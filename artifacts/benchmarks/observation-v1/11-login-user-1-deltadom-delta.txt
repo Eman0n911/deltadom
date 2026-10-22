@@ -1,0 +1,3 @@
+{"base_seq":1,"document":"7f6eff3b-c949-4ca7-8591-26763048229a","kind":"delta","seq":2,"url":"http://127.0.0.1:53240/miniwob/login-user.html"}
+upsert=[]
+removed=[]

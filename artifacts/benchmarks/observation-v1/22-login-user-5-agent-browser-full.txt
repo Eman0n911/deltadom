@@ -1,0 +1,32 @@
+- generic
+  - generic
+    - generic
+      - StaticText "Enter the username \"emile\" and the password \"l3H\" into the text fields and press login."
+    - generic
+      - paragraph
+        - LabelText
+          - StaticText "Username"
+        - textbox [ref=e5]
+      - paragraph
+        - LabelText
+          - StaticText "Password"
+        - textbox [ref=e6]
+      - button "Login" [ref=e4]
+  - Canvas
+  - generic
+    - generic
+      - LabelText
+        - StaticText "Last reward:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Last 10 average:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Time left:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Episodes done:"
+      - StaticText "0"

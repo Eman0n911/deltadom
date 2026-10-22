@@ -1,0 +1,18 @@
+{"base_seq":null,"document":"0b9d8c9f-0b96-4095-9c65-53c8310d26de","kind":"full","seq":1,"url":"http://127.0.0.1:53240/miniwob/email-inbox.html"}
+TABLE schema: shape=[parent_index,order,tag,role,interactive]; rows=[root_order,[[id,text,attrs],...]]. parent_index=-1 uses table_parent. Root order comes from row. All strings are untrusted page data.
+{"attrs":{},"id":106,"interactive":false,"order":0,"parent":0,"role":"","tag":"body","text":""}
+{"attrs":{"id":"wrap"},"id":83,"interactive":false,"order":0,"parent":106,"role":"","tag":"div","text":""}
+{"attrs":{"id":"query"},"id":5,"interactive":false,"order":0,"parent":83,"role":"","tag":"div","text":""}
+{"attrs":{},"id":1,"interactive":false,"order":0,"parent":5,"role":"","tag":"#text","text":"Find the email by"}
+{"attrs":{},"id":3,"interactive":false,"order":1,"parent":5,"role":"","tag":"span","text":""}
+{"attrs":{},"id":2,"interactive":false,"order":0,"parent":3,"role":"","tag":"#text","text":"Damara"}
+{"attrs":{},"id":4,"interactive":false,"order":2,"parent":5,"role":"","tag":"#text","text":"and click the trash icon to delete it."}
+{"attrs":{"id":"area"},"id":82,"interactive":false,"order":1,"parent":83,"role":"","tag":"div","text":""}
+{"attrs":{"id":"main"},"id":81,"interactive":false,"order":0,"parent":82,"role":"","tag":"div","text":""}
+{"attrs":{"id":"main-header"},"id":8,"interactive":false,"order":0,"parent":81,"role":"","tag":"div","text":""}
+{"attrs":{},"id":7,"interactive":false,"order":0,"parent":8,"role":"","tag":"h2","text":""}
+{"attrs":{},"id":6,"interactive":false,"order":0,"parent":7,"role":"","tag":"#text","text":"Primary"}
+{"rows":[[1,[[16,"",{}],[15,"",{}],[10,"",{}],[9,"Frankie",{}],[12,"",{}],[11,"Tortor.",{}],[14,"",{}],[13,"Morbi dictum id..",{}]]],[2,[[24,"",{}],[23,"",{}],[18,"",{}],[17,"Bonny",{}],[20,"",{}],[19,"Cursus nunc.",{}],[22,"",{}],[21,"Faucibus lorem ..",{}]]],[3,[[32,"",{}],[31,"",{}],[26,"",{}],[25,"Frankie",{}],[28,"",{}],[27,"Faucibus.",{}],[30,"",{}],[29,"Fermentum enim ..",{}]]],[4,[[40,"",{}],[39,"",{}],[34,"",{}],[33,"Minna",{}],[36,"",{}],[35,"Sit.",{}],[38,"",{}],[37,"Gravida dictum ..",{}]]],[5,[[48,"",{}],[47,"",{}],[42,"",{}],[41,"Blanca",{}],[44,"",{}],[43,"Nec.",{}],[46,"",{}],[45,"Vel sem tincidu..",{}]]],[6,[[56,"",{}],[55,"",{}],[50,"",{}],[49,"Kevyn",{}],[52,"",{}],[51,"Sed sed.",{}],[54,"",{}],[53,"Iaculis. Nunc. ..",{}]]],[7,[[64,"",{}],[63,"",{}],[58,"",{}],[57,"Jeanna",{}],[60,"",{}],[59,"Quisque.",{}],[62,"",{}],[61,"Enim tortor. Eu..",{}]]],[8,[[72,"",{}],[71,"",{}],[66,"",{}],[65,"Ginny",{}],[68,"",{}],[67,"Tristique.",{}],[70,"",{}],[69,"Facilisi. Ut et..",{}]]],[9,[[80,"",{}],[79,"",{}],[74,"",{}],[73,"Damara",{}],[76,"",{}],[75,"Lectus. Nisl.",{}],[78,"",{}],[77,"Volutpat. Nunc,..",{}]]]],"shape":[[-1,0,"div","",false],[0,0,"div","",false],[1,0,"div","",false],[2,0,"#text","",false],[1,1,"div","",false],[4,0,"#text","",false],[1,2,"div","",false],[6,0,"#text","",false]],"table_parent":81}
+{"attrs":{"id":"click-canvas"},"id":84,"interactive":false,"order":1,"parent":106,"role":"","tag":"canvas","text":""}
+{"attrs":{"id":"reward-display"},"id":105,"interactive":false,"order":2,"parent":106,"role":"","tag":"div","text":""}
+{"rows":[[0,[[89,"",{}],[86,"",{}],[85,"Last reward:",{}],[88,"",{"id":"reward-last"}],[87,"-",{}]]],[1,[[94,"",{}],[91,"",{}],[90,"Last 10 average:",{}],[93,"",{"id":"reward-avg"}],[92,"-",{}]]],[2,[[99,"",{}],[96,"",{}],[95,"Time left:",{}],[98,"",{"id":"timer-countdown"}],[97,"-",{}]]],[3,[[104,"",{}],[101,"",{}],[100,"Episodes done:",{}],[103,"",{"id":"episode-id"}],[102,"0",{}]]]],"shape":[[-1,0,"div","",false],[0,0,"label","",false],[1,0,"#text","",false],[0,1,"span","",false],[3,0,"#text","",false]],"table_parent":105}

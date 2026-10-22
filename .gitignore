@@ -1,0 +1,13 @@
+.venv/
+target/
+__pycache__/
+*.so
+*.dylib
+*.pyc
+.pytest_cache/
+.ruff_cache/
+dist/
+.deltadom-env/
+deltadom-output/
+
+.bench/

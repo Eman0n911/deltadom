@@ -1,0 +1,18 @@
+DeltaDOM / real browser demo
+Local sample page. No API key. No model calls.
+
+STEP                   FRAME   NODES  FULL BYTES  SENT BYTES  CHECK
+initial                full      304      32,556       9,644  OK
+unchanged              delta     304      32,556         141  OK
+fill                   delta     304      32,560         311  OK
+api                    delta     304      32,576         260  OK
+reorder                delta     304      32,576       3,182  OK
+choose                 delta     304      32,574         259  OK
+add                    delta     313      33,531       1,097  OK
+same_url_reload        full      304      32,556       9,644  OK
+
+Verified 8/8: every frame reconstructs the captured nodes.
+FULL = complete semantic JSON. SENT = new DOM text; excludes API and prompt history.
+Local sample only; bytes are not tokens, model cost, or task success.
+Results: /HOME/Desktop/d4luv918/cvd/deltadom/artifacts/preview-demo.json
+Screenshot: /HOME/Desktop/d4luv918/cvd/deltadom/artifacts/preview-demo.png

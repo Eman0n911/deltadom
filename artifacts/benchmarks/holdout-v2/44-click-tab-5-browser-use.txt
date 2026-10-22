@@ -1,0 +1,17 @@
+*[180]<div id=query />
+	Click on Tab #3.
+*[198]<ul role=tablist multiselectable=false />
+	*[199]<li role=tab expanded=true selected=true />
+		*[200]<a role=presentation id=ui-id-1 />
+			Tab #1
+	*[201]<li role=tab expanded=false selected=false />
+		*[202]<a role=presentation id=ui-id-2 />
+			Tab #2
+	*[203]<li role=tab expanded=false selected=false />
+		*[204]<a role=presentation id=ui-id-3 />
+			Tab #3
+Non lorem egestas iaculis. Est aliquam. Cursus pretium bibendum ac aliquam. Sed lorem platea enim, vestibulum, pharetra, felis, sit. Lectus.
+Last reward:
+Last 10 average:
+Time left:
+Episodes done:

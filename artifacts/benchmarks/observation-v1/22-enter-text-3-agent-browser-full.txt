@@ -1,0 +1,26 @@
+- generic
+  - generic
+    - generic
+      - StaticText "Enter \"Dannie\" into the text field and press Submit."
+    - generic
+      - textbox [ref=e1]: Bob
+        - StaticText "Bob"
+      - button "Submit" [ref=e2]
+  - Canvas
+  - generic
+    - generic
+      - LabelText
+        - StaticText "Last reward:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Last 10 average:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Time left:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Episodes done:"
+      - StaticText "0"

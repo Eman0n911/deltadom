@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "browser_use": "0.13.11",
+  "browser": "156.0.8078.47",
+  "actual_agent_run": true,
+  "scripted_responder": true,
+  "recorded_messages_equal_to_responder_inputs": true,
+  "model_calls": 0,
+  "provider_usage": null,
+  "not_run": [
+    "model task success",
+    "cost savings",
+    "autonomous benchmark"
+  ],
+  "scope": "callback wiring only; done action is scripted, not scored"
+}

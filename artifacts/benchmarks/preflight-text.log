@@ -1,0 +1,67 @@
+BU 2175 30
+AB 0  27" [level=2, ref=e63]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 27"
+    - StaticText "$37"
+    - button "Choose 27" [ref=e64]
+  - article
+    - heading "Product 28" [level=2, ref=e65]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 28"
+    - StaticText "$38"
+    - button "Choose 28" [ref=e66]
+  - article
+    - heading "Product 29" [level=2, ref=e67]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 29"
+    - StaticText "$39"
+    - button "Choose 29" [ref=e68]
+  - article
+    - heading "Product 30" [level=2, ref=e69]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 30"
+    - StaticText "$40"
+    - button "Choose 30" [ref=e70]
+- generic
+  - LabelText
+    - StaticText "Shadow "
+    - textbox "Shadow" [ref=e71]
+  - button "Shadow button" [ref=e10]
+- textbox [ref=e7]: •••••••••••••••••
+  - StaticText "•••••••••••••••••"
+ 
+AB 0  27" [level=2, ref=e63]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 27"
+    - StaticText "$37"
+    - button "Choose 27" [ref=e64]
+  - article
+    - heading "Product 28" [level=2, ref=e65]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 28"
+    - StaticText "$38"
+    - button "Choose 28" [ref=e66]
+  - article
+    - heading "Product 29" [level=2, ref=e67]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 29"
+    - StaticText "$39"
+    - button "Choose 29" [ref=e68]
+  - article
+    - heading "Product 30" [level=2, ref=e69]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 30"
+    - StaticText "$40"
+    - button "Choose 30" [ref=e70]
+- generic
+  - LabelText
+    - StaticText "Shadow "
+    - textbox "Shadow" [ref=e71]
+  - button "Shadow button" [ref=e10]
+- textbox [ref=e7]: •••••••••••••••••
+  - StaticText "•••••••••••••••••"
+ 
+AB 0 unchanged (revision 2)
+ 
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete

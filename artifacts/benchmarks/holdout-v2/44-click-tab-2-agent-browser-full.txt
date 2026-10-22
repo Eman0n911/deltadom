@@ -1,0 +1,32 @@
+- generic
+  - generic
+    - StaticText "Click on Tab #3."
+    - generic
+      - tablist
+        - tab "Tab #1" [expanded=false, ref=e1]
+          - link "Tab #1" [ref=e4]
+        - tab "Tab #2" [expanded=true, selected, ref=e2]
+          - link "Tab #2" [ref=e5]
+        - tab "Tab #3" [expanded=false, ref=e3]
+          - link "Tab #3" [ref=e6]
+      - tabpanel "Tab #2"
+        - paragraph
+          - StaticText "Ut. Facilisis faucibus. Turpis. Duis maecenas ornare commodo magna est amet in dignissim imperdiet diam nisl senectus tortor, sed amet."
+  - Canvas
+  - generic
+    - generic
+      - LabelText
+        - StaticText "Last reward:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Last 10 average:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Time left:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Episodes done:"
+      - StaticText "0"

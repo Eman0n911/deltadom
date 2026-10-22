@@ -1,0 +1,37 @@
+- generic
+  - generic
+    - StaticText "Select YM2l8 and click Submit."
+    - generic
+      - generic
+        - checkbox "TVkEpYW" [checked=true, ref=e2]
+        - LineBreak "\n"
+        - checkbox "YM2l8" [checked=false, ref=e3]
+        - LineBreak "\n"
+        - checkbox "bGyAZTd" [checked=false, ref=e4]
+        - LineBreak "\n"
+        - checkbox "PThT" [checked=false, ref=e5]
+        - LineBreak "\n"
+        - checkbox "UI" [checked=false, ref=e6]
+        - LineBreak "\n"
+        - checkbox "JyUX6W" [checked=false, ref=e7]
+        - LineBreak "\n"
+      - LineBreak "\n"
+      - button "Submit" [ref=e1]
+  - Canvas
+  - generic
+    - generic
+      - LabelText
+        - StaticText "Last reward:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Last 10 average:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Time left:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Episodes done:"
+      - StaticText "0"

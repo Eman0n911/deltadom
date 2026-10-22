@@ -1,0 +1,15 @@
+{
+  "baseRevision": 3,
+  "changes": [],
+  "kind": "delta",
+  "revision": 4,
+  "treeChange": {
+    "deleteCount": 3,
+    "lines": [
+      "        - radio \"cs5852\" [checked=false, ref=e2]",
+      "        - LineBreak \"\\n\"",
+      "        - radio \"xED\" [checked=true, ref=e3]"
+    ],
+    "startLine": 5
+  }
+}

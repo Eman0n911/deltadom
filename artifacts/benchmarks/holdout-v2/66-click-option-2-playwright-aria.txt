@@ -1,0 +1,13 @@
+- text: Select 0bnFBY and click Submit.
+- radio "Npg" [checked]
+- text: Npg
+- radio "HBaFx"
+- text: HBaFx
+- radio "0bnFBY"
+- text: 0bnFBY
+- radio "zHYK"
+- text: zHYK
+- radio "ln"
+- text: ln
+- button "Submit"
+- text: "Last reward: - Last 10 average: - Time left: - Episodes done: 0"

@@ -1,0 +1,15 @@
+{
+  "app": "WorkBuddy AI 5.8.4",
+  "model_ui_label": "Deepseek-V4.1-Flash",
+  "backend_identity": "not_exposed",
+  "sampling_parameters": "not_exposed",
+  "provider_usage": "unavailable",
+  "copied_reply_count": 4,
+  "baseline_artifacts": "../workbuddy-v1",
+  "same_seed": 11,
+  "policy_change": "only format adapter to TEXT_GUIDE; no coaching or action repair",
+  "wall_time": "includes manual UI/operator delays; not a speed metric",
+  "runner_sha256": "47dec9ddbf854dad0706e4ea7884dd6cfe54fda3720fbde30410afcb33f8fda8",
+  "wheel_sha256": "0c55a5afe39cda1f603100af03a747866e29d256b2bf997a6d81cc50d8f47846",
+  "chatgpt_desktop": "not_run: application control denied; no substitute"
+}

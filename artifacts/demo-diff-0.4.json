@@ -1,0 +1,47 @@
+{
+  "before": 2,
+  "after": 3,
+  "added": [],
+  "removed": [],
+  "changed": [
+    {
+      "id": 6,
+      "fields": {
+        "attrs": {
+          "before": {
+            "disabled": "false",
+            "name": "query",
+            "placeholder": "Product name",
+            "value": ""
+          },
+          "after": {
+            "disabled": "false",
+            "name": "query",
+            "placeholder": "Product name",
+            "value": "Rust"
+          }
+        }
+      }
+    }
+  ],
+  "context": {
+    "label": {
+      "before": "unchanged",
+      "after": "fill"
+    },
+    "settle": {
+      "before": {
+        "status": "quiet",
+        "elapsed_ms": 71.239,
+        "pending_requests": 0,
+        "pending_api": 0
+      },
+      "after": {
+        "status": "quiet",
+        "elapsed_ms": 70.015,
+        "pending_requests": 0,
+        "pending_api": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+
+NEXT OBSERVATION: login-user; action 1/8.
+OBSERVATION
+{
+  "baseRevision": 1,
+  "changes": [],
+  "kind": "delta",
+  "revision": 2,
+  "treeChange": {
+    "deleteCount": 1,
+    "lines": [
+      "        - textbox [ref=e2]: keli",
+      "          - StaticText \"keli\""
+    ],
+    "startLine": 8
+  }
+}

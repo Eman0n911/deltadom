@@ -1,0 +1,14 @@
+[41]<div id=query />
+	Select JAzeB8 and click Submit.
+[47]<label />
+	[48]<input type=radio id=ch0 name=radio value=on checked=false />
+	JAzeB8
+[51]<label />
+	[52]<input type=radio id=ch1 name=radio value=on checked=false />
+	hGl8r
+[5]<button id=subbtn />
+	Submit
+Last reward:
+Last 10 average:
+Time left:
+Episodes done:

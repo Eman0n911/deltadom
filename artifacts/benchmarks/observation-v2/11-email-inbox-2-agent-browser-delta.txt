@@ -1,0 +1,40 @@
+- generic
+  - generic
+    - generic
+      - StaticText "Find the email by Helena and click the trash icon to delete it."
+    - generic
+      - generic
+        - generic
+          - image [ref=e10] clickable [cursor:pointer]
+          - generic
+            - image [ref=e11] clickable [cursor:pointer]
+            - image [ref=e12] clickable [cursor:pointer]
+        - StaticText "Turpis gravida."
+        - StaticText "Helena"
+        - StaticText "to me"
+        - StaticText "Velit. Tristique sapien,. Sit aenean leo morbi."
+        - generic [ref=e9] clickable [cursor:pointer]
+          - generic
+            - image
+            - StaticText "Reply"
+          - generic
+            - image
+            - StaticText "Forward"
+  - Canvas
+  - generic
+    - generic
+      - LabelText
+        - StaticText "Last reward:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Last 10 average:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Time left:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Episodes done:"
+      - StaticText "0"

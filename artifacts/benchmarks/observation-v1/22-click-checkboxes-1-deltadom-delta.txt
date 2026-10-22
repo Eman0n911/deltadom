@@ -1,0 +1,3 @@
+{"base_seq":1,"document":"3c066f06-c72f-4e1d-b857-952f7b654c80","kind":"delta","seq":2,"url":"http://127.0.0.1:53240/miniwob/click-checkboxes.html"}
+upsert=[]
+removed=[]

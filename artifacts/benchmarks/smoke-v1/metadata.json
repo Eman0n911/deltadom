@@ -1,0 +1,33 @@
+{
+  "scope": "observation replay, NOT native MiniWoB success",
+  "packages": {
+    "browser-use": "0.13.11",
+    "deltadom": "0.2.0",
+    "playwright": "1.64.0",
+    "tiktoken": "0.14.0"
+  },
+  "python": "3.12.13",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "miniwob_sha": "33c3b4ddef8c6eb67c57a29663d844b1eda7e614",
+  "runner_sha256": "989b2650ef68d92a7d3d64d0ded48aa26dbcab9b8d716860aed3542c302554fb",
+  "protocol_sha256": "81d98dcbdc8d6c18117cdacd401b5f19e4ae30caa9fe60abd5514d147f2eab72",
+  "wheel_sha256": "108fc640f35141c3e4adc350d1c9e23a25a5af4321cc0e8a25c2128192b7e20e",
+  "agent_browser_version": "0.39.1",
+  "seeds": [
+    11
+  ],
+  "cases": [
+    "enter-text"
+  ],
+  "chrome": "156.0.8078.47",
+  "rows": 36,
+  "errors": 0,
+  "mutated_during_capture": 0,
+  "not_run": [
+    "model tasks",
+    "official score",
+    "paid cost",
+    "full prompt tokens",
+    "native action comparison"
+  ]
+}

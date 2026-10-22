@@ -1,0 +1,1 @@
+{"base":2,"document":"10075999-f588-41e7-bd35-73410cdb81e6","kind":"delta","patch":[[3,{"attrs":{"checked":"true"}}]],"seq":3,"v":2}

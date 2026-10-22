@@ -1,0 +1,1 @@
+{"base_seq": 4, "change_ratio": 0.0, "document": "aAvY1Pfj2GtTS2NnAJBrBQ", "kind": "delta", "reason": "delta", "removed": [], "seq": 5, "text": "{\"base\":4,\"document\":\"aAvY1Pfj2GtTS2NnAJBrBQ\",\"kind\":\"delta\",\"seq\":5,\"v\":2}\n", "upsert": [], "url": "http://127.0.0.1:61027/miniwob/click-tab.html", "version": 1}

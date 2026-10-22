@@ -1,0 +1,40 @@
+- generic
+  - generic
+    - generic
+      - StaticText "Find the email by Damara and click the trash icon to delete it."
+    - generic
+      - generic
+        - generic
+          - image [ref=e13] clickable [cursor:pointer]
+          - generic
+            - image [ref=e14] clickable [cursor:pointer]
+            - image [ref=e15] clickable [cursor:pointer]
+        - StaticText "Tortor."
+        - StaticText "Frankie"
+        - StaticText "to me"
+        - StaticText "Morbi dictum id eget facilisis mattis. Eget tincidunt tellus id. Nunc."
+        - generic [ref=e12] clickable [cursor:pointer]
+          - generic
+            - image
+            - StaticText "Reply"
+          - generic
+            - image
+            - StaticText "Forward"
+  - Canvas
+  - generic
+    - generic
+      - LabelText
+        - StaticText "Last reward:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Last 10 average:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Time left:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Episodes done:"
+      - StaticText "0"

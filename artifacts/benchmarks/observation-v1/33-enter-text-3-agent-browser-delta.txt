@@ -1,0 +1,14 @@
+{
+  "baseRevision": 3,
+  "changes": [],
+  "kind": "delta",
+  "revision": 4,
+  "treeChange": {
+    "deleteCount": 2,
+    "lines": [
+      "      - textbox [ref=e1]: Bob",
+      "        - StaticText \"Bob\""
+    ],
+    "startLine": 5
+  }
+}

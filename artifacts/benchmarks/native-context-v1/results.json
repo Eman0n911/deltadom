@@ -1,0 +1,52 @@
+{
+  "browser_use": "0.13.11",
+  "states": 6,
+  "state_slot_replaces_previous": true,
+  "recorded_messages_equal": true,
+  "llm_input_reduction": 0,
+  "scope": "native MessageManager state-slot contract; no actor/model/provider calls",
+  "not_run": [
+    "full agent loop",
+    "provider wire request",
+    "provider usage",
+    "model success"
+  ],
+  "rows": [
+    {
+      "step": 1,
+      "messages": 2,
+      "serialized_input_tokens_proxy": 169,
+      "source_sha256": "5c6179d1f2a6250e744e158868409fae0a98f080c2b40e32bd4d11739978baef"
+    },
+    {
+      "step": 2,
+      "messages": 2,
+      "serialized_input_tokens_proxy": 169,
+      "source_sha256": "5c6179d1f2a6250e744e158868409fae0a98f080c2b40e32bd4d11739978baef"
+    },
+    {
+      "step": 3,
+      "messages": 2,
+      "serialized_input_tokens_proxy": 172,
+      "source_sha256": "aa0237f16f3bce6a08369c27bde641f2649b56439506215b329da0fc017fb1eb"
+    },
+    {
+      "step": 4,
+      "messages": 2,
+      "serialized_input_tokens_proxy": 172,
+      "source_sha256": "aa0237f16f3bce6a08369c27bde641f2649b56439506215b329da0fc017fb1eb"
+    },
+    {
+      "step": 5,
+      "messages": 2,
+      "serialized_input_tokens_proxy": 172,
+      "source_sha256": "aa0237f16f3bce6a08369c27bde641f2649b56439506215b329da0fc017fb1eb"
+    },
+    {
+      "step": 6,
+      "messages": 2,
+      "serialized_input_tokens_proxy": 169,
+      "source_sha256": "2064d3a5baca6cd02009e7d21c833b8f596a7004e34d317abcf765359e552533"
+    }
+  ]
+}

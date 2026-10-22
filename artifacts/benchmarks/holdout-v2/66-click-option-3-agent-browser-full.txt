@@ -1,0 +1,35 @@
+- generic
+  - generic
+    - StaticText "Select 0bnFBY and click Submit."
+    - generic
+      - generic
+        - radio "Npg" [checked=false, ref=e2]
+        - LineBreak "\n"
+        - radio "HBaFx" [checked=true, ref=e3]
+        - LineBreak "\n"
+        - radio "0bnFBY" [checked=false, ref=e4]
+        - LineBreak "\n"
+        - radio "zHYK" [checked=false, ref=e5]
+        - LineBreak "\n"
+        - radio "ln" [checked=false, ref=e6]
+        - LineBreak "\n"
+      - LineBreak "\n"
+      - button "Submit" [ref=e1]
+  - Canvas
+  - generic
+    - generic
+      - LabelText
+        - StaticText "Last reward:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Last 10 average:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Time left:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Episodes done:"
+      - StaticText "0"

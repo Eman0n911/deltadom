@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>DeltaDOM local shop</title>
+<style>body{font:16px system-ui;max-width:1000px;margin:40px auto;background:#f4f6fa;color:#182b42}button,input,select{padding:10px;margin:5px}#products{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}article{background:white;padding:16px;border-radius:12px}aside{padding:16px;background:#e5eaf5}h1{color:#294f81}</style></head>
+<body><h1>DeltaDOM · local fixture</h1><aside>Deterministic fixture. No model or external requests.</aside>
+<label>Search <input name="query" placeholder="Product name"></label>
+<button id="load">Load API</button><button id="sort">Reverse order</button><button id="add">Add item</button>
+<label>Mode <select name="mode"><option value="all">All</option><option value="sale">Sale</option></select></label>
+<label><input type="checkbox" name="stock"> In stock</label>
+<p id="status">Ready</p><section id="products" aria-label="Products"></section>
+<div id="host"></div><div hidden>HIDDEN-SENTINEL</div><input type="password" value="PASSWORD-SENTINEL">
+<script>
+const products=document.querySelector('#products');
+function card(i){const el=document.createElement('article');el.dataset.product=i;el.innerHTML=`<h2>Product ${i}</h2><p>Rust tools | reliable &amp; fast ${i}</p><span>$${i+10}</span><button data-product="${i}">Choose ${i}</button>`;el.querySelector('button').onclick=()=>document.querySelector('#status').textContent=`Selected product ${i}`;return el;}
+for(let i=1;i<=30;i++)products.append(card(i));
+document.querySelector('#sort').onclick=()=>[...products.children].reverse().forEach(el=>products.append(el));
+document.querySelector('#add').onclick=()=>products.append(card(31));
+document.querySelector('#load').onclick=async()=>{const r=await fetch('/api/products');const data=await r.json();document.querySelector('#status').textContent=`Loaded ${data.items.length} API records`;};
+document.querySelector('#host').attachShadow({mode:'open'}).innerHTML='<label>Shadow <input name="shadow"></label><button id="shadowbutton">Shadow button</button>';
+</script></body></html>

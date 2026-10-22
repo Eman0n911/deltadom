@@ -1,0 +1,1 @@
+{"base":1,"document":"7eea87ef-434c-42e8-b1a1-b4227a096a70","kind":"delta","seq":2,"v":2}

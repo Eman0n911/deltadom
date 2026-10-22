@@ -1,0 +1,23 @@
+name: 安装或使用问题
+description: 描述实际遇到的问题，帮助复现和修复。
+title: "[问题] "
+body:
+  - type: input
+    id: system
+    attributes:
+      label: 电脑与版本
+      placeholder: "例如：Apple M2 / macOS 26 / DeltaDOM 0.2"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 操作了什么，发生了什么？
+      description: 请写最短复现步骤，以及期待看到的结果。
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: 错误信息或截图
+      description: 请先移除密钥、登录信息及私有网页内容。

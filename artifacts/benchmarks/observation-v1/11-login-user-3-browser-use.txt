@@ -1,0 +1,20 @@
+[39]<div id=query />
+	Enter the
+	[41]<span />
+		username
+	"keli" and the
+	[44]<span />
+		password
+	"3hI" into the text fields and press login.
+[5]<label />
+	Username
+|SHADOW(open)|[3]<input type=text id=username value=alice />
+[6]<label />
+	Password
+|SHADOW(open)|[4]<input type=password />
+[9]<button id=subbtn />
+	Login
+Last reward:
+Last 10 average:
+Time left:
+Episodes done:

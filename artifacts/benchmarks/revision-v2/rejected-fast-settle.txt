@@ -1,0 +1,25 @@
+...F.................                                                    [100%]
+=================================== FAILURES ===================================
+_____________________ test_timeout_is_explicit_and_cleanup _____________________
+
+live = (<Page url='http://127.0.0.1:58896/'>, 'http://127.0.0.1:58896')
+
+    async def test_timeout_is_explicit_and_cleanup(live):
+        page, url = live
+        await page.goto(url)
+        delta = DeltaBrowser(page, quiet_ms=40, timeout_ms=100)
+        await delta.observe()
+        await page.evaluate(
+            "window.churn=setInterval(()=>document.querySelector('#status').textContent=String(performance.now()),5)"
+        )
+        obs = await delta.observe()
+>       assert obs.settle["status"] == "timeout"
+E       AssertionError: assert 'quiet' == 'timeout'
+E         
+E         - timeout
+E         + quiet
+
+tests/test_browser.py:104: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_browser.py::test_timeout_is_explicit_and_cleanup - Assertio...
+1 failed, 20 passed in 13.19s

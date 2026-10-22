@@ -1,0 +1,19 @@
+{
+  "baseRevision": 2,
+  "changes": [],
+  "kind": "delta",
+  "revision": 3,
+  "treeChange": {
+    "deleteCount": 7,
+    "lines": [
+      "        - tab \"Tab #2\" [expanded=true, selected, ref=e2]",
+      "          - link \"Tab #2\" [ref=e5]",
+      "        - tab \"Tab #3\" [expanded=false, ref=e3]",
+      "          - link \"Tab #3\" [ref=e6]",
+      "      - tabpanel \"Tab #2\"",
+      "        - paragraph",
+      "          - StaticText \"Molestie faucibus. Mattis vel. Eu id. Imperdiet. Erat morbi egestas nunc, mattis montes, nibh nulla amet laoreet tincidunt dictum ut.\""
+    ],
+    "startLine": 7
+  }
+}

@@ -1,0 +1,17 @@
+[18]<div id=query />
+	Click on Tab #3.
+[20]<ul role=tablist multiselectable=false />
+	[21]<li role=tab expanded=false selected=false />
+		[22]<a role=presentation id=ui-id-1 />
+			Tab #1
+	[23]<li role=tab expanded=true selected=true />
+		[24]<a role=presentation id=ui-id-2 />
+			Tab #2
+	[25]<li role=tab expanded=false selected=false />
+		[26]<a role=presentation id=ui-id-3 />
+			Tab #3
+Ut. Facilisis faucibus. Turpis. Duis maecenas ornare commodo magna est amet in dignissim imperdiet diam nisl senectus tortor, sed amet.
+Last reward:
+Last 10 average:
+Time left:
+Episodes done:

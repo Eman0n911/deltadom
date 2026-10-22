@@ -1,0 +1,40 @@
+- generic
+  - generic
+    - generic
+      - StaticText "Find the email by Alexina and reply to them with the text \"Tortor, diam semper.\"."
+    - generic
+      - generic
+        - generic
+          - image [ref=e14] clickable [cursor:pointer]
+          - generic
+            - image [ref=e15] clickable [cursor:pointer]
+            - image [ref=e16] clickable [cursor:pointer]
+        - StaticText "Sed."
+        - StaticText "Rozina"
+        - StaticText "to me"
+        - StaticText "Proin quis malesuada eu nunc purus ut nec dictum."
+        - generic [ref=e13] clickable [cursor:pointer]
+          - generic
+            - image
+            - StaticText "Reply"
+          - generic
+            - image
+            - StaticText "Forward"
+  - Canvas
+  - generic
+    - generic
+      - LabelText
+        - StaticText "Last reward:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Last 10 average:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Time left:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Episodes done:"
+      - StaticText "0"

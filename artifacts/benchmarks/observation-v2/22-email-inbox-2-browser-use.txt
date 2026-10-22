@@ -1,0 +1,27 @@
+[20]<div id=query />
+	Find the email by
+	[21]<span />
+		Damara
+	and click the trash icon to delete it.
+*[357]<span id=close-email />
+*[358]<div />
+	*[359]<span />
+	*[360]<span />
+Tortor.
+Frankie
+to me
+*[366]<span />
+Morbi dictum id eget facilisis mattis. Eget tincidunt tellus id. Nunc.
+*[369]<div />
+	*[370]<span />
+		*[371]<div />
+		*[372]<div />
+			Reply
+	*[373]<span />
+		*[374]<div />
+		*[375]<div />
+			Forward
+Last reward:
+Last 10 average:
+Time left:
+Episodes done:

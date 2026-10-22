@@ -1,0 +1,15 @@
+- text: Select YM2l8 and click Submit.
+- checkbox "TVkEpYW"
+- text: TVkEpYW
+- checkbox "YM2l8"
+- text: YM2l8
+- checkbox "bGyAZTd"
+- text: bGyAZTd
+- checkbox "PThT"
+- text: PThT
+- checkbox "UI"
+- text: UI
+- checkbox "JyUX6W"
+- text: JyUX6W
+- button "Submit"
+- text: "Last reward: - Last 10 average: - Time left: - Episodes done: 0"

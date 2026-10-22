@@ -1,0 +1,39 @@
+{
+  "baseRevision": 5,
+  "changes": [
+    {
+      "op": "remove",
+      "ref": "@e1"
+    },
+    {
+      "op": "remove",
+      "ref": "@e2"
+    },
+    {
+      "node": {
+        "name": "",
+        "role": "textbox"
+      },
+      "op": "add",
+      "ref": "@e3"
+    },
+    {
+      "node": {
+        "name": "Submit",
+        "role": "button"
+      },
+      "op": "add",
+      "ref": "@e4"
+    }
+  ],
+  "kind": "delta",
+  "revision": 6,
+  "treeChange": {
+    "deleteCount": 3,
+    "lines": [
+      "      - textbox [ref=e3]",
+      "      - button \"Submit\" [ref=e4]"
+    ],
+    "startLine": 5
+  }
+}

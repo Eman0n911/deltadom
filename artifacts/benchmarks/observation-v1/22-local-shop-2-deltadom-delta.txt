@@ -1,0 +1,3 @@
+{"base_seq":2,"document":"f46a44f5-2315-44a8-855b-8a8662d844af","kind":"delta","seq":3,"url":"http://127.0.0.1:53241/"}
+upsert=[{"attrs":{"disabled":"false","name":"query","placeholder":"Product name","value":"Rust"},"id":6,"interactive":true,"order":1,"parent":7,"role":"","tag":"input","text":""}]
+removed=[]

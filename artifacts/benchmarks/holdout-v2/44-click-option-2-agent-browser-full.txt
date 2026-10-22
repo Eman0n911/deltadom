@@ -1,0 +1,31 @@
+- generic
+  - generic
+    - StaticText "Select H7 and click Submit."
+    - generic
+      - generic
+        - radio "cs5852" [checked=true, ref=e2]
+        - LineBreak "\n"
+        - radio "xED" [checked=false, ref=e3]
+        - LineBreak "\n"
+        - radio "H7" [checked=false, ref=e4]
+        - LineBreak "\n"
+      - LineBreak "\n"
+      - button "Submit" [ref=e1]
+  - Canvas
+  - generic
+    - generic
+      - LabelText
+        - StaticText "Last reward:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Last 10 average:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Time left:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Episodes done:"
+      - StaticText "0"

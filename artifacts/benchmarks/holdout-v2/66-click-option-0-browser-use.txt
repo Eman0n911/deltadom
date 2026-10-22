@@ -1,0 +1,23 @@
+[41]<div id=query />
+	Select 0bnFBY and click Submit.
+[47]<label />
+	[48]<input type=radio id=ch0 name=radio value=on checked=false />
+	Npg
+[51]<label />
+	[52]<input type=radio id=ch1 name=radio value=on checked=false />
+	HBaFx
+[55]<label />
+	[56]<input type=radio id=ch2 name=radio value=on checked=false />
+	0bnFBY
+[59]<label />
+	[60]<input type=radio id=ch3 name=radio value=on checked=false />
+	zHYK
+[63]<label />
+	[64]<input type=radio id=ch4 name=radio value=on checked=false />
+	ln
+[5]<button id=subbtn />
+	Submit
+Last reward:
+Last 10 average:
+Time left:
+Episodes done:

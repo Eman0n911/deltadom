@@ -1,0 +1,266 @@
+{
+  "groups": [
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "agent-browser-delta",
+      "calls": 54,
+      "errors": 0,
+      "tokens": 6798,
+      "bytes": 23032,
+      "wall_p50_ms": 34.204,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "agent-browser-full",
+      "calls": 54,
+      "errors": 0,
+      "tokens": 12934,
+      "bytes": 46239,
+      "wall_p50_ms": 34.199,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "browser-use",
+      "calls": 54,
+      "errors": 0,
+      "tokens": 7627,
+      "bytes": 23869,
+      "wall_p50_ms": 5.504,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "deltadom-delta",
+      "calls": 54,
+      "errors": 0,
+      "tokens": 11958,
+      "bytes": 33235,
+      "wall_p50_ms": 73.547,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "deltadom-full",
+      "calls": 54,
+      "errors": 0,
+      "tokens": 29028,
+      "bytes": 82149,
+      "wall_p50_ms": 74.022,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "playwright-aria",
+      "calls": 54,
+      "errors": 0,
+      "tokens": 6375,
+      "bytes": 18099,
+      "wall_p50_ms": 2.036,
+      "page_mutations": 0
+    }
+  ],
+  "blocks": [
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "agent-browser-delta",
+      "seed": 44,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 2252,
+      "bytes": 7667,
+      "wall_p50_ms": 34.838,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "agent-browser-delta",
+      "seed": 55,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 2203,
+      "bytes": 7474,
+      "wall_p50_ms": 33.589,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "agent-browser-delta",
+      "seed": 66,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 2343,
+      "bytes": 7891,
+      "wall_p50_ms": 33.492,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "agent-browser-full",
+      "seed": 44,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 4247,
+      "bytes": 15267,
+      "wall_p50_ms": 36.333,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "agent-browser-full",
+      "seed": 55,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 4109,
+      "bytes": 14764,
+      "wall_p50_ms": 34.417,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "agent-browser-full",
+      "seed": 66,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 4578,
+      "bytes": 16208,
+      "wall_p50_ms": 33.527,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "browser-use",
+      "seed": 44,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 2460,
+      "bytes": 7800,
+      "wall_p50_ms": 5.284,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "browser-use",
+      "seed": 55,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 2280,
+      "bytes": 7173,
+      "wall_p50_ms": 5.309,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "browser-use",
+      "seed": 66,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 2887,
+      "bytes": 8896,
+      "wall_p50_ms": 6.184,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "deltadom-delta",
+      "seed": 44,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 3936,
+      "bytes": 10985,
+      "wall_p50_ms": 72.992,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "deltadom-delta",
+      "seed": 55,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 3848,
+      "bytes": 10646,
+      "wall_p50_ms": 73.476,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "deltadom-delta",
+      "seed": 66,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 4174,
+      "bytes": 11604,
+      "wall_p50_ms": 73.918,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "deltadom-full",
+      "seed": 44,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 9566,
+      "bytes": 27094,
+      "wall_p50_ms": 74.423,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "deltadom-full",
+      "seed": 55,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 9301,
+      "bytes": 26159,
+      "wall_p50_ms": 73.695,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "deltadom-full",
+      "seed": 66,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 10161,
+      "bytes": 28896,
+      "wall_p50_ms": 74.266,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "playwright-aria",
+      "seed": 44,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 2070,
+      "bytes": 5966,
+      "wall_p50_ms": 2.174,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "playwright-aria",
+      "seed": 55,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 2009,
+      "bytes": 5751,
+      "wall_p50_ms": 1.819,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "playwright-aria",
+      "seed": 66,
+      "calls": 18,
+      "errors": 0,
+      "tokens": 2296,
+      "bytes": 6382,
+      "wall_p50_ms": 1.826,
+      "page_mutations": 0
+    }
+  ],
+  "delta_reconstruction_checks": 108,
+  "unactionable_script_targets": []
+}

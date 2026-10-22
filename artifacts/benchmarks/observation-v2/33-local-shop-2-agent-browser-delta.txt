@@ -1,0 +1,14 @@
+{
+  "baseRevision": 2,
+  "changes": [],
+  "kind": "delta",
+  "revision": 3,
+  "treeChange": {
+    "deleteCount": 1,
+    "lines": [
+      "  - textbox \"Search\" [ref=e8]: Rust",
+      "    - StaticText \"Rust\""
+    ],
+    "startLine": 5
+  }
+}

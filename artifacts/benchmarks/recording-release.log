@@ -1,0 +1,65 @@
+{
+  "observation-v2/browser-use": {
+    "snapshots": 72,
+    "raw": 51563,
+    "full": 30098,
+    "adaptive": 15428,
+    "offline_gzip": 7472
+  },
+  "shop/browser-use": {
+    "snapshots": 24,
+    "raw": 58053,
+    "full": 18802,
+    "adaptive": 7690,
+    "offline_gzip": 4347
+  },
+  "observation-v2/agent-browser-full": {
+    "snapshots": 72,
+    "raw": 86738,
+    "full": 28127,
+    "adaptive": 12979,
+    "offline_gzip": 5333
+  },
+  "shop/agent-browser-full": {
+    "snapshots": 24,
+    "raw": 154347,
+    "full": 25788,
+    "adaptive": 7941,
+    "offline_gzip": 5964
+  },
+  "observation-v2/deltadom-full": {
+    "snapshots": 72,
+    "raw": 130993,
+    "full": 58613,
+    "adaptive": 21150,
+    "offline_gzip": 11818
+  },
+  "shop/deltadom-full": {
+    "snapshots": 24,
+    "raw": 173670,
+    "full": 47631,
+    "adaptive": 10678,
+    "offline_gzip": 8776
+  },
+  "holdout-v2/browser-use": {
+    "snapshots": 54,
+    "raw": 23869,
+    "full": 18663,
+    "adaptive": 8985,
+    "offline_gzip": 3388
+  },
+  "holdout-v2/agent-browser-full": {
+    "snapshots": 54,
+    "raw": 46239,
+    "full": 19913,
+    "adaptive": 9274,
+    "offline_gzip": 3672
+  },
+  "holdout-v2/deltadom-full": {
+    "snapshots": 54,
+    "raw": 82149,
+    "full": 39856,
+    "adaptive": 13696,
+    "offline_gzip": 7775
+  }
+}

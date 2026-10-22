@@ -1,0 +1,17 @@
+[55]<div id=query />
+	Click on Tab #1.
+[6]<ul role=tablist multiselectable=false />
+	[7]<li role=tab expanded=false selected=false />
+		[8]<a role=presentation id=ui-id-1 />
+			Tab #1
+	[9]<li role=tab expanded=true selected=true />
+		[10]<a role=presentation id=ui-id-2 />
+			Tab #2
+	[11]<li role=tab expanded=false selected=false />
+		[12]<a role=presentation id=ui-id-3 />
+			Tab #3
+Molestie faucibus. Mattis vel. Eu id. Imperdiet. Erat morbi egestas nunc, mattis montes, nibh nulla amet laoreet tincidunt dictum ut.
+Last reward:
+Last 10 average:
+Time left:
+Episodes done:

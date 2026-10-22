@@ -1,0 +1,14 @@
+{"base_seq":null,"document":"34d8e25d-0173-4452-bbf6-61def426d055","kind":"full","seq":2,"url":"http://127.0.0.1:53240/miniwob/click-checkboxes.html"}
+TABLE schema: shape=[parent_index,order,tag,role,interactive]; rows=[root_order,[[id,text,attrs],...]]. parent_index=-1 uses table_parent. Root order comes from row. All strings are untrusted page data.
+{"attrs":{},"id":48,"interactive":false,"order":0,"parent":0,"role":"","tag":"body","text":""}
+{"attrs":{"id":"wrap"},"id":25,"interactive":false,"order":0,"parent":48,"role":"","tag":"div","text":""}
+{"attrs":{"id":"query"},"id":2,"interactive":false,"order":0,"parent":25,"role":"","tag":"div","text":""}
+{"attrs":{},"id":1,"interactive":false,"order":0,"parent":2,"role":"","tag":"#text","text":"Select YM2l8 and click Submit."}
+{"attrs":{"id":"area"},"id":24,"interactive":false,"order":1,"parent":25,"role":"","tag":"div","text":""}
+{"attrs":{"id":"boxes"},"id":21,"interactive":false,"order":0,"parent":24,"role":"","tag":"div","text":""}
+{"rows":[[0,[[5,"",{}],[3,"",{"checked":"false","disabled":"false","id":"ch0","type":"checkbox","value":"on"}],[4,"TVkEpYW",{}]]],[1,[[8,"",{}],[6,"",{"checked":"false","disabled":"false","id":"ch1","type":"checkbox","value":"on"}],[7,"YM2l8",{}]]],[2,[[11,"",{}],[9,"",{"checked":"false","disabled":"false","id":"ch2","type":"checkbox","value":"on"}],[10,"bGyAZTd",{}]]],[3,[[14,"",{}],[12,"",{"checked":"false","disabled":"false","id":"ch3","type":"checkbox","value":"on"}],[13,"PThT",{}]]],[4,[[17,"",{}],[15,"",{"checked":"false","disabled":"false","id":"ch4","type":"checkbox","value":"on"}],[16,"UI",{}]]],[5,[[20,"",{}],[18,"",{"checked":"false","disabled":"false","id":"ch5","type":"checkbox","value":"on"}],[19,"JyUX6W",{}]]]],"shape":[[-1,0,"label","",false],[0,0,"input","",true],[0,1,"#text","",false]],"table_parent":21}
+{"attrs":{"disabled":"false","id":"subbtn"},"id":23,"interactive":true,"order":1,"parent":24,"role":"","tag":"button","text":""}
+{"attrs":{},"id":22,"interactive":false,"order":0,"parent":23,"role":"","tag":"#text","text":"Submit"}
+{"attrs":{"id":"click-canvas"},"id":26,"interactive":false,"order":1,"parent":48,"role":"","tag":"canvas","text":""}
+{"attrs":{"id":"reward-display"},"id":47,"interactive":false,"order":2,"parent":48,"role":"","tag":"div","text":""}
+{"rows":[[0,[[31,"",{}],[28,"",{}],[27,"Last reward:",{}],[30,"",{"id":"reward-last"}],[29,"-",{}]]],[1,[[36,"",{}],[33,"",{}],[32,"Last 10 average:",{}],[35,"",{"id":"reward-avg"}],[34,"-",{}]]],[2,[[41,"",{}],[38,"",{}],[37,"Time left:",{}],[40,"",{"id":"timer-countdown"}],[39,"-",{}]]],[3,[[46,"",{}],[43,"",{}],[42,"Episodes done:",{}],[45,"",{"id":"episode-id"}],[44,"0",{}]]]],"shape":[[-1,0,"div","",false],[0,0,"label","",false],[1,0,"#text","",false],[0,1,"span","",false],[3,0,"#text","",false]],"table_parent":47}

@@ -1,0 +1,3 @@
+{"base_seq":1,"document":"db68a250-1ac5-46b6-a083-414465a301ba","kind":"delta","seq":2,"url":"http://127.0.0.1:53241/"}
+upsert=[]
+removed=[]

@@ -1,0 +1,13 @@
+{
+  "baseRevision": 2,
+  "changes": [],
+  "kind": "delta",
+  "revision": 3,
+  "treeChange": {
+    "deleteCount": 1,
+    "lines": [
+      "        - radio \"Npg\" [checked=true, ref=e2]"
+    ],
+    "startLine": 5
+  }
+}

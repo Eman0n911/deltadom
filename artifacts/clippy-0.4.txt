@@ -1,0 +1,2 @@
+    Checking deltadom-core v0.4.0 (/HOME/Desktop/d4luv918/cvd/deltadom)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.30s

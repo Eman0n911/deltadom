@@ -1,0 +1,7 @@
+- text: Select JAzeB8 and click Submit.
+- radio "JAzeB8" [checked]
+- text: JAzeB8
+- radio "hGl8r"
+- text: hGl8r
+- button "Submit"
+- text: "Last reward: - Last 10 average: - Time left: - Episodes done: 0"

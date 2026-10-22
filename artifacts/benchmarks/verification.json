@@ -1,0 +1,12 @@
+{
+  "frozen_runner_protocol_wheel_hashes": "pass",
+  "raw_observation_byte_and_token_recounts": 576,
+  "unchanged_page_checks": 576,
+  "deltadom_reconstruction_checks": 192,
+  "model_raw_reply_action_matches": 15,
+  "model_completed_episodes": 6,
+  "model_successes": 5,
+  "official_score": "not_run",
+  "model_cost": "unavailable",
+  "chatgpt_desktop_models": "not_run"
+}

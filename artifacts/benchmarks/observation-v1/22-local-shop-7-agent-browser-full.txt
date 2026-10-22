@@ -1,0 +1,206 @@
+- heading "DeltaDOM · local fixture" [level=1, ref=e76]
+- complementary
+  - StaticText "Deterministic fixture. No model or external requests."
+- LabelText
+  - StaticText "Search "
+  - textbox "Search" [ref=e83]
+- button "Load API" [ref=e77]
+- button "Reverse order" [ref=e78]
+- button "Add item" [ref=e79]
+- LabelText
+  - StaticText "Mode "
+  - combobox "Mode" [expanded=false, ref=e84]: All
+    - MenuListPopup
+      - option "All" [selected, ref=e147]
+      - option "Sale" [ref=e148]
+- checkbox "In stock" [checked=false, ref=e80]
+- paragraph
+  - StaticText "Ready"
+- region "Products" [ref=e81]
+  - article
+    - heading "Product 1" [level=2, ref=e86]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 1"
+    - StaticText "$11"
+    - button "Choose 1" [ref=e87]
+  - article
+    - heading "Product 2" [level=2, ref=e88]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 2"
+    - StaticText "$12"
+    - button "Choose 2" [ref=e89]
+  - article
+    - heading "Product 3" [level=2, ref=e90]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 3"
+    - StaticText "$13"
+    - button "Choose 3" [ref=e91]
+  - article
+    - heading "Product 4" [level=2, ref=e92]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 4"
+    - StaticText "$14"
+    - button "Choose 4" [ref=e93]
+  - article
+    - heading "Product 5" [level=2, ref=e94]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 5"
+    - StaticText "$15"
+    - button "Choose 5" [ref=e95]
+  - article
+    - heading "Product 6" [level=2, ref=e96]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 6"
+    - StaticText "$16"
+    - button "Choose 6" [ref=e97]
+  - article
+    - heading "Product 7" [level=2, ref=e98]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 7"
+    - StaticText "$17"
+    - button "Choose 7" [ref=e99]
+  - article
+    - heading "Product 8" [level=2, ref=e100]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 8"
+    - StaticText "$18"
+    - button "Choose 8" [ref=e101]
+  - article
+    - heading "Product 9" [level=2, ref=e102]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 9"
+    - StaticText "$19"
+    - button "Choose 9" [ref=e103]
+  - article
+    - heading "Product 10" [level=2, ref=e104]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 10"
+    - StaticText "$20"
+    - button "Choose 10" [ref=e105]
+  - article
+    - heading "Product 11" [level=2, ref=e106]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 11"
+    - StaticText "$21"
+    - button "Choose 11" [ref=e107]
+  - article
+    - heading "Product 12" [level=2, ref=e108]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 12"
+    - StaticText "$22"
+    - button "Choose 12" [ref=e109]
+  - article
+    - heading "Product 13" [level=2, ref=e110]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 13"
+    - StaticText "$23"
+    - button "Choose 13" [ref=e111]
+  - article
+    - heading "Product 14" [level=2, ref=e112]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 14"
+    - StaticText "$24"
+    - button "Choose 14" [ref=e113]
+  - article
+    - heading "Product 15" [level=2, ref=e114]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 15"
+    - StaticText "$25"
+    - button "Choose 15" [ref=e115]
+  - article
+    - heading "Product 16" [level=2, ref=e116]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 16"
+    - StaticText "$26"
+    - button "Choose 16" [ref=e117]
+  - article
+    - heading "Product 17" [level=2, ref=e118]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 17"
+    - StaticText "$27"
+    - button "Choose 17" [ref=e119]
+  - article
+    - heading "Product 18" [level=2, ref=e120]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 18"
+    - StaticText "$28"
+    - button "Choose 18" [ref=e121]
+  - article
+    - heading "Product 19" [level=2, ref=e122]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 19"
+    - StaticText "$29"
+    - button "Choose 19" [ref=e123]
+  - article
+    - heading "Product 20" [level=2, ref=e124]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 20"
+    - StaticText "$30"
+    - button "Choose 20" [ref=e125]
+  - article
+    - heading "Product 21" [level=2, ref=e126]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 21"
+    - StaticText "$31"
+    - button "Choose 21" [ref=e127]
+  - article
+    - heading "Product 22" [level=2, ref=e128]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 22"
+    - StaticText "$32"
+    - button "Choose 22" [ref=e129]
+  - article
+    - heading "Product 23" [level=2, ref=e130]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 23"
+    - StaticText "$33"
+    - button "Choose 23" [ref=e131]
+  - article
+    - heading "Product 24" [level=2, ref=e132]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 24"
+    - StaticText "$34"
+    - button "Choose 24" [ref=e133]
+  - article
+    - heading "Product 25" [level=2, ref=e134]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 25"
+    - StaticText "$35"
+    - button "Choose 25" [ref=e135]
+  - article
+    - heading "Product 26" [level=2, ref=e136]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 26"
+    - StaticText "$36"
+    - button "Choose 26" [ref=e137]
+  - article
+    - heading "Product 27" [level=2, ref=e138]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 27"
+    - StaticText "$37"
+    - button "Choose 27" [ref=e139]
+  - article
+    - heading "Product 28" [level=2, ref=e140]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 28"
+    - StaticText "$38"
+    - button "Choose 28" [ref=e141]
+  - article
+    - heading "Product 29" [level=2, ref=e142]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 29"
+    - StaticText "$39"
+    - button "Choose 29" [ref=e143]
+  - article
+    - heading "Product 30" [level=2, ref=e144]
+    - paragraph
+      - StaticText "Rust tools | reliable & fast 30"
+    - StaticText "$40"
+    - button "Choose 30" [ref=e145]
+- generic
+  - LabelText
+    - StaticText "Shadow "
+    - textbox "Shadow" [ref=e146]
+  - button "Shadow button" [ref=e85]
+- textbox [ref=e82]: •••••••••••••••••
+  - StaticText "•••••••••••••••••"

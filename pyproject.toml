@@ -1,0 +1,32 @@
+[build-system]
+requires = ["maturin>=1.8,<2"]
+build-backend = "maturin"
+
+[project]
+name = "deltadom"
+version = "0.4.0"
+description = "Record, compare and recover browser observations with checked incremental streams."
+license = {file = "LICENSE"}
+requires-python = ">=3.12"
+dependencies = ["playwright>=1.50,<2"]
+readme = "README.md"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.25", "ruff>=0.11", "tiktoken>=0.9"]
+
+[project.scripts]
+deltadom = "deltadom.cli:main"
+deltadom-demo = "deltadom.demo:main"
+
+[tool.maturin]
+python-source = "python"
+module-name = "deltadom._core"
+features = ["extension-module"]
+include = ["python/deltadom/*.js", "python/deltadom/*.html", "python/deltadom/licenses/**/*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

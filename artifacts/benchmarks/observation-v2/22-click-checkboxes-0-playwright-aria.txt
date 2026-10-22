@@ -1,0 +1,13 @@
+- text: Select C0ZWRz, vrD, YT0peP and click Submit.
+- checkbox "l3HK"
+- text: l3HK
+- checkbox "C0ZWRz"
+- text: C0ZWRz
+- checkbox "vrD"
+- text: vrD
+- checkbox "YT0peP"
+- text: YT0peP
+- checkbox "I1"
+- text: I1
+- button "Submit"
+- text: "Last reward: - Last 10 average: - Time left: - Episodes done: 0"

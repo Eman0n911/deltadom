@@ -1,0 +1,15 @@
+{
+  "baseRevision": 3,
+  "changes": [],
+  "kind": "delta",
+  "revision": 4,
+  "treeChange": {
+    "deleteCount": 3,
+    "lines": [
+      "        - radio \"JAzeB8\" [checked=false, ref=e2]",
+      "        - LineBreak \"\\n\"",
+      "        - radio \"hGl8r\" [checked=true, ref=e3]"
+    ],
+    "startLine": 5
+  }
+}

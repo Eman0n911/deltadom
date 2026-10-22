@@ -1,0 +1,35 @@
+{
+  "baseRevision": 6,
+  "changes": [
+    {
+      "node": {
+        "name": "Product 31",
+        "role": "heading"
+      },
+      "op": "add",
+      "ref": "@e74"
+    },
+    {
+      "node": {
+        "name": "Choose 31",
+        "role": "button"
+      },
+      "op": "add",
+      "ref": "@e75"
+    }
+  ],
+  "kind": "delta",
+  "revision": 7,
+  "treeChange": {
+    "deleteCount": 0,
+    "lines": [
+      "  - article",
+      "    - heading \"Product 31\" [level=2, ref=e74]",
+      "    - paragraph",
+      "      - StaticText \"Rust tools | reliable & fast 31\"",
+      "    - StaticText \"$41\"",
+      "    - button \"Choose 31\" [ref=e75]"
+    ],
+    "startLine": 200
+  }
+}

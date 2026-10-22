@@ -1,0 +1,26 @@
+[41]<div id=query />
+	Select YM2l8 and click Submit.
+[47]<label />
+	[48]<input type=checkbox id=ch0 value=on checked=false />
+	TVkEpYW
+[51]<label />
+	[52]<input type=checkbox id=ch1 value=on checked=false />
+	YM2l8
+[55]<label />
+	[56]<input type=checkbox id=ch2 value=on checked=false />
+	bGyAZTd
+[59]<label />
+	[60]<input type=checkbox id=ch3 value=on checked=false />
+	PThT
+[63]<label />
+	[64]<input type=checkbox id=ch4 value=on checked=false />
+	UI
+[67]<label />
+	[68]<input type=checkbox id=ch5 value=on checked=false />
+	JyUX6W
+[3]<button id=subbtn />
+	Submit
+Last reward:
+Last 10 average:
+Time left:
+Episodes done:

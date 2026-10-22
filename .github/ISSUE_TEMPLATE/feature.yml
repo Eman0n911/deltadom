@@ -1,0 +1,10 @@
+name: 使用建议
+description: 告诉我们你想完成什么。
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: 你希望更容易完成什么？
+      description: 描述具体场景，比技术实现方案更有帮助。
+    validations:
+      required: true

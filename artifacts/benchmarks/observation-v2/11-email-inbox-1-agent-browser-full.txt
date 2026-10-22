@@ -1,0 +1,75 @@
+- generic
+  - generic
+    - generic
+      - StaticText "Find the email by Helena and click the trash icon to delete it."
+    - generic
+      - generic
+        - generic
+          - heading "Primary" [level=2, ref=e7]
+          - image [ref=e8] clickable [cursor:pointer]
+        - generic [ref=e1] clickable [cursor:pointer]
+          - generic
+            - StaticText "Helena"
+            - StaticText "Turpis gravida..."
+            - StaticText "Velit. Tristiqu.."
+          - generic
+            - image
+            - image
+        - generic [ref=e2] clickable [cursor:pointer]
+          - generic
+            - StaticText "Neille"
+            - StaticText "Curabitur nec."
+            - StaticText "A sed. Pellente.."
+          - generic
+            - image
+            - image
+        - generic [ref=e3] clickable [cursor:pointer]
+          - generic
+            - StaticText "Rochella"
+            - StaticText "Aliquet."
+            - StaticText "Nisi, euismod n.."
+          - generic
+            - image
+            - image
+        - generic [ref=e4] clickable [cursor:pointer]
+          - generic
+            - StaticText "Wallie"
+            - StaticText "At consequat."
+            - StaticText "Ipsum velit ac .."
+          - generic
+            - image
+            - image
+        - generic [ref=e5] clickable [cursor:pointer]
+          - generic
+            - StaticText "Sindee"
+            - StaticText "Nunc sem."
+            - StaticText "Sit. Aliquam. V.."
+          - generic
+            - image
+            - image
+        - generic [ref=e6] clickable [cursor:pointer]
+          - generic
+            - StaticText "Britteny"
+            - StaticText "Ultrices. Purus.."
+            - StaticText "Porttitor conva.."
+          - generic
+            - image
+            - image
+  - Canvas
+  - generic
+    - generic
+      - LabelText
+        - StaticText "Last reward:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Last 10 average:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Time left:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Episodes done:"
+      - StaticText "0"

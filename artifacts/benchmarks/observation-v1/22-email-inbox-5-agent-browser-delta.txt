@@ -1,0 +1,99 @@
+- generic
+  - generic
+    - generic
+      - StaticText "Find the email by Damara and click the trash icon to delete it."
+    - generic
+      - generic
+        - generic
+          - heading "Primary" [level=2, ref=e25]
+          - image [ref=e26] clickable [cursor:pointer]
+        - generic [ref=e16] clickable [cursor:pointer]
+          - generic
+            - StaticText "Frankie"
+            - StaticText "Tortor."
+            - StaticText "Morbi dictum id.."
+          - generic
+            - image
+            - image
+        - generic [ref=e17] clickable [cursor:pointer]
+          - generic
+            - StaticText "Bonny"
+            - StaticText "Cursus nunc."
+            - StaticText "Faucibus lorem .."
+          - generic
+            - image
+            - image
+        - generic [ref=e18] clickable [cursor:pointer]
+          - generic
+            - StaticText "Frankie"
+            - StaticText "Faucibus."
+            - StaticText "Fermentum enim .."
+          - generic
+            - image
+            - image
+        - generic [ref=e19] clickable [cursor:pointer]
+          - generic
+            - StaticText "Minna"
+            - StaticText "Sit."
+            - StaticText "Gravida dictum .."
+          - generic
+            - image
+            - image
+        - generic [ref=e20] clickable [cursor:pointer]
+          - generic
+            - StaticText "Blanca"
+            - StaticText "Nec."
+            - StaticText "Vel sem tincidu.."
+          - generic
+            - image
+            - image
+        - generic [ref=e21] clickable [cursor:pointer]
+          - generic
+            - StaticText "Kevyn"
+            - StaticText "Sed sed."
+            - StaticText "Iaculis. Nunc. .."
+          - generic
+            - image
+            - image
+        - generic [ref=e22] clickable [cursor:pointer]
+          - generic
+            - StaticText "Jeanna"
+            - StaticText "Quisque."
+            - StaticText "Enim tortor. Eu.."
+          - generic
+            - image
+            - image
+        - generic [ref=e23] clickable [cursor:pointer]
+          - generic
+            - StaticText "Ginny"
+            - StaticText "Tristique."
+            - StaticText "Facilisi. Ut et.."
+          - generic
+            - image
+            - image
+        - generic [ref=e24] clickable [cursor:pointer]
+          - generic
+            - StaticText "Damara"
+            - StaticText "Lectus. Nisl."
+            - StaticText "Volutpat. Nunc,.."
+          - generic
+            - image
+            - image
+  - Canvas
+  - generic
+    - generic
+      - LabelText
+        - StaticText "Last reward:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Last 10 average:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Time left:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Episodes done:"
+      - StaticText "0"

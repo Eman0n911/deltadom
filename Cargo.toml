@@ -1,0 +1,16 @@
+[package]
+name = "deltadom-core"
+version = "0.4.0"
+edition = "2021"
+
+[lib]
+name = "_core"
+crate-type = ["cdylib", "rlib"]
+
+[features]
+extension-module = ["pyo3/extension-module"]
+
+[dependencies]
+pyo3 = { version = "0.27", features = ["abi3-py312"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"

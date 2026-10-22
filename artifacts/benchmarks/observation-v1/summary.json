@@ -1,0 +1,633 @@
+{
+  "groups": [
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "agent-browser-delta",
+      "calls": 72,
+      "errors": 0,
+      "tokens": 12320,
+      "bytes": 46869,
+      "wall_p50_ms": 40.94,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "agent-browser-full",
+      "calls": 72,
+      "errors": 0,
+      "tokens": 22191,
+      "bytes": 86738,
+      "wall_p50_ms": 41.114,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "browser-use",
+      "calls": 72,
+      "errors": 0,
+      "tokens": 19292,
+      "bytes": 51586,
+      "wall_p50_ms": 6.56,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "deltadom-delta",
+      "calls": 72,
+      "errors": 0,
+      "tokens": 36475,
+      "bytes": 106631,
+      "wall_p50_ms": 73.744,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "deltadom-full",
+      "calls": 72,
+      "errors": 0,
+      "tokens": 74943,
+      "bytes": 223288,
+      "wall_p50_ms": 74.23,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "playwright-aria",
+      "calls": 72,
+      "errors": 0,
+      "tokens": 6906,
+      "bytes": 21080,
+      "wall_p50_ms": 2.717,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "agent-browser-delta",
+      "calls": 24,
+      "errors": 0,
+      "tokens": 20037,
+      "bytes": 61782,
+      "wall_p50_ms": 44.663,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "agent-browser-full",
+      "calls": 24,
+      "errors": 0,
+      "tokens": 50028,
+      "bytes": 154347,
+      "wall_p50_ms": 44.24,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "browser-use",
+      "calls": 24,
+      "errors": 0,
+      "tokens": 20376,
+      "bytes": 58047,
+      "wall_p50_ms": 17.743,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "deltadom-delta",
+      "calls": 24,
+      "errors": 0,
+      "tokens": 25176,
+      "bytes": 73614,
+      "wall_p50_ms": 83.236,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "deltadom-full",
+      "calls": 24,
+      "errors": 0,
+      "tokens": 81264,
+      "bytes": 232254,
+      "wall_p50_ms": 84.026,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "playwright-aria",
+      "calls": 24,
+      "errors": 0,
+      "tokens": 35907,
+      "bytes": 112821,
+      "wall_p50_ms": 4.696,
+      "page_mutations": 0
+    }
+  ],
+  "blocks": [
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "agent-browser-delta",
+      "seed": 11,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 3606,
+      "bytes": 13642,
+      "wall_p50_ms": 40.367,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "agent-browser-delta",
+      "seed": 22,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 4251,
+      "bytes": 16137,
+      "wall_p50_ms": 41.437,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "agent-browser-delta",
+      "seed": 33,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 4463,
+      "bytes": 17090,
+      "wall_p50_ms": 40.673,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "agent-browser-full",
+      "seed": 11,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 6445,
+      "bytes": 25277,
+      "wall_p50_ms": 40.863,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "agent-browser-full",
+      "seed": 22,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 7671,
+      "bytes": 29844,
+      "wall_p50_ms": 41.374,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "agent-browser-full",
+      "seed": 33,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 8075,
+      "bytes": 31617,
+      "wall_p50_ms": 41.017,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "browser-use",
+      "seed": 11,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 5072,
+      "bytes": 13996,
+      "wall_p50_ms": 6.402,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "browser-use",
+      "seed": 22,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 6823,
+      "bytes": 17924,
+      "wall_p50_ms": 6.549,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "browser-use",
+      "seed": 33,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 7397,
+      "bytes": 19666,
+      "wall_p50_ms": 6.665,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "deltadom-delta",
+      "seed": 11,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 11487,
+      "bytes": 33841,
+      "wall_p50_ms": 73.814,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "deltadom-delta",
+      "seed": 22,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 12185,
+      "bytes": 35464,
+      "wall_p50_ms": 73.42,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "deltadom-delta",
+      "seed": 33,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 12803,
+      "bytes": 37326,
+      "wall_p50_ms": 74.106,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "deltadom-full",
+      "seed": 11,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 23662,
+      "bytes": 71128,
+      "wall_p50_ms": 74.509,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "deltadom-full",
+      "seed": 22,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 25116,
+      "bytes": 74469,
+      "wall_p50_ms": 74.611,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "deltadom-full",
+      "seed": 33,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 26165,
+      "bytes": 77691,
+      "wall_p50_ms": 73.517,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "playwright-aria",
+      "seed": 11,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 1979,
+      "bytes": 6335,
+      "wall_p50_ms": 2.886,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "playwright-aria",
+      "seed": 22,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 2387,
+      "bytes": 7146,
+      "wall_p50_ms": 2.553,
+      "page_mutations": 0
+    },
+    {
+      "scope": "MiniWoB-derived",
+      "arm": "playwright-aria",
+      "seed": 33,
+      "calls": 24,
+      "errors": 0,
+      "tokens": 2540,
+      "bytes": 7599,
+      "wall_p50_ms": 2.704,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "agent-browser-delta",
+      "seed": 11,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 6679,
+      "bytes": 20594,
+      "wall_p50_ms": 45.132,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "agent-browser-delta",
+      "seed": 22,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 6679,
+      "bytes": 20594,
+      "wall_p50_ms": 43.847,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "agent-browser-delta",
+      "seed": 33,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 6679,
+      "bytes": 20594,
+      "wall_p50_ms": 44.842,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "agent-browser-full",
+      "seed": 11,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 16676,
+      "bytes": 51449,
+      "wall_p50_ms": 43.701,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "agent-browser-full",
+      "seed": 22,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 16676,
+      "bytes": 51449,
+      "wall_p50_ms": 43.93,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "agent-browser-full",
+      "seed": 33,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 16676,
+      "bytes": 51449,
+      "wall_p50_ms": 45.375,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "browser-use",
+      "seed": 11,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 6792,
+      "bytes": 19311,
+      "wall_p50_ms": 17.667,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "browser-use",
+      "seed": 22,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 6792,
+      "bytes": 19425,
+      "wall_p50_ms": 17.513,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "browser-use",
+      "seed": 33,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 6792,
+      "bytes": 19311,
+      "wall_p50_ms": 19.002,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "deltadom-delta",
+      "seed": 11,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 8374,
+      "bytes": 24538,
+      "wall_p50_ms": 83.082,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "deltadom-delta",
+      "seed": 22,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 8400,
+      "bytes": 24538,
+      "wall_p50_ms": 81.902,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "deltadom-delta",
+      "seed": 33,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 8402,
+      "bytes": 24538,
+      "wall_p50_ms": 84.341,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "deltadom-full",
+      "seed": 11,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 27096,
+      "bytes": 77418,
+      "wall_p50_ms": 83.62,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "deltadom-full",
+      "seed": 22,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 27100,
+      "bytes": 77418,
+      "wall_p50_ms": 84.172,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "deltadom-full",
+      "seed": 33,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 27068,
+      "bytes": 77418,
+      "wall_p50_ms": 83.552,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "playwright-aria",
+      "seed": 11,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 11969,
+      "bytes": 37607,
+      "wall_p50_ms": 5.147,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "playwright-aria",
+      "seed": 22,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 11969,
+      "bytes": 37607,
+      "wall_p50_ms": 4.729,
+      "page_mutations": 0
+    },
+    {
+      "scope": "local-shop",
+      "arm": "playwright-aria",
+      "seed": 33,
+      "calls": 8,
+      "errors": 0,
+      "tokens": 11969,
+      "bytes": 37607,
+      "wall_p50_ms": 4.662,
+      "page_mutations": 0
+    }
+  ],
+  "delta_reconstruction_checks": 192,
+  "unactionable_script_targets": [
+    {
+      "seed": 11,
+      "case": "email-inbox",
+      "step": "unchanged",
+      "arm": "deltadom-full",
+      "selector": "#main .email-thread >> nth=0",
+      "captured": true,
+      "interactive": false
+    },
+    {
+      "seed": 11,
+      "case": "email-inbox",
+      "step": "unchanged",
+      "arm": "deltadom-delta",
+      "selector": "#main .email-thread >> nth=0",
+      "captured": true,
+      "interactive": false
+    },
+    {
+      "seed": 11,
+      "case": "email-inbox",
+      "step": "mutation1",
+      "arm": "deltadom-delta",
+      "selector": "#close-email",
+      "captured": false,
+      "interactive": false
+    },
+    {
+      "seed": 11,
+      "case": "email-inbox",
+      "step": "mutation1",
+      "arm": "deltadom-full",
+      "selector": "#close-email",
+      "captured": false,
+      "interactive": false
+    },
+    {
+      "seed": 22,
+      "case": "email-inbox",
+      "step": "unchanged",
+      "arm": "deltadom-delta",
+      "selector": "#main .email-thread >> nth=0",
+      "captured": true,
+      "interactive": false
+    },
+    {
+      "seed": 22,
+      "case": "email-inbox",
+      "step": "unchanged",
+      "arm": "deltadom-full",
+      "selector": "#main .email-thread >> nth=0",
+      "captured": true,
+      "interactive": false
+    },
+    {
+      "seed": 22,
+      "case": "email-inbox",
+      "step": "mutation1",
+      "arm": "deltadom-full",
+      "selector": "#close-email",
+      "captured": false,
+      "interactive": false
+    },
+    {
+      "seed": 22,
+      "case": "email-inbox",
+      "step": "mutation1",
+      "arm": "deltadom-delta",
+      "selector": "#close-email",
+      "captured": false,
+      "interactive": false
+    },
+    {
+      "seed": 33,
+      "case": "email-inbox",
+      "step": "unchanged",
+      "arm": "deltadom-delta",
+      "selector": "#main .email-thread >> nth=0",
+      "captured": true,
+      "interactive": false
+    },
+    {
+      "seed": 33,
+      "case": "email-inbox",
+      "step": "unchanged",
+      "arm": "deltadom-full",
+      "selector": "#main .email-thread >> nth=0",
+      "captured": true,
+      "interactive": false
+    },
+    {
+      "seed": 33,
+      "case": "email-inbox",
+      "step": "mutation1",
+      "arm": "deltadom-full",
+      "selector": "#close-email",
+      "captured": false,
+      "interactive": false
+    },
+    {
+      "seed": 33,
+      "case": "email-inbox",
+      "step": "mutation1",
+      "arm": "deltadom-delta",
+      "selector": "#close-email",
+      "captured": false,
+      "interactive": false
+    }
+  ]
+}

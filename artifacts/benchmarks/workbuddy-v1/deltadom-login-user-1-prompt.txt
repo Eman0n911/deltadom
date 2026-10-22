@@ -1,0 +1,7 @@
+
+NEXT OBSERVATION: login-user; action 1/8.
+OBSERVATION
+{"base_seq":1,"document":"f45b87b5-5528-4112-9c4e-6a5b03337cab","kind":"delta","seq":2,"url":"http://127.0.0.1:53683/miniwob/login-user.html"}
+upsert=[{"attrs":{"disabled":"false","id":"username","type":"text","value":"keli"},"id":11,"interactive":true,"order":1,"parent":12,"role":"","tag":"input","text":""}]
+removed=[]
+{"settle":{"status":"quiet","elapsed_ms":71.982,"pending_requests":0,"pending_api":0},"warnings":["canvas pixels are not captured"],"api":[]}

@@ -1,0 +1,27 @@
+Relay ready http://127.0.0.1:8879
+Traceback (most recent call last):
+  File "/HOME/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/HOME/Desktop/d4luv918/cvd/deltadom/benchmarks/model_bridge_v2.py", line 171, in main
+    try: await asyncio.Event().wait()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/asyncio/locks.py", line 212, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/HOME/Desktop/d4luv918/cvd/deltadom/benchmarks/model_bridge_v2.py", line 177, in <module>
+    if __name__=='__main__': asyncio.run(main())
+                             ^^^^^^^^^^^^^^^^^^^
+  File "/HOME/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/HOME/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt

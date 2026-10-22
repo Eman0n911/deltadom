@@ -1,0 +1,3 @@
+{"base_seq":1,"document":"bbdb8c24-c9de-439e-a8db-0fdeb0866eec","kind":"delta","seq":2,"url":"http://127.0.0.1:53240/miniwob/email-inbox.html"}
+upsert=[]
+removed=[]

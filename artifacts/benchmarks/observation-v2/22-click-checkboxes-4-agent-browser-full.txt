@@ -1,0 +1,35 @@
+- generic
+  - generic
+    - StaticText "Select C0ZWRz, vrD, YT0peP and click Submit."
+    - generic
+      - generic
+        - checkbox "l3HK" [checked=false, ref=e2]
+        - LineBreak "\n"
+        - checkbox "C0ZWRz" [checked=false, ref=e3]
+        - LineBreak "\n"
+        - checkbox "vrD" [checked=false, ref=e4]
+        - LineBreak "\n"
+        - checkbox "YT0peP" [checked=false, ref=e5]
+        - LineBreak "\n"
+        - checkbox "I1" [checked=false, ref=e6]
+        - LineBreak "\n"
+      - LineBreak "\n"
+      - button "Submit" [ref=e1]
+  - Canvas
+  - generic
+    - generic
+      - LabelText
+        - StaticText "Last reward:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Last 10 average:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Time left:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Episodes done:"
+      - StaticText "0"

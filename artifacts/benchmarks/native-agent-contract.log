@@ -1,0 +1,35 @@
+INFO     [Agent] [34m🎯 Task: Exercise the recording callback on the local sample.[0m
+INFO     [Agent] Starting a browser-use agent with version 0.13.11, with provider=test and model=contract-test-double
+INFO     [Agent]   ▶️   [34mnavigate[0m: [35murl[0m: http://127.0.0.1:52970
+INFO     [tools] 🔗 Navigated to http://127.0.0.1:52970
+INFO     [Agent] 
+
+INFO     [Agent] 📍 Step 1:
+INFO     [Agent]   ❔ Eval: Interface check only
+INFO     [Agent]   🧠 Memory: No autonomous task or score
+INFO     [Agent]   [34m🎯 Next goal: End interface check[0m
+INFO     [Agent]   ▶️   [34mdone[0m: [35mtext[0m: Callback interface check only, [35msuccess[0m: True
+INFO     [Agent] 
+📄 [32m Final Result:[0m 
+Callback interface check only
+
+
+INFO     [Agent] ✅ Task completed successfully
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+{
+  "status": "pass",
+  "browser_use": "0.13.11",
+  "browser": "156.0.8078.47",
+  "actual_agent_run": true,
+  "scripted_responder": true,
+  "recorded_messages_equal_to_responder_inputs": true,
+  "model_calls": 0,
+  "provider_usage": null,
+  "not_run": [
+    "model task success",
+    "cost savings",
+    "autonomous benchmark"
+  ],
+  "scope": "callback wiring only; done action is scripted, not scored"
+}

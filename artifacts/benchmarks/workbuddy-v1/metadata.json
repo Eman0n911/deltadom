@@ -1,0 +1,20 @@
+{
+  "app": "WorkBuddy AI 5.8.4",
+  "model_ui_label": "Deepseek-V4.1-Flash",
+  "model_backend_identity": "not_exposed",
+  "sampling_parameters": "not_exposed",
+  "provider_usage": "unavailable",
+  "copied_model_reply_count": 15,
+  "source_binding": "post-run audit, scripts unchanged during run",
+  "source_sha256": {
+    "model_bridge.py": "46e3863cd14033c731bbd91b7047934c3f0d157baf6e459e00a781530120b087",
+    "relay.py": "d3f653aff19dfb60c9c1f589b38e10ad3236872e9df9e06a59af237e348dee0f",
+    "observe.py": "989b2650ef68d92a7d3d64d0ded48aa26dbcab9b8d716860aed3542c302554fb"
+  },
+  "core_commit": "c4df334",
+  "chatgpt_desktop": {
+    "GPT-6.1 Sol": "not_run: application control denied",
+    "GPT-6.1 Luna": "not_run: application control denied",
+    "GPT-6 Astra": "not_run: application control denied"
+  }
+}

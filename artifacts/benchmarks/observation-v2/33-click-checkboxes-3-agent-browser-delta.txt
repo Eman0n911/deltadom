@@ -1,0 +1,13 @@
+{
+  "baseRevision": 3,
+  "changes": [],
+  "kind": "delta",
+  "revision": 4,
+  "treeChange": {
+    "deleteCount": 1,
+    "lines": [
+      "        - checkbox \"TVkEpYW\" [checked=false, ref=e2]"
+    ],
+    "startLine": 5
+  }
+}

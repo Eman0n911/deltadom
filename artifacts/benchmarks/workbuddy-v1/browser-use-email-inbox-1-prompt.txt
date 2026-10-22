@@ -1,0 +1,93 @@
+
+NEXT OBSERVATION: email-inbox; action 1/8.
+OBSERVATION
+[59]<div id=query />
+	Find the email by
+	[61]<span />
+		Helena
+	and click the trash icon to delete it.
+|scroll element|<div id=main /> (0.0 pages above, 0.7 pages below)
+	Primary
+	[4]<span id=open-search />
+	[5]<div />
+		[76]<div />
+			[78]<div />
+				Helena
+			[81]<div />
+				Turpis gravida...
+			[84]<div />
+				Velit. Tristiqu..
+		[88]<div />
+			[90]<div />
+			[92]<div />
+				[6]<span />
+				[7]<span />
+	[8]<div />
+		[99]<div />
+			[101]<div />
+				Neille
+			[104]<div />
+				Curabitur nec.
+			[107]<div />
+				A sed. Pellente..
+		[111]<div />
+			[113]<div />
+			[115]<div />
+				[9]<span />
+				[10]<span />
+	[11]<div />
+		[122]<div />
+			[124]<div />
+				Rochella
+			[127]<div />
+				Aliquet.
+			[130]<div />
+				Nisi, euismod n..
+		[134]<div />
+			[136]<div />
+			[138]<div />
+				[12]<span />
+				[13]<span />
+	[14]<div />
+		[145]<div />
+			[147]<div />
+				Wallie
+			[150]<div />
+				At consequat.
+			[153]<div />
+				Ipsum velit ac ..
+		[157]<div />
+			[159]<div />
+			[161]<div />
+				[15]<span />
+				[16]<span />
+	[17]<div />
+		[168]<div />
+			[170]<div />
+				Sindee
+			[173]<div />
+				Nunc sem.
+			[176]<div />
+				Sit. Aliquam. V..
+		[180]<div />
+			[182]<div />
+			[184]<div />
+				[18]<span />
+				[19]<span />
+	[20]<div />
+		[191]<div />
+			[193]<div />
+				Britteny
+			[196]<div />
+				Ultrices. Purus..
+			[199]<div />
+				Porttitor conva..
+		[203]<div />
+			[205]<div />
+			[207]<div />
+				[21]<span />
+				[22]<span />
+Last reward:
+Last 10 average:
+Time left:
+Episodes done:

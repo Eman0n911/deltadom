@@ -1,0 +1,4 @@
+{
+  "action": "give_up",
+  "reason": "observation exposes no interactive=true nodes (delete/trash icon is not in the representation), so no valid click target exists"
+}

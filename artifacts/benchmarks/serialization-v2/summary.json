@@ -1,0 +1,12 @@
+{
+  "MiniWoB-derived": {
+    "before_tokens": 36475,
+    "after_tokens": 19340,
+    "frames": 72
+  },
+  "local-shop": {
+    "before_tokens": 25176,
+    "after_tokens": 17907,
+    "frames": 24
+  }
+}

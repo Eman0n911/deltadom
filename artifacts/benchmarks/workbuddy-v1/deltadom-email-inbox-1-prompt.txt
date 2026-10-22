@@ -1,0 +1,8 @@
+
+NEXT OBSERVATION: email-inbox; action 1/8.
+Last action error: StaleObservationError: node is not an observed interactive target
+OBSERVATION
+{"base_seq":1,"document":"e58b0d84-f656-4f19-b9b6-a5b9625b4121","kind":"delta","seq":2,"url":"http://127.0.0.1:53683/miniwob/email-inbox.html"}
+upsert=[]
+removed=[]
+{"settle":{"status":"quiet","elapsed_ms":72.104,"pending_requests":0,"pending_api":0},"warnings":["canvas pixels are not captured"],"api":[]}

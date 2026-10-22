@@ -1,0 +1,4 @@
+    Checking pyo3-ffi v0.27.2
+    Checking pyo3 v0.27.2
+    Checking deltadom-core v0.3.0 (/HOME/Desktop/d4luv918/cvd/deltadom)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.98s

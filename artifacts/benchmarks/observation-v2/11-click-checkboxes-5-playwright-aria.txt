@@ -1,0 +1,9 @@
+- text: Select nothing and click Submit.
+- checkbox "3hIU"
+- text: 3hIU
+- checkbox "Qqi"
+- text: Qqi
+- checkbox "rS49"
+- text: rS49
+- button "Submit"
+- text: "Last reward: - Last 10 average: - Time left: - Episodes done: 0"

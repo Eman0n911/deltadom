@@ -1,0 +1,64 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+_____________ test_pointer_listener_and_empty_icon_are_actionable ______________
+
+live = (<Page url='http://127.0.0.1:57865/'>, 'http://127.0.0.1:57865')
+
+    async def test_pointer_listener_and_empty_icon_are_actionable(live):
+        page, url = live
+        await page.goto(url)
+        await page.set_content('''<div id="thread" style="cursor:pointer">Message</div>
+          <span id="trash" class="icon-trash" style="cursor:pointer"></span>
+          <span id="status">pending</span><span id="inline" onclick="this.textContent='done'"></span>
+          <script>thread.addEventListener('click',()=>statusNode.textContent='opened');
+          const statusNode=document.querySelector('#status');
+          trash.addEventListener('click',()=>statusNode.textContent='deleted');</script>''')
+        async with DeltaBrowser(page) as delta:
+            for target, expected in [('thread', 'opened'), ('trash', 'deleted')]:
+                obs = await delta.observe()
+                nodes = obs.find(attr=('id', target))
+>               assert nodes and nodes[0]['interactive'], f'{target} missing from action surface'
+E               AssertionError: thread missing from action surface
+E               assert ([{'id': 2, 'tag': 'div', 'role': '', 'text': '', ...}] and False)
+
+tests/test_regressions.py:23: AssertionError
+____________ test_already_quiet_page_does_not_restart_quiet_window _____________
+
+live = (<Page url='http://127.0.0.1:57875/'>, 'http://127.0.0.1:57875')
+
+    async def test_already_quiet_page_does_not_restart_quiet_window(live):
+        page, url = live
+        await page.goto(url)
+        await page.set_content('<button>Ready</button>')
+        async with DeltaBrowser(page, quiet_ms=200, timeout_ms=1000) as delta:
+            await delta.observe()
+            await asyncio.sleep(.25)
+            obs = await delta.observe()
+            assert obs.settle['status'] == 'quiet'
+>           assert obs.settle['elapsed_ms'] < 100, obs.settle
+E           AssertionError: {'status': 'quiet', 'elapsed_ms': 210.193, 'pending_requests': 0, 'pending_api': 0}
+E           assert 210.193 < 100
+
+tests/test_regressions.py:40: AssertionError
+________ test_attribute_only_change_does_not_resend_long_unchanged_text ________
+
+    def test_attribute_only_change_does_not_resend_long_unchanged_text():
+        session = DeltaSession(1.0, 20)
+        nodes = [node(1, text='unchanged-description-' * 100, tag='button')]
+        process(session, nodes)
+        nodes[0]['attrs']['aria-pressed'] = 'true'
+        delta = process(session, nodes)
+>       assert 'unchanged-description' not in delta['text']
+E       assert 'unchanged-description' not in '{"base_seq"...removed=[]\n'
+E         
+E         'unchanged-description' is contained here:
+E           ","text":"unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description-unchanged-description...
+E         
+E         ...Full output truncated (3 lines hidden), use '-vv' to show
+
+tests/test_regressions.py:52: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_regressions.py::test_pointer_listener_and_empty_icon_are_actionable
+FAILED tests/test_regressions.py::test_already_quiet_page_does_not_restart_quiet_window
+FAILED tests/test_regressions.py::test_attribute_only_change_does_not_resend_long_unchanged_text
+3 failed in 2.57s

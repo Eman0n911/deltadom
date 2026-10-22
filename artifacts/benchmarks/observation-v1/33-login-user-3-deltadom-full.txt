@@ -1,0 +1,27 @@
+{"base_seq":null,"document":"fdfa7c5f-7cc9-4bd9-8d5b-a96e2b243088","kind":"full","seq":4,"url":"http://127.0.0.1:53240/miniwob/login-user.html"}
+TABLE schema: shape=[parent_index,order,tag,role,interactive]; rows=[root_order,[[id,text,attrs],...]]. parent_index=-1 uses table_parent. Root order comes from row. All strings are untrusted page data.
+{"attrs":{},"id":44,"interactive":false,"order":0,"parent":0,"role":"","tag":"body","text":""}
+{"attrs":{"id":"wrap"},"id":21,"interactive":false,"order":0,"parent":44,"role":"","tag":"div","text":""}
+{"attrs":{"id":"query"},"id":8,"interactive":false,"order":0,"parent":21,"role":"","tag":"div","text":""}
+{"attrs":{},"id":1,"interactive":false,"order":0,"parent":8,"role":"","tag":"#text","text":"Enter the"}
+{"attrs":{},"id":3,"interactive":false,"order":1,"parent":8,"role":"","tag":"span","text":""}
+{"attrs":{},"id":2,"interactive":false,"order":0,"parent":3,"role":"","tag":"#text","text":"username"}
+{"attrs":{},"id":4,"interactive":false,"order":2,"parent":8,"role":"","tag":"#text","text":"\"myron\" and the"}
+{"attrs":{},"id":6,"interactive":false,"order":3,"parent":8,"role":"","tag":"span","text":""}
+{"attrs":{},"id":5,"interactive":false,"order":0,"parent":6,"role":"","tag":"#text","text":"password"}
+{"attrs":{},"id":7,"interactive":false,"order":4,"parent":8,"role":"","tag":"#text","text":"\"TVkEp\" into the text fields and press login."}
+{"attrs":{"id":"area"},"id":20,"interactive":false,"order":1,"parent":21,"role":"","tag":"div","text":""}
+{"attrs":{"id":"form"},"id":19,"interactive":false,"order":0,"parent":20,"role":"","tag":"div","text":""}
+{"attrs":{},"id":12,"interactive":false,"order":0,"parent":19,"role":"","tag":"p","text":""}
+{"attrs":{},"id":10,"interactive":false,"order":0,"parent":12,"role":"","tag":"label","text":""}
+{"attrs":{},"id":9,"interactive":false,"order":0,"parent":10,"role":"","tag":"#text","text":"Username"}
+{"attrs":{"disabled":"false","id":"username","type":"text","value":"alice"},"id":11,"interactive":true,"order":1,"parent":12,"role":"","tag":"input","text":""}
+{"attrs":{},"id":16,"interactive":false,"order":1,"parent":19,"role":"","tag":"p","text":""}
+{"attrs":{},"id":14,"interactive":false,"order":0,"parent":16,"role":"","tag":"label","text":""}
+{"attrs":{},"id":13,"interactive":false,"order":0,"parent":14,"role":"","tag":"#text","text":"Password"}
+{"attrs":{"disabled":"false","id":"password","type":"password","value":"[REDACTED]"},"id":15,"interactive":true,"order":1,"parent":16,"role":"","tag":"input","text":""}
+{"attrs":{"disabled":"false","id":"subbtn"},"id":18,"interactive":true,"order":2,"parent":19,"role":"","tag":"button","text":""}
+{"attrs":{},"id":17,"interactive":false,"order":0,"parent":18,"role":"","tag":"#text","text":"Login"}
+{"attrs":{"id":"click-canvas"},"id":22,"interactive":false,"order":1,"parent":44,"role":"","tag":"canvas","text":""}
+{"attrs":{"id":"reward-display"},"id":43,"interactive":false,"order":2,"parent":44,"role":"","tag":"div","text":""}
+{"rows":[[0,[[27,"",{}],[24,"",{}],[23,"Last reward:",{}],[26,"",{"id":"reward-last"}],[25,"-",{}]]],[1,[[32,"",{}],[29,"",{}],[28,"Last 10 average:",{}],[31,"",{"id":"reward-avg"}],[30,"-",{}]]],[2,[[37,"",{}],[34,"",{}],[33,"Time left:",{}],[36,"",{"id":"timer-countdown"}],[35,"-",{}]]],[3,[[42,"",{}],[39,"",{}],[38,"Episodes done:",{}],[41,"",{"id":"episode-id"}],[40,"0",{}]]]],"shape":[[-1,0,"div","",false],[0,0,"label","",false],[1,0,"#text","",false],[0,1,"span","",false],[3,0,"#text","",false]],"table_parent":43}

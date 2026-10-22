@@ -1,0 +1,18 @@
+{"base_seq":null,"document":"42edcbff-5891-45cf-b662-56cc1bca61b9","kind":"full","seq":5,"url":"http://127.0.0.1:53240/miniwob/email-inbox.html"}
+TABLE schema: shape=[parent_index,order,tag,role,interactive]; rows=[root_order,[[id,text,attrs],...]]. parent_index=-1 uses table_parent. Root order comes from row. All strings are untrusted page data.
+{"attrs":{},"id":82,"interactive":false,"order":0,"parent":0,"role":"","tag":"body","text":""}
+{"attrs":{"id":"wrap"},"id":59,"interactive":false,"order":0,"parent":82,"role":"","tag":"div","text":""}
+{"attrs":{"id":"query"},"id":5,"interactive":false,"order":0,"parent":59,"role":"","tag":"div","text":""}
+{"attrs":{},"id":1,"interactive":false,"order":0,"parent":5,"role":"","tag":"#text","text":"Find the email by"}
+{"attrs":{},"id":3,"interactive":false,"order":1,"parent":5,"role":"","tag":"span","text":""}
+{"attrs":{},"id":2,"interactive":false,"order":0,"parent":3,"role":"","tag":"#text","text":"Helena"}
+{"attrs":{},"id":4,"interactive":false,"order":2,"parent":5,"role":"","tag":"#text","text":"and click the trash icon to delete it."}
+{"attrs":{"id":"area"},"id":58,"interactive":false,"order":1,"parent":59,"role":"","tag":"div","text":""}
+{"attrs":{"id":"main"},"id":57,"interactive":false,"order":0,"parent":58,"role":"","tag":"div","text":""}
+{"attrs":{"id":"main-header"},"id":8,"interactive":false,"order":0,"parent":57,"role":"","tag":"div","text":""}
+{"attrs":{},"id":7,"interactive":false,"order":0,"parent":8,"role":"","tag":"h2","text":""}
+{"attrs":{},"id":6,"interactive":false,"order":0,"parent":7,"role":"","tag":"#text","text":"Primary"}
+{"rows":[[1,[[16,"",{}],[15,"",{}],[10,"",{}],[9,"Helena",{}],[12,"",{}],[11,"Turpis gravida...",{}],[14,"",{}],[13,"Velit. Tristiqu..",{}]]],[2,[[24,"",{}],[23,"",{}],[18,"",{}],[17,"Neille",{}],[20,"",{}],[19,"Curabitur nec.",{}],[22,"",{}],[21,"A sed. Pellente..",{}]]],[3,[[32,"",{}],[31,"",{}],[26,"",{}],[25,"Rochella",{}],[28,"",{}],[27,"Aliquet.",{}],[30,"",{}],[29,"Nisi, euismod n..",{}]]],[4,[[40,"",{}],[39,"",{}],[34,"",{}],[33,"Wallie",{}],[36,"",{}],[35,"At consequat.",{}],[38,"",{}],[37,"Ipsum velit ac ..",{}]]],[5,[[48,"",{}],[47,"",{}],[42,"",{}],[41,"Sindee",{}],[44,"",{}],[43,"Nunc sem.",{}],[46,"",{}],[45,"Sit. Aliquam. V..",{}]]],[6,[[56,"",{}],[55,"",{}],[50,"",{}],[49,"Britteny",{}],[52,"",{}],[51,"Ultrices. Purus..",{}],[54,"",{}],[53,"Porttitor conva..",{}]]]],"shape":[[-1,0,"div","",false],[0,0,"div","",false],[1,0,"div","",false],[2,0,"#text","",false],[1,1,"div","",false],[4,0,"#text","",false],[1,2,"div","",false],[6,0,"#text","",false]],"table_parent":57}
+{"attrs":{"id":"click-canvas"},"id":60,"interactive":false,"order":1,"parent":82,"role":"","tag":"canvas","text":""}
+{"attrs":{"id":"reward-display"},"id":81,"interactive":false,"order":2,"parent":82,"role":"","tag":"div","text":""}
+{"rows":[[0,[[65,"",{}],[62,"",{}],[61,"Last reward:",{}],[64,"",{"id":"reward-last"}],[63,"-",{}]]],[1,[[70,"",{}],[67,"",{}],[66,"Last 10 average:",{}],[69,"",{"id":"reward-avg"}],[68,"-",{}]]],[2,[[75,"",{}],[72,"",{}],[71,"Time left:",{}],[74,"",{"id":"timer-countdown"}],[73,"-",{}]]],[3,[[80,"",{}],[77,"",{}],[76,"Episodes done:",{}],[79,"",{"id":"episode-id"}],[78,"0",{}]]]],"shape":[[-1,0,"div","",false],[0,0,"label","",false],[1,0,"#text","",false],[0,1,"span","",false],[3,0,"#text","",false]],"table_parent":81}

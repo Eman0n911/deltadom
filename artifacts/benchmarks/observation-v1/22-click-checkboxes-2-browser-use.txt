@@ -1,0 +1,23 @@
+[18]<div id=query />
+	Select C0ZWRz, vrD, YT0peP and click Submit.
+[21]<label />
+	[22]<input type=checkbox id=ch0 value=on checked=true />
+	l3HK
+[24]<label />
+	[25]<input type=checkbox id=ch1 value=on checked=false />
+	C0ZWRz
+[27]<label />
+	[28]<input type=checkbox id=ch2 value=on checked=false />
+	vrD
+[30]<label />
+	[31]<input type=checkbox id=ch3 value=on checked=false />
+	YT0peP
+[33]<label />
+	[34]<input type=checkbox id=ch4 value=on checked=false />
+	I1
+[3]<button id=subbtn />
+	Submit
+Last reward:
+Last 10 average:
+Time left:
+Episodes done:

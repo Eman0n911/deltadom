@@ -1,0 +1,20 @@
+*[141]<div id=query />
+	Enter the
+	*[164]<span />
+		username
+	"myron" and the
+	*[165]<span />
+		password
+	"TVkEp" into the text fields and press login.
+*[114]<label />
+	Username
+|SHADOW(open)|*[109]<input type=text id=username />
+*[115]<label />
+	Password
+|SHADOW(open)|*[113]<input type=password />
+*[148]<button id=subbtn />
+	Login
+Last reward:
+Last 10 average:
+Time left:
+Episodes done:

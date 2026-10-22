@@ -1,0 +1,9 @@
+- text: Select H7 and click Submit.
+- radio "cs5852"
+- text: cs5852
+- radio "xED"
+- text: xED
+- radio "H7"
+- text: H7
+- button "Submit"
+- text: "Last reward: - Last 10 average: - Time left: - Episodes done: 0"

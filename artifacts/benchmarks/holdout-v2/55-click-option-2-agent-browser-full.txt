@@ -1,0 +1,29 @@
+- generic
+  - generic
+    - StaticText "Select JAzeB8 and click Submit."
+    - generic
+      - generic
+        - radio "JAzeB8" [checked=true, ref=e2]
+        - LineBreak "\n"
+        - radio "hGl8r" [checked=false, ref=e3]
+        - LineBreak "\n"
+      - LineBreak "\n"
+      - button "Submit" [ref=e1]
+  - Canvas
+  - generic
+    - generic
+      - LabelText
+        - StaticText "Last reward:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Last 10 average:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Time left:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Episodes done:"
+      - StaticText "0"

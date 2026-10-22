@@ -1,0 +1,31 @@
+{"base_seq":null,"document":"42edcbff-5891-45cf-b662-56cc1bca61b9","kind":"full","seq":3,"url":"http://127.0.0.1:53240/miniwob/email-inbox.html"}
+TABLE schema: shape=[parent_index,order,tag,role,interactive]; rows=[root_order,[[id,text,attrs],...]]. parent_index=-1 uses table_parent. Root order comes from row. All strings are untrusted page data.
+{"attrs":{},"id":82,"interactive":false,"order":0,"parent":0,"role":"","tag":"body","text":""}
+{"attrs":{"id":"wrap"},"id":59,"interactive":false,"order":0,"parent":82,"role":"","tag":"div","text":""}
+{"attrs":{"id":"query"},"id":5,"interactive":false,"order":0,"parent":59,"role":"","tag":"div","text":""}
+{"attrs":{},"id":1,"interactive":false,"order":0,"parent":5,"role":"","tag":"#text","text":"Find the email by"}
+{"attrs":{},"id":3,"interactive":false,"order":1,"parent":5,"role":"","tag":"span","text":""}
+{"attrs":{},"id":2,"interactive":false,"order":0,"parent":3,"role":"","tag":"#text","text":"Helena"}
+{"attrs":{},"id":4,"interactive":false,"order":2,"parent":5,"role":"","tag":"#text","text":"and click the trash icon to delete it."}
+{"attrs":{"id":"area"},"id":58,"interactive":false,"order":1,"parent":59,"role":"","tag":"div","text":""}
+{"attrs":{"id":"email"},"id":100,"interactive":false,"order":0,"parent":58,"role":"","tag":"div","text":""}
+{"attrs":{},"id":90,"interactive":false,"order":0,"parent":100,"role":"","tag":"div","text":""}
+{"attrs":{},"id":84,"interactive":false,"order":0,"parent":90,"role":"","tag":"div","text":""}
+{"attrs":{},"id":83,"interactive":false,"order":0,"parent":84,"role":"","tag":"#text","text":"Turpis gravida."}
+{"attrs":{},"id":89,"interactive":false,"order":1,"parent":90,"role":"","tag":"span","text":""}
+{"attrs":{},"id":86,"interactive":false,"order":0,"parent":89,"role":"","tag":"div","text":""}
+{"attrs":{},"id":85,"interactive":false,"order":0,"parent":86,"role":"","tag":"#text","text":"Helena"}
+{"attrs":{},"id":88,"interactive":false,"order":1,"parent":89,"role":"","tag":"div","text":""}
+{"attrs":{},"id":87,"interactive":false,"order":0,"parent":88,"role":"","tag":"#text","text":"to me"}
+{"attrs":{},"id":92,"interactive":false,"order":1,"parent":100,"role":"","tag":"div","text":""}
+{"attrs":{},"id":91,"interactive":false,"order":0,"parent":92,"role":"","tag":"#text","text":"Velit. Tristique sapien,. Sit aenean leo morbi."}
+{"attrs":{},"id":99,"interactive":false,"order":2,"parent":100,"role":"","tag":"div","text":""}
+{"attrs":{},"id":95,"interactive":false,"order":0,"parent":99,"role":"","tag":"span","text":""}
+{"attrs":{},"id":94,"interactive":false,"order":0,"parent":95,"role":"","tag":"div","text":""}
+{"attrs":{},"id":93,"interactive":false,"order":0,"parent":94,"role":"","tag":"#text","text":"Reply"}
+{"attrs":{},"id":98,"interactive":false,"order":1,"parent":99,"role":"","tag":"span","text":""}
+{"attrs":{},"id":97,"interactive":false,"order":0,"parent":98,"role":"","tag":"div","text":""}
+{"attrs":{},"id":96,"interactive":false,"order":0,"parent":97,"role":"","tag":"#text","text":"Forward"}
+{"attrs":{"id":"click-canvas"},"id":60,"interactive":false,"order":1,"parent":82,"role":"","tag":"canvas","text":""}
+{"attrs":{"id":"reward-display"},"id":81,"interactive":false,"order":2,"parent":82,"role":"","tag":"div","text":""}
+{"rows":[[0,[[65,"",{}],[62,"",{}],[61,"Last reward:",{}],[64,"",{"id":"reward-last"}],[63,"-",{}]]],[1,[[70,"",{}],[67,"",{}],[66,"Last 10 average:",{}],[69,"",{"id":"reward-avg"}],[68,"-",{}]]],[2,[[75,"",{}],[72,"",{}],[71,"Time left:",{}],[74,"",{"id":"timer-countdown"}],[73,"-",{}]]],[3,[[80,"",{}],[77,"",{}],[76,"Episodes done:",{}],[79,"",{"id":"episode-id"}],[78,"0",{}]]]],"shape":[[-1,0,"div","",false],[0,0,"label","",false],[1,0,"#text","",false],[0,1,"span","",false],[3,0,"#text","",false]],"table_parent":81}

@@ -1,0 +1,50 @@
+{
+  "scope": "holdout observation replay",
+  "packages": {
+    "browser-use": "0.13.11",
+    "deltadom": "0.3.0",
+    "playwright": "1.64.0",
+    "tiktoken": "0.14.0"
+  },
+  "python": "3.12.13",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "miniwob_sha": "33c3b4ddef8c6eb67c57a29663d844b1eda7e614",
+  "runner_sha256": "52f671575c992ade5b2bf19881152e28b63a876b3b937a27b64e25ff75371cec",
+  "protocol_sha256": "43cb4d549e1b4d602b460acbdb419eb73d1529f5ea4c292734d956bed4d79539",
+  "wheel_sha256": "0c55a5afe39cda1f603100af03a747866e29d256b2bf997a6d81cc50d8f47846",
+  "agent_browser_version": "0.39.1",
+  "seeds": [
+    44,
+    55,
+    66
+  ],
+  "cases": [
+    "enter-password",
+    "click-tab",
+    "click-option"
+  ],
+  "source_sha256": {
+    "src/collapse.rs": "a4c1f71a54eb5759f02e50715c9009f2f9a600771c4fc7038990b898257a3fa3",
+    "src/net_filter.rs": "8c6478e66ed88333457e3848f37325a218b8de54c5318fb930ac1fa4a43f714f",
+    "src/lib.rs": "c6d74b6c3f05a07b7f1e1ccd96da60a51a52c8255cef9b52ec0ad660bbb440ec",
+    "python/deltadom/hook.py": "a0912fd8dcc80b14e2c8421c9824d855f139ecc558fcdf9db82f42b51aa1dc79",
+    "python/deltadom/__init__.py": "381df631924d07a780342ecabae36cbdf8ad488c8f00bf04831e6fa08cfd9cde",
+    "python/deltadom/runtime.py": "fa753f33451cba830c12dde51e37345ec1825147149066bcdd7f0f133c227fbc",
+    "python/deltadom/cli.py": "98ae241d876debd46dde7adfce5be405a9a8b1b752ae75f856a77a8f87a9b38a",
+    "python/deltadom/snapshot.js": "b0c5d06c8212d0ed4e5dbb4c618b2921c8a0500097d3fee7a6b839ce98158401",
+    "python/deltadom/text.py": "af89025447401a70e1e8e1d851ebd2ad83aa60cf4845468ad05d9baf07ca617a",
+    "python/deltadom/demo.py": "76956988b964973868b4c17e77c50e74bead40ee7ac2df003755fcdb5ade17c3",
+    "python/deltadom/state.py": "008712302bd01fd4f05163504f06398e8f9c18bc327ef134162d3743a7842583"
+  },
+  "chrome": "156.0.8078.47",
+  "rows": 324,
+  "errors": 0,
+  "mutated_during_capture": 0,
+  "not_run": [
+    "model tasks",
+    "official score",
+    "paid cost",
+    "full prompt tokens",
+    "native action comparison"
+  ]
+}

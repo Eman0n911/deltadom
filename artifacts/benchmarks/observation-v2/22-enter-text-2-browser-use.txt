@@ -1,0 +1,12 @@
+[18]<div id=query />
+	Enter "
+	[19]<span />
+		Dannie
+	" into the text field and press Submit.
+|SHADOW(open)|[3]<input type=text id=tt value=Alice />
+[5]<button id=subbtn />
+	Submit
+Last reward:
+Last 10 average:
+Time left:
+Episodes done:

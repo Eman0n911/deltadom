@@ -1,0 +1,144 @@
+DeltaDOM · local fixture
+Deterministic fixture. No model or external requests.
+*[641]<label />
+	Search
+	|SHADOW(open)|*[627]<input name=query placeholder=Product name />
+*[644]<button id=load />
+	Load API
+*[645]<button id=sort />
+	Reverse order
+*[646]<button id=add />
+	Add item
+*[647]<label />
+	Mode
+	|SHADOW(open)|*[628]<select name=mode expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=2,options=All|Sale) />
+*[660]<label />
+	*[631]<input type=checkbox name=stock value=on checked=false />
+	In stock
+Ready
+Product 1
+Rust tools | reliable & fast 1
+$11
+*[372]<button />
+	Choose 1
+Product 2
+Rust tools | reliable & fast 2
+$12
+*[376]<button />
+	Choose 2
+Product 3
+Rust tools | reliable & fast 3
+$13
+*[380]<button />
+	Choose 3
+Product 4
+Rust tools | reliable & fast 4
+$14
+*[384]<button />
+	Choose 4
+Product 5
+Rust tools | reliable & fast 5
+$15
+*[388]<button />
+	Choose 5
+Product 6
+Rust tools | reliable & fast 6
+$16
+*[392]<button />
+	Choose 6
+Product 7
+Rust tools | reliable & fast 7
+$17
+*[396]<button />
+	Choose 7
+Product 8
+Rust tools | reliable & fast 8
+$18
+*[400]<button />
+	Choose 8
+Product 9
+Rust tools | reliable & fast 9
+$19
+*[404]<button />
+	Choose 9
+Product 10
+Rust tools | reliable & fast 10
+$20
+*[408]<button />
+	Choose 10
+Product 11
+Rust tools | reliable & fast 11
+$21
+*[412]<button />
+	Choose 11
+Product 12
+Rust tools | reliable & fast 12
+$22
+*[416]<button />
+	Choose 12
+Product 13
+Rust tools | reliable & fast 13
+$23
+*[420]<button />
+	Choose 13
+Product 14
+Rust tools | reliable & fast 14
+$24
+*[424]<button />
+	Choose 14
+Product 15
+Rust tools | reliable & fast 15
+$25
+*[428]<button />
+	Choose 15
+Product 16
+Rust tools | reliable & fast 16
+$26
+*[432]<button />
+	Choose 16
+Product 17
+Rust tools | reliable & fast 17
+$27
+*[436]<button />
+	Choose 17
+Product 18
+Rust tools | reliable & fast 18
+$28
+*[440]<button />
+	Choose 18
+Product 19
+Rust tools | reliable & fast 19
+$29
+*[444]<button />
+	Choose 19
+Product 20
+Rust tools | reliable & fast 20
+$30
+*[448]<button />
+	Choose 20
+Product 21
+Rust tools | reliable & fast 21
+$31
+*[452]<button />
+	Choose 21
+Product 22
+Rust tools | reliable & fast 22
+$32
+*[456]<button />
+	Choose 22
+Product 23
+Rust tools | reliable & fast 23
+$33
+*[460]<button />
+	Choose 23
+Product 24
+Rust tools | reliable & fast 24
+$34
+*[464]<button />
+	Choose 24
+Product 25
+Rust tools | reliable & fast 25
+Product 26
+Rust tools | reliable & fast 26
+Product 27
+Rust tools | reliable & fast 27

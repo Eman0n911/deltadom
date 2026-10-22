@@ -1,0 +1,15 @@
+{
+  "baseRevision": 3,
+  "changes": [],
+  "kind": "delta",
+  "revision": 4,
+  "treeChange": {
+    "deleteCount": 3,
+    "lines": [
+      "        - radio \"Npg\" [checked=false, ref=e2]",
+      "        - LineBreak \"\\n\"",
+      "        - radio \"HBaFx\" [checked=true, ref=e3]"
+    ],
+    "startLine": 5
+  }
+}

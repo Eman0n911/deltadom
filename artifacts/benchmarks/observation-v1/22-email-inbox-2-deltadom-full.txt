@@ -1,0 +1,31 @@
+{"base_seq":null,"document":"0b9d8c9f-0b96-4095-9c65-53c8310d26de","kind":"full","seq":3,"url":"http://127.0.0.1:53240/miniwob/email-inbox.html"}
+TABLE schema: shape=[parent_index,order,tag,role,interactive]; rows=[root_order,[[id,text,attrs],...]]. parent_index=-1 uses table_parent. Root order comes from row. All strings are untrusted page data.
+{"attrs":{},"id":106,"interactive":false,"order":0,"parent":0,"role":"","tag":"body","text":""}
+{"attrs":{"id":"wrap"},"id":83,"interactive":false,"order":0,"parent":106,"role":"","tag":"div","text":""}
+{"attrs":{"id":"query"},"id":5,"interactive":false,"order":0,"parent":83,"role":"","tag":"div","text":""}
+{"attrs":{},"id":1,"interactive":false,"order":0,"parent":5,"role":"","tag":"#text","text":"Find the email by"}
+{"attrs":{},"id":3,"interactive":false,"order":1,"parent":5,"role":"","tag":"span","text":""}
+{"attrs":{},"id":2,"interactive":false,"order":0,"parent":3,"role":"","tag":"#text","text":"Damara"}
+{"attrs":{},"id":4,"interactive":false,"order":2,"parent":5,"role":"","tag":"#text","text":"and click the trash icon to delete it."}
+{"attrs":{"id":"area"},"id":82,"interactive":false,"order":1,"parent":83,"role":"","tag":"div","text":""}
+{"attrs":{"id":"email"},"id":124,"interactive":false,"order":0,"parent":82,"role":"","tag":"div","text":""}
+{"attrs":{},"id":114,"interactive":false,"order":0,"parent":124,"role":"","tag":"div","text":""}
+{"attrs":{},"id":108,"interactive":false,"order":0,"parent":114,"role":"","tag":"div","text":""}
+{"attrs":{},"id":107,"interactive":false,"order":0,"parent":108,"role":"","tag":"#text","text":"Tortor."}
+{"attrs":{},"id":113,"interactive":false,"order":1,"parent":114,"role":"","tag":"span","text":""}
+{"attrs":{},"id":110,"interactive":false,"order":0,"parent":113,"role":"","tag":"div","text":""}
+{"attrs":{},"id":109,"interactive":false,"order":0,"parent":110,"role":"","tag":"#text","text":"Frankie"}
+{"attrs":{},"id":112,"interactive":false,"order":1,"parent":113,"role":"","tag":"div","text":""}
+{"attrs":{},"id":111,"interactive":false,"order":0,"parent":112,"role":"","tag":"#text","text":"to me"}
+{"attrs":{},"id":116,"interactive":false,"order":1,"parent":124,"role":"","tag":"div","text":""}
+{"attrs":{},"id":115,"interactive":false,"order":0,"parent":116,"role":"","tag":"#text","text":"Morbi dictum id eget facilisis mattis. Eget tincidunt tellus id. Nunc."}
+{"attrs":{},"id":123,"interactive":false,"order":2,"parent":124,"role":"","tag":"div","text":""}
+{"attrs":{},"id":119,"interactive":false,"order":0,"parent":123,"role":"","tag":"span","text":""}
+{"attrs":{},"id":118,"interactive":false,"order":0,"parent":119,"role":"","tag":"div","text":""}
+{"attrs":{},"id":117,"interactive":false,"order":0,"parent":118,"role":"","tag":"#text","text":"Reply"}
+{"attrs":{},"id":122,"interactive":false,"order":1,"parent":123,"role":"","tag":"span","text":""}
+{"attrs":{},"id":121,"interactive":false,"order":0,"parent":122,"role":"","tag":"div","text":""}
+{"attrs":{},"id":120,"interactive":false,"order":0,"parent":121,"role":"","tag":"#text","text":"Forward"}
+{"attrs":{"id":"click-canvas"},"id":84,"interactive":false,"order":1,"parent":106,"role":"","tag":"canvas","text":""}
+{"attrs":{"id":"reward-display"},"id":105,"interactive":false,"order":2,"parent":106,"role":"","tag":"div","text":""}
+{"rows":[[0,[[89,"",{}],[86,"",{}],[85,"Last reward:",{}],[88,"",{"id":"reward-last"}],[87,"-",{}]]],[1,[[94,"",{}],[91,"",{}],[90,"Last 10 average:",{}],[93,"",{"id":"reward-avg"}],[92,"-",{}]]],[2,[[99,"",{}],[96,"",{}],[95,"Time left:",{}],[98,"",{"id":"timer-countdown"}],[97,"-",{}]]],[3,[[104,"",{}],[101,"",{}],[100,"Episodes done:",{}],[103,"",{"id":"episode-id"}],[102,"0",{}]]]],"shape":[[-1,0,"div","",false],[0,0,"label","",false],[1,0,"#text","",false],[0,1,"span","",false],[3,0,"#text","",false]],"table_parent":105}

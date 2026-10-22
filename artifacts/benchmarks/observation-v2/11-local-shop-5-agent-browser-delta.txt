@@ -1,0 +1,13 @@
+{
+  "baseRevision": 5,
+  "changes": [],
+  "kind": "delta",
+  "revision": 6,
+  "treeChange": {
+    "deleteCount": 1,
+    "lines": [
+      "  - StaticText \"Selected product 7\""
+    ],
+    "startLine": 18
+  }
+}

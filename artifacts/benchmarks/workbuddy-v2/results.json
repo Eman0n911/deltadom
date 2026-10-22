@@ -1,0 +1,28 @@
+[
+  {
+    "arm": "deltadom",
+    "task": "login-user",
+    "actions": 3,
+    "success": true,
+    "verdict": {
+      "done": true,
+      "raw_reward": 1,
+      "reason": null
+    },
+    "gave_up": false,
+    "wall_s": 516.2394773330016
+  },
+  {
+    "arm": "deltadom",
+    "task": "email-inbox",
+    "actions": 1,
+    "success": true,
+    "verdict": {
+      "done": true,
+      "raw_reward": 1,
+      "reason": null
+    },
+    "gave_up": false,
+    "wall_s": 160.90874574999907
+  }
+]

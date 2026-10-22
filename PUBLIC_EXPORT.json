@@ -1,0 +1,33 @@
+{
+  "source_commit": "7c9eff820f9022e90cd4b39c3d1a6e806c824ab7",
+  "files": 3072,
+  "ci": "Workflow retained as inactive ci/check.yml; publishing token lacks workflow scope",
+  "path_redactions": [
+    "artifacts/benchmarks/model-bridge-v2.log",
+    "artifacts/benchmarks/model-bridge.log",
+    "artifacts/benchmarks/revision-v2/clippy.txt",
+    "artifacts/benchmarks/revision-v2/rust-tests.txt",
+    "artifacts/build-0.4.log",
+    "artifacts/build-wheel-0.4.log",
+    "artifacts/clippy-0.4.txt",
+    "artifacts/demo-0.4.json",
+    "artifacts/demo-0.4.log",
+    "artifacts/demo-0.4.txt",
+    "artifacts/installation-0.3.json",
+    "artifacts/installation-0.3.log",
+    "artifacts/installation-0.4-final.json",
+    "artifacts/installation-0.4-final.log",
+    "artifacts/installation-0.4.json",
+    "artifacts/installation-0.4.log",
+    "artifacts/installation.json",
+    "artifacts/preview-demo-0.3.log",
+    "artifacts/preview-demo-0.3.txt",
+    "artifacts/preview-demo.txt",
+    "artifacts/rust-tests-0.4.txt",
+    "scripts/export_public.py"
+  ],
+  "omitted": [
+    "artifacts/benchmarks/native-agent-contract/agent.ddt"
+  ],
+  "note": "Public text logs are path-redacted derivatives; local originals retained. Captured synthetic observation text and codec/source bindings are unchanged. No old Git history, environments, credentials or everyday browser profiles exported."
+}

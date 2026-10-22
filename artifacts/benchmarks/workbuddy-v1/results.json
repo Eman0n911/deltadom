@@ -1,0 +1,80 @@
+[
+  {
+    "arm": "deltadom",
+    "task": "login-user",
+    "actions": 3,
+    "success": true,
+    "verdict": {
+      "done": true,
+      "raw_reward": 1,
+      "reason": null
+    },
+    "gave_up": false,
+    "wall_s": 445.2682813339925
+  },
+  {
+    "arm": "deltadom",
+    "task": "email-inbox",
+    "actions": 2,
+    "success": false,
+    "verdict": {
+      "done": false,
+      "raw_reward": 0,
+      "reason": null
+    },
+    "gave_up": true,
+    "wall_s": 263.0588969579985
+  },
+  {
+    "arm": "browser-use",
+    "task": "login-user",
+    "actions": 3,
+    "success": true,
+    "verdict": {
+      "done": true,
+      "raw_reward": 1,
+      "reason": null
+    },
+    "gave_up": false,
+    "wall_s": 104.23133962501015
+  },
+  {
+    "arm": "browser-use",
+    "task": "email-inbox",
+    "actions": 2,
+    "success": true,
+    "verdict": {
+      "done": true,
+      "raw_reward": 1,
+      "reason": null
+    },
+    "gave_up": false,
+    "wall_s": 159.92818995799462
+  },
+  {
+    "arm": "agent-browser",
+    "task": "login-user",
+    "actions": 3,
+    "success": true,
+    "verdict": {
+      "done": true,
+      "raw_reward": 1,
+      "reason": null
+    },
+    "gave_up": false,
+    "wall_s": 146.98688975001278
+  },
+  {
+    "arm": "agent-browser",
+    "task": "email-inbox",
+    "actions": 2,
+    "success": true,
+    "verdict": {
+      "done": true,
+      "raw_reward": 1,
+      "reason": null
+    },
+    "gave_up": false,
+    "wall_s": 96.7024972079962
+  }
+]

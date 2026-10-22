@@ -1,0 +1,23 @@
+{
+  "observation-v2": {
+    "captures": 576,
+    "raw_recounts": "pass",
+    "source_and_wheel_hashes": "pass",
+    "structured_and_text_checks": 192,
+    "target_coverage": "pass"
+  },
+  "holdout-v2": {
+    "captures": 324,
+    "raw_recounts": "pass",
+    "source_and_wheel_hashes": "pass",
+    "structured_and_text_checks": 108,
+    "target_coverage": "pass"
+  },
+  "model": {
+    "episodes": 2,
+    "successes": 2,
+    "raw_reply_matches": 4,
+    "official_score": "not_run",
+    "cost": "unavailable"
+  }
+}

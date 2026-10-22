@@ -1,0 +1,107 @@
+- generic
+  - generic
+    - generic
+      - StaticText "Find the email by Alexina and reply to them with the text \"Tortor, diam semper.\"."
+    - generic
+      - generic
+        - generic
+          - heading "Primary" [level=2, ref=e11]
+          - image [ref=e12] clickable [cursor:pointer]
+        - generic [ref=e1] clickable [cursor:pointer]
+          - generic
+            - StaticText "Rozina"
+            - StaticText "Sed."
+            - StaticText "Proin quis male.."
+          - generic
+            - image
+            - image
+        - generic [ref=e2] clickable [cursor:pointer]
+          - generic
+            - StaticText "Clarisse"
+            - StaticText "Neque, elementu.."
+            - StaticText "Arcu. Mus massa.."
+          - generic
+            - image
+            - image
+        - generic [ref=e3] clickable [cursor:pointer]
+          - generic
+            - StaticText "Barby"
+            - StaticText "Mi."
+            - StaticText "Tortor. Leo sem.."
+          - generic
+            - image
+            - image
+        - generic [ref=e4] clickable [cursor:pointer]
+          - generic
+            - StaticText "Luce"
+            - StaticText "Ipsum."
+            - StaticText "Purus odio null.."
+          - generic
+            - image
+            - image
+        - generic [ref=e5] clickable [cursor:pointer]
+          - generic
+            - StaticText "Alexina"
+            - StaticText "Mi."
+            - StaticText "Sollicitudin nu.."
+          - generic
+            - image
+            - image
+        - generic [ref=e6] clickable [cursor:pointer]
+          - generic
+            - StaticText "Rosabelle"
+            - StaticText "Ultrices."
+            - StaticText "Tincidunt amet,.."
+          - generic
+            - image
+            - image
+        - generic [ref=e7] clickable [cursor:pointer]
+          - generic
+            - StaticText "Gloriana"
+            - StaticText "Sed. In."
+            - StaticText "Leo volutpat am.."
+          - generic
+            - image
+            - image
+        - generic [ref=e8] clickable [cursor:pointer]
+          - generic
+            - StaticText "Florette"
+            - StaticText "Egestas nibh."
+            - StaticText "Donec feugiat a.."
+          - generic
+            - image
+            - image
+        - generic [ref=e9] clickable [cursor:pointer]
+          - generic
+            - StaticText "Effie"
+            - StaticText "Auctor et."
+            - StaticText "Sit fermentum. .."
+          - generic
+            - image
+            - image
+        - generic [ref=e10] clickable [cursor:pointer]
+          - generic
+            - StaticText "Bari"
+            - StaticText "Nec."
+            - StaticText "Tellus eu mauri.."
+          - generic
+            - image
+            - image
+  - Canvas
+  - generic
+    - generic
+      - LabelText
+        - StaticText "Last reward:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Last 10 average:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Time left:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Episodes done:"
+      - StaticText "0"

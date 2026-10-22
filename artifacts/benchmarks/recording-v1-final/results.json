@@ -1,0 +1,2110 @@
+{
+  "scope": "retrospective storage only; zero model calls",
+  "zlib_level": 6,
+  "sources": {
+    "python/deltadom/tape.py": "2f84177233a78b447e31c433d7845eb1aa69e38999f5ffb582b10077078a0b00",
+    "benchmarks/recording_v1.py": "b18e284f6f4fcacafa499ea04bd67ba17f7be7eb7bce81d0ef6078b7bef42778",
+    "benchmarks/RECORDING-PROTOCOL.md": "16d5d29b69a99fa887631631dcc1b8309a3aec370e52a19e720cd43344da2862"
+  },
+  "summary": {
+    "observation-v2/browser-use": {
+      "snapshots": 72,
+      "raw": 51563,
+      "full": 30098,
+      "adaptive": 15428,
+      "offline_gzip": 7472
+    },
+    "shop/browser-use": {
+      "snapshots": 24,
+      "raw": 58053,
+      "full": 18802,
+      "adaptive": 7690,
+      "offline_gzip": 4347
+    },
+    "observation-v2/agent-browser-full": {
+      "snapshots": 72,
+      "raw": 86738,
+      "full": 28127,
+      "adaptive": 12979,
+      "offline_gzip": 5333
+    },
+    "shop/agent-browser-full": {
+      "snapshots": 24,
+      "raw": 154347,
+      "full": 25788,
+      "adaptive": 7941,
+      "offline_gzip": 5964
+    },
+    "observation-v2/deltadom-full": {
+      "snapshots": 72,
+      "raw": 130993,
+      "full": 58613,
+      "adaptive": 21150,
+      "offline_gzip": 11818
+    },
+    "shop/deltadom-full": {
+      "snapshots": 24,
+      "raw": 173670,
+      "full": 47631,
+      "adaptive": 10678,
+      "offline_gzip": 8776
+    },
+    "holdout-v2/browser-use": {
+      "snapshots": 54,
+      "raw": 23869,
+      "full": 18663,
+      "adaptive": 8985,
+      "offline_gzip": 3388
+    },
+    "holdout-v2/agent-browser-full": {
+      "snapshots": 54,
+      "raw": 46239,
+      "full": 19913,
+      "adaptive": 9274,
+      "offline_gzip": 3672
+    },
+    "holdout-v2/deltadom-full": {
+      "snapshots": 54,
+      "raw": 82149,
+      "full": 39856,
+      "adaptive": 13696,
+      "offline_gzip": 7775
+    }
+  },
+  "episodes": [
+    {
+      "corpus": "observation-v2",
+      "group": "11-click-checkboxes",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 2284,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-0-browser-use.txt": "7eeef480ec3e5696fd832e5507020f6a77c8249b14028180e64c2f3e9c008f08",
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-1-browser-use.txt": "7eeef480ec3e5696fd832e5507020f6a77c8249b14028180e64c2f3e9c008f08",
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-2-browser-use.txt": "38708ce1daed85d293b5ce8ff1dd367485dab60ecb017fd529e5b161bcd8093f",
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-3-browser-use.txt": "7eeef480ec3e5696fd832e5507020f6a77c8249b14028180e64c2f3e9c008f08",
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-4-browser-use.txt": "7eeef480ec3e5696fd832e5507020f6a77c8249b14028180e64c2f3e9c008f08",
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-5-browser-use.txt": "56546c27e98420bc056354908efcf39e28e42ec0ebed9f1a43bbe24415e3f197"
+      },
+      "full": {
+        "bytes": 1874,
+        "encode_ms": 0.275999991572462,
+        "decode_ms": 0.08708400127943605,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 893,
+        "encode_ms": 0.17558300169184804,
+        "decode_ms": 0.04758300201501697,
+        "exact": true
+      },
+      "offline_gzip_bytes": 308
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "11-email-inbox",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 8120,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/11-email-inbox-0-browser-use.txt": "74e79c6f60dc3ead295e7d79dd54b4b10b5b8eae7b7d719d220100c70ce0bb7b",
+        "artifacts/benchmarks/observation-v2/11-email-inbox-1-browser-use.txt": "74e79c6f60dc3ead295e7d79dd54b4b10b5b8eae7b7d719d220100c70ce0bb7b",
+        "artifacts/benchmarks/observation-v2/11-email-inbox-2-browser-use.txt": "ed99afbba3a02843696983e5b51c68999e267f27d69c918bfc162b154a8d2bdf",
+        "artifacts/benchmarks/observation-v2/11-email-inbox-3-browser-use.txt": "9643b8c059d9646966e346aa45cb670b130006e4bd9a6b38818c5282c0a6b704",
+        "artifacts/benchmarks/observation-v2/11-email-inbox-4-browser-use.txt": "74e79c6f60dc3ead295e7d79dd54b4b10b5b8eae7b7d719d220100c70ce0bb7b",
+        "artifacts/benchmarks/observation-v2/11-email-inbox-5-browser-use.txt": "b51551d63d466234261db24e5dcfa52aecf784a72a484f8ae92e780580150636"
+      },
+      "full": {
+        "bytes": 3720,
+        "encode_ms": 0.26770799013320357,
+        "decode_ms": 0.072750000981614,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 2137,
+        "encode_ms": 0.2671670081326738,
+        "decode_ms": 0.05558399425353855,
+        "exact": true
+      },
+      "offline_gzip_bytes": 1242
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "11-enter-text",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 1317,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/11-enter-text-0-browser-use.txt": "2c8950efd39babffa114bae98d626c444030aea770c3d20e168ca77a357e4247",
+        "artifacts/benchmarks/observation-v2/11-enter-text-1-browser-use.txt": "2c8950efd39babffa114bae98d626c444030aea770c3d20e168ca77a357e4247",
+        "artifacts/benchmarks/observation-v2/11-enter-text-2-browser-use.txt": "5ebc90630d585ec50d87f58a78e17429c3394bfd18a3df074e4dd9d4af2f1448",
+        "artifacts/benchmarks/observation-v2/11-enter-text-3-browser-use.txt": "7a81569a02c6cd9d576bac9a5c26fa80453bb2f43c53bb5016686fb0ad14eb05",
+        "artifacts/benchmarks/observation-v2/11-enter-text-4-browser-use.txt": "7a81569a02c6cd9d576bac9a5c26fa80453bb2f43c53bb5016686fb0ad14eb05",
+        "artifacts/benchmarks/observation-v2/11-enter-text-5-browser-use.txt": "b9625dac1e256daa4d56e42cdaa0d2f214756cdf4ea92714432da7f3ab91a786"
+      },
+      "full": {
+        "bytes": 1703,
+        "encode_ms": 0.1467500114813447,
+        "decode_ms": 0.05049999163020402,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 840,
+        "encode_ms": 0.14612499217037112,
+        "decode_ms": 0.03374999505467713,
+        "exact": true
+      },
+      "offline_gzip_bytes": 251
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "11-local-shop",
+      "source": "browser-use",
+      "snapshots": 8,
+      "raw_bytes": 19311,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/11-local-shop-0-browser-use.txt": "1d73ecf77b701faf739f076cc6f664ff508179986ad53b4e192b8c6f7440e4ac",
+        "artifacts/benchmarks/observation-v2/11-local-shop-1-browser-use.txt": "1d73ecf77b701faf739f076cc6f664ff508179986ad53b4e192b8c6f7440e4ac",
+        "artifacts/benchmarks/observation-v2/11-local-shop-2-browser-use.txt": "17dfd9727f465005b71f74c39b90b42cdc9191014ef9f903da6b3d1aeca85964",
+        "artifacts/benchmarks/observation-v2/11-local-shop-3-browser-use.txt": "6f927eb2162d57c44b076386d379e8cff6a907c01880ca847c69614c015df0f3",
+        "artifacts/benchmarks/observation-v2/11-local-shop-4-browser-use.txt": "4dc4356034832833adaed5c6118953db56d1b21b3298f7efe11de5e0ce9e3240",
+        "artifacts/benchmarks/observation-v2/11-local-shop-5-browser-use.txt": "1b4317a46e8ece2d0094c9dcd144dda069af3166e7c434edb58c88fb1386ad0f",
+        "artifacts/benchmarks/observation-v2/11-local-shop-6-browser-use.txt": "5160f02813eededca83417b9f38eb1b6c386733929869786e8db085594de9e3f",
+        "artifacts/benchmarks/observation-v2/11-local-shop-7-browser-use.txt": "256f98f1741fb6c4b46b2664af6d7c1caae992cb1014bfa325fbdc9b016d03fd"
+      },
+      "full": {
+        "bytes": 6268,
+        "encode_ms": 0.3325419966131449,
+        "decode_ms": 0.08187499770428985,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 2566,
+        "encode_ms": 0.37966699164826423,
+        "decode_ms": 0.06733300688210875,
+        "exact": true
+      },
+      "offline_gzip_bytes": 1450
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "11-login-user",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 2247,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/11-login-user-0-browser-use.txt": "5c6179d1f2a6250e744e158868409fae0a98f080c2b40e32bd4d11739978baef",
+        "artifacts/benchmarks/observation-v2/11-login-user-1-browser-use.txt": "5c6179d1f2a6250e744e158868409fae0a98f080c2b40e32bd4d11739978baef",
+        "artifacts/benchmarks/observation-v2/11-login-user-2-browser-use.txt": "aa0237f16f3bce6a08369c27bde641f2649b56439506215b329da0fc017fb1eb",
+        "artifacts/benchmarks/observation-v2/11-login-user-3-browser-use.txt": "aa0237f16f3bce6a08369c27bde641f2649b56439506215b329da0fc017fb1eb",
+        "artifacts/benchmarks/observation-v2/11-login-user-4-browser-use.txt": "aa0237f16f3bce6a08369c27bde641f2649b56439506215b329da0fc017fb1eb",
+        "artifacts/benchmarks/observation-v2/11-login-user-5-browser-use.txt": "2064d3a5baca6cd02009e7d21c833b8f596a7004e34d317abcf765359e552533"
+      },
+      "full": {
+        "bytes": 2057,
+        "encode_ms": 0.14854200708214194,
+        "decode_ms": 0.05037500523030758,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 904,
+        "encode_ms": 0.1415410079061985,
+        "decode_ms": 0.03229199501220137,
+        "exact": true
+      },
+      "offline_gzip_bytes": 339
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "22-click-checkboxes",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 3329,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-0-browser-use.txt": "8231611811ea669a7b8925982b77fb3e3493e844f8679b5a9de9ac37bbd759ff",
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-1-browser-use.txt": "8231611811ea669a7b8925982b77fb3e3493e844f8679b5a9de9ac37bbd759ff",
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-2-browser-use.txt": "4e996b5b4c59bd80867f5fe475df5b6009144963f06e5ae9f0c363499fda6e8b",
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-3-browser-use.txt": "8231611811ea669a7b8925982b77fb3e3493e844f8679b5a9de9ac37bbd759ff",
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-4-browser-use.txt": "8231611811ea669a7b8925982b77fb3e3493e844f8679b5a9de9ac37bbd759ff",
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-5-browser-use.txt": "06bffd2f31a6ef30e3273f74c72b8c0a6a98eeaef25a81b468706bed05aec85c"
+      },
+      "full": {
+        "bytes": 2083,
+        "encode_ms": 0.18791599723044783,
+        "decode_ms": 0.06154199945740402,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 950,
+        "encode_ms": 0.16095800674520433,
+        "decode_ms": 0.039166989154182374,
+        "exact": true
+      },
+      "offline_gzip_bytes": 359
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "22-email-inbox",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 10957,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/22-email-inbox-0-browser-use.txt": "378a7805102b5ce19e3c691224cc81a599fb55a4ee574dcf47baa644c38643a8",
+        "artifacts/benchmarks/observation-v2/22-email-inbox-1-browser-use.txt": "378a7805102b5ce19e3c691224cc81a599fb55a4ee574dcf47baa644c38643a8",
+        "artifacts/benchmarks/observation-v2/22-email-inbox-2-browser-use.txt": "d556753ca781ed3f77357a4549fa2671e98b651f30b6fd4b105514b9fe9ddebb",
+        "artifacts/benchmarks/observation-v2/22-email-inbox-3-browser-use.txt": "153f934f83affe3c68b963c9742c82a65d8ff9f5abb4c460d0e7987ec31bca93",
+        "artifacts/benchmarks/observation-v2/22-email-inbox-4-browser-use.txt": "378a7805102b5ce19e3c691224cc81a599fb55a4ee574dcf47baa644c38643a8",
+        "artifacts/benchmarks/observation-v2/22-email-inbox-5-browser-use.txt": "21ab7fd044313854fb37954ea36c67ae8b9d896d6ee13b36f7c4a9212b3a35c6"
+      },
+      "full": {
+        "bytes": 4161,
+        "encode_ms": 0.26966699806507677,
+        "decode_ms": 0.06495800334960222,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 2462,
+        "encode_ms": 0.27929201314691454,
+        "decode_ms": 0.05745900853071362,
+        "exact": true
+      },
+      "offline_gzip_bytes": 1570
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "22-enter-text",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 1385,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/22-enter-text-0-browser-use.txt": "3db80c1385dc5d71652e0e9efcb9060f13c610e7b36e2f8b8ea7a07a50dfe741",
+        "artifacts/benchmarks/observation-v2/22-enter-text-1-browser-use.txt": "3db80c1385dc5d71652e0e9efcb9060f13c610e7b36e2f8b8ea7a07a50dfe741",
+        "artifacts/benchmarks/observation-v2/22-enter-text-2-browser-use.txt": "047fce8d29ab013cae85a9b925cb51cbfb949a4b612f139b413868ad456a7ea3",
+        "artifacts/benchmarks/observation-v2/22-enter-text-3-browser-use.txt": "99a1e7775255b71ff1be3acac14243d247a20b2aa8c77be3b79e3d3ef5183fce",
+        "artifacts/benchmarks/observation-v2/22-enter-text-4-browser-use.txt": "99a1e7775255b71ff1be3acac14243d247a20b2aa8c77be3b79e3d3ef5183fce",
+        "artifacts/benchmarks/observation-v2/22-enter-text-5-browser-use.txt": "8545eeddcb7ea6eefadfb05be64b6f20673984ad9ac7601df5660dea85bec434"
+      },
+      "full": {
+        "bytes": 1732,
+        "encode_ms": 0.16549999418202788,
+        "decode_ms": 0.057833007303997874,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 849,
+        "encode_ms": 0.14316700980998576,
+        "decode_ms": 0.03433399251662195,
+        "exact": true
+      },
+      "offline_gzip_bytes": 267
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "22-local-shop",
+      "source": "browser-use",
+      "snapshots": 8,
+      "raw_bytes": 19425,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/22-local-shop-0-browser-use.txt": "8a98ed3f1e16e9b495bf2b9330b97353fefdf33e56e9c9062ea44bb1b9303bb7",
+        "artifacts/benchmarks/observation-v2/22-local-shop-1-browser-use.txt": "8a98ed3f1e16e9b495bf2b9330b97353fefdf33e56e9c9062ea44bb1b9303bb7",
+        "artifacts/benchmarks/observation-v2/22-local-shop-2-browser-use.txt": "153b75b2dd5b0882648b58db5a1a2e8c040054e82839c9806e935da04c8579fb",
+        "artifacts/benchmarks/observation-v2/22-local-shop-3-browser-use.txt": "af49a57703a9af197a64882d499a4a5a4097e56a5ffc53e896d94b68b16b14b5",
+        "artifacts/benchmarks/observation-v2/22-local-shop-4-browser-use.txt": "2d6bc114ea7e38b519d2f205e034fc9651b70e2a19065bf703921a8e841462a5",
+        "artifacts/benchmarks/observation-v2/22-local-shop-5-browser-use.txt": "2e04d78a8ae92327bd5b2f6d060f877882e53311aba9ec8fd05e42c924280944",
+        "artifacts/benchmarks/observation-v2/22-local-shop-6-browser-use.txt": "dd4c48209d6babdc1f3566bef3f2b9c4f33eaaa452382cc9d9e2d80f5398c31d",
+        "artifacts/benchmarks/observation-v2/22-local-shop-7-browser-use.txt": "256f98f1741fb6c4b46b2664af6d7c1caae992cb1014bfa325fbdc9b016d03fd"
+      },
+      "full": {
+        "bytes": 6265,
+        "encode_ms": 0.3927500074496493,
+        "decode_ms": 0.09737499931361526,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 2558,
+        "encode_ms": 0.5763330118497834,
+        "decode_ms": 0.10595899948384613,
+        "exact": true
+      },
+      "offline_gzip_bytes": 1446
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "22-login-user",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 2258,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/22-login-user-0-browser-use.txt": "8b8a29f91befeb6bb58835c9e6c09ab3bd09941e455e8f133cf357d9cc810183",
+        "artifacts/benchmarks/observation-v2/22-login-user-1-browser-use.txt": "8b8a29f91befeb6bb58835c9e6c09ab3bd09941e455e8f133cf357d9cc810183",
+        "artifacts/benchmarks/observation-v2/22-login-user-2-browser-use.txt": "bbd5ec2ecb682d367ebcbbb5e36f3c3f7e5bfa4c72a35053ba0464318a9f762d",
+        "artifacts/benchmarks/observation-v2/22-login-user-3-browser-use.txt": "bbd5ec2ecb682d367ebcbbb5e36f3c3f7e5bfa4c72a35053ba0464318a9f762d",
+        "artifacts/benchmarks/observation-v2/22-login-user-4-browser-use.txt": "bbd5ec2ecb682d367ebcbbb5e36f3c3f7e5bfa4c72a35053ba0464318a9f762d",
+        "artifacts/benchmarks/observation-v2/22-login-user-5-browser-use.txt": "c500584bc65f81e4e191b82fbe6f63835dc358b194923a0f780197696fde48ac"
+      },
+      "full": {
+        "bytes": 2074,
+        "encode_ms": 0.1479579950682819,
+        "decode_ms": 0.053041003411635756,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 911,
+        "encode_ms": 0.13008298992644995,
+        "decode_ms": 0.03179200575686991,
+        "exact": true
+      },
+      "offline_gzip_bytes": 344
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "33-click-checkboxes",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 3754,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-0-browser-use.txt": "0ef9a79f7f8813513dc17b62083c7a60280d5a61b516a9f399be9bab3e3bb125",
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-1-browser-use.txt": "0ef9a79f7f8813513dc17b62083c7a60280d5a61b516a9f399be9bab3e3bb125",
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-2-browser-use.txt": "957592db2e987fe47249a06e69bb1711ff314a92c771ac429f8057359edc28fe",
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-3-browser-use.txt": "0ef9a79f7f8813513dc17b62083c7a60280d5a61b516a9f399be9bab3e3bb125",
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-4-browser-use.txt": "0ef9a79f7f8813513dc17b62083c7a60280d5a61b516a9f399be9bab3e3bb125",
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-5-browser-use.txt": "ae78a51282f5cf141994eb81465c256b3fa043ff4ce90204bdf81931adc1154e"
+      },
+      "full": {
+        "bytes": 2154,
+        "encode_ms": 0.14674999692942947,
+        "decode_ms": 0.059999991208314896,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 980,
+        "encode_ms": 0.18274999456480145,
+        "decode_ms": 0.03912499232683331,
+        "exact": true
+      },
+      "offline_gzip_bytes": 390
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "33-email-inbox",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 12250,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/33-email-inbox-0-browser-use.txt": "20e41d1d050e83ed5e090dc0d13688cf8c6c3d113b93259c118cccc0ef9e2bfc",
+        "artifacts/benchmarks/observation-v2/33-email-inbox-1-browser-use.txt": "20e41d1d050e83ed5e090dc0d13688cf8c6c3d113b93259c118cccc0ef9e2bfc",
+        "artifacts/benchmarks/observation-v2/33-email-inbox-2-browser-use.txt": "84ec885cfa6478a49f0dc24cc26d278e383a5d145eeda65edf5b6bc7f6305893",
+        "artifacts/benchmarks/observation-v2/33-email-inbox-3-browser-use.txt": "137ab486089c911aa37122ee512b7aa6b48419364073e042f72ac995d55a2866",
+        "artifacts/benchmarks/observation-v2/33-email-inbox-4-browser-use.txt": "20e41d1d050e83ed5e090dc0d13688cf8c6c3d113b93259c118cccc0ef9e2bfc",
+        "artifacts/benchmarks/observation-v2/33-email-inbox-5-browser-use.txt": "ee0ef4780ec4861db0e0459f34c2af1ff353b6d79e64024c4aabec9d607a4961"
+      },
+      "full": {
+        "bytes": 4724,
+        "encode_ms": 0.2617919963086024,
+        "decode_ms": 0.06158401083666831,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 2739,
+        "encode_ms": 0.30104100005701184,
+        "decode_ms": 0.05675001011695713,
+        "exact": true
+      },
+      "offline_gzip_bytes": 1789
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "33-enter-text",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 1397,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/33-enter-text-0-browser-use.txt": "6477faa7135946cb5478fa15e938bebb9c4743995f3301e9bb4a551943e0055e",
+        "artifacts/benchmarks/observation-v2/33-enter-text-1-browser-use.txt": "6477faa7135946cb5478fa15e938bebb9c4743995f3301e9bb4a551943e0055e",
+        "artifacts/benchmarks/observation-v2/33-enter-text-2-browser-use.txt": "459f8c5c7c60f0577f218855aeb326c499a7843fdaf74ef79a5bb088287dd854",
+        "artifacts/benchmarks/observation-v2/33-enter-text-3-browser-use.txt": "172bc1396c88e99fca705fc2f6b99c0bcd35bee535c4ac87466aa16ea1fe50ff",
+        "artifacts/benchmarks/observation-v2/33-enter-text-4-browser-use.txt": "172bc1396c88e99fca705fc2f6b99c0bcd35bee535c4ac87466aa16ea1fe50ff",
+        "artifacts/benchmarks/observation-v2/33-enter-text-5-browser-use.txt": "05babf949dd82e76a7cf8ba0ffb86cb18cab8475e033856bb94014a3c9a98c3f"
+      },
+      "full": {
+        "bytes": 1740,
+        "encode_ms": 0.15920800797175616,
+        "decode_ms": 0.053916999604552984,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 851,
+        "encode_ms": 0.12862500443588942,
+        "decode_ms": 0.02983299782499671,
+        "exact": true
+      },
+      "offline_gzip_bytes": 267
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "33-local-shop",
+      "source": "browser-use",
+      "snapshots": 8,
+      "raw_bytes": 19317,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/33-local-shop-0-browser-use.txt": "febea6022d242ddb48325d6738d9e169c79f6cc79ddc0add5d13f1e40d081626",
+        "artifacts/benchmarks/observation-v2/33-local-shop-1-browser-use.txt": "febea6022d242ddb48325d6738d9e169c79f6cc79ddc0add5d13f1e40d081626",
+        "artifacts/benchmarks/observation-v2/33-local-shop-2-browser-use.txt": "500a91fc755d095f241ed6dd426856bb2735723d034c89cfd0968cd39351b7dd",
+        "artifacts/benchmarks/observation-v2/33-local-shop-3-browser-use.txt": "2bdcff1392cff68e6fe924df8277cf9f21c06f602bc63d4f38d73329a512c367",
+        "artifacts/benchmarks/observation-v2/33-local-shop-4-browser-use.txt": "ff8c3f79c78e0979934da654849eb7a7dfe6eb9590d44d6453724954e20a340a",
+        "artifacts/benchmarks/observation-v2/33-local-shop-5-browser-use.txt": "9a76cb699c59d3c5f7223e895725f3503a2159800ad98bf7afecffe4d920531b",
+        "artifacts/benchmarks/observation-v2/33-local-shop-6-browser-use.txt": "bb3d53de0c5a5bb58148d7cce81986587a29b9c0aaed2bb566bb4c769f2fa96e",
+        "artifacts/benchmarks/observation-v2/33-local-shop-7-browser-use.txt": "256f98f1741fb6c4b46b2664af6d7c1caae992cb1014bfa325fbdc9b016d03fd"
+      },
+      "full": {
+        "bytes": 6269,
+        "encode_ms": 0.297166989184916,
+        "decode_ms": 0.07633300265297294,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 2566,
+        "encode_ms": 0.38291700184345245,
+        "decode_ms": 0.07075000030454248,
+        "exact": true
+      },
+      "offline_gzip_bytes": 1451
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "33-login-user",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 2265,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/33-login-user-0-browser-use.txt": "18231aa98a5d33b09d72dca017522ed1d08037a1a41c580a5398433b5589cf86",
+        "artifacts/benchmarks/observation-v2/33-login-user-1-browser-use.txt": "18231aa98a5d33b09d72dca017522ed1d08037a1a41c580a5398433b5589cf86",
+        "artifacts/benchmarks/observation-v2/33-login-user-2-browser-use.txt": "d3e9e351b475393b29284a8ac327e8f1b84a0ee3304593599d14d4385f8b2658",
+        "artifacts/benchmarks/observation-v2/33-login-user-3-browser-use.txt": "d3e9e351b475393b29284a8ac327e8f1b84a0ee3304593599d14d4385f8b2658",
+        "artifacts/benchmarks/observation-v2/33-login-user-4-browser-use.txt": "d3e9e351b475393b29284a8ac327e8f1b84a0ee3304593599d14d4385f8b2658",
+        "artifacts/benchmarks/observation-v2/33-login-user-5-browser-use.txt": "52e5b63b4d71d51b946b636602f69c8bb6adb8dcd9d0b3959326aaeead8c38b3"
+      },
+      "full": {
+        "bytes": 2076,
+        "encode_ms": 0.21170898980926722,
+        "decode_ms": 0.07408300007227808,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 912,
+        "encode_ms": 0.16479101032018661,
+        "decode_ms": 0.04387499939184636,
+        "exact": true
+      },
+      "offline_gzip_bytes": 346
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "11-click-checkboxes",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 4649,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-0-agent-browser-full.txt": "1bd3e35ba788643593a883cbdf836ce72b05bdf09d9d0274c41bccd46e16fbd1",
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-1-agent-browser-full.txt": "1bd3e35ba788643593a883cbdf836ce72b05bdf09d9d0274c41bccd46e16fbd1",
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-2-agent-browser-full.txt": "24fe6eaac984a86d26b1dc9d1bff834a27d904453f1d2c38671faf73ebca09e2",
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-3-agent-browser-full.txt": "1bd3e35ba788643593a883cbdf836ce72b05bdf09d9d0274c41bccd46e16fbd1",
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-4-agent-browser-full.txt": "1bd3e35ba788643593a883cbdf836ce72b05bdf09d9d0274c41bccd46e16fbd1",
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-5-agent-browser-full.txt": "a3e03b1e22a89a01cdbdcdfd409e495062033d53ec51b45e05ad42f434449bf0"
+      },
+      "full": {
+        "bytes": 2015,
+        "encode_ms": 0.19562500528991222,
+        "decode_ms": 0.056667005992494524,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 901,
+        "encode_ms": 0.15579200407955796,
+        "decode_ms": 0.04104200343135744,
+        "exact": true
+      },
+      "offline_gzip_bytes": 319
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "11-email-inbox",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 12078,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/11-email-inbox-0-agent-browser-full.txt": "eff771e47ac7fec4bd9e86199ec8977befad2de9d3948156096ddd68882f20c9",
+        "artifacts/benchmarks/observation-v2/11-email-inbox-1-agent-browser-full.txt": "eff771e47ac7fec4bd9e86199ec8977befad2de9d3948156096ddd68882f20c9",
+        "artifacts/benchmarks/observation-v2/11-email-inbox-2-agent-browser-full.txt": "c961e2fbf8450b19d8490e884ee4339027cbb35ec748e1b2f5190caa957094e3",
+        "artifacts/benchmarks/observation-v2/11-email-inbox-3-agent-browser-full.txt": "eff771e47ac7fec4bd9e86199ec8977befad2de9d3948156096ddd68882f20c9",
+        "artifacts/benchmarks/observation-v2/11-email-inbox-4-agent-browser-full.txt": "eff771e47ac7fec4bd9e86199ec8977befad2de9d3948156096ddd68882f20c9",
+        "artifacts/benchmarks/observation-v2/11-email-inbox-5-agent-browser-full.txt": "68b987dd2b421bc9d64550d672f28fdf4fd07538f205bb384f5e22910495f652"
+      },
+      "full": {
+        "bytes": 3141,
+        "encode_ms": 0.24337500508408993,
+        "decode_ms": 0.07045800157357007,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1504,
+        "encode_ms": 0.22833399998489767,
+        "decode_ms": 0.055500000598840415,
+        "exact": true
+      },
+      "offline_gzip_bytes": 705
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "11-enter-text",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 3574,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/11-enter-text-0-agent-browser-full.txt": "1d9aee3853e6068a806dce79686ec1e455469a441c96d10913eeb9ad002c292b",
+        "artifacts/benchmarks/observation-v2/11-enter-text-1-agent-browser-full.txt": "1d9aee3853e6068a806dce79686ec1e455469a441c96d10913eeb9ad002c292b",
+        "artifacts/benchmarks/observation-v2/11-enter-text-2-agent-browser-full.txt": "5e1018a6f6b9398b681e9100505404439d20b24c2f9c80f29a6adf57985db5fc",
+        "artifacts/benchmarks/observation-v2/11-enter-text-3-agent-browser-full.txt": "57ad65f80e4f30122942ca73598112f694b9d38bb6cfadbd35fc9b8e2d5a9e9f",
+        "artifacts/benchmarks/observation-v2/11-enter-text-4-agent-browser-full.txt": "57ad65f80e4f30122942ca73598112f694b9d38bb6cfadbd35fc9b8e2d5a9e9f",
+        "artifacts/benchmarks/observation-v2/11-enter-text-5-agent-browser-full.txt": "286b2e9e6a3e067ba78f067edd4f00f79339b06e96f9d9267fde61d57d4358a4"
+      },
+      "full": {
+        "bytes": 1756,
+        "encode_ms": 0.1482499937992543,
+        "decode_ms": 0.04479099879972637,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 853,
+        "encode_ms": 0.1408749958500266,
+        "decode_ms": 0.035124990972690284,
+        "exact": true
+      },
+      "offline_gzip_bytes": 272
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "11-local-shop",
+      "source": "agent-browser-full",
+      "snapshots": 8,
+      "raw_bytes": 51449,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/11-local-shop-0-agent-browser-full.txt": "3ada3a1dc657caef03ca1c1aed02d33ae9fd8cf78781605a4ae30c99cd3452da",
+        "artifacts/benchmarks/observation-v2/11-local-shop-1-agent-browser-full.txt": "3ada3a1dc657caef03ca1c1aed02d33ae9fd8cf78781605a4ae30c99cd3452da",
+        "artifacts/benchmarks/observation-v2/11-local-shop-2-agent-browser-full.txt": "d6a8e2576c35b5d226439a7e45c04069a422785058d61c580485d164dab1ae13",
+        "artifacts/benchmarks/observation-v2/11-local-shop-3-agent-browser-full.txt": "aae4565b53a54f4b4e0e60ff6a8e348fe23717f96bcf57a29f607e39cd5aa079",
+        "artifacts/benchmarks/observation-v2/11-local-shop-4-agent-browser-full.txt": "e864376fe4e2c526e678544d2ee082c0190b7a8155b9e9a67f2c84dc309f802c",
+        "artifacts/benchmarks/observation-v2/11-local-shop-5-agent-browser-full.txt": "317634623fa8ace1c2a61884ab3012d043c52c1fc5d8d9952ccd418c10f65b01",
+        "artifacts/benchmarks/observation-v2/11-local-shop-6-agent-browser-full.txt": "b7a08c04b0a0e29d6f15abcc4b0e5965149c32f37c4530a54cf77c075841b2c7",
+        "artifacts/benchmarks/observation-v2/11-local-shop-7-agent-browser-full.txt": "e56ee7ce10b2580edc4f795de55edd945b31c482dca2e2b2973fc2a60b1fc800"
+      },
+      "full": {
+        "bytes": 8596,
+        "encode_ms": 0.4482500080484897,
+        "decode_ms": 0.11766700481530279,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 2647,
+        "encode_ms": 0.4602919943863526,
+        "decode_ms": 0.09995800792239606,
+        "exact": true
+      },
+      "offline_gzip_bytes": 1988
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "11-login-user",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 4976,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/11-login-user-0-agent-browser-full.txt": "bb2581a6b873918731680d9989fe58fa40dfe270ef0de8bde30b4541376096fd",
+        "artifacts/benchmarks/observation-v2/11-login-user-1-agent-browser-full.txt": "bb2581a6b873918731680d9989fe58fa40dfe270ef0de8bde30b4541376096fd",
+        "artifacts/benchmarks/observation-v2/11-login-user-2-agent-browser-full.txt": "df32919f8c48d7415c89df24c4a34e3f93d30134eafa46385e21ecbfc559c18f",
+        "artifacts/benchmarks/observation-v2/11-login-user-3-agent-browser-full.txt": "856b552270be1bae6b17c18e1e1e5b5776d1562c4973242877180da27ae1b30f",
+        "artifacts/benchmarks/observation-v2/11-login-user-4-agent-browser-full.txt": "856b552270be1bae6b17c18e1e1e5b5776d1562c4973242877180da27ae1b30f",
+        "artifacts/benchmarks/observation-v2/11-login-user-5-agent-browser-full.txt": "ec32382a3871e476311189a18d59ab63ea75af26aa142151ffd7b52fe09a3057"
+      },
+      "full": {
+        "bytes": 2108,
+        "encode_ms": 0.19758299458771944,
+        "decode_ms": 0.0832920050015673,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 924,
+        "encode_ms": 0.16295800742227584,
+        "decode_ms": 0.043666004785336554,
+        "exact": true
+      },
+      "offline_gzip_bytes": 355
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "22-click-checkboxes",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 5636,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-0-agent-browser-full.txt": "c19fc089cbfc389e78cee1159aad8a25f43af8574391a086f1ffb1080e1935fc",
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-1-agent-browser-full.txt": "c19fc089cbfc389e78cee1159aad8a25f43af8574391a086f1ffb1080e1935fc",
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-2-agent-browser-full.txt": "a1094ce1a8b9d14aa7c918491c3061176b83f4da9f79ed927c433140cc8eef08",
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-3-agent-browser-full.txt": "c19fc089cbfc389e78cee1159aad8a25f43af8574391a086f1ffb1080e1935fc",
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-4-agent-browser-full.txt": "c19fc089cbfc389e78cee1159aad8a25f43af8574391a086f1ffb1080e1935fc",
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-5-agent-browser-full.txt": "e3d131cf8c0de83cc5f2c1de4b1a36d8c03d1dc21424671decbbf5c852e0199b"
+      },
+      "full": {
+        "bytes": 2180,
+        "encode_ms": 0.18212500435765833,
+        "decode_ms": 0.05816700286231935,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 948,
+        "encode_ms": 0.16391600365750492,
+        "decode_ms": 0.04149999585933983,
+        "exact": true
+      },
+      "offline_gzip_bytes": 370
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "22-email-inbox",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 15676,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/22-email-inbox-0-agent-browser-full.txt": "d25384c83945df9a55acf63d1163903acfe16c67de60792714e6f80a65c558ab",
+        "artifacts/benchmarks/observation-v2/22-email-inbox-1-agent-browser-full.txt": "d25384c83945df9a55acf63d1163903acfe16c67de60792714e6f80a65c558ab",
+        "artifacts/benchmarks/observation-v2/22-email-inbox-2-agent-browser-full.txt": "c047cd01231a2df2d9c62e0ad7eb309f49d732e70f3edbe1cf5c1fb731a59023",
+        "artifacts/benchmarks/observation-v2/22-email-inbox-3-agent-browser-full.txt": "d25384c83945df9a55acf63d1163903acfe16c67de60792714e6f80a65c558ab",
+        "artifacts/benchmarks/observation-v2/22-email-inbox-4-agent-browser-full.txt": "d25384c83945df9a55acf63d1163903acfe16c67de60792714e6f80a65c558ab",
+        "artifacts/benchmarks/observation-v2/22-email-inbox-5-agent-browser-full.txt": "534cca142a5761611e6f804a08be875fe6a315fe6f97a436fd905ec80d12aa96"
+      },
+      "full": {
+        "bytes": 3354,
+        "encode_ms": 0.21383300190791488,
+        "decode_ms": 0.06337500235531479,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1615,
+        "encode_ms": 0.21183300123084337,
+        "decode_ms": 0.04512500890996307,
+        "exact": true
+      },
+      "offline_gzip_bytes": 797
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "22-enter-text",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 3550,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/22-enter-text-0-agent-browser-full.txt": "b13440e85ad9016ecd57ce854a884c89a9fba81208d4b7b5902df3604f064c22",
+        "artifacts/benchmarks/observation-v2/22-enter-text-1-agent-browser-full.txt": "b13440e85ad9016ecd57ce854a884c89a9fba81208d4b7b5902df3604f064c22",
+        "artifacts/benchmarks/observation-v2/22-enter-text-2-agent-browser-full.txt": "f06a16f424d1092fafaf5c7fdc431aa7e5e354543d833a32e5583494eb8e208b",
+        "artifacts/benchmarks/observation-v2/22-enter-text-3-agent-browser-full.txt": "f84d1b949db4da5183273e388ebff42b44cfde166d236c85d08a28cf48b843b6",
+        "artifacts/benchmarks/observation-v2/22-enter-text-4-agent-browser-full.txt": "f84d1b949db4da5183273e388ebff42b44cfde166d236c85d08a28cf48b843b6",
+        "artifacts/benchmarks/observation-v2/22-enter-text-5-agent-browser-full.txt": "8a978d45181a9b51550f11e07660c29ee1f135b0995e371d168c7ff5a06d78ca"
+      },
+      "full": {
+        "bytes": 1734,
+        "encode_ms": 0.15870900824666023,
+        "decode_ms": 0.05112499638926238,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 851,
+        "encode_ms": 0.14041700342204422,
+        "decode_ms": 0.032208990887738764,
+        "exact": true
+      },
+      "offline_gzip_bytes": 272
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "22-local-shop",
+      "source": "agent-browser-full",
+      "snapshots": 8,
+      "raw_bytes": 51449,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/22-local-shop-0-agent-browser-full.txt": "3ada3a1dc657caef03ca1c1aed02d33ae9fd8cf78781605a4ae30c99cd3452da",
+        "artifacts/benchmarks/observation-v2/22-local-shop-1-agent-browser-full.txt": "3ada3a1dc657caef03ca1c1aed02d33ae9fd8cf78781605a4ae30c99cd3452da",
+        "artifacts/benchmarks/observation-v2/22-local-shop-2-agent-browser-full.txt": "d6a8e2576c35b5d226439a7e45c04069a422785058d61c580485d164dab1ae13",
+        "artifacts/benchmarks/observation-v2/22-local-shop-3-agent-browser-full.txt": "aae4565b53a54f4b4e0e60ff6a8e348fe23717f96bcf57a29f607e39cd5aa079",
+        "artifacts/benchmarks/observation-v2/22-local-shop-4-agent-browser-full.txt": "e864376fe4e2c526e678544d2ee082c0190b7a8155b9e9a67f2c84dc309f802c",
+        "artifacts/benchmarks/observation-v2/22-local-shop-5-agent-browser-full.txt": "317634623fa8ace1c2a61884ab3012d043c52c1fc5d8d9952ccd418c10f65b01",
+        "artifacts/benchmarks/observation-v2/22-local-shop-6-agent-browser-full.txt": "b7a08c04b0a0e29d6f15abcc4b0e5965149c32f37c4530a54cf77c075841b2c7",
+        "artifacts/benchmarks/observation-v2/22-local-shop-7-agent-browser-full.txt": "e56ee7ce10b2580edc4f795de55edd945b31c482dca2e2b2973fc2a60b1fc800"
+      },
+      "full": {
+        "bytes": 8596,
+        "encode_ms": 0.5514170043170452,
+        "decode_ms": 0.12258299102541059,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 2647,
+        "encode_ms": 0.5108339973958209,
+        "decode_ms": 0.09758300438988954,
+        "exact": true
+      },
+      "offline_gzip_bytes": 1988
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "22-login-user",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 4982,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/22-login-user-0-agent-browser-full.txt": "8832ba4b5d7365e563444f354995a7040388bb6900808454e2ed703aae636dd0",
+        "artifacts/benchmarks/observation-v2/22-login-user-1-agent-browser-full.txt": "8832ba4b5d7365e563444f354995a7040388bb6900808454e2ed703aae636dd0",
+        "artifacts/benchmarks/observation-v2/22-login-user-2-agent-browser-full.txt": "a2a1aae3d5df357110a93a189d68ffbabd543b4a8849b67031a02a6cbb2bf2e3",
+        "artifacts/benchmarks/observation-v2/22-login-user-3-agent-browser-full.txt": "cad723a3b5da4ee53bdc106d75ba7f6e0531959fbf81a29f9e478534bf33f92b",
+        "artifacts/benchmarks/observation-v2/22-login-user-4-agent-browser-full.txt": "cad723a3b5da4ee53bdc106d75ba7f6e0531959fbf81a29f9e478534bf33f92b",
+        "artifacts/benchmarks/observation-v2/22-login-user-5-agent-browser-full.txt": "d20432f7456f734c210e882579fa86bb2d84d1face8820b853756196bf7f7c2e"
+      },
+      "full": {
+        "bytes": 2110,
+        "encode_ms": 0.16491700080223382,
+        "decode_ms": 0.04774999979417771,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 924,
+        "encode_ms": 0.15162499039433897,
+        "decode_ms": 0.033958000130951405,
+        "exact": true
+      },
+      "offline_gzip_bytes": 355
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "33-click-checkboxes",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 6040,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-0-agent-browser-full.txt": "9a459eb9e0a847f8172550797f27dad38919db781b442a05658a9194e43e318a",
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-1-agent-browser-full.txt": "9a459eb9e0a847f8172550797f27dad38919db781b442a05658a9194e43e318a",
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-2-agent-browser-full.txt": "213a6eca99ecf24f7bc2457a7c12ad7498bb9e05fad769c391d9333170f55e38",
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-3-agent-browser-full.txt": "9a459eb9e0a847f8172550797f27dad38919db781b442a05658a9194e43e318a",
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-4-agent-browser-full.txt": "9a459eb9e0a847f8172550797f27dad38919db781b442a05658a9194e43e318a",
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-5-agent-browser-full.txt": "a747014e6306c196ae7ab62d835cb8f2e96a76df34aae98217e5cd8e33d059e6"
+      },
+      "full": {
+        "bytes": 2216,
+        "encode_ms": 0.16295800742227584,
+        "decode_ms": 0.045791995944455266,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 966,
+        "encode_ms": 0.14312499843072146,
+        "decode_ms": 0.03358301182743162,
+        "exact": true
+      },
+      "offline_gzip_bytes": 385
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "33-email-inbox",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 17021,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/33-email-inbox-0-agent-browser-full.txt": "6c803f4d1fe429d8985d6f884897fbc1de46a934da3cf942178144e795451917",
+        "artifacts/benchmarks/observation-v2/33-email-inbox-1-agent-browser-full.txt": "6c803f4d1fe429d8985d6f884897fbc1de46a934da3cf942178144e795451917",
+        "artifacts/benchmarks/observation-v2/33-email-inbox-2-agent-browser-full.txt": "5547418b1ce4ead4e13b95356e61f6f1dc7c75dc1546bbfa316639958efc298a",
+        "artifacts/benchmarks/observation-v2/33-email-inbox-3-agent-browser-full.txt": "6c803f4d1fe429d8985d6f884897fbc1de46a934da3cf942178144e795451917",
+        "artifacts/benchmarks/observation-v2/33-email-inbox-4-agent-browser-full.txt": "6c803f4d1fe429d8985d6f884897fbc1de46a934da3cf942178144e795451917",
+        "artifacts/benchmarks/observation-v2/33-email-inbox-5-agent-browser-full.txt": "8ce274fc6b869e61a4f8d042fc1433ffbff614f701df1dc1a966e04c5ded2eee"
+      },
+      "full": {
+        "bytes": 3646,
+        "encode_ms": 0.20720799511764199,
+        "decode_ms": 0.07279199780896306,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1711,
+        "encode_ms": 0.20579200645443052,
+        "decode_ms": 0.04708299820777029,
+        "exact": true
+      },
+      "offline_gzip_bytes": 868
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "33-enter-text",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 3562,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/33-enter-text-0-agent-browser-full.txt": "04cb4e267d7ebc9759a13a2fca0c798a9c333d340d95da8a1f5288f6e283dd0b",
+        "artifacts/benchmarks/observation-v2/33-enter-text-1-agent-browser-full.txt": "04cb4e267d7ebc9759a13a2fca0c798a9c333d340d95da8a1f5288f6e283dd0b",
+        "artifacts/benchmarks/observation-v2/33-enter-text-2-agent-browser-full.txt": "8aeed20365625a18b9d21011c2565c39b403da2e30c08cea75e375d0b1c39fba",
+        "artifacts/benchmarks/observation-v2/33-enter-text-3-agent-browser-full.txt": "d624a4bdd9ae5c0b56bbb1436f7f7d9e538ebd7be3c86323725f2a54e8c611b3",
+        "artifacts/benchmarks/observation-v2/33-enter-text-4-agent-browser-full.txt": "d624a4bdd9ae5c0b56bbb1436f7f7d9e538ebd7be3c86323725f2a54e8c611b3",
+        "artifacts/benchmarks/observation-v2/33-enter-text-5-agent-browser-full.txt": "025e6a834243a5bf7a867fc7ae481a5f33aecbb0516a4b6ebc419831b93ff10e"
+      },
+      "full": {
+        "bytes": 1743,
+        "encode_ms": 0.16358299762941897,
+        "decode_ms": 0.04979199729859829,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 852,
+        "encode_ms": 0.16458300524391234,
+        "decode_ms": 0.03391600330360234,
+        "exact": true
+      },
+      "offline_gzip_bytes": 273
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "33-local-shop",
+      "source": "agent-browser-full",
+      "snapshots": 8,
+      "raw_bytes": 51449,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/33-local-shop-0-agent-browser-full.txt": "3ada3a1dc657caef03ca1c1aed02d33ae9fd8cf78781605a4ae30c99cd3452da",
+        "artifacts/benchmarks/observation-v2/33-local-shop-1-agent-browser-full.txt": "3ada3a1dc657caef03ca1c1aed02d33ae9fd8cf78781605a4ae30c99cd3452da",
+        "artifacts/benchmarks/observation-v2/33-local-shop-2-agent-browser-full.txt": "d6a8e2576c35b5d226439a7e45c04069a422785058d61c580485d164dab1ae13",
+        "artifacts/benchmarks/observation-v2/33-local-shop-3-agent-browser-full.txt": "aae4565b53a54f4b4e0e60ff6a8e348fe23717f96bcf57a29f607e39cd5aa079",
+        "artifacts/benchmarks/observation-v2/33-local-shop-4-agent-browser-full.txt": "e864376fe4e2c526e678544d2ee082c0190b7a8155b9e9a67f2c84dc309f802c",
+        "artifacts/benchmarks/observation-v2/33-local-shop-5-agent-browser-full.txt": "317634623fa8ace1c2a61884ab3012d043c52c1fc5d8d9952ccd418c10f65b01",
+        "artifacts/benchmarks/observation-v2/33-local-shop-6-agent-browser-full.txt": "b7a08c04b0a0e29d6f15abcc4b0e5965149c32f37c4530a54cf77c075841b2c7",
+        "artifacts/benchmarks/observation-v2/33-local-shop-7-agent-browser-full.txt": "e56ee7ce10b2580edc4f795de55edd945b31c482dca2e2b2973fc2a60b1fc800"
+      },
+      "full": {
+        "bytes": 8596,
+        "encode_ms": 0.36458300019148737,
+        "decode_ms": 0.11466600699350238,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 2647,
+        "encode_ms": 0.46483300684485584,
+        "decode_ms": 0.09658299677539617,
+        "exact": true
+      },
+      "offline_gzip_bytes": 1988
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "33-login-user",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 4994,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/33-login-user-0-agent-browser-full.txt": "5801c65041874fff2ae0f5488f9bad2ea83d8daee7ea2e35c0a89cefa0ffdd01",
+        "artifacts/benchmarks/observation-v2/33-login-user-1-agent-browser-full.txt": "5801c65041874fff2ae0f5488f9bad2ea83d8daee7ea2e35c0a89cefa0ffdd01",
+        "artifacts/benchmarks/observation-v2/33-login-user-2-agent-browser-full.txt": "90b768a4c140637cfe912f081ee998bfff8c406e4afd4e7dc581a241aae89446",
+        "artifacts/benchmarks/observation-v2/33-login-user-3-agent-browser-full.txt": "b547a2e3cd77af884aa4a401c32d0f7b00c65248bac1e105cef5d0594a45acc3",
+        "artifacts/benchmarks/observation-v2/33-login-user-4-agent-browser-full.txt": "b547a2e3cd77af884aa4a401c32d0f7b00c65248bac1e105cef5d0594a45acc3",
+        "artifacts/benchmarks/observation-v2/33-login-user-5-agent-browser-full.txt": "dca3455006fb9259b20e21a8dea6dbf032b11682f8fa95c47b6c4e424c4d07e5"
+      },
+      "full": {
+        "bytes": 2124,
+        "encode_ms": 0.15454099047929049,
+        "decode_ms": 0.0473749969387427,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 930,
+        "encode_ms": 0.1785829954314977,
+        "decode_ms": 0.03491700044833124,
+        "exact": true
+      },
+      "offline_gzip_bytes": 362
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "11-click-checkboxes",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 7925,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-0-deltadom-full.txt": "f19a3a91fb3208909f0833335ab74ba8afe4103b0ab7212d71608e37534a7905",
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-1-deltadom-full.txt": "695ab067dbf20f8bd4fdd97edae4944f165d501f1d3846aa9a25fd67d59bd809",
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-2-deltadom-full.txt": "894ff292e63678d6c19aa29d24c040a5a31b52da5b0f704e7b145705c885053d",
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-3-deltadom-full.txt": "e1d885398306aaffec5e23c3c9bced090adfa1d57aebd9a240062995dd0f80b5",
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-4-deltadom-full.txt": "274179aab132dc0da20d6fc811863d3a14fb99c6a8a79ff49b1638f2f0997b35",
+        "artifacts/benchmarks/observation-v2/11-click-checkboxes-5-deltadom-full.txt": "994b1a22c1f21fb4dce9e378b1035620fe2b818ce920f31609196f667db5df6b"
+      },
+      "full": {
+        "bytes": 3948,
+        "encode_ms": 0.1965830015251413,
+        "decode_ms": 0.057541998103260994,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1321,
+        "encode_ms": 0.18787500448524952,
+        "decode_ms": 0.0499580055475235,
+        "exact": true
+      },
+      "offline_gzip_bytes": 716
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "11-email-inbox",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 16650,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/11-email-inbox-0-deltadom-full.txt": "9c45e2c02cf51d36eb2a59dd916e2e371a96ec297c0e6bd47dbb0967322b63fe",
+        "artifacts/benchmarks/observation-v2/11-email-inbox-1-deltadom-full.txt": "9a00480b2c58c54a7d4f1dcd2415848d71490bb75845c56aa164d035aac7941d",
+        "artifacts/benchmarks/observation-v2/11-email-inbox-2-deltadom-full.txt": "72eadc1a9221a0d85550bf3db1ac80ac794568e1d7378ce2cd655cc9fa0420fd",
+        "artifacts/benchmarks/observation-v2/11-email-inbox-3-deltadom-full.txt": "6be2dfaaf2557f935b1b576964203457cc9876a234326dddaae11166b0c2a7d3",
+        "artifacts/benchmarks/observation-v2/11-email-inbox-4-deltadom-full.txt": "3aea3907c52b09fc67b81a7eaf394bcfadc2328e0fb6ad939cbf0cb54cb033fa",
+        "artifacts/benchmarks/observation-v2/11-email-inbox-5-deltadom-full.txt": "13df43a2beab92d7b714c34ca274d839b64bb1440841020e17bb13afe4e88dd8"
+      },
+      "full": {
+        "bytes": 6635,
+        "encode_ms": 0.2998329873662442,
+        "decode_ms": 0.0694579939590767,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 2692,
+        "encode_ms": 0.3191249998053536,
+        "decode_ms": 0.05441700341179967,
+        "exact": true
+      },
+      "offline_gzip_bytes": 1532
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "11-enter-text",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 6389,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/11-enter-text-0-deltadom-full.txt": "60161df27659f06c36e9473804668902747839b3c6824c6889886de0f6abf9b1",
+        "artifacts/benchmarks/observation-v2/11-enter-text-1-deltadom-full.txt": "e734205287bebc65916b1402c619b2440bfe0329ff59366c327001e315f28d46",
+        "artifacts/benchmarks/observation-v2/11-enter-text-2-deltadom-full.txt": "a8c55028c4daae7edec02de2423a8151a387b36be1b41623139bddd31c1ed816",
+        "artifacts/benchmarks/observation-v2/11-enter-text-3-deltadom-full.txt": "1c6db4e78ff8f21af003bb55451560ee11e657a824369e860d993b03e02cfd30",
+        "artifacts/benchmarks/observation-v2/11-enter-text-4-deltadom-full.txt": "d83c2beab96c7dce3b6aff92355704556bf72a69a5213db7979488ed16dd32f1",
+        "artifacts/benchmarks/observation-v2/11-enter-text-5-deltadom-full.txt": "c8691a5a9a261a0456207bf270ec8262065e1eaca53abb6d60c7b0e6dc3f3935"
+      },
+      "full": {
+        "bytes": 3721,
+        "encode_ms": 0.20708299416583031,
+        "decode_ms": 0.059416008298285306,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1281,
+        "encode_ms": 0.18620799528434873,
+        "decode_ms": 0.03666599513962865,
+        "exact": true
+      },
+      "offline_gzip_bytes": 672
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "11-local-shop",
+      "source": "deltadom-full",
+      "snapshots": 8,
+      "raw_bytes": 57890,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/11-local-shop-0-deltadom-full.txt": "80ddeaa6bc889987effaefd4ca8eb03434dcbcf42965ef58750478821377591d",
+        "artifacts/benchmarks/observation-v2/11-local-shop-1-deltadom-full.txt": "8b0ed9ee1ee4d526422e32205dbcf44e4edc07b65930eec687bc9712ef80b02f",
+        "artifacts/benchmarks/observation-v2/11-local-shop-2-deltadom-full.txt": "a0a177783935859cada32b678b5a2e4ff7e68fe94cf0d3dae3fb5379e2effde1",
+        "artifacts/benchmarks/observation-v2/11-local-shop-3-deltadom-full.txt": "577b6d04b14f10d0eac9c2e18f0bf69f8aaee02a1cc1812f9335db2456806247",
+        "artifacts/benchmarks/observation-v2/11-local-shop-4-deltadom-full.txt": "e0c4a7cbb9b5d93922a931586f50f05a7532f6dfa577ff760ac485c5c27f3200",
+        "artifacts/benchmarks/observation-v2/11-local-shop-5-deltadom-full.txt": "e9a8774faefdd01b89a36cb2c464aa8607c8f2c51e6da9a52ba72589f831e096",
+        "artifacts/benchmarks/observation-v2/11-local-shop-6-deltadom-full.txt": "f3a9e5413044f939e04a1caeb8aad061b3cecfe761ad1fef37399cd9d98baab7",
+        "artifacts/benchmarks/observation-v2/11-local-shop-7-deltadom-full.txt": "14a871887be33845fcda89d0461cc46435a8d50572d7db052301657d0e46909c"
+      },
+      "full": {
+        "bytes": 15874,
+        "encode_ms": 0.7157079962780699,
+        "decode_ms": 0.1610000035725534,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 3561,
+        "encode_ms": 0.7098750065779313,
+        "decode_ms": 0.09595899609848857,
+        "exact": true
+      },
+      "offline_gzip_bytes": 2927
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "11-login-user",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 7971,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/11-login-user-0-deltadom-full.txt": "725b54243b57e3f222e3fa0ca292e186fda8f18f06867aaa096297fd427357e2",
+        "artifacts/benchmarks/observation-v2/11-login-user-1-deltadom-full.txt": "7f1aeec3a6775d278980c58caab58bfe72cf508fea1d117edf1af118613d5fa1",
+        "artifacts/benchmarks/observation-v2/11-login-user-2-deltadom-full.txt": "53b11ab33910d9df21d7d4fd8b69d1992d91c46da7def1a27b0391d7ff795b27",
+        "artifacts/benchmarks/observation-v2/11-login-user-3-deltadom-full.txt": "56d21a594941fb2a1c2024f04062d49a282e20ebc945608b2c4c2debdf759b52",
+        "artifacts/benchmarks/observation-v2/11-login-user-4-deltadom-full.txt": "671df3480ef9b72e4d37c662c0e76d8825e73929ea86de2791eaa2796ed06573",
+        "artifacts/benchmarks/observation-v2/11-login-user-5-deltadom-full.txt": "75ab05219bf66abbe86234e9e0049db7085ecb08de38abe497a29f750fc89b56"
+      },
+      "full": {
+        "bytes": 4207,
+        "encode_ms": 0.20145899907220155,
+        "decode_ms": 0.05354100721888244,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1367,
+        "encode_ms": 0.18204099615104496,
+        "decode_ms": 0.03604099038057029,
+        "exact": true
+      },
+      "offline_gzip_bytes": 757
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "22-click-checkboxes",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 9593,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-0-deltadom-full.txt": "43964241439700a8c3302d4a1d2e2672718f05d1d304e6ad1eead0192ac7a88b",
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-1-deltadom-full.txt": "4d5c46e35d5443059324d06f58156e127ccc09edd099daec197e72cf8abb7a9f",
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-2-deltadom-full.txt": "7d1ce389bc1b6eeab34dbcd205c04c47d249a07edca78789012ce457e29d7787",
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-3-deltadom-full.txt": "af0bd8c116e9a4768e4ad0dc64a6a36167997af725439cfe4d4b529b4f4d77a7",
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-4-deltadom-full.txt": "0c5e769ac213c0a15a437f1249e8c6fee7a12efe97f10f6c2806311b19b35a1c",
+        "artifacts/benchmarks/observation-v2/22-click-checkboxes-5-deltadom-full.txt": "67f42eb2f0340017a7e3b019429e38c4a26a6d9f759359e20c02d33a204be661"
+      },
+      "full": {
+        "bytes": 4217,
+        "encode_ms": 0.20216600387357175,
+        "decode_ms": 0.05612500535789877,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1379,
+        "encode_ms": 0.21225000091362745,
+        "decode_ms": 0.041457999031990767,
+        "exact": true
+      },
+      "offline_gzip_bytes": 768
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "22-email-inbox",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 20807,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/22-email-inbox-0-deltadom-full.txt": "60e0cf3691925eb811b691bf0ad47a443522e7f784118be63cad805eeed245e0",
+        "artifacts/benchmarks/observation-v2/22-email-inbox-1-deltadom-full.txt": "9b8b12d0f6480b36ffcb92090138412a4b908923581b6ee10d1669b9556a26e3",
+        "artifacts/benchmarks/observation-v2/22-email-inbox-2-deltadom-full.txt": "b7dd6467c670c495c2113940252b4885ca6cd42076dc86e2ffc9d189d6ae355a",
+        "artifacts/benchmarks/observation-v2/22-email-inbox-3-deltadom-full.txt": "707857149aeffb9636c8c23735704c2f9587b95e8295f392854202b27aaa3419",
+        "artifacts/benchmarks/observation-v2/22-email-inbox-4-deltadom-full.txt": "58b8d53ed6c9014d08876cf770f636910b76f1324992a0d9b72379f838a97dc7",
+        "artifacts/benchmarks/observation-v2/22-email-inbox-5-deltadom-full.txt": "134f5d0171a1d4496f4fea765077bde86cdd18d5a15bcc6680e1b49b2e6ce569"
+      },
+      "full": {
+        "bytes": 7529,
+        "encode_ms": 0.32604199077468365,
+        "decode_ms": 0.07020799966994673,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 3082,
+        "encode_ms": 0.33554199035279453,
+        "decode_ms": 0.06091600516811013,
+        "exact": true
+      },
+      "offline_gzip_bytes": 1788
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "22-enter-text",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 6365,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/22-enter-text-0-deltadom-full.txt": "cdf3ea276a8809547bee59b90ae5c0de17be4c0247babd815014e534fb0ca01d",
+        "artifacts/benchmarks/observation-v2/22-enter-text-1-deltadom-full.txt": "f21e4ee48f255994e9b7f62fe9bce24d14af81b986b6ecd5848d449004f3fda7",
+        "artifacts/benchmarks/observation-v2/22-enter-text-2-deltadom-full.txt": "1f29436c36a0ab8c1aadaa951ca9c8cfb569a6802811ffce61dfb097d7d05dc8",
+        "artifacts/benchmarks/observation-v2/22-enter-text-3-deltadom-full.txt": "54f5b63e0ee52b5716832a90e897c18685fa7d4fa7e30004bc724d49fdff6ab1",
+        "artifacts/benchmarks/observation-v2/22-enter-text-4-deltadom-full.txt": "31abe069d25a189394794e39206cb71b44f9b2087f32ef09a287f27b46077cb8",
+        "artifacts/benchmarks/observation-v2/22-enter-text-5-deltadom-full.txt": "14d53cc7aaf48d0de5d283530d598abc178e6241854f46d5e99eafe30ead19fd"
+      },
+      "full": {
+        "bytes": 3706,
+        "encode_ms": 0.20575000962708145,
+        "decode_ms": 0.07070798892527819,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1277,
+        "encode_ms": 0.16908301040530205,
+        "decode_ms": 0.03420800203457475,
+        "exact": true
+      },
+      "offline_gzip_bytes": 671
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "22-local-shop",
+      "source": "deltadom-full",
+      "snapshots": 8,
+      "raw_bytes": 57890,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/22-local-shop-0-deltadom-full.txt": "223b3ab034e1d02af6e85770a3271dc985f5cc3f0dd5aab1ed834a22844d1c4f",
+        "artifacts/benchmarks/observation-v2/22-local-shop-1-deltadom-full.txt": "231ee10aeb2042cc33153dd241b730bbaf0fdcd1c4cfa54b5e3234c440dff86a",
+        "artifacts/benchmarks/observation-v2/22-local-shop-2-deltadom-full.txt": "51b508335fb26944d94f3d32f4a74ca5f7a99f9bbbdba5855b86d16b13712686",
+        "artifacts/benchmarks/observation-v2/22-local-shop-3-deltadom-full.txt": "cb37fcc5685e5ad494b537fe114954192b5ef828d3c313962c226607c98a3a3b",
+        "artifacts/benchmarks/observation-v2/22-local-shop-4-deltadom-full.txt": "bdbfbc78559fc53cb278513d44b581360e143ca782a64b9b76df3e0196ec9aa7",
+        "artifacts/benchmarks/observation-v2/22-local-shop-5-deltadom-full.txt": "b66852446fec9ff8cea29e49038fcde0fd45c19829e32e2bbef8d3fd65d8cfb7",
+        "artifacts/benchmarks/observation-v2/22-local-shop-6-deltadom-full.txt": "bf237bd8f3d3929ccc070f003a2deb294876e4ca7e7d2b3224b361ac8fb1f3f8",
+        "artifacts/benchmarks/observation-v2/22-local-shop-7-deltadom-full.txt": "db411945e0513d016cb9865065f181f4dc3a8201e4bd5baa2be1273bbce5c321"
+      },
+      "full": {
+        "bytes": 15867,
+        "encode_ms": 0.7034590089460835,
+        "decode_ms": 0.1059580099536106,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 3554,
+        "encode_ms": 0.6839169946033508,
+        "decode_ms": 0.08029199671000242,
+        "exact": true
+      },
+      "offline_gzip_bytes": 2923
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "22-login-user",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 7977,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/22-login-user-0-deltadom-full.txt": "84b76b2b988651d01e36fa637364d312e5de8bbd4e81c557382338403f731334",
+        "artifacts/benchmarks/observation-v2/22-login-user-1-deltadom-full.txt": "93231eed929bd8846a8d9fd482e16c10bd9e6a56319eb5b6e8c2156cad2549ad",
+        "artifacts/benchmarks/observation-v2/22-login-user-2-deltadom-full.txt": "3f5d2e7302e40a681fd8e68888270a2e8d7630096fdd71673db2a05d1af06eb0",
+        "artifacts/benchmarks/observation-v2/22-login-user-3-deltadom-full.txt": "0c9f74163fc3af003f2559d1e4f170dc180ab9413985b547d7143d3253de9665",
+        "artifacts/benchmarks/observation-v2/22-login-user-4-deltadom-full.txt": "f1c4d8811645a88b0de2c02fe8bd93346f2801284fc55938ea991f4245836cd5",
+        "artifacts/benchmarks/observation-v2/22-login-user-5-deltadom-full.txt": "60dd5309c495ac83bbc55ee493d672cebd0fa9d2ec87ecd95587d5da2fcfd45c"
+      },
+      "full": {
+        "bytes": 4205,
+        "encode_ms": 0.2092909999191761,
+        "decode_ms": 0.060709004173986614,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1367,
+        "encode_ms": 0.19829200755339116,
+        "decode_ms": 0.03704200207721442,
+        "exact": true
+      },
+      "offline_gzip_bytes": 758
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "33-click-checkboxes",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 10337,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-0-deltadom-full.txt": "008daa09e61aa5ae4d636c67e78de165f88ef61924da3b41d0ac09eb5f176a5e",
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-1-deltadom-full.txt": "7aee3f3b4ed2cae7885804206ece1749a658054d3c81bced6ad68e641e78825d",
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-2-deltadom-full.txt": "32b60e1f488438e625071e33aa2439436681ecbedcd79cdab0e32a0fba67cbdf",
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-3-deltadom-full.txt": "f955707a086e6a845c14fdeaa200b9d636e899ed53cb83a32870f8743caba1fc",
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-4-deltadom-full.txt": "276a8e9047580e4a68f710a9597d11457cf507aa91fd0c72e13bab30a9416667",
+        "artifacts/benchmarks/observation-v2/33-click-checkboxes-5-deltadom-full.txt": "1d9577a3223d980f95673ff02509f60d52b0c1070a54d20e28c2c408be80f92d"
+      },
+      "full": {
+        "bytes": 4334,
+        "encode_ms": 0.23362500360235572,
+        "decode_ms": 0.06416700489353389,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1412,
+        "encode_ms": 0.19545800751075149,
+        "decode_ms": 0.039457998354919255,
+        "exact": true
+      },
+      "offline_gzip_bytes": 800
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "33-email-inbox",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 22613,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/33-email-inbox-0-deltadom-full.txt": "4e477c8ecc84d80a538b58f2920662b6a9a5dab293b538135664542bb3fa403f",
+        "artifacts/benchmarks/observation-v2/33-email-inbox-1-deltadom-full.txt": "b2754a2263efd087143f82bf9077d5d47a0625a35631f73d5665a678e4c54e31",
+        "artifacts/benchmarks/observation-v2/33-email-inbox-2-deltadom-full.txt": "1fc5bde84ee070a5a044e4039c2921029b6904858bf358e7f490deda2809588c",
+        "artifacts/benchmarks/observation-v2/33-email-inbox-3-deltadom-full.txt": "145071e7e6f8d1adab5840a31038e5d864badb9557d7f4ad7cc73bde7040e9ac",
+        "artifacts/benchmarks/observation-v2/33-email-inbox-4-deltadom-full.txt": "8f11d5bf05d547aa3400817bec44912107309809a01a77975af1cd00f2f277bb",
+        "artifacts/benchmarks/observation-v2/33-email-inbox-5-deltadom-full.txt": "8f12014bc1fcca57c4e4220ffdba6e095e84db06e813fd1f5500fe704a6b24a1"
+      },
+      "full": {
+        "bytes": 8163,
+        "encode_ms": 0.38020800275262445,
+        "decode_ms": 0.07562499376945198,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 3321,
+        "encode_ms": 0.37349999183788896,
+        "decode_ms": 0.06766599835827947,
+        "exact": true
+      },
+      "offline_gzip_bytes": 1925
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "33-enter-text",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 6377,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/33-enter-text-0-deltadom-full.txt": "0ed7f9fcfad41f7ac3b0e53a8a29004d1068d5f2b5c44dccb05fa3d4fd89437a",
+        "artifacts/benchmarks/observation-v2/33-enter-text-1-deltadom-full.txt": "0be7ffe139c11697474118ff084ea16e697c359a0247f3bdc00ccdb6728d348e",
+        "artifacts/benchmarks/observation-v2/33-enter-text-2-deltadom-full.txt": "74f174416677aaac4089726e3e2329005a367ccb9e591a75ed2846883fb9ea76",
+        "artifacts/benchmarks/observation-v2/33-enter-text-3-deltadom-full.txt": "5078bd9647072fe9192cfe617baca77bed986b71ec8020cad80256a83ea37ee1",
+        "artifacts/benchmarks/observation-v2/33-enter-text-4-deltadom-full.txt": "6db53f4859eae289750a9316209ecb0806549f0afcd3b4ea7a64d1c25f76894c",
+        "artifacts/benchmarks/observation-v2/33-enter-text-5-deltadom-full.txt": "4bebdc2ffbe4bc2bd7e76c943c4a67db26a56399f6c23d1d3b0194a9ff87f7d2"
+      },
+      "full": {
+        "bytes": 3721,
+        "encode_ms": 0.18945799092762172,
+        "decode_ms": 0.053625000873580575,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1280,
+        "encode_ms": 0.17620901053305715,
+        "decode_ms": 0.043334002839401364,
+        "exact": true
+      },
+      "offline_gzip_bytes": 670
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "33-local-shop",
+      "source": "deltadom-full",
+      "snapshots": 8,
+      "raw_bytes": 57890,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/33-local-shop-0-deltadom-full.txt": "91e1b773bf61f15fc23033fb3f1620dc916bff1a32be110ed3d88ee9cb5fbaab",
+        "artifacts/benchmarks/observation-v2/33-local-shop-1-deltadom-full.txt": "b7788dc882cf076f6d2ae0b9b8cfc53a783344f3c8314ce9d5ca6c83a1e271f3",
+        "artifacts/benchmarks/observation-v2/33-local-shop-2-deltadom-full.txt": "2da95642b80d32da71761f8606060e3d1bb441648150bb7dc5b4410d8075efc1",
+        "artifacts/benchmarks/observation-v2/33-local-shop-3-deltadom-full.txt": "3d6ea5b19a4479c9b0e664cb8b4d19fb47b3e8921dea13278f8a95f576fb1a56",
+        "artifacts/benchmarks/observation-v2/33-local-shop-4-deltadom-full.txt": "3f78c7d2f43de4c65b68c13079831eb730c3ca8d8d9f46a1e6fb82a2b0f86feb",
+        "artifacts/benchmarks/observation-v2/33-local-shop-5-deltadom-full.txt": "9a379a4f10a875eaa150957cbde09a7afdb60f3e5b86763a1fb5ff610f85b8b0",
+        "artifacts/benchmarks/observation-v2/33-local-shop-6-deltadom-full.txt": "1277191bcaa70f8e23b14551eda626629ec6a00cc51fb94136d70098caba89be",
+        "artifacts/benchmarks/observation-v2/33-local-shop-7-deltadom-full.txt": "80b08b491f802724c88201a0cecee96489cdb43c02fd2570742b242c9e57bef7"
+      },
+      "full": {
+        "bytes": 15890,
+        "encode_ms": 0.7279169949470088,
+        "decode_ms": 0.12195800081826746,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 3563,
+        "encode_ms": 0.7102919917088002,
+        "decode_ms": 0.0889999937498942,
+        "exact": true
+      },
+      "offline_gzip_bytes": 2926
+    },
+    {
+      "corpus": "observation-v2",
+      "group": "33-login-user",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 7989,
+      "inputs": {
+        "artifacts/benchmarks/observation-v2/33-login-user-0-deltadom-full.txt": "622674f2b8d5c9a63cdcb4fc2984df8049c537b29b08e98a0210b23a06d2193a",
+        "artifacts/benchmarks/observation-v2/33-login-user-1-deltadom-full.txt": "757b1ef033eccab85dbfa2d2e14128e89ffc5a5c8d68825fe07f600b2e608227",
+        "artifacts/benchmarks/observation-v2/33-login-user-2-deltadom-full.txt": "01a8457d7be046ca155c76b5b0e9093eef9912c70c1e13199de13b85729ccb29",
+        "artifacts/benchmarks/observation-v2/33-login-user-3-deltadom-full.txt": "f09adadc5aeb04a56ed49088943e4c40bb643e50e8ba01f48eef2493691582e0",
+        "artifacts/benchmarks/observation-v2/33-login-user-4-deltadom-full.txt": "60a3c440de4b0a8393fbb76f26198639ffc411844d8e3e8dbedc7a616deef195",
+        "artifacts/benchmarks/observation-v2/33-login-user-5-deltadom-full.txt": "b5d512b5380dc1cda7885140931aa98df3f6a7242c9514da94c112ce8fbfa400"
+      },
+      "full": {
+        "bytes": 4227,
+        "encode_ms": 0.20341601339168847,
+        "decode_ms": 0.052458999562077224,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1371,
+        "encode_ms": 0.17712499538902193,
+        "decode_ms": 0.035832999856211245,
+        "exact": true
+      },
+      "offline_gzip_bytes": 761
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "44-click-option",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 2401,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/44-click-option-0-browser-use.txt": "de0d7fa8658fc14388999c42926ebe827d8195b69d8817262f285d0bfbc31fe4",
+        "artifacts/benchmarks/holdout-v2/44-click-option-1-browser-use.txt": "de0d7fa8658fc14388999c42926ebe827d8195b69d8817262f285d0bfbc31fe4",
+        "artifacts/benchmarks/holdout-v2/44-click-option-2-browser-use.txt": "d5ee08db0090ca5ba5c7928650ade0b04ed966ca78fafe3b645429624ad3eac7",
+        "artifacts/benchmarks/holdout-v2/44-click-option-3-browser-use.txt": "b5768d14278a7bb7959a01eb812dbbfaa4b5f8ab27a50b2a21d297b0e6c9cd75",
+        "artifacts/benchmarks/holdout-v2/44-click-option-4-browser-use.txt": "b5768d14278a7bb7959a01eb812dbbfaa4b5f8ab27a50b2a21d297b0e6c9cd75",
+        "artifacts/benchmarks/holdout-v2/44-click-option-5-browser-use.txt": "3e59c5d423e6e4ee43234bd3914a18e5cdc32dcc5390aef2c89854d85b4b8f5e"
+      },
+      "full": {
+        "bytes": 1885,
+        "encode_ms": 0.12774999777320772,
+        "decode_ms": 0.044832995627075434,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 903,
+        "encode_ms": 0.13025000225752592,
+        "decode_ms": 0.03199999628122896,
+        "exact": true
+      },
+      "offline_gzip_bytes": 312
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "44-click-tab",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 3521,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/44-click-tab-0-browser-use.txt": "b74cd2e3f45343137d887cd16bc20e3ceacf5389a23ba403b203aad06c3d09fe",
+        "artifacts/benchmarks/holdout-v2/44-click-tab-1-browser-use.txt": "b74cd2e3f45343137d887cd16bc20e3ceacf5389a23ba403b203aad06c3d09fe",
+        "artifacts/benchmarks/holdout-v2/44-click-tab-2-browser-use.txt": "fe3cc04f69f50b4d1e44cec2d0e22b748af86ecf3cc4e83d0174b5b58077120a",
+        "artifacts/benchmarks/holdout-v2/44-click-tab-3-browser-use.txt": "b74cd2e3f45343137d887cd16bc20e3ceacf5389a23ba403b203aad06c3d09fe",
+        "artifacts/benchmarks/holdout-v2/44-click-tab-4-browser-use.txt": "b74cd2e3f45343137d887cd16bc20e3ceacf5389a23ba403b203aad06c3d09fe",
+        "artifacts/benchmarks/holdout-v2/44-click-tab-5-browser-use.txt": "eba5e9b904824fd7b34db0768627a86383233cae0fca1642632ddcf886e231d2"
+      },
+      "full": {
+        "bytes": 2392,
+        "encode_ms": 0.14308400568552315,
+        "decode_ms": 0.050000002374872565,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1214,
+        "encode_ms": 0.1521660014986992,
+        "decode_ms": 0.053499999921768904,
+        "exact": true
+      },
+      "offline_gzip_bytes": 494
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "44-enter-password",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 1878,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/44-enter-password-0-browser-use.txt": "7a362685796b9d5ff434d2b645fc282a15d0051b552c4346c4f92f632253f560",
+        "artifacts/benchmarks/holdout-v2/44-enter-password-1-browser-use.txt": "7a362685796b9d5ff434d2b645fc282a15d0051b552c4346c4f92f632253f560",
+        "artifacts/benchmarks/holdout-v2/44-enter-password-2-browser-use.txt": "7a362685796b9d5ff434d2b645fc282a15d0051b552c4346c4f92f632253f560",
+        "artifacts/benchmarks/holdout-v2/44-enter-password-3-browser-use.txt": "7a362685796b9d5ff434d2b645fc282a15d0051b552c4346c4f92f632253f560",
+        "artifacts/benchmarks/holdout-v2/44-enter-password-4-browser-use.txt": "7a362685796b9d5ff434d2b645fc282a15d0051b552c4346c4f92f632253f560",
+        "artifacts/benchmarks/holdout-v2/44-enter-password-5-browser-use.txt": "437b46834e237370622f06fcbaae2b3b5aebdb2655f83aecfa541add81495d51"
+      },
+      "full": {
+        "bytes": 1917,
+        "encode_ms": 0.127958002849482,
+        "decode_ms": 0.04774999979417771,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 841,
+        "encode_ms": 0.1143749977927655,
+        "decode_ms": 0.027542002499103546,
+        "exact": true
+      },
+      "offline_gzip_bytes": 290
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "55-click-option",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 1918,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/55-click-option-0-browser-use.txt": "edeed55cbcd6cab82b5cde8d6dd11332b3987025f1ba860449af3b73497e11d2",
+        "artifacts/benchmarks/holdout-v2/55-click-option-1-browser-use.txt": "edeed55cbcd6cab82b5cde8d6dd11332b3987025f1ba860449af3b73497e11d2",
+        "artifacts/benchmarks/holdout-v2/55-click-option-2-browser-use.txt": "f7e7efd8df36f11eec31bb9bf711cc417b96d36b2112b89da68600c076c2ad10",
+        "artifacts/benchmarks/holdout-v2/55-click-option-3-browser-use.txt": "cf374dcb2c363d59a52d3b82d4a263f3ea7392ad2b78b059e22cf8460b537a0d",
+        "artifacts/benchmarks/holdout-v2/55-click-option-4-browser-use.txt": "cf374dcb2c363d59a52d3b82d4a263f3ea7392ad2b78b059e22cf8460b537a0d",
+        "artifacts/benchmarks/holdout-v2/55-click-option-5-browser-use.txt": "3f4bbcd088f593e76ceb058f432ab7e508de77bbaff551f620d3a955f9e2c471"
+      },
+      "full": {
+        "bytes": 1829,
+        "encode_ms": 0.14133300282992423,
+        "decode_ms": 0.046083005145192146,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 880,
+        "encode_ms": 0.1278749987250194,
+        "decode_ms": 0.029417002224363387,
+        "exact": true
+      },
+      "offline_gzip_bytes": 286
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "55-click-tab",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 3388,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/55-click-tab-0-browser-use.txt": "aba64f1350728e337ce688a53ca57ebd045bb81137ad0e845708b385c90e008a",
+        "artifacts/benchmarks/holdout-v2/55-click-tab-1-browser-use.txt": "aba64f1350728e337ce688a53ca57ebd045bb81137ad0e845708b385c90e008a",
+        "artifacts/benchmarks/holdout-v2/55-click-tab-2-browser-use.txt": "8c22e17f7ff9dff610ad2d1f2c30b59fc1bf27679a19883f660fa51793839028",
+        "artifacts/benchmarks/holdout-v2/55-click-tab-3-browser-use.txt": "aba64f1350728e337ce688a53ca57ebd045bb81137ad0e845708b385c90e008a",
+        "artifacts/benchmarks/holdout-v2/55-click-tab-4-browser-use.txt": "aba64f1350728e337ce688a53ca57ebd045bb81137ad0e845708b385c90e008a",
+        "artifacts/benchmarks/holdout-v2/55-click-tab-5-browser-use.txt": "5cc684e853b3a83d5abd6dfea88bc95f2f85b21f4578165056cb9d75b3da4315"
+      },
+      "full": {
+        "bytes": 2337,
+        "encode_ms": 0.13679199037142098,
+        "decode_ms": 0.04633300704881549,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1184,
+        "encode_ms": 0.1677919935900718,
+        "decode_ms": 0.04149999585933983,
+        "exact": true
+      },
+      "offline_gzip_bytes": 487
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "55-enter-password",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 1867,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/55-enter-password-0-browser-use.txt": "268d40fc34bd740e46fc77dfcb0f02203d049cf2c80456dde87f34f66c24e755",
+        "artifacts/benchmarks/holdout-v2/55-enter-password-1-browser-use.txt": "268d40fc34bd740e46fc77dfcb0f02203d049cf2c80456dde87f34f66c24e755",
+        "artifacts/benchmarks/holdout-v2/55-enter-password-2-browser-use.txt": "268d40fc34bd740e46fc77dfcb0f02203d049cf2c80456dde87f34f66c24e755",
+        "artifacts/benchmarks/holdout-v2/55-enter-password-3-browser-use.txt": "268d40fc34bd740e46fc77dfcb0f02203d049cf2c80456dde87f34f66c24e755",
+        "artifacts/benchmarks/holdout-v2/55-enter-password-4-browser-use.txt": "268d40fc34bd740e46fc77dfcb0f02203d049cf2c80456dde87f34f66c24e755",
+        "artifacts/benchmarks/holdout-v2/55-enter-password-5-browser-use.txt": "a870cc941c634b1fe870a73b8b0e597ac9105b6bda624a8b673ca92ae16790b0"
+      },
+      "full": {
+        "bytes": 1901,
+        "encode_ms": 0.14329201076179743,
+        "decode_ms": 0.05470799806062132,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 838,
+        "encode_ms": 0.19145800615660846,
+        "decode_ms": 0.036833007470704615,
+        "exact": true
+      },
+      "offline_gzip_bytes": 289
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "66-click-option",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 3478,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/66-click-option-0-browser-use.txt": "4eda66d02365a3ec57f44f4dd7043e01cd99188b164c78fd9cd44e7674cb1e3d",
+        "artifacts/benchmarks/holdout-v2/66-click-option-1-browser-use.txt": "4eda66d02365a3ec57f44f4dd7043e01cd99188b164c78fd9cd44e7674cb1e3d",
+        "artifacts/benchmarks/holdout-v2/66-click-option-2-browser-use.txt": "8f7de14a35df19b8fa94c158c04b4975fb9fc8adaf13b0ea586630244426f99c",
+        "artifacts/benchmarks/holdout-v2/66-click-option-3-browser-use.txt": "9b083ecc7f469d5df671a7d455f1be19145af002c1ed04cd32a6e3c2a08bf7e4",
+        "artifacts/benchmarks/holdout-v2/66-click-option-4-browser-use.txt": "9b083ecc7f469d5df671a7d455f1be19145af002c1ed04cd32a6e3c2a08bf7e4",
+        "artifacts/benchmarks/holdout-v2/66-click-option-5-browser-use.txt": "34685cafded94387c64ee35a077a3f4f2dcd2e07bc172824dfdb5a8c761ed8ef"
+      },
+      "full": {
+        "bytes": 2075,
+        "encode_ms": 0.18620899936649948,
+        "decode_ms": 0.05750000127591193,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 963,
+        "encode_ms": 0.15029100177343935,
+        "decode_ms": 0.042665997170843184,
+        "exact": true
+      },
+      "offline_gzip_bytes": 366
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "66-click-tab",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 3539,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/66-click-tab-0-browser-use.txt": "fe11c13039ba112ddd62690855c532865adfe015e0f0f31ceba88ee7cee0efc3",
+        "artifacts/benchmarks/holdout-v2/66-click-tab-1-browser-use.txt": "fe11c13039ba112ddd62690855c532865adfe015e0f0f31ceba88ee7cee0efc3",
+        "artifacts/benchmarks/holdout-v2/66-click-tab-2-browser-use.txt": "66421b5be9c51c49e86ec0a1711587967007b1a78909f1ba600cef992278d910",
+        "artifacts/benchmarks/holdout-v2/66-click-tab-3-browser-use.txt": "76d5ce8589c70d9a3f4b269065f4ea3ba35ac2976c4634f70b033cec0bfc8cdd",
+        "artifacts/benchmarks/holdout-v2/66-click-tab-4-browser-use.txt": "76d5ce8589c70d9a3f4b269065f4ea3ba35ac2976c4634f70b033cec0bfc8cdd",
+        "artifacts/benchmarks/holdout-v2/66-click-tab-5-browser-use.txt": "ff60527830f0a4869bc43aea3514d04409b5e424dfcf39655327ffe973fa9db7"
+      },
+      "full": {
+        "bytes": 2419,
+        "encode_ms": 0.19508300465531647,
+        "decode_ms": 0.0620420032646507,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1323,
+        "encode_ms": 0.1993329933611676,
+        "decode_ms": 0.0421659933635965,
+        "exact": true
+      },
+      "offline_gzip_bytes": 574
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "66-enter-password",
+      "source": "browser-use",
+      "snapshots": 6,
+      "raw_bytes": 1879,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/66-enter-password-0-browser-use.txt": "aad7b35d04fa917ab8aa7602d3fca51ce0a3257a9726d3313c32bb068472b60a",
+        "artifacts/benchmarks/holdout-v2/66-enter-password-1-browser-use.txt": "aad7b35d04fa917ab8aa7602d3fca51ce0a3257a9726d3313c32bb068472b60a",
+        "artifacts/benchmarks/holdout-v2/66-enter-password-2-browser-use.txt": "aad7b35d04fa917ab8aa7602d3fca51ce0a3257a9726d3313c32bb068472b60a",
+        "artifacts/benchmarks/holdout-v2/66-enter-password-3-browser-use.txt": "aad7b35d04fa917ab8aa7602d3fca51ce0a3257a9726d3313c32bb068472b60a",
+        "artifacts/benchmarks/holdout-v2/66-enter-password-4-browser-use.txt": "aad7b35d04fa917ab8aa7602d3fca51ce0a3257a9726d3313c32bb068472b60a",
+        "artifacts/benchmarks/holdout-v2/66-enter-password-5-browser-use.txt": "7ca406de9a10f19a9ec3b8b8b994294af5ba9bd93fd8e43e7b1843a37f3026fc"
+      },
+      "full": {
+        "bytes": 1908,
+        "encode_ms": 0.149125000461936,
+        "decode_ms": 0.05079200491309166,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 839,
+        "encode_ms": 0.12995900760870427,
+        "decode_ms": 0.03808298788499087,
+        "exact": true
+      },
+      "offline_gzip_bytes": 290
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "44-click-option",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 4563,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/44-click-option-0-agent-browser-full.txt": "2c596d94fe21190a5e733ee4a0633ab0507408d498b68b158a5c37fef8ea36d6",
+        "artifacts/benchmarks/holdout-v2/44-click-option-1-agent-browser-full.txt": "2c596d94fe21190a5e733ee4a0633ab0507408d498b68b158a5c37fef8ea36d6",
+        "artifacts/benchmarks/holdout-v2/44-click-option-2-agent-browser-full.txt": "6335376804caa0cc942c437a0d15bdd19e42d17e29dbdb8467949659a46a96bc",
+        "artifacts/benchmarks/holdout-v2/44-click-option-3-agent-browser-full.txt": "ecb775fd90a0154e1ad23284af440d495044747271397d1521fa976ecaf57239",
+        "artifacts/benchmarks/holdout-v2/44-click-option-4-agent-browser-full.txt": "ecb775fd90a0154e1ad23284af440d495044747271397d1521fa976ecaf57239",
+        "artifacts/benchmarks/holdout-v2/44-click-option-5-agent-browser-full.txt": "67dd6aa97a9eb925476634e77b82a7698a183e6bec0ed1cf81514071cb1dbda9"
+      },
+      "full": {
+        "bytes": 2000,
+        "encode_ms": 0.1662499998928979,
+        "decode_ms": 0.045958004193380475,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 904,
+        "encode_ms": 0.13658399984706193,
+        "decode_ms": 0.03487500362098217,
+        "exact": true
+      },
+      "offline_gzip_bytes": 318
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "44-click-tab",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 5692,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/44-click-tab-0-agent-browser-full.txt": "1dc5adc29a818893bde1d265852879a355551826df8c2fd3f8d46c8c5137daaf",
+        "artifacts/benchmarks/holdout-v2/44-click-tab-1-agent-browser-full.txt": "1dc5adc29a818893bde1d265852879a355551826df8c2fd3f8d46c8c5137daaf",
+        "artifacts/benchmarks/holdout-v2/44-click-tab-2-agent-browser-full.txt": "58bb5a8b59daee6a4a92ff9a11370c8a9c93aa5c51a75a6190fe010197002406",
+        "artifacts/benchmarks/holdout-v2/44-click-tab-3-agent-browser-full.txt": "1dc5adc29a818893bde1d265852879a355551826df8c2fd3f8d46c8c5137daaf",
+        "artifacts/benchmarks/holdout-v2/44-click-tab-4-agent-browser-full.txt": "1dc5adc29a818893bde1d265852879a355551826df8c2fd3f8d46c8c5137daaf",
+        "artifacts/benchmarks/holdout-v2/44-click-tab-5-agent-browser-full.txt": "56d266e1312bccab48dd1012c5567ee45ffccfec9cca41c91cfb5cb04a87c70b"
+      },
+      "full": {
+        "bytes": 2555,
+        "encode_ms": 0.16233300266321748,
+        "decode_ms": 0.05062499258201569,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1241,
+        "encode_ms": 0.15504199836868793,
+        "decode_ms": 0.04012499994132668,
+        "exact": true
+      },
+      "offline_gzip_bytes": 525
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "44-enter-password",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 5012,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/44-enter-password-0-agent-browser-full.txt": "e04728aca4d0082eb78ae44c205c3158d960729c677dafe8f88d2fe3ffcec383",
+        "artifacts/benchmarks/holdout-v2/44-enter-password-1-agent-browser-full.txt": "e04728aca4d0082eb78ae44c205c3158d960729c677dafe8f88d2fe3ffcec383",
+        "artifacts/benchmarks/holdout-v2/44-enter-password-2-agent-browser-full.txt": "af886359aab40f6bf920762a700b5574c2c446470414c6ac07b10b0d281e2fdd",
+        "artifacts/benchmarks/holdout-v2/44-enter-password-3-agent-browser-full.txt": "b02404442d334fa9d78bcbf43839f7a46a84654e74768d20b0dcb71cfbe4f3af",
+        "artifacts/benchmarks/holdout-v2/44-enter-password-4-agent-browser-full.txt": "b02404442d334fa9d78bcbf43839f7a46a84654e74768d20b0dcb71cfbe4f3af",
+        "artifacts/benchmarks/holdout-v2/44-enter-password-5-agent-browser-full.txt": "5b10920061fdf3867c8a15f5ee49c3ba81776223ec8da12c344b20dff59fd7d2"
+      },
+      "full": {
+        "bytes": 2058,
+        "encode_ms": 0.17141600255854428,
+        "decode_ms": 0.055374999647028744,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 906,
+        "encode_ms": 0.179541006218642,
+        "decode_ms": 0.04170800093561411,
+        "exact": true
+      },
+      "offline_gzip_bytes": 343
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "55-click-option",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 4179,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/55-click-option-0-agent-browser-full.txt": "e176d38221260be62d08509ebbac4549f94d26be11c1147717f56e45a05f2c97",
+        "artifacts/benchmarks/holdout-v2/55-click-option-1-agent-browser-full.txt": "e176d38221260be62d08509ebbac4549f94d26be11c1147717f56e45a05f2c97",
+        "artifacts/benchmarks/holdout-v2/55-click-option-2-agent-browser-full.txt": "9946376fd8a0211be980bb4cadf1e1463c463248468f07dc97e4563b05926139",
+        "artifacts/benchmarks/holdout-v2/55-click-option-3-agent-browser-full.txt": "8040d26b9dab95cb0d5bf4c860745e871c190bf0c8c05d89474078cfbd0e95ad",
+        "artifacts/benchmarks/holdout-v2/55-click-option-4-agent-browser-full.txt": "8040d26b9dab95cb0d5bf4c860745e871c190bf0c8c05d89474078cfbd0e95ad",
+        "artifacts/benchmarks/holdout-v2/55-click-option-5-agent-browser-full.txt": "03a7e541dd5d9a97020589b6c8561629eef11f3b8d00add9d34cb0d5fea04f8b"
+      },
+      "full": {
+        "bytes": 1965,
+        "encode_ms": 0.1447910035494715,
+        "decode_ms": 0.047291003284044564,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 892,
+        "encode_ms": 0.1296660047955811,
+        "decode_ms": 0.0315000070258975,
+        "exact": true
+      },
+      "offline_gzip_bytes": 309
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "55-click-tab",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 5579,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/55-click-tab-0-agent-browser-full.txt": "ddbf016ea8a0e2333435b6c0e042cc91c9ed981a06cd6818d52aaefce92c4acc",
+        "artifacts/benchmarks/holdout-v2/55-click-tab-1-agent-browser-full.txt": "ddbf016ea8a0e2333435b6c0e042cc91c9ed981a06cd6818d52aaefce92c4acc",
+        "artifacts/benchmarks/holdout-v2/55-click-tab-2-agent-browser-full.txt": "8e158249b5bf56971a3801d554bde5669015829c3f4378e1c7400bef319a24b7",
+        "artifacts/benchmarks/holdout-v2/55-click-tab-3-agent-browser-full.txt": "ddbf016ea8a0e2333435b6c0e042cc91c9ed981a06cd6818d52aaefce92c4acc",
+        "artifacts/benchmarks/holdout-v2/55-click-tab-4-agent-browser-full.txt": "ddbf016ea8a0e2333435b6c0e042cc91c9ed981a06cd6818d52aaefce92c4acc",
+        "artifacts/benchmarks/holdout-v2/55-click-tab-5-agent-browser-full.txt": "0fc47ecfcc7ab3689be04b334d61c7678e0c93a7df53bcb4e920c986166ec410"
+      },
+      "full": {
+        "bytes": 2510,
+        "encode_ms": 0.17979199765250087,
+        "decode_ms": 0.05154100654181093,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1215,
+        "encode_ms": 0.16074998711701483,
+        "decode_ms": 0.044957996578887105,
+        "exact": true
+      },
+      "offline_gzip_bytes": 515
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "55-enter-password",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 5006,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/55-enter-password-0-agent-browser-full.txt": "503db47545da0e08c1737cc31200a008b1f75bb6ce2bd9fb950a6324961a205e",
+        "artifacts/benchmarks/holdout-v2/55-enter-password-1-agent-browser-full.txt": "503db47545da0e08c1737cc31200a008b1f75bb6ce2bd9fb950a6324961a205e",
+        "artifacts/benchmarks/holdout-v2/55-enter-password-2-agent-browser-full.txt": "12192718c513949b15aab7eef00f291b66e08e0875025e686a75b12b1b9fb377",
+        "artifacts/benchmarks/holdout-v2/55-enter-password-3-agent-browser-full.txt": "bc5c239d3a6ef98557e119b2d800508f6f4565400ed43c623413cad48bfd3d83",
+        "artifacts/benchmarks/holdout-v2/55-enter-password-4-agent-browser-full.txt": "bc5c239d3a6ef98557e119b2d800508f6f4565400ed43c623413cad48bfd3d83",
+        "artifacts/benchmarks/holdout-v2/55-enter-password-5-agent-browser-full.txt": "c5629fbf488ef974441db3ab7fadd13f83866430728d9c024801f9aef370964a"
+      },
+      "full": {
+        "bytes": 2054,
+        "encode_ms": 0.15350000467151403,
+        "decode_ms": 0.05266600055620074,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 905,
+        "encode_ms": 0.15545800852123648,
+        "decode_ms": 0.049417008995078504,
+        "exact": true
+      },
+      "offline_gzip_bytes": 340
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "66-click-option",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 5460,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/66-click-option-0-agent-browser-full.txt": "b6509b95949f07899e2d06cc6953c7dd3d440912221bb178fa5404ebef7937a4",
+        "artifacts/benchmarks/holdout-v2/66-click-option-1-agent-browser-full.txt": "b6509b95949f07899e2d06cc6953c7dd3d440912221bb178fa5404ebef7937a4",
+        "artifacts/benchmarks/holdout-v2/66-click-option-2-agent-browser-full.txt": "d7bb61cdd6e7ebb4bd71d4736075463fa8902bce5147ff13566ee531105e1fbc",
+        "artifacts/benchmarks/holdout-v2/66-click-option-3-agent-browser-full.txt": "c9af5b188c8878c256c6a57362009b7c60ea95d2eca4177a9fbe13e203c94146",
+        "artifacts/benchmarks/holdout-v2/66-click-option-4-agent-browser-full.txt": "c9af5b188c8878c256c6a57362009b7c60ea95d2eca4177a9fbe13e203c94146",
+        "artifacts/benchmarks/holdout-v2/66-click-option-5-agent-browser-full.txt": "13887f21896782e07ab003537f251de18722f05cae44ab63c23106ac9741a196"
+      },
+      "full": {
+        "bytes": 2121,
+        "encode_ms": 0.16224999853875488,
+        "decode_ms": 0.05408399738371372,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 943,
+        "encode_ms": 0.16204200801439583,
+        "decode_ms": 0.041040999349206686,
+        "exact": true
+      },
+      "offline_gzip_bytes": 358
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "66-click-tab",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 5730,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/66-click-tab-0-agent-browser-full.txt": "80fa7fbd029562c58e913b93f209a091acd12c34199ce6096eeb6a2b488d1098",
+        "artifacts/benchmarks/holdout-v2/66-click-tab-1-agent-browser-full.txt": "80fa7fbd029562c58e913b93f209a091acd12c34199ce6096eeb6a2b488d1098",
+        "artifacts/benchmarks/holdout-v2/66-click-tab-2-agent-browser-full.txt": "acd5561f3a3be48cc0f4bc0ad23a509ecf7c59aa8b3932c587669d303a4db64d",
+        "artifacts/benchmarks/holdout-v2/66-click-tab-3-agent-browser-full.txt": "6f7d5a96dda95cd3468e550246016e383d11c7080fe5e70bb1518da415227874",
+        "artifacts/benchmarks/holdout-v2/66-click-tab-4-agent-browser-full.txt": "6f7d5a96dda95cd3468e550246016e383d11c7080fe5e70bb1518da415227874",
+        "artifacts/benchmarks/holdout-v2/66-click-tab-5-agent-browser-full.txt": "cd9a365bd7624556f8041a85a1b9dd458359f43b8e0647592916616a25015cf8"
+      },
+      "full": {
+        "bytes": 2592,
+        "encode_ms": 0.18133300181943923,
+        "decode_ms": 0.08333400182891637,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1362,
+        "encode_ms": 0.16745799803175032,
+        "decode_ms": 0.040166007238440216,
+        "exact": true
+      },
+      "offline_gzip_bytes": 621
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "66-enter-password",
+      "source": "agent-browser-full",
+      "snapshots": 6,
+      "raw_bytes": 5018,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/66-enter-password-0-agent-browser-full.txt": "ae17fdff174d49a678a88aa17ca5d2946a5939acaa5841382f48e21a79e2048d",
+        "artifacts/benchmarks/holdout-v2/66-enter-password-1-agent-browser-full.txt": "ae17fdff174d49a678a88aa17ca5d2946a5939acaa5841382f48e21a79e2048d",
+        "artifacts/benchmarks/holdout-v2/66-enter-password-2-agent-browser-full.txt": "08e2df2af87ad3bc13c227a4e1e0c77f70f2a61d5a655b2f682d8327b6598eb9",
+        "artifacts/benchmarks/holdout-v2/66-enter-password-3-agent-browser-full.txt": "f00af2b28bac72780d859b3b09f28493f70378be99d017afd65fe384dcde9f25",
+        "artifacts/benchmarks/holdout-v2/66-enter-password-4-agent-browser-full.txt": "f00af2b28bac72780d859b3b09f28493f70378be99d017afd65fe384dcde9f25",
+        "artifacts/benchmarks/holdout-v2/66-enter-password-5-agent-browser-full.txt": "a376d34ec3cefeb61497f7638abac9469a82f61cbd1e47d5fe0ca1cc4b6fb500"
+      },
+      "full": {
+        "bytes": 2058,
+        "encode_ms": 0.14637499407399446,
+        "decode_ms": 0.04137500945944339,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 906,
+        "encode_ms": 0.1617920061107725,
+        "decode_ms": 0.05487501039169729,
+        "exact": true
+      },
+      "offline_gzip_bytes": 343
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "44-click-option",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 8085,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/44-click-option-0-deltadom-full.txt": "de284c12bc1e61fe19db5da5d8e21c4aea8994c2cc8665c61452846473bb72b1",
+        "artifacts/benchmarks/holdout-v2/44-click-option-1-deltadom-full.txt": "84e47de6814ef8446bdc67d3471d4232abf02d7578829fd3125d65fa493ebd6a",
+        "artifacts/benchmarks/holdout-v2/44-click-option-2-deltadom-full.txt": "f3af23868c655c41134f09f70497b1cf98266942fd3dda9fe0f50dfe7e4aa0d6",
+        "artifacts/benchmarks/holdout-v2/44-click-option-3-deltadom-full.txt": "17ab16eba2a43e6572406aae8be204824dfac6bf6f294c01ffa2a374cef9f89d",
+        "artifacts/benchmarks/holdout-v2/44-click-option-4-deltadom-full.txt": "565a6e81b9c2143b429a1d94d948ab390056dde51dd24138d347b691f47df3c7",
+        "artifacts/benchmarks/holdout-v2/44-click-option-5-deltadom-full.txt": "fba5aecbc1b96fcfb1a56a444a5ab3e780510e04c2437d13eddec643589c8931"
+      },
+      "full": {
+        "bytes": 3946,
+        "encode_ms": 0.2129580097971484,
+        "decode_ms": 0.06687499990221113,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1329,
+        "encode_ms": 0.2016669895965606,
+        "decode_ms": 0.04333299875725061,
+        "exact": true
+      },
+      "offline_gzip_bytes": 727
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "44-click-tab",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 11293,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/44-click-tab-0-deltadom-full.txt": "97ed8ed1899a631199062d5c9554ea3a384d1346c4841e9be30bb45b9ad000aa",
+        "artifacts/benchmarks/holdout-v2/44-click-tab-1-deltadom-full.txt": "c6590dfff61a8024f676cb3674791b5479384c85bca8d2be20f56e33f2f0c949",
+        "artifacts/benchmarks/holdout-v2/44-click-tab-2-deltadom-full.txt": "1210cd8f45c58307eb31d8d5c72bcccc3f64368f21424efbcc3b928a17b7c240",
+        "artifacts/benchmarks/holdout-v2/44-click-tab-3-deltadom-full.txt": "df18dee5484c5176025d1e0f1e09fa0bd5452ff53111c3139c03ca7f907153d7",
+        "artifacts/benchmarks/holdout-v2/44-click-tab-4-deltadom-full.txt": "1b4cb026c7ec57e06e0836f32201f6309cc527cbce4ed0193f6efd7ece47022b",
+        "artifacts/benchmarks/holdout-v2/44-click-tab-5-deltadom-full.txt": "fae6a9433f2958f3a93e0dfacf383d75dda3b4e6aeeae99efbb8ea241683df77"
+      },
+      "full": {
+        "bytes": 5205,
+        "encode_ms": 0.24691699945833534,
+        "decode_ms": 0.06545800715684891,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1847,
+        "encode_ms": 0.24208299873862416,
+        "decode_ms": 0.05499999679159373,
+        "exact": true
+      },
+      "offline_gzip_bytes": 1097
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "44-enter-password",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 7716,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/44-enter-password-0-deltadom-full.txt": "dd22ad6227f0e43a25e27e6bee5fc8becf87cc653604e10a0cfb0a31ab3282eb",
+        "artifacts/benchmarks/holdout-v2/44-enter-password-1-deltadom-full.txt": "37d0cd8f8a811927923104bdf4663ca26063164a33f5c72ede0832ce9f97878f",
+        "artifacts/benchmarks/holdout-v2/44-enter-password-2-deltadom-full.txt": "ef147c201ce1e00ef2790a9ff97f940f5871f5c9903f77d5fe86f08e984597c6",
+        "artifacts/benchmarks/holdout-v2/44-enter-password-3-deltadom-full.txt": "d9b1b26c9464b6b502752fdccb68e99413f37bc824b241fd7f64fd8eca750572",
+        "artifacts/benchmarks/holdout-v2/44-enter-password-4-deltadom-full.txt": "7ba307efd111e05a2efd30b64877fe90b4a191f2efba0dec42e84daf9707b2df",
+        "artifacts/benchmarks/holdout-v2/44-enter-password-5-deltadom-full.txt": "d3dcd1b7da7d71bb334627c08b05a1dc47573cb69edcc6c709fac05aabcf9eb7"
+      },
+      "full": {
+        "bytes": 4098,
+        "encode_ms": 0.1867500104708597,
+        "decode_ms": 0.05366701225284487,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1338,
+        "encode_ms": 0.1699170097708702,
+        "decode_ms": 0.039417005609720945,
+        "exact": true
+      },
+      "offline_gzip_bytes": 728
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "55-click-option",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 7269,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/55-click-option-0-deltadom-full.txt": "49d70b15f833abbfdec551e9d7082ddd13e79a0f42d16fc8572f7f7593d26763",
+        "artifacts/benchmarks/holdout-v2/55-click-option-1-deltadom-full.txt": "26ea4973ff1af572702ac8387515d2de2cfddaff1d40062cb8d342aea9472058",
+        "artifacts/benchmarks/holdout-v2/55-click-option-2-deltadom-full.txt": "0d904077afa07217b6dc686ff61c679641e225741a7a6ae0069f8e466a74e740",
+        "artifacts/benchmarks/holdout-v2/55-click-option-3-deltadom-full.txt": "3be0ebaf33fecb9fb9eb4061ea99f4d4c14c6e93774525691da408e424e97a14",
+        "artifacts/benchmarks/holdout-v2/55-click-option-4-deltadom-full.txt": "cf5752b8d6267dfcb988d70f7ce1ea4016b8b7cfc3351bd813ef9a6b2f991d8a",
+        "artifacts/benchmarks/holdout-v2/55-click-option-5-deltadom-full.txt": "3174fc9a08c719d5e177d1af7ad03c5ac231072e92d8e601eaa244e390555cfb"
+      },
+      "full": {
+        "bytes": 3868,
+        "encode_ms": 0.1742089953040704,
+        "decode_ms": 0.055917000281624496,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1312,
+        "encode_ms": 0.18304100376553833,
+        "decode_ms": 0.04054199962411076,
+        "exact": true
+      },
+      "offline_gzip_bytes": 701
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "55-click-tab",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 11180,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/55-click-tab-0-deltadom-full.txt": "8d349205184c129ae2a27682a5500a9213c2405f46e46266d8a8769fcea8871b",
+        "artifacts/benchmarks/holdout-v2/55-click-tab-1-deltadom-full.txt": "96e63aecc2b617259aa0a54e958499b636e7fcaf315343367410861352b1bf86",
+        "artifacts/benchmarks/holdout-v2/55-click-tab-2-deltadom-full.txt": "914c563d0fb9d301b9ec0c04bd0ba601f7038e9b383a00f4bad5d8e8c76f0757",
+        "artifacts/benchmarks/holdout-v2/55-click-tab-3-deltadom-full.txt": "bb01d59fd27b69ba9e00926652012bd7e9d5432c89209870d32b29071331ab1a",
+        "artifacts/benchmarks/holdout-v2/55-click-tab-4-deltadom-full.txt": "db11b842da1c56fb106acb36de15de250e18b788f3d4550c96c3524780382cdf",
+        "artifacts/benchmarks/holdout-v2/55-click-tab-5-deltadom-full.txt": "fc833bdd50f3d27177985e37558b40392af13a330554d79413c00b28cf6e47d6"
+      },
+      "full": {
+        "bytes": 5127,
+        "encode_ms": 0.20824999955948442,
+        "decode_ms": 0.06137500167824328,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1817,
+        "encode_ms": 0.21729199215769768,
+        "decode_ms": 0.046250002924352884,
+        "exact": true
+      },
+      "offline_gzip_bytes": 1086
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "55-enter-password",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 7710,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/55-enter-password-0-deltadom-full.txt": "c3c42e1fc4a6c1483582444050f76d8e7f359a547f4ff2949fd2e4f2426f385a",
+        "artifacts/benchmarks/holdout-v2/55-enter-password-1-deltadom-full.txt": "9afa94828d7ecfadc236dd6aa0c72d3b0c13c514c2f597b1045fd155b015865d",
+        "artifacts/benchmarks/holdout-v2/55-enter-password-2-deltadom-full.txt": "369b0145dfb6c68ec7f08848f740858fac07a429b33f2343b7c4973124218db4",
+        "artifacts/benchmarks/holdout-v2/55-enter-password-3-deltadom-full.txt": "82087764c3bac8b42523cbadea941418b62bd037595e8d3cb25e215fe6caf063",
+        "artifacts/benchmarks/holdout-v2/55-enter-password-4-deltadom-full.txt": "44fe483a85718c04598acbf0331e2e273efe1bd4babec20b6b2720edc1c390c8",
+        "artifacts/benchmarks/holdout-v2/55-enter-password-5-deltadom-full.txt": "a245e708b9a27cf7853c5516bfba3d1d3420f1bae1647b771edaafce41c3581e"
+      },
+      "full": {
+        "bytes": 4090,
+        "encode_ms": 0.17329200636595488,
+        "decode_ms": 0.054042000556364655,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1336,
+        "encode_ms": 0.16999999934341758,
+        "decode_ms": 0.037999998312443495,
+        "exact": true
+      },
+      "offline_gzip_bytes": 724
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "66-click-option",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 9843,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/66-click-option-0-deltadom-full.txt": "1f8eb7597d1e3f513b5f1313714306465c10b2aa8fb94b5f2fd233a04debc74c",
+        "artifacts/benchmarks/holdout-v2/66-click-option-1-deltadom-full.txt": "a822cf6a8dedaaaaec05d6144e80ba046b4b913210e59662e52a76fd448e97f9",
+        "artifacts/benchmarks/holdout-v2/66-click-option-2-deltadom-full.txt": "b88741f860e119b25ad5f50a4363032f70f2c2a226d615ba57cecc02b4190221",
+        "artifacts/benchmarks/holdout-v2/66-click-option-3-deltadom-full.txt": "279d0ad0986fb9719854605805dc0bbe78675925f1098bce1b7459405278a1fa",
+        "artifacts/benchmarks/holdout-v2/66-click-option-4-deltadom-full.txt": "dcc13386d78db50c2c8ea6c09adaaefed19fc20b4962e834e3753fb12ad2c527",
+        "artifacts/benchmarks/holdout-v2/66-click-option-5-deltadom-full.txt": "2d71940afbf7e03b31ce1be2500a7beb321f0d4bd396086550479c1847735f2c"
+      },
+      "full": {
+        "bytes": 4188,
+        "encode_ms": 0.21149999520275742,
+        "decode_ms": 0.06149998807813972,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1385,
+        "encode_ms": 0.19870900723617524,
+        "decode_ms": 0.051750001148320735,
+        "exact": true
+      },
+      "offline_gzip_bytes": 777
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "66-click-tab",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 11331,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/66-click-tab-0-deltadom-full.txt": "96f7467389bae88ce201ba2fa380899c6382a18c6964d567f2ed5dcbab14af2b",
+        "artifacts/benchmarks/holdout-v2/66-click-tab-1-deltadom-full.txt": "c65fec6d249ede783238e8d8cfd64e7e917981f6217a70376df581f9fbf1e0fc",
+        "artifacts/benchmarks/holdout-v2/66-click-tab-2-deltadom-full.txt": "3b653d2b6775282c581dc7ee3d7b784ec90b96f0cd4fcb8dd458d081d3d7fd95",
+        "artifacts/benchmarks/holdout-v2/66-click-tab-3-deltadom-full.txt": "6dd7cb0f362f4c624aedf5ae5079833ef1bf0f9e8a78239e45349c11b6931b53",
+        "artifacts/benchmarks/holdout-v2/66-click-tab-4-deltadom-full.txt": "6748d95b8e292546c3e9bb17853a791dc00ace6c5f274ae532411d20ed8150d8",
+        "artifacts/benchmarks/holdout-v2/66-click-tab-5-deltadom-full.txt": "95db5a9740e27aafc7306fc4000b8dbb6c2ad45e431c47a08b94d7c12d337292"
+      },
+      "full": {
+        "bytes": 5209,
+        "encode_ms": 0.20983300055377185,
+        "decode_ms": 0.053499999921768904,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1988,
+        "encode_ms": 0.225499999942258,
+        "decode_ms": 0.04116600030101836,
+        "exact": true
+      },
+      "offline_gzip_bytes": 1202
+    },
+    {
+      "corpus": "holdout-v2",
+      "group": "66-enter-password",
+      "source": "deltadom-full",
+      "snapshots": 6,
+      "raw_bytes": 7722,
+      "inputs": {
+        "artifacts/benchmarks/holdout-v2/66-enter-password-0-deltadom-full.txt": "b71975d840267b71c82153a63085c98f89a9fa605bcf4c08bc6e1408d7e2a6d4",
+        "artifacts/benchmarks/holdout-v2/66-enter-password-1-deltadom-full.txt": "229eea0416e71f4b558f28838aa6369d856b8789444938162c22fb798330265a",
+        "artifacts/benchmarks/holdout-v2/66-enter-password-2-deltadom-full.txt": "f2ad7b8c0456efd5a50ff31677a5e534050127bbef30025ecd1bfb1c0f21e0a5",
+        "artifacts/benchmarks/holdout-v2/66-enter-password-3-deltadom-full.txt": "cbf1d86937a2eaff25ff407a97c0e924947532aa00f2e1a8807c04fae679f34b",
+        "artifacts/benchmarks/holdout-v2/66-enter-password-4-deltadom-full.txt": "9f917c41f4f12b0d0bf1f06aa1d3490fcd829c0f5f84554098bc8f6195e51e97",
+        "artifacts/benchmarks/holdout-v2/66-enter-password-5-deltadom-full.txt": "7fb5dba86e54cac77e9c7e0cd4c12679d3f0df5dd947fc66ae433fefb5925a17"
+      },
+      "full": {
+        "bytes": 4125,
+        "encode_ms": 0.18087499483954161,
+        "decode_ms": 0.05208299262449145,
+        "exact": true
+      },
+      "adaptive": {
+        "bytes": 1344,
+        "encode_ms": 0.1744170003803447,
+        "decode_ms": 0.041749997762963176,
+        "exact": true
+      },
+      "offline_gzip_bytes": 733
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "baseRevision": 3,
+  "changes": [],
+  "kind": "delta",
+  "revision": 4,
+  "treeChange": {
+    "deleteCount": 1,
+    "lines": [
+      "  - StaticText \"Loaded 2 API records\""
+    ],
+    "startLine": 18
+  }
+}

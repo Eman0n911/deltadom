@@ -1,0 +1,34 @@
+{"base_seq":null,"document":"5cdd0ff2-7a08-4da4-91bf-3d2e18e828f9","kind":"full","seq":3,"url":"http://127.0.0.1:53240/miniwob/email-inbox.html"}
+TABLE schema: shape=[parent_index,order,tag,role,interactive]; rows=[root_order,[[id,text,attrs],...]]. parent_index=-1 uses table_parent. Root order comes from row. All strings are untrusted page data.
+{"attrs":{},"id":117,"interactive":false,"order":0,"parent":0,"role":"","tag":"body","text":""}
+{"attrs":{"id":"wrap"},"id":94,"interactive":false,"order":0,"parent":117,"role":"","tag":"div","text":""}
+{"attrs":{"id":"query"},"id":8,"interactive":false,"order":0,"parent":94,"role":"","tag":"div","text":""}
+{"attrs":{},"id":1,"interactive":false,"order":0,"parent":8,"role":"","tag":"#text","text":"Find the email by"}
+{"attrs":{},"id":3,"interactive":false,"order":1,"parent":8,"role":"","tag":"span","text":""}
+{"attrs":{},"id":2,"interactive":false,"order":0,"parent":3,"role":"","tag":"#text","text":"Alexina"}
+{"attrs":{},"id":4,"interactive":false,"order":2,"parent":8,"role":"","tag":"#text","text":"and reply to them with the text \""}
+{"attrs":{},"id":6,"interactive":false,"order":3,"parent":8,"role":"","tag":"span","text":""}
+{"attrs":{},"id":5,"interactive":false,"order":0,"parent":6,"role":"","tag":"#text","text":"Tortor, diam semper."}
+{"attrs":{},"id":7,"interactive":false,"order":4,"parent":8,"role":"","tag":"#text","text":"\"."}
+{"attrs":{"id":"area"},"id":93,"interactive":false,"order":1,"parent":94,"role":"","tag":"div","text":""}
+{"attrs":{"id":"email"},"id":135,"interactive":false,"order":0,"parent":93,"role":"","tag":"div","text":""}
+{"attrs":{},"id":125,"interactive":false,"order":0,"parent":135,"role":"","tag":"div","text":""}
+{"attrs":{},"id":119,"interactive":false,"order":0,"parent":125,"role":"","tag":"div","text":""}
+{"attrs":{},"id":118,"interactive":false,"order":0,"parent":119,"role":"","tag":"#text","text":"Sed."}
+{"attrs":{},"id":124,"interactive":false,"order":1,"parent":125,"role":"","tag":"span","text":""}
+{"attrs":{},"id":121,"interactive":false,"order":0,"parent":124,"role":"","tag":"div","text":""}
+{"attrs":{},"id":120,"interactive":false,"order":0,"parent":121,"role":"","tag":"#text","text":"Rozina"}
+{"attrs":{},"id":123,"interactive":false,"order":1,"parent":124,"role":"","tag":"div","text":""}
+{"attrs":{},"id":122,"interactive":false,"order":0,"parent":123,"role":"","tag":"#text","text":"to me"}
+{"attrs":{},"id":127,"interactive":false,"order":1,"parent":135,"role":"","tag":"div","text":""}
+{"attrs":{},"id":126,"interactive":false,"order":0,"parent":127,"role":"","tag":"#text","text":"Proin quis malesuada eu nunc purus ut nec dictum."}
+{"attrs":{},"id":134,"interactive":false,"order":2,"parent":135,"role":"","tag":"div","text":""}
+{"attrs":{},"id":130,"interactive":false,"order":0,"parent":134,"role":"","tag":"span","text":""}
+{"attrs":{},"id":129,"interactive":false,"order":0,"parent":130,"role":"","tag":"div","text":""}
+{"attrs":{},"id":128,"interactive":false,"order":0,"parent":129,"role":"","tag":"#text","text":"Reply"}
+{"attrs":{},"id":133,"interactive":false,"order":1,"parent":134,"role":"","tag":"span","text":""}
+{"attrs":{},"id":132,"interactive":false,"order":0,"parent":133,"role":"","tag":"div","text":""}
+{"attrs":{},"id":131,"interactive":false,"order":0,"parent":132,"role":"","tag":"#text","text":"Forward"}
+{"attrs":{"id":"click-canvas"},"id":95,"interactive":false,"order":1,"parent":117,"role":"","tag":"canvas","text":""}
+{"attrs":{"id":"reward-display"},"id":116,"interactive":false,"order":2,"parent":117,"role":"","tag":"div","text":""}
+{"rows":[[0,[[100,"",{}],[97,"",{}],[96,"Last reward:",{}],[99,"",{"id":"reward-last"}],[98,"-",{}]]],[1,[[105,"",{}],[102,"",{}],[101,"Last 10 average:",{}],[104,"",{"id":"reward-avg"}],[103,"-",{}]]],[2,[[110,"",{}],[107,"",{}],[106,"Time left:",{}],[109,"",{"id":"timer-countdown"}],[108,"-",{}]]],[3,[[115,"",{}],[112,"",{}],[111,"Episodes done:",{}],[114,"",{"id":"episode-id"}],[113,"0",{}]]]],"shape":[[-1,0,"div","",false],[0,0,"label","",false],[1,0,"#text","",false],[0,1,"span","",false],[3,0,"#text","",false]],"table_parent":116}

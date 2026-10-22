@@ -1,0 +1,31 @@
+- generic
+  - generic
+    - StaticText "Select nothing and click Submit."
+    - generic
+      - generic
+        - checkbox "3hIU" [checked=false, ref=e2]
+        - LineBreak "\n"
+        - checkbox "Qqi" [checked=false, ref=e3]
+        - LineBreak "\n"
+        - checkbox "rS49" [checked=false, ref=e4]
+        - LineBreak "\n"
+      - LineBreak "\n"
+      - button "Submit" [ref=e1]
+  - Canvas
+  - generic
+    - generic
+      - LabelText
+        - StaticText "Last reward:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Last 10 average:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Time left:"
+      - StaticText "-"
+    - generic
+      - LabelText
+        - StaticText "Episodes done:"
+      - StaticText "0"

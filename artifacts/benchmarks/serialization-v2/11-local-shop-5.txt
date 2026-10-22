@@ -1,0 +1,1 @@
+{"add":[[306,25,0,"#text","Selected product 7"]],"base":5,"document":"db68a250-1ac5-46b6-a083-414465a301ba","kind":"delta","remove":[305],"seq":6,"v":2}

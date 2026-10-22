@@ -1,0 +1,19 @@
+   Compiling deltadom-core v0.4.0 (/HOME/Desktop/d4luv918/cvd/deltadom)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.22s
+     Running unittests src/lib.rs (target/debug/deps/_core-92ee0cf857668b2c)
+
+running 5 tests
+test net_filter::tests::nested_arrays_union_and_projection ... ok
+test tests::invalid_input_is_transactional ... ok
+test tests::periodic_and_explicit_resync ... ok
+test tests::same_url_reload_and_empty_frame ... ok
+test tests::reorder_and_attribute_changes_are_not_lost ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests _core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

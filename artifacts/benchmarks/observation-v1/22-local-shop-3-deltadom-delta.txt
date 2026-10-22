@@ -1,0 +1,3 @@
+{"base_seq":3,"document":"f46a44f5-2315-44a8-855b-8a8662d844af","kind":"delta","seq":4,"url":"http://127.0.0.1:53241/"}
+upsert=[{"attrs":{},"id":305,"interactive":false,"order":0,"parent":25,"role":"","tag":"#text","text":"Loaded 2 API records"}]
+removed=[24]

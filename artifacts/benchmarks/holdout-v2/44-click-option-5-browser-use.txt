@@ -1,0 +1,17 @@
+*[173]<div id=query />
+	Select H7 and click Submit.
+*[192]<label />
+	*[194]<input type=radio id=ch0 name=radio value=on checked=false />
+	cs5852
+*[196]<label />
+	*[198]<input type=radio id=ch1 name=radio value=on checked=false />
+	xED
+*[200]<label />
+	*[202]<input type=radio id=ch2 name=radio value=on checked=false />
+	H7
+*[176]<button id=subbtn />
+	Submit
+Last reward:
+Last 10 average:
+Time left:
+Episodes done:

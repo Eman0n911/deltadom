@@ -1,0 +1,11 @@
+[37]<div id=query />
+	Enter "
+	Bernardine
+	" into the text field and press Submit.
+|SHADOW(open)|[2]<input type=text id=tt value=Bob />
+[5]<button id=subbtn />
+	Submit
+Last reward:
+Last 10 average:
+Time left:
+Episodes done:

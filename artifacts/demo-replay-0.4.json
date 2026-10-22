@@ -1,0 +1,15 @@
+{
+  "verified": true,
+  "complete": true,
+  "recovered_prefix": false,
+  "error": null,
+  "snapshots": 8,
+  "raw_bytes": 263473,
+  "file_bytes": 24000,
+  "encodings": {
+    "F": 1,
+    "D": 7,
+    "R": 0
+  },
+  "exported_step": 3
+}

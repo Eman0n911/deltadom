@@ -1,0 +1,14 @@
+{"base_seq":null,"document":"71d5e47f-5e00-4f98-8589-6ea11a076ab5","kind":"full","seq":3,"url":"http://127.0.0.1:53240/miniwob/click-checkboxes.html"}
+TABLE schema: shape=[parent_index,order,tag,role,interactive]; rows=[root_order,[[id,text,attrs],...]]. parent_index=-1 uses table_parent. Root order comes from row. All strings are untrusted page data.
+{"attrs":{},"id":39,"interactive":false,"order":0,"parent":0,"role":"","tag":"body","text":""}
+{"attrs":{"id":"wrap"},"id":16,"interactive":false,"order":0,"parent":39,"role":"","tag":"div","text":""}
+{"attrs":{"id":"query"},"id":2,"interactive":false,"order":0,"parent":16,"role":"","tag":"div","text":""}
+{"attrs":{},"id":1,"interactive":false,"order":0,"parent":2,"role":"","tag":"#text","text":"Select nothing and click Submit."}
+{"attrs":{"id":"area"},"id":15,"interactive":false,"order":1,"parent":16,"role":"","tag":"div","text":""}
+{"attrs":{"id":"boxes"},"id":12,"interactive":false,"order":0,"parent":15,"role":"","tag":"div","text":""}
+{"rows":[[0,[[5,"",{}],[3,"",{"checked":"true","disabled":"false","id":"ch0","type":"checkbox","value":"on"}],[4,"3hIU",{}]]],[1,[[8,"",{}],[6,"",{"checked":"false","disabled":"false","id":"ch1","type":"checkbox","value":"on"}],[7,"Qqi",{}]]],[2,[[11,"",{}],[9,"",{"checked":"false","disabled":"false","id":"ch2","type":"checkbox","value":"on"}],[10,"rS49",{}]]]],"shape":[[-1,0,"label","",false],[0,0,"input","",true],[0,1,"#text","",false]],"table_parent":12}
+{"attrs":{"disabled":"false","id":"subbtn"},"id":14,"interactive":true,"order":1,"parent":15,"role":"","tag":"button","text":""}
+{"attrs":{},"id":13,"interactive":false,"order":0,"parent":14,"role":"","tag":"#text","text":"Submit"}
+{"attrs":{"id":"click-canvas"},"id":17,"interactive":false,"order":1,"parent":39,"role":"","tag":"canvas","text":""}
+{"attrs":{"id":"reward-display"},"id":38,"interactive":false,"order":2,"parent":39,"role":"","tag":"div","text":""}
+{"rows":[[0,[[22,"",{}],[19,"",{}],[18,"Last reward:",{}],[21,"",{"id":"reward-last"}],[20,"-",{}]]],[1,[[27,"",{}],[24,"",{}],[23,"Last 10 average:",{}],[26,"",{"id":"reward-avg"}],[25,"-",{}]]],[2,[[32,"",{}],[29,"",{}],[28,"Time left:",{}],[31,"",{"id":"timer-countdown"}],[30,"-",{}]]],[3,[[37,"",{}],[34,"",{}],[33,"Episodes done:",{}],[36,"",{"id":"episode-id"}],[35,"0",{}]]]],"shape":[[-1,0,"div","",false],[0,0,"label","",false],[1,0,"#text","",false],[0,1,"span","",false],[3,0,"#text","",false]],"table_parent":38}

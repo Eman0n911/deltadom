@@ -1,0 +1,9 @@
+- text: Enter the username "emile" and the password "l3H" into the text fields and press login.
+- paragraph:
+  - text: Username
+  - textbox: alice
+- paragraph:
+  - text: Password
+  - textbox: sample123
+- button "Login"
+- text: "Last reward: - Last 10 average: - Time left: - Episodes done: 0"

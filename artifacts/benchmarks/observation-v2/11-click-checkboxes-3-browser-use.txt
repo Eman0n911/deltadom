@@ -1,0 +1,17 @@
+[41]<div id=query />
+	Select nothing and click Submit.
+[47]<label />
+	[48]<input type=checkbox id=ch0 value=on checked=false />
+	3hIU
+[51]<label />
+	[52]<input type=checkbox id=ch1 value=on checked=false />
+	Qqi
+[55]<label />
+	[56]<input type=checkbox id=ch2 value=on checked=false />
+	rS49
+[3]<button id=subbtn />
+	Submit
+Last reward:
+Last 10 average:
+Time left:
+Episodes done:

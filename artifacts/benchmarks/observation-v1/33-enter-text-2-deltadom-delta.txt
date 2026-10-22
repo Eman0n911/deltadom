@@ -1,0 +1,3 @@
+{"base_seq":2,"document":"bc12010b-198d-41bc-bcd0-07ec695e0d75","kind":"delta","seq":3,"url":"http://127.0.0.1:53240/miniwob/enter-text.html"}
+upsert=[{"attrs":{"disabled":"false","id":"tt","type":"text","value":"Alice"},"id":6,"interactive":true,"order":0,"parent":9,"role":"","tag":"input","text":""}]
+removed=[]

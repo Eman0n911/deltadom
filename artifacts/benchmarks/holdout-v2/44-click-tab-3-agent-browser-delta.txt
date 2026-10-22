@@ -1,0 +1,21 @@
+{
+  "baseRevision": 3,
+  "changes": [],
+  "kind": "delta",
+  "revision": 4,
+  "treeChange": {
+    "deleteCount": 9,
+    "lines": [
+      "        - tab \"Tab #1\" [expanded=true, selected, ref=e1]",
+      "          - link \"Tab #1\" [ref=e4]",
+      "        - tab \"Tab #2\" [expanded=false, ref=e2]",
+      "          - link \"Tab #2\" [ref=e5]",
+      "        - tab \"Tab #3\" [expanded=false, ref=e3]",
+      "          - link \"Tab #3\" [ref=e6]",
+      "      - tabpanel \"Tab #1\"",
+      "        - paragraph",
+      "          - StaticText \"Non lorem egestas iaculis. Est aliquam. Cursus pretium bibendum ac aliquam. Sed lorem platea enim, vestibulum, pharetra, felis, sit. Lectus.\""
+    ],
+    "startLine": 5
+  }
+}

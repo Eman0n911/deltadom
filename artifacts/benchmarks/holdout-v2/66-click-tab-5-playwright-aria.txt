@@ -1,0 +1,14 @@
+- text: "Click on Tab #1."
+- tablist:
+  - 'tab "Tab #1"':
+    - 'link "Tab #1"':
+      - /url: "#tabs-1"
+  - 'tab "Tab #2"':
+    - 'link "Tab #2"':
+      - /url: "#tabs-2"
+  - 'tab "Tab #3" [expanded] [selected]':
+    - 'link "Tab #3"':
+      - /url: "#tabs-3"
+- 'tabpanel "Tab #3"':
+  - paragraph: Vitae. Massa mattis imperdiet. Cras. Aenean. Nunc. Facilisis vulputate mauris accumsan, nisl, pulvinar tincidunt mauris pulvinar libero pellentesque ipsum volutpat.
+- text: "Last reward: - Last 10 average: - Time left: - Episodes done: 0"

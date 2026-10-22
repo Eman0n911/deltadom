@@ -1,0 +1,4 @@
+- text: Enter "Thaddeus" into the text field and press Submit.
+- textbox: Alice
+- button "Submit"
+- text: "Last reward: - Last 10 average: - Time left: - Episodes done: 0"
