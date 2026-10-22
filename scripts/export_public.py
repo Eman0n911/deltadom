@@ -14,6 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ROOT_FILES = {
     ".gitignore",
+    ".gitattributes",
     "Cargo.toml",
     "Cargo.lock",
     "pyproject.toml",
@@ -83,7 +84,7 @@ def main():
         if source.suffix in TEXT_SUFFIXES:
             text = data.decode("utf-8")
             clean = text.replace(str(Path.home()), "/HOME")
-            clean = re.sub(r"(?:/private)?/TMP/\s]+/[^/\s]+/", "/TMP/", clean)
+            clean = re.sub(r"(?:/private)?/var/folders/[^/\s]+/[^/\s]+/[^/\s]+/", "/TMP/", clean)
             if clean != text:
                 redacted.append(name)
             data = clean.encode("utf-8")

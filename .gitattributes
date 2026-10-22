@@ -1,0 +1,3 @@
+artifacts/** linguist-generated=true
+evidence/** linguist-generated=true
+python/deltadom/licenses/** linguist-vendored=true
