@@ -1,6 +1,6 @@
 {
-  "source_commit": "74a09e492ea29938088615ede0d40205d9219d3f",
-  "files": 4656,
+  "source_commit": "a22e65c84456e6267d7ee28a790fbbafcfb06bf2",
+  "files": 4658,
   "ci": "Workflow retained as inactive ci/check.yml; publishing token lacks workflow scope",
   "path_redactions": [
     "artifacts/benchmarks/binding-v9/final-install.log",

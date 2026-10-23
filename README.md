@@ -1,5 +1,7 @@
 # DeltaDOM
 
+[中文](README.md) · [English](README.en.md) · [日本語](README.ja.md) · [Français](README.fr.md)
+
 ![DeltaDOM 概念插画：工单在移动，光标通过蓝线连接原来的目标](docs/assets/brand/identity-thread.png)
 
 **让点击跟着目标走。** 保存记录的可见身份，在真实点击过程中继续核对。
@@ -8,13 +10,13 @@
 
 > **私密研发中（2026-10-23）。** 0.4 已停止公开分发；以下体验包入口仅供已有仓库访问权限的人使用。当前尚未证明端到端竞争优势，新的方向、负结果与继续投入标准见[研发决策](docs/DIRECTION.md)。未经项目所有者重新明确授权，不恢复公开。
 
-最新本地预览 **0.5.0.dev9** 研究“列表变了，还能否点对原来的记录”：可以用 Option/Alt 点击保存一个目标，并在真实输入事件中再次核对。已完成独立目录的免编译安装和浏览器演示；固定场景及七站全部按钮对比已完成，观察到局部能力差异；尚未获得通用 Browser Use 替代品的证据。[直接试用说明](docs/BINDING-PREVIEW.md) · [接口与限制](docs/ACTION-BINDING.md)。此预览没有上传 GitHub，下面的 0.4 下载包不包含这些新能力。
+最新本地预览 **0.5.0.dev9** 研究“列表变了，还能否点对原来的记录”：可以用 Option/Alt 点击保存一个目标，并在真实输入事件中再次核对。已完成独立目录的免编译安装和浏览器演示；固定场景及七站全部按钮对比已完成，观察到局部能力差异；尚未获得通用 Browser Use 替代品的证据。[直接试用说明](docs/BINDING-PREVIEW.md) · [接口与限制](docs/ACTION-BINDING.md)。源代码与图文已同步到私密仓库；预编译体验包尚未上传 GitHub Releases，下面的 0.4 下载包不包含这些新能力。
 
 此前原型研究“断线后怎样避免重复提交”：已实现对象级未决写入隔离和请求转发防重放。真实浏览器故障诊断出现一项范围有限的恢复收益，也保留了合法重复操作被误拦等反例；尚不能作为通用保护层。见[使用方法](docs/RECOVERY-V7-V8.md)、[固定样本与强基线结果](benchmarks/RECOVERY-V7-V8-RESULTS.md)。原型尚未纳入 0.4 发布包。
 
 **网页哪里变了，一步一步查清楚。**
 
-[English](README.en.md) · [下载体验包](https://github.com/Eman0n911/deltadom/releases/tag/v0.4.0) · [安装说明](START_HERE.md) · [实测比较](benchmarks/RECORDING-RESULTS.md) · [Python SDK](docs/SDK.md)
+[下载旧版体验包](https://github.com/Eman0n911/deltadom/releases/tag/v0.4.0) · [安装说明](START_HERE.md) · [实测比较](benchmarks/RECORDING-RESULTS.md) · [Python SDK](docs/SDK.md)
 
 DeltaDOM 记录浏览器看到的页面内容，显示每一步的变化，出错后可以离线恢复先前记录。适合检查自动化流程、排查浏览器智能体为什么点错，以及保存动态页面的变化过程。
 
@@ -38,10 +40,10 @@ DeltaDOM 记录浏览器看到的页面内容，显示每一步的变化，出�
 **Start DeltaDOM.command**。它会安装预编译程序并打开真实浏览器演示，无需模型账号。
 此文件尚未上传 GitHub；下面的旧版下载地址不包含新原型。
 
-在新体验包目录中，也可以保存自己的一个点击目标：
+在新体验包目录中，也可以保存自己的一个点击目标；将 `https://example.com` 替换为目标网页：
 
 ```sh
-python3 run.py bind https://你的网页地址 --output action.json
+python3 run.py bind https://example.com --output action.json
 python3 run.py bound-click action.json
 ```
 
@@ -49,8 +51,9 @@ python3 run.py bound-click action.json
 并保留浏览器供你核对结果。发现身份改变就停止，没有自动重试，也不把点击等同于
 业务成功。[详细使用步骤](docs/BINDING-PREVIEW.md)。
 
-普通排序时，本版与强简单上下文核对在 281 个按钮上打平；输入开始后的固定变化
-诊断中，Browser Use 原生点击与人工点击前核对各有 6 类错误效果，本版降为 2 类。
+普通排序时，本版与强简单上下文核对在 281 个按钮上打平；11 种固定输入场景分别
+使用普通与要求可信输入的处理器测试，每种处理器下，Browser Use 原生点击与人工
+点击前核对各有 6 类错误效果，本版降为 2 类。
 这不是完整任务成功率。[协议、强基线、全部反例与结果](benchmarks/BINDING-V9-RESULTS.md)。
 
 ## 旧版 0.4：观察录制体验
@@ -131,6 +134,7 @@ with BrowserUseRecorder("agent.ddt") as recorder:
 
 ## 范围与限制
 
+- V9 一次保存、重放一个点击，不负责完整任务规划。当前仅支持顶层常见 HTML 控件，重放网址须与保存时完全一致；变化检测仍有漏拦，不能撤销较早处理函数的副作用，也不确认服务器业务结果。
 - “恢复一致”指捕获的语义节点或写入的原生文本，不是完整 HTML、视频或整个浏览器状态。Playwright 捕获不包含 iframe 内部、closed shadow 或 canvas 像素。
 - 默认页面观察包含 60 ms 稳定窗口；可显示未稳定警告，不能保证网页未来不再更新。
 - 单步录制最大 16 MiB。损坏会拒绝；中断录制可用 `replay --recover` 恢复已验证前缀，明确标记未完整结束。

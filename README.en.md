@@ -1,50 +1,98 @@
 # DeltaDOM
 
-![DeltaDOM: a cursor tethered to its intended ticket as surrounding records move](docs/assets/brand/identity-thread.png)
+[中文](README.md) · [English](README.en.md) · [日本語](README.ja.md) · [Français](README.fr.md)
 
-**Keep hold of the intended record.** Bind a click to visible identity and recheck during real input.
+![Concept illustration: a cursor stays tethered to its intended ticket as surrounding records move](docs/assets/brand/identity-thread.png)
 
-![Concept animation: follow the same record through a reorder; pause when its identity changes](docs/assets/brand/identity-motion.gif)
+**Keep hold of the intended record.** Save its visible identity and recheck it during real clicks.
 
-*Illustrative motion, not an execution recording or a guarantee of business correctness.*
-[Static alternative](docs/assets/brand/identity-motion-still.png) · [Usage and limits](docs/ACTION-BINDING.md)
+[Animation](#everyday-scenario-dont-close-the-wrong-ticket) · [Local preview](docs/BINDING-PREVIEW.md) · [Results and limits](benchmarks/BINDING-V9-RESULTS.md)
 
-**Private local preview: 0.5.0.dev9.** The new prototype records one selected control’s visible record identity and checks it during trusted input dispatch. A prebuilt Mac arm64 preview and real-browser demo have been tested locally; this preview has not been published. It is not a general Browser Use replacement. [Usage](docs/BINDING-PREVIEW.md) · [Full comparisons and counterexamples](benchmarks/BINDING-V9-RESULTS.md). The older 0.4 downloads below do not contain these features.
+> **Private development — 2026-10-23.** Public distribution of 0.4 has stopped. The download links below require repository access. End-to-end competitive advantage remains unproven; see the [research decisions](docs/DIRECTION.md), including negative results and criteria for further work. The repository will not become public again without fresh explicit authorization from its owner.
 
-> **Private development — 2026-10-22.** Public distribution of 0.4 has stopped. Release links below require repository access. End-to-end competitive advantage remains unproven; see the [research decision](docs/DIRECTION.md). Making the repository public again requires fresh explicit authorization from its owner.
+The latest local preview, **0.5.0.dev9**, asks whether a click can still reach the intended record after a list changes. Select a target with Option/Alt-click, save it, and check its identity again during real input. Installation without compilation and the browser demo have been verified in a fresh directory. Fixed scenarios and all buttons across seven test sites show some component-level differences; they do not establish a general replacement for Browser Use. [Preview guide](docs/BINDING-PREVIEW.md) · [API and limits](docs/ACTION-BINDING.md). Source and visuals are in the private repository; the prebuilt preview has **not** been uploaded to GitHub Releases. The older 0.4 downloads do not include these features.
 
-The earlier local prototype adds durable recovery and exact HTTP replay fencing. Fixed browser fault tests show a narrow recovery benefit, with missed duplicates and legitimate-repeat false blocks retained. This is not a general protection layer or a released feature. See the [results](benchmarks/RECOVERY-V7-V8-RESULTS.md) and [SDK boundaries](docs/RECOVERY-V7-V8.md).
+An earlier prototype explores avoiding duplicate submissions after a disconnect, using object-level isolation of unresolved writes and request replay fencing. Browser fault tests show a limited recovery benefit, with missed duplicates and incorrectly blocked legitimate repeats retained. This is not yet a general protection layer and is not included in the 0.4 package. [Usage](docs/RECOVERY-V7-V8.md) · [Fixed comparisons and counterexamples](benchmarks/RECOVERY-V7-V8-RESULTS.md).
 
-**See what changed. Recover what the browser agent saw.**
+**See what changed, step by step.**
 
-[中文](README.md) · [Download](https://github.com/Eman0n911/deltadom/releases/tag/v0.4.0) · [Recording guide](docs/RECORDING.md) · [Evidence](benchmarks/RECORDING-RESULTS.md)
+[Older preview download](https://github.com/Eman0n911/deltadom/releases/tag/v0.4.0) · [Installation](START_HERE.md) · [Measurements](benchmarks/RECORDING-RESULTS.md) · [Python SDK](docs/SDK.md)
 
-DeltaDOM records browser observations, compares changes between steps, and restores captured content offline. It works alongside existing browser tools. Version 0.4 is an experimental release, not a general agent accelerator.
+DeltaDOM also records what the browser sees, compares changes between steps, and restores earlier observations offline. Use it to inspect automation, investigate wrong clicks, or preserve changes on dynamic pages.
 
-## Try it without compiling
+**0.4 is experimental.** Installation without compilation has been verified on Apple Silicon Macs. Its demo needs no API key, model account, or programming experience. Many linked guides and some CLI messages are currently in Chinese.
 
-Download the **Apple Silicon Mac** ZIP from Releases, unzip it, and double-click **Start DeltaDOM.command**, or run:
+## New prototype: see the clicks first
+
+### Everyday scenario: don't close the wrong ticket
+
+A queue keeps refreshing. You select a ticket; if its position changes, follow the same record. If its identity changes during input, pause the click and leave it for review.
+
+![Concept animation: follow the blue ticket through a reorder; pause when it becomes a different orange ticket](docs/assets/brand/identity-motion.gif)
+
+*The illustration and animation explain the mechanism. They are not execution recordings or guarantees of effectiveness.*
+[Static version](docs/assets/brand/identity-motion-still.png) · [Real-browser demonstration and limits](docs/TICKET-QUEUE-STORY.md)
+
+### Open the local preview
+
+Unzip the locally supplied **DeltaDOM-0.5.0.dev9-macosx_11_0_arm64.zip** and double-click **Start DeltaDOM.command**. It installs prebuilt binaries and opens a real-browser demo, with no model account required. This ZIP is not on GitHub Releases; the older download below does not contain the new prototype.
+
+In the new preview folder, save a click target of your own. Replace `https://example.com` with the page you want to use:
 
 ```sh
-python3 install.py
+python3 run.py bind https://example.com --output action.json
+python3 run.py bound-click action.json
 ```
 
-Requires Python 3.12+ (or uv) and Chrome. No Rust, Node, model account or API key. The real-browser demo runs eight local steps and checks reconstruction. First installation downloads dependencies; the demo uses only a local sample page. This is not a signed standalone desktop application.
+In the first step, hold Option/Alt and click to select. The second step sends one real click matched to the saved record identity, then leaves the browser open for inspection. Detected identity changes stop the action. There are no automatic retries, and a click is not treated as business success. [Detailed instructions](docs/BINDING-PREVIEW.md).
 
-In the unpacked folder:
+On ordinary reordering, V9 tied the strong simple context-checking baseline across 281 buttons. In 11 fixed input scenarios, tested separately with ordinary handlers and handlers requiring trusted input, native Browser Use clicks and manual pre-click checks each produced wrong effects in 6 scenarios per handler type; V9 reduced that count to 2. This is not an end-to-end task success rate. [Protocol, strong baselines, all counterexamples and results](benchmarks/BINDING-V9-RESULTS.md).
+
+## Older version 0.4: observation recording
+
+1. [Download and unzip the Mac preview](https://github.com/Eman0n911/deltadom/releases/download/v0.4.0/DeltaDOM-0.4.0-macosx_11_0_arm64.zip). Requires Python 3.12+ (or uv) and Google Chrome.
+2. Double-click **Start DeltaDOM.command**, or run `python3 install.py` in the extracted folder.
+3. Watch a real browser fill a form, reorder items, select a product and refresh. The terminal should report **Verified 8/8**.
+
+No Rust, Node.js, or compiler is needed. The first installation downloads dependencies; the demo visits only its bundled local page. See the [installation guide](START_HERE.md) for help. This is not a standalone desktop application and is not signed or notarized.
+
+```text
+STEP                   FRAME   NODES  FULL BYTES  SENT BYTES  CHECK
+initial                full      304      32,556       7,203  OK
+unchanged              delta     304      32,556          76  OK
+fill                   delta     304      32,560         117  OK
+reorder                delta     304      32,576         638  OK
+same_url_reload        full      304      32,556       7,203  OK
+```
+
+This is an actual demo excerpt from the 0.3 capture core. Version 0.4 retains that encoding and adds verifiable recording files. [Full historical output](artifacts/preview-demo-0.3.txt). These are byte counts from a local example, not model costs.
+
+## Inspect what changed
+
+After the demo, run these commands in the extracted folder:
 
 ```sh
+# Check recording integrity without starting a browser
 python3 run.py replay deltadom-output/demo.ddt
+
+# Compare observations before and after filling the form
 python3 run.py diff deltadom-output/demo.ddt --before 2 --after 3
+
+# Restore step 3 as readable JSON
 python3 run.py replay deltadom-output/demo.ddt --step 3 --output step-3.json
+```
+
+To record a page of your own:
+
+```sh
 python3 run.py record https://example.com --count 30 --output example.ddt
 ```
 
-Recordings stay local and may contain private page/form content. Review them before sharing. A fresh browser session is used; your everyday browser profile is not loaded. Existing recordings and exported files are never overwritten.
+Interact with the separate browser window; DeltaDOM records once per second. Recordings stay local and may contain private page or form content, so review them before sharing. It does not load your everyday browser's signed-in profile. Existing recording and export files are not overwritten. [Recording, interrupted recovery and integration](docs/RECORDING.md).
 
-## Add recording to Browser Use
+## Add recording to an existing agent
 
-Keep your existing `agent`, model and action setup:
+In a Python environment with the wheel installed, keep your existing Browser Use model and action logic:
 
 ```python
 from deltadom import BrowserUseRecorder
@@ -53,23 +101,39 @@ with BrowserUseRecorder("agent.ddt") as recorder:
     await agent.run(on_step_end=recorder.on_step_end)
 ```
 
-Tested against Browser Use **0.13.11**. The optional callback copies the last input messages, output and action results at step end. It depends on a private MessageManager field: revalidate after upgrades. It does not capture every provider request/retry, and does not modify or reduce model input. Existing step callbacks can explicitly call `recorder.on_step_end(agent)`.
+The callback has been verified with Browser Use **0.13.11**. It records the last model input, output and action results at each step end. It does not modify model input or capture every provider request and retry. It uses a private MessageManager field, so revalidate after upgrades. [Interface boundaries](docs/RECORDING.md#接入已有-browser-use-智能体).
 
-For Playwright semantic deltas, stable node IDs and guarded actions, see the [SDK](docs/SDK.md) and [example](examples/observe.py).
+With Playwright, `DeltaBrowser` also supports semantic-node deltas, stable-ID actions, and explicitly allowed API field reads. [SDK](docs/SDK.md) · [Example](examples/observe.py).
 
-## Measured, with limits
+## Measured results
 
-- **450/450 snapshots restored byte for byte**, from three native observation sources.
-- Recording identical Browser Use output used **48.7%–59.1% fewer bytes** than independently zlib-compressed snapshots with the same framing/integrity checks, on the existing local corpus.
-- **Whole-session gzip was smaller in every group.** Prefer ordinary gzip for offline backups.
-- **No demonstrated model cost or task-success improvement.** Native agent-browser deltas remain shorter on the previously tested public pages; Browser Use native DOM capture remains faster.
+| Comparison | Result | Scope |
+|---|---|---|
+| Saving identical Browser Use output frame by frame | **48.7%–59.1% fewer bytes** | Compared with independent zlib compression and equivalent integrity checks, on existing page recordings |
+| Restoring original content | **450/450 byte-identical** | Three observation sources, 150 snapshots each |
+| Whole-session gzip archive | **gzip is smaller** | Prefer gzip if you only need a backup after the task |
+| Model cost and end-to-end success | **No improvement demonstrated** | The recording callback does not change model input |
 
-[Protocol, results and negative findings](benchmarks/RECORDING-RESULTS.md). This is retrospective storage evidence, not a new held-out or autonomous-agent benchmark. DDT1 uses standard zlib with the preceding snapshot as dictionary; the contribution is the checked recording/recovery workflow, not a new compression algorithm.
+[Protocol, full results and negative findings](benchmarks/RECORDING-RESULTS.md). In earlier observation-layer comparisons on public pages, native agent-browser deltas were shorter and Browser Use native DOM capture was faster. Storage savings do not establish superiority over browser agents.
 
-## What is recovered?
+## Which tool fits?
 
-The exact semantic nodes or native text recorded, not a complete browser state or video. DeltaBrowser capture excludes iframe internals, closed shadow roots and canvas pixels. A record is limited to 16 MiB. Missing/damaged records fail validation. `replay --recover` can recover a verified prefix from an interrupted recording, explicitly marked incomplete. Hashes detect damage; they do not authenticate the origin.
+- For AI that autonomously completes web tasks: [Browser Use](https://github.com/browser-use/browser-use).
+- For browser control from the terminal: [agent-browser](https://github.com/vercel-labs/agent-browser).
+- For incremental page recording, field-level comparisons, validation and observation recovery: try DeltaDOM alongside your existing tools.
 
-Choose [Browser Use](https://github.com/browser-use/browser-use) for autonomous browser tasks, [agent-browser](https://github.com/vercel-labs/agent-browser) for CLI control, and DeltaDOM for checked incremental observation records and field-level inspection. The projects are not affiliated.
+The recording format uses standard zlib with the previous frame as a dictionary. Its value lies in the combination of validation, incremental recording and recovery. It is not a new compression algorithm, and we do not claim other tools lack replay features. The projects are not affiliated.
 
-[Contributing](CONTRIBUTING.md) · [MIT license](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md)
+## Scope and limitations
+
+- V9 saves and replays one click at a time; it does not plan complete tasks. It currently supports common top-level HTML controls and requires the exact saved URL. Some changes escape detection. It cannot undo earlier handler side effects or confirm server-side business results.
+- Exact recovery means the captured semantic nodes or native text, not complete HTML, video, or browser state. Playwright capture excludes iframe internals, closed shadow roots and canvas pixels.
+- Page observation includes a default 60 ms settling window. It can report instability but cannot guarantee the page will not change later.
+- A single recorded step is limited to 16 MiB. Damaged records fail validation. `replay --recover` restores a verified prefix from an interrupted recording and marks it incomplete. Integrity hashes do not authenticate origin.
+- The Mac arm64 preview has been installed and verified locally. Source or build checks on other platforms are not installation verification of their downloadable packages.
+
+## Development and contributions
+
+[Historical release checks](docs/VALIDATION-0.4.md) · [Development and tests](CONTRIBUTING.md) · [Design](docs/DESIGN.md) · [Research decisions](docs/DIRECTION.md) · [Changelog](CHANGELOG.md)
+
+MIT · [Third-party notices](THIRD_PARTY_NOTICES.md). Reproducible pages and bug reports are welcome; do not include real passwords, cookies, or personal browsing records.

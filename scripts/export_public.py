@@ -21,6 +21,8 @@ ROOT_FILES = {
     "requirements-dev.lock",
     "README.md",
     "README.en.md",
+    "README.ja.md",
+    "README.fr.md",
     "START_HERE.md",
     "CONTRIBUTING.md",
     "CHANGELOG.md",
