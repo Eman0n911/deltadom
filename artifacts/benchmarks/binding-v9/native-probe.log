@@ -1,0 +1,9 @@
+INFO     [probe] 🔍 Searching for element: <BUTTON> hash=5774147598918325995 stable_hash=5774147598918325995
+INFO     [probe] 🔍 Selector map has 4 elements, 2 are <BUTTON>: [(15, 'BUTTON', None), (10, 'BUTTON', None)]
+INFO     [probe] Element index updated 10 → 15 (matched at EXACT level)
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+before [(10, 'html/body/main/article[1]/button', 5774147598918325995, 'Approve'), (15, 'html/body/main/article[2]/button', 5774147598918325995, 'Approve')]
+match {'click': {'index': 15}}
+{"clicked": ["Invoice B"], "action_result": {"is_done": false, "extracted_content": "Clicked button \"Approve\"", "include_extracted_content_only_once": false, "metadata": {"click_x": 108.546875, "click_y": 20.5}, "include_in_memory": false}}

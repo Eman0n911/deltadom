@@ -1,0 +1,6 @@
+{
+  "benchmarks/outcome_agent.py": "671cbc4d49b31c48971eff3a0bde5b55e168fd355031d777339c7fcf334e99f7",
+  "benchmarks/outcome_cli_actor.py": "e406280599c090b1e918b4f5230c7e7ab274056fa7e80c8925ac728996b116bf",
+  "python/deltadom/outcome.py": "2402aab9d8a3c9c9bac87953f3d3c570d6ec04d7535356224decc907aa7702f7",
+  "python/deltadom/presence.py": "a22ae415c024795a9fae1b7f8612202443e7893d2d1f7ad6d973648b5b2a1201"
+}

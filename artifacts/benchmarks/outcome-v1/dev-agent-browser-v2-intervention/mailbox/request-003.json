@@ -1,0 +1,54 @@
+{
+  "request_id": "003",
+  "messages": [
+    {
+      "role": "system",
+      "cache": false,
+      "content": "Complete the user's browser task using agent-browser native snapshot refs. Only interact with the current local website UI; no evaluator, backend state or external sites. Return one JSON action. click/fill use e-number refs (e.g. e5). Use refresh to independently read page state, back for previous page, scroll_down/up for scrolling. Finish with success=false if unconfirmed. Do not claim success based only on a click or toast.",
+      "name": null
+    },
+    {
+      "role": "user",
+      "cache": false,
+      "content": "{\"task\": \"Find the email from Alice Chen with subject \\\"Project Update — Q1 Milestones\\\" and star it.\", \"step\": 3, \"budget\": 40, \"action_history\": [{\"action\": {\"action\": \"click\", \"target\": \"e34\", \"text\": \"\", \"success\": false}, \"error\": null}, {\"action\": {\"action\": \"refresh\", \"target\": \"\", \"text\": \"\", \"success\": false}, \"error\": null}], \"last_error\": null, \"snapshot\": \"- generic [ref=e52] clickable [onclick]\\n  - banner\\n    - StaticText \\\"Gmail\\\"\\n    - search\\n      - textbox \\\"Search mail\\\" [ref=e60]\\n      - button \\\"Run search\\\" [ref=e61]\\n        - StaticText \\\"Search\\\"\\n  - navigation \\\"Gmail navigation\\\" [ref=e53]\\n    - button \\\"Compose a new message\\\" [ref=e55]\\n      - StaticText \\\"Compose\\\"\\n    - complementary \\\"Gmail navigation\\\"\\n      - region \\\"main\\\" [ref=e62]\\n        - link \\\"Inbox\\\" [ref=e76]\\n          - StaticText \\\"Inbox\\\"\\n          - StaticText \\\"11\\\"\\n        - link \\\"Starred\\\" [ref=e77]\\n          - StaticText \\\"Starred\\\"\\n          - StaticText \\\"0\\\"\\n        - link \\\"Sent\\\" [ref=e78]\\n          - StaticText \\\"Sent\\\"\\n          - StaticText \\\"0\\\"\\n        - link \\\"Drafts\\\" [ref=e79]\\n          - StaticText \\\"Drafts\\\"\\n          - StaticText \\\"0\\\"\\n        - link \\\"Archive\\\" [ref=e80]\\n          - StaticText \\\"Archive\\\"\\n        - link \\\"Trash\\\" [ref=e81]\\n          - StaticText \\\"Trash\\\"\\n      - region \\\"manage\\\" [ref=e63]\\n        - link \\\"Settings\\\" [ref=e82]\\n          - StaticText \\\"Settings\\\"\\n        - link \\\"Labels\\\" [ref=e83]\\n          - StaticText \\\"Labels\\\"\\n        - link \\\"Contacts\\\" [ref=e84]\\n          - StaticText \\\"Contacts\\\"\\n  - main \\\"Inbox\\\" [ref=e54]\\n    - tablist \\\"Inbox categories\\\"\\n      - tab \\\"Primary\\\" [selected, ref=e64]\\n      - tab \\\"Promotions\\\" [ref=e65]\\n      - tab \\\"Updates\\\" [ref=e66]\\n      - tab \\\"All Mail\\\" [ref=e67]\\n    - button \\\"Mark all as read\\\" [ref=e56]\\n      - StaticText \\\"Mark all read\\\"\\n    - StaticText \\\"1\\\"\\n    - StaticText \\\"–\\\"\\n    - StaticText \\\"8\\\"\\n    - StaticText \\\" of \\\"\\n    - StaticText \\\"8\\\"\\n    - button \\\"Previous page\\\" [disabled, ref=e57]\\n    - button \\\"Next page\\\" [disabled, ref=e58]\\n    - region \\\"Email results\\\" [ref=e59]\\n      - article \\\"Unread thread from Alice Chen: Project Update — Q1 Milestones\\\" [ref=e68] clickable [cursor:pointer, onclick]\\n        - button \\\"Star Project Update — Q1 Milestones\\\" [ref=e85]\\n        - strong\\n          - StaticText \\\"Alice Chen\\\"\\n        - StaticText \\\"UNREAD\\\"\\n        - link \\\"Open unread thread Project Update — Q1 Milestones\\\" [ref=e86]\\n          - StaticText \\\"Project Update — Q1 Milestones\\\"\\n          - StaticText \\\"—\\\"\\n          - StaticText \\\"Hi team, Here's the latest update on our Q1 milestones. All deliverables are on track. Please review and let me know if you have questions.\\\"\\n        - StaticText \\\"inbox\\\"\\n        - time\\n          - StaticText \\\"Jul 7, 6:05 PM\\\"\\n      - article \\\"Read thread from Theo Rivera: Follow-up on venue estimate\\\" [ref=e69] clickable [cursor:pointer, onclick]\\n        - button \\\"Star Follow-up on venue estimate\\\" [ref=e87]\\n        - strong\\n          - StaticText \\\"Theo Rivera\\\"\\n        - link \\\"Open read thread Follow-up on venue estimate\\\" [ref=e88]\\n          - StaticText \\\"Follow-up on venue estimate\\\"\\n          - StaticText \\\"—\\\"\\n          - StaticText \\\"Passing along the current draft so you have it in one place. Most of the edits were minor, with one budget line still waiting on approval. N\\\"\\n        - StaticText \\\"inbox\\\"\\n        - StaticText \\\"Attachment\\\"\\n        - time\\n          - StaticText \\\"Jul 5, 6:05 PM\\\"\\n      - article \\\"Read thread from Priya Rivera: Reminder on document review timing\\\" [ref=e70] clickable [cursor:pointer, onclick]\\n        - button \\\"Star Reminder on document review timing\\\" [ref=e89]\\n        - strong\\n          - StaticText \\\"Priya Rivera\\\"\\n        - link \\\"Open read thread Reminder on document review timing\\\" [ref=e90]\\n          - StaticText \\\"Reminder on document review timing\\\"\\n          - StaticText \\\"—\\\"\\n          - StaticText \\\"Passing along the current draft so you have it in one place. Nothing looks blocked right now, but we still need one decision on timing. Happ\\\"\\n        - StaticText \\\"inbox\\\"\\n        - time\\n          - StaticText \\\"Jul 3, 7:05 PM\\\"\\n      - article \\\"Unread thread from Sofia Brooks: Quarterly metrics recap\\\" [ref=e71] clickable [cursor:pointer, onclick]\\n        - button \\\"Star Quarterly metrics recap\\\" [ref=e91]\\n        - strong\\n          - StaticText \\\"Sofia Brooks\\\"\\n        - StaticText \\\"UNREAD\\\"\\n        - link \\\"Open unread thread Quarterly metrics recap\\\" [ref=e92]\\n          - StaticText \\\"Quarterly metrics recap\\\"\\n          - StaticText \\\"—\\\"\\n          - StaticText \\\"I pulled the loose ends into one note for easier review. Nothing looks blocked right now, but we still need one decision on timing. Happy to\\\"\\n        - StaticText \\\"inbox\\\"\\n        - time\\n          - StaticText \\\"Jul 2, 2:05 PM\\\"\\n      - article \\\"Read thread from Elena Patel: Updated rollout checklist\\\" [ref=e72] clickable [cursor:pointer, onclick]\\n        - button \\\"Star Updated rollout checklist\\\" [ref=e93]\\n        - strong\\n          - StaticText \\\"Elena Patel\\\"\\n        - link \\\"Open read thread Updated rollout checklist\\\" [ref=e94]\\n          - StaticText \\\"Updated rollout checklist\\\"\\n          - StaticText \\\"—\\\"\\n          - StaticText \\\"Passing along the current draft so you have it in one place. The open items are mostly ownership questions rather than scope changes. Happy\\\"\\n        - StaticText \\\"inbox\\\"\\n        - time\\n          - StaticText \\\"Jun 24, 1:05 PM\\\"\\n      - article \\\"Read thread from Sofia Patel: Reminder on document review timing\\\" [ref=e73] clickable [cursor:pointer, onclick]\\n        - button \\\"Star Reminder on document review timing\\\" [ref=e95]\\n        - strong\\n          - StaticText \\\"Sofia Patel\\\"\\n        - link \\\"Open read thread Reminder on document review timing\\\" [ref=e96]\\n          - StaticText \\\"Reminder on document review timing\\\"\\n          - StaticText \\\"—\\\"\\n          - StaticText \\\"Sending a quick status update from today's working session. The open items are mostly ownership questions rather than scope changes. If you\\\"\\n        - StaticText \\\"inbox\\\"\\n        - time\\n          - StaticText \\\"Jun 19, 2:05 PM\\\"\\n      - article \\\"Unread thread from Theo Nguyen: Follow-up on venue estimate\\\" [ref=e74] clickable [cursor:pointer, onclick]\\n        - button \\\"Star Follow-up on venue estimate\\\" [ref=e97]\\n        - strong\\n          - StaticText \\\"Theo Nguyen\\\"\\n        - StaticText \\\"UNREAD\\\"\\n        - link \\\"Open unread thread Follow-up on venue estimate\\\" [ref=e98]\\n          - StaticText \\\"Follow-up on venue estimate\\\"\\n          - StaticText \\\"—\\\"\\n          - StaticText \\\"Sending a quick status update from today's working session. The open items are mostly ownership questions rather than scope changes. No resp\\\"\\n        - StaticText \\\"inbox\\\"\\n        - time\\n          - StaticText \\\"Jun 19, 1:05 PM\\\"\\n      - article \\\"Unread thread from Theo Brooks: Notes from the partner sync\\\" [ref=e75] clickable [cursor:pointer, onclick]\\n        - button \\\"Star Notes from the partner sync\\\" [ref=e99]\\n        - strong\\n          - StaticText \\\"Theo Brooks\\\"\\n        - StaticText \\\"UNREAD\\\"\\n        - link \\\"Open unread thread Notes from the partner sync\\\" [ref=e100]\\n          - StaticText \\\"Notes from the partner sync\\\"\\n          - StaticText \\\"—\\\"\\n          - StaticText \\\"Sharing the latest notes before tomorrow's check-in. Most of the edits were minor, with one budget line still waiting on approval. No respon\\\"\\n        - StaticText \\\"inbox\\\"\\n        - time\\n          - StaticText \\\"Jun 19, 12:05 PM\\\"\\n\"}",
+      "name": null
+    }
+  ],
+  "output_schema": {
+    "properties": {
+      "action": {
+        "enum": [
+          "click",
+          "fill",
+          "scroll_down",
+          "scroll_up",
+          "back",
+          "refresh",
+          "finish"
+        ],
+        "title": "Action",
+        "type": "string"
+      },
+      "target": {
+        "default": "",
+        "title": "Target",
+        "type": "string"
+      },
+      "text": {
+        "default": "",
+        "title": "Text",
+        "type": "string"
+      },
+      "success": {
+        "default": false,
+        "title": "Success",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "action"
+    ],
+    "title": "CLIAction",
+    "type": "object"
+  }
+}

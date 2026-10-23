@@ -1,0 +1,476 @@
+{
+  "case": "entity_swap",
+  "arm": "whole_page_guard",
+  "valid_target_available": false,
+  "outcome": "blocked_invalid",
+  "actions": [],
+  "error": {
+    "type": "StaleObservationError",
+    "message": "experimental whole-page guard"
+  },
+  "action_elapsed_ms_diagnostic_only": 0.006,
+  "observed_nodes": [
+    {
+      "id": 22,
+      "tag": "body",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "interactive": false,
+      "parent": 0,
+      "order": 0
+    },
+    {
+      "id": 2,
+      "tag": "p",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "id": "outside"
+      },
+      "interactive": false,
+      "parent": 22,
+      "order": 0
+    },
+    {
+      "id": 1,
+      "tag": "#text",
+      "role": "",
+      "text": "0",
+      "attrs": {},
+      "interactive": false,
+      "parent": 2,
+      "order": 0
+    },
+    {
+      "id": 21,
+      "tag": "main",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "interactive": false,
+      "parent": 22,
+      "order": 1
+    },
+    {
+      "id": 11,
+      "tag": "article",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "id": "row"
+      },
+      "interactive": false,
+      "parent": 21,
+      "order": 0
+    },
+    {
+      "id": 4,
+      "tag": "span",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "interactive": false,
+      "parent": 11,
+      "order": 0
+    },
+    {
+      "id": 3,
+      "tag": "#text",
+      "role": "",
+      "text": "Invoice A",
+      "attrs": {},
+      "interactive": false,
+      "parent": 4,
+      "order": 0
+    },
+    {
+      "id": 6,
+      "tag": "span",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "interactive": false,
+      "parent": 11,
+      "order": 1
+    },
+    {
+      "id": 5,
+      "tag": "#text",
+      "role": "",
+      "text": "100",
+      "attrs": {},
+      "interactive": false,
+      "parent": 6,
+      "order": 0
+    },
+    {
+      "id": 8,
+      "tag": "span",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "interactive": false,
+      "parent": 11,
+      "order": 2
+    },
+    {
+      "id": 7,
+      "tag": "#text",
+      "role": "",
+      "text": "Updated 0",
+      "attrs": {},
+      "interactive": false,
+      "parent": 8,
+      "order": 0
+    },
+    {
+      "id": 10,
+      "tag": "button",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "disabled": "false"
+      },
+      "interactive": true,
+      "parent": 11,
+      "order": 3
+    },
+    {
+      "id": 9,
+      "tag": "#text",
+      "role": "",
+      "text": "Approve",
+      "attrs": {},
+      "interactive": false,
+      "parent": 10,
+      "order": 0
+    },
+    {
+      "id": 20,
+      "tag": "article",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "id": "other"
+      },
+      "interactive": false,
+      "parent": 21,
+      "order": 1
+    },
+    {
+      "id": 13,
+      "tag": "span",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "interactive": false,
+      "parent": 20,
+      "order": 0
+    },
+    {
+      "id": 12,
+      "tag": "#text",
+      "role": "",
+      "text": "Invoice C",
+      "attrs": {},
+      "interactive": false,
+      "parent": 13,
+      "order": 0
+    },
+    {
+      "id": 15,
+      "tag": "span",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "interactive": false,
+      "parent": 20,
+      "order": 1
+    },
+    {
+      "id": 14,
+      "tag": "#text",
+      "role": "",
+      "text": "100",
+      "attrs": {},
+      "interactive": false,
+      "parent": 15,
+      "order": 0
+    },
+    {
+      "id": 17,
+      "tag": "span",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "interactive": false,
+      "parent": 20,
+      "order": 2
+    },
+    {
+      "id": 16,
+      "tag": "#text",
+      "role": "",
+      "text": "Updated 0",
+      "attrs": {},
+      "interactive": false,
+      "parent": 17,
+      "order": 0
+    },
+    {
+      "id": 19,
+      "tag": "button",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "disabled": "false"
+      },
+      "interactive": true,
+      "parent": 20,
+      "order": 3
+    },
+    {
+      "id": 18,
+      "tag": "#text",
+      "role": "",
+      "text": "Approve",
+      "attrs": {},
+      "interactive": false,
+      "parent": 19,
+      "order": 0
+    }
+  ],
+  "after_nodes": [
+    {
+      "id": 22,
+      "tag": "body",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "interactive": false,
+      "parent": 0,
+      "order": 0
+    },
+    {
+      "id": 2,
+      "tag": "p",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "id": "outside"
+      },
+      "interactive": false,
+      "parent": 22,
+      "order": 0
+    },
+    {
+      "id": 1,
+      "tag": "#text",
+      "role": "",
+      "text": "0",
+      "attrs": {},
+      "interactive": false,
+      "parent": 2,
+      "order": 0
+    },
+    {
+      "id": 21,
+      "tag": "main",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "interactive": false,
+      "parent": 22,
+      "order": 1
+    },
+    {
+      "id": 11,
+      "tag": "article",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "id": "row"
+      },
+      "interactive": false,
+      "parent": 21,
+      "order": 0
+    },
+    {
+      "id": 4,
+      "tag": "span",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "interactive": false,
+      "parent": 11,
+      "order": 0
+    },
+    {
+      "id": 23,
+      "tag": "#text",
+      "role": "",
+      "text": "Invoice B",
+      "attrs": {},
+      "interactive": false,
+      "parent": 4,
+      "order": 0
+    },
+    {
+      "id": 6,
+      "tag": "span",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "interactive": false,
+      "parent": 11,
+      "order": 1
+    },
+    {
+      "id": 5,
+      "tag": "#text",
+      "role": "",
+      "text": "100",
+      "attrs": {},
+      "interactive": false,
+      "parent": 6,
+      "order": 0
+    },
+    {
+      "id": 8,
+      "tag": "span",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "interactive": false,
+      "parent": 11,
+      "order": 2
+    },
+    {
+      "id": 7,
+      "tag": "#text",
+      "role": "",
+      "text": "Updated 0",
+      "attrs": {},
+      "interactive": false,
+      "parent": 8,
+      "order": 0
+    },
+    {
+      "id": 10,
+      "tag": "button",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "disabled": "false"
+      },
+      "interactive": true,
+      "parent": 11,
+      "order": 3
+    },
+    {
+      "id": 9,
+      "tag": "#text",
+      "role": "",
+      "text": "Approve",
+      "attrs": {},
+      "interactive": false,
+      "parent": 10,
+      "order": 0
+    },
+    {
+      "id": 20,
+      "tag": "article",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "id": "other"
+      },
+      "interactive": false,
+      "parent": 21,
+      "order": 1
+    },
+    {
+      "id": 13,
+      "tag": "span",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "interactive": false,
+      "parent": 20,
+      "order": 0
+    },
+    {
+      "id": 12,
+      "tag": "#text",
+      "role": "",
+      "text": "Invoice C",
+      "attrs": {},
+      "interactive": false,
+      "parent": 13,
+      "order": 0
+    },
+    {
+      "id": 15,
+      "tag": "span",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "interactive": false,
+      "parent": 20,
+      "order": 1
+    },
+    {
+      "id": 14,
+      "tag": "#text",
+      "role": "",
+      "text": "100",
+      "attrs": {},
+      "interactive": false,
+      "parent": 15,
+      "order": 0
+    },
+    {
+      "id": 17,
+      "tag": "span",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "interactive": false,
+      "parent": 20,
+      "order": 2
+    },
+    {
+      "id": 16,
+      "tag": "#text",
+      "role": "",
+      "text": "Updated 0",
+      "attrs": {},
+      "interactive": false,
+      "parent": 17,
+      "order": 0
+    },
+    {
+      "id": 19,
+      "tag": "button",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "disabled": "false"
+      },
+      "interactive": true,
+      "parent": 20,
+      "order": 3
+    },
+    {
+      "id": 18,
+      "tag": "#text",
+      "role": "",
+      "text": "Approve",
+      "attrs": {},
+      "interactive": false,
+      "parent": 19,
+      "order": 0
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "arm": "simple",
+  "task": "gmail_star_email",
+  "condition": "intervention",
+  "scope": "Browser Use 0.13.11 native agent, text-only desktop model relay; not official paper harness score",
+  "claimed_success": true,
+  "evaluation": {
+    "score": 1.0,
+    "final_score": 1.0,
+    "success": true,
+    "reasoning": "Score: 1.000; success=True\nPassed 1/1 checks.\n  [PASS] Agent starred the target email\nAll negative checks passed (no penalties).\nFinal score: 1.000 | Success: True",
+    "checks": [
+      {
+        "desc": "Agent starred the target email",
+        "passed": true,
+        "error": null
+      }
+    ],
+    "negative_checks": [
+      {
+        "desc": "Agent did not modify other inbox emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify drafts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not send emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not delete emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify contacts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify labels",
+        "passed": true,
+        "penalty": 0.1,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify filters",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      }
+    ]
+  },
+  "error": null,
+  "model_calls": 9,
+  "provider_usage": null,
+  "wall_seconds": 223.79205312499835,
+  "events": [
+    {
+      "action": {
+        "click": {
+          "index": 27
+        }
+      }
+    },
+    {
+      "action": {
+        "refresh_page": {}
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 393
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 377
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 376
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 869
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1112
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 377
+        }
+      }
+    },
+    {
+      "action": {
+        "finish": {
+          "success": true,
+          "text": "Starred the email \"Project Update — Q1 Milestones\" from Alice Chen (alice.chen@thornton.com). Verified after the action by opening the Starred folder: the thread is listed there with a \"starred\" label and its control reads \"Unstar Project Update — Q1 Milestones\". Note on the path taken: two clicks on the inbox list-row star control produced only an optimistic \"Starred thread\" message and did not persist (a reload showed the thread still unstarred and the Starred folder was empty), so I opened the thread and used the thread-level star control instead, which persisted."
+        }
+      }
+    }
+  ]
+}

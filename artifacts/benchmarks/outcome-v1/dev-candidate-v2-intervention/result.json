@@ -1,0 +1,499 @@
+{
+  "arm": "candidate",
+  "task": "gmail_star_email",
+  "condition": "intervention",
+  "scope": "Browser Use 0.13.11 native agent with restricted tools; text-only desktop relay; not official paper harness score",
+  "claimed_success": false,
+  "evaluation": {
+    "score": 1.0,
+    "final_score": 1.0,
+    "success": true,
+    "reasoning": "Score: 1.000; success=True\nPassed 1/1 checks.\n  [PASS] Agent starred the target email\nAll negative checks passed (no penalties).\nFinal score: 1.000 | Success: True",
+    "checks": [
+      {
+        "desc": "Agent starred the target email",
+        "passed": true,
+        "error": null
+      }
+    ],
+    "negative_checks": [
+      {
+        "desc": "Agent did not modify other inbox emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify drafts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not send emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not delete emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify contacts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify labels",
+        "passed": true,
+        "penalty": 0.1,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify filters",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      }
+    ]
+  },
+  "error": null,
+  "model_requests": 18,
+  "provider_usage": null,
+  "model_usage_note": "Counts mailbox requests, not all WorkBuddy internal generations/tool turns; desktop context and tokens unavailable",
+  "wall_seconds": 416.64801279200765,
+  "events": [
+    {
+      "action": {
+        "find_elements": {
+          "selector": "article",
+          "attributes": [
+            "aria-label",
+            "class",
+            "data-thread-id",
+            "id"
+          ],
+          "max_results": 20,
+          "include_text": false
+        }
+      }
+    },
+    {
+      "action": {
+        "register_checks": {
+          "checks": [
+            {
+              "key": "target_thread_sender",
+              "scope": "article[aria-label*=\"Alice Chen\"]",
+              "identity": "Alice Chen",
+              "identity_text": "Alice Chen",
+              "target": "strong",
+              "kind": "text",
+              "expected": "Alice Chen"
+            },
+            {
+              "key": "target_thread_subject",
+              "scope": "article[aria-label*=\"Alice Chen\"]",
+              "identity": "Project Update — Q1 Milestones",
+              "identity_text": "Project Update — Q1 Milestones",
+              "target": "a[aria-label]",
+              "kind": "attribute",
+              "attribute": "aria-label",
+              "expected": "Open unread thread Project Update — Q1 Milestones"
+            },
+            {
+              "key": "target_star_label",
+              "scope": "article[aria-label*=\"Alice Chen\"]",
+              "identity": "Alice Chen",
+              "identity_text": "Alice Chen",
+              "target": "button[aria-label*=\"Star\"]",
+              "kind": "attribute",
+              "attribute": "aria-label",
+              "expected": "Starred Project Update — Q1 Milestones"
+            },
+            {
+              "key": "target_star_pressed",
+              "scope": "article[aria-label*=\"Alice Chen\"]",
+              "identity": "Alice Chen",
+              "identity_text": "Alice Chen",
+              "target": "button[aria-label*=\"Star\"]",
+              "kind": "checked",
+              "attribute": "aria-pressed",
+              "expected": true
+            },
+            {
+              "key": "no_collateral_star_theo_rivera",
+              "scope": "article[aria-label*=\"Theo Rivera\"]",
+              "identity": "Theo Rivera",
+              "identity_text": "Theo Rivera",
+              "target": "button[aria-label*=\"Star\"]",
+              "kind": "attribute",
+              "attribute": "aria-label",
+              "expected": "Star Follow-up on venue estimate"
+            }
+          ],
+          "readback_index": 0
+        }
+      }
+    },
+    {
+      "action": {
+        "register_checks": {
+          "checks": [
+            {
+              "key": "target_thread_sender",
+              "scope": "article[aria-label*=\"Alice Chen\"]",
+              "identity": "Alice Chen",
+              "target": "strong",
+              "kind": "text",
+              "expected": "Alice Chen"
+            },
+            {
+              "key": "target_thread_subject",
+              "scope": "article[aria-label*=\"Alice Chen\"]",
+              "identity": "Project Update — Q1 Milestones",
+              "target": "a[aria-label]",
+              "kind": "attribute",
+              "expected": "Open unread thread Project Update — Q1 Milestones",
+              "attribute": "aria-label"
+            },
+            {
+              "key": "target_star_label",
+              "scope": "article[aria-label*=\"Alice Chen\"]",
+              "identity": "Alice Chen",
+              "target": "button[aria-label*=\"Star\"]",
+              "kind": "attribute",
+              "expected": "Starred Project Update — Q1 Milestones",
+              "attribute": "aria-label"
+            },
+            {
+              "key": "target_star_pressed",
+              "scope": "article[aria-label*=\"Alice Chen\"]",
+              "identity": "Alice Chen",
+              "target": "button[aria-label*=\"Star\"]",
+              "kind": "checked",
+              "expected": true,
+              "attribute": "aria-pressed"
+            },
+            {
+              "key": "no_collateral_star_theo_rivera",
+              "scope": "article[aria-label*=\"Theo Rivera\"]",
+              "identity": "Theo Rivera",
+              "target": "button[aria-label*=\"Star\"]",
+              "kind": "attribute",
+              "expected": "Star Follow-up on venue estimate",
+              "attribute": "aria-label"
+            }
+          ],
+          "readback_index": 0
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 27
+        }
+      }
+    },
+    {
+      "action": {
+        "verify_outcome": {}
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "revision": 1,
+      "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_ce70e2482a&agent_mode=1",
+      "checks": [
+        {
+          "key": "target_thread_sender",
+          "status": "match",
+          "identity": "Alice Chen",
+          "expected": "Alice Chen",
+          "actual": "Alice Chen"
+        },
+        {
+          "key": "target_thread_subject",
+          "status": "match",
+          "identity": "Project Update — Q1 Milestones",
+          "expected": "Open unread thread Project Update — Q1 Milestones",
+          "actual": "Open unread thread Project Update — Q1 Milestones"
+        },
+        {
+          "key": "target_star_label",
+          "status": "mismatch",
+          "identity": "Alice Chen",
+          "expected": "Starred Project Update — Q1 Milestones",
+          "actual": "Star Project Update — Q1 Milestones"
+        }
+      ],
+      "error": "Error: Locator.is_checked: Error: Not a checkbox or radio button\nCall log:\n  - waiting for locator(\"article[aria-label*=\\\"Alice Chen\\\"]\").filter(has=get_by_text(\"Alice Chen\", exact=True)).locator(\"button[aria-label*=\\\"Star\\\"]\")\n",
+      "elapsed_ms": 704.218,
+      "scope": "caller-declared checks on visible page after reload; not task completeness or backend commit proof",
+      "contract": [
+        {
+          "key": "target_thread_sender",
+          "scope": "article[aria-label*=\"Alice Chen\"]",
+          "identity": "Alice Chen",
+          "target": "strong",
+          "kind": "text",
+          "expected": "Alice Chen",
+          "attribute": null
+        },
+        {
+          "key": "target_thread_subject",
+          "scope": "article[aria-label*=\"Alice Chen\"]",
+          "identity": "Project Update — Q1 Milestones",
+          "target": "a[aria-label]",
+          "kind": "attribute",
+          "expected": "Open unread thread Project Update — Q1 Milestones",
+          "attribute": "aria-label"
+        },
+        {
+          "key": "target_star_label",
+          "scope": "article[aria-label*=\"Alice Chen\"]",
+          "identity": "Alice Chen",
+          "target": "button[aria-label*=\"Star\"]",
+          "kind": "attribute",
+          "expected": "Starred Project Update — Q1 Milestones",
+          "attribute": "aria-label"
+        },
+        {
+          "key": "target_star_pressed",
+          "scope": "article[aria-label*=\"Alice Chen\"]",
+          "identity": "Alice Chen",
+          "target": "button[aria-label*=\"Star\"]",
+          "kind": "checked",
+          "expected": true,
+          "attribute": "aria-pressed"
+        },
+        {
+          "key": "no_collateral_star_theo_rivera",
+          "scope": "article[aria-label*=\"Theo Rivera\"]",
+          "identity": "Theo Rivera",
+          "target": "button[aria-label*=\"Star\"]",
+          "kind": "attribute",
+          "expected": "Star Follow-up on venue estimate",
+          "attribute": "aria-label"
+        }
+      ]
+    },
+    {
+      "action": {
+        "click": {
+          "index": 11
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 377
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 376
+        }
+      }
+    },
+    {
+      "action": {
+        "register_checks": {
+          "checks": [
+            {
+              "key": "starred_view_target_sender",
+              "scope": "article[aria-label*=\"Alice Chen\"]",
+              "identity": "Alice Chen",
+              "target": "strong",
+              "kind": "text",
+              "expected": "Alice Chen"
+            },
+            {
+              "key": "starred_view_target_subject",
+              "scope": "article[aria-label*=\"Alice Chen\"]",
+              "identity": "Project Update — Q1 Milestones",
+              "target": "a[aria-label]",
+              "kind": "attribute",
+              "attribute": "aria-label",
+              "expected": "Open unread thread Project Update — Q1 Milestones"
+            }
+          ],
+          "readback_index": 377
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 865
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 377
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 376
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1226
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1469
+        }
+      }
+    },
+    {
+      "action": {
+        "verify_outcome": {}
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "revision": 9,
+      "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_ce70e2482a&agent_mode=1",
+      "checks": [
+        {
+          "key": "target_thread_sender",
+          "status": "match",
+          "identity": "Alice Chen",
+          "expected": "Alice Chen",
+          "actual": "Alice Chen"
+        },
+        {
+          "key": "target_thread_subject",
+          "status": "match",
+          "identity": "Project Update — Q1 Milestones",
+          "expected": "Open unread thread Project Update — Q1 Milestones",
+          "actual": "Open unread thread Project Update — Q1 Milestones"
+        },
+        {
+          "key": "target_star_label",
+          "status": "unknown",
+          "reason": "target_not_unique_or_visible"
+        },
+        {
+          "key": "target_star_pressed",
+          "status": "unknown",
+          "reason": "target_not_unique_or_visible"
+        },
+        {
+          "key": "no_collateral_star_theo_rivera",
+          "status": "match",
+          "identity": "Theo Rivera",
+          "expected": "Star Follow-up on venue estimate",
+          "actual": "Star Follow-up on venue estimate"
+        }
+      ],
+      "error": null,
+      "elapsed_ms": 680.371,
+      "scope": "caller-declared checks on visible page after reload; not task completeness or backend commit proof",
+      "contract": [
+        {
+          "key": "target_thread_sender",
+          "scope": "article[aria-label*=\"Alice Chen\"]",
+          "identity": "Alice Chen",
+          "target": "strong",
+          "kind": "text",
+          "expected": "Alice Chen",
+          "attribute": null
+        },
+        {
+          "key": "target_thread_subject",
+          "scope": "article[aria-label*=\"Alice Chen\"]",
+          "identity": "Project Update — Q1 Milestones",
+          "target": "a[aria-label]",
+          "kind": "attribute",
+          "expected": "Open unread thread Project Update — Q1 Milestones",
+          "attribute": "aria-label"
+        },
+        {
+          "key": "target_star_label",
+          "scope": "article[aria-label*=\"Alice Chen\"]",
+          "identity": "Alice Chen",
+          "target": "button[aria-label*=\"Star\"]",
+          "kind": "attribute",
+          "expected": "Starred Project Update — Q1 Milestones",
+          "attribute": "aria-label"
+        },
+        {
+          "key": "target_star_pressed",
+          "scope": "article[aria-label*=\"Alice Chen\"]",
+          "identity": "Alice Chen",
+          "target": "button[aria-label*=\"Star\"]",
+          "kind": "checked",
+          "expected": true,
+          "attribute": "aria-pressed"
+        },
+        {
+          "key": "no_collateral_star_theo_rivera",
+          "scope": "article[aria-label*=\"Theo Rivera\"]",
+          "identity": "Theo Rivera",
+          "target": "button[aria-label*=\"Star\"]",
+          "kind": "attribute",
+          "expected": "Star Follow-up on venue estimate",
+          "attribute": "aria-label"
+        }
+      ]
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1545
+        }
+      }
+    },
+    {
+      "action": {
+        "finish": {
+          "success": true,
+          "text": "Starred the email from Alice Chen with subject \"Project Update — Q1 Milestones\". It is now the only message in the Starred view.\n\nVisible evidence (all read from the page after the write):\n1. Starred folder: nav count went from 0 (view said 'No messages match this view') to 1, and the single row listed is Alice Chen / 'Project Update — Q1 Milestones'.\n2. Inbox row star control flipped from aria-label 'Star Project Update — Q1 Milestones' to 'Unstar Project Update — Q1 Milestones'.\n3. The inbox row gained a label chip 'Label: starred' / 'starred' that was not present before.\n4. In the thread view the toolbar control changed from 'Star this thread' to 'Unstar this thread' and the header shows 'Starred'.\n5. No collateral: the Theo Rivera row still reads 'Star Follow-up on venue estimate' (this check returned match).\n\nImportant limitation - the formal receipt is NOT matched. verify_outcome returned status 'unconfirmed'. Two of the five checks I registered were mis-specified by me, not failed by the page: (a) target_star_label used target 'button[aria-label*=\"Star\"]' and attribute matching is case-sensitive, so it cannot match the post-state label 'Unstar ...'; (b) target_star_pressed used kind=checked, which throws 'Not a checkbox or radio button' on a plain button. Both came back 'unknown - target_not_unique_or_visible'. I tried to re-register a corrected contract and the runtime refused ('Contract already frozen or actions started'), so no matched receipt exists for this run. The starred state is therefore confirmed from the page, not from a receipt.\n\nAlso worth knowing: the two earlier clicks on the list-row star control were no-ops - the row only switched to its hover state, and the Starred folder stayed at 0, which is how I detected it. The star finally applied via the thread toolbar control. Opening the thread did not mark it read (the row still shows 'Unread'), so the only state changed is the star."
+        }
+      }
+    },
+    {
+      "action": {
+        "finish": {
+          "success": false,
+          "text": "success=false because no matched outcome receipt exists for this run. That flag reports the verification status, not a failed action - the email IS starred, and here is exactly how far the evidence goes.\n\nWhat was done: opened the thread from Alice Chen with subject \"Project Update — Q1 Milestones\" (thread view /env/gmail/thread/email_1, sender alice.chen@thornton.com, Jul 7 6:05 PM) and starred it from the thread toolbar.\n\nVisible page evidence after the write:\n1. Starred view: before the write it said 'No messages match this view' with nav count 0; after the write the nav count is 1 and the only row listed is Alice Chen / 'Project Update — Q1 Milestones'.\n2. Inbox row: the star control's aria-label changed from 'Star Project Update — Q1 Milestones' to 'Unstar Project Update — Q1 Milestones'.\n3. Inbox row: a new label chip appeared, 'Label: starred' / 'starred'.\n4. Thread view: the toolbar control changed from 'Star this thread' to 'Unstar this thread' and the header shows 'Starred'.\n5. No collateral: the Theo Rivera row still reads 'Star Follow-up on venue estimate' (this check returned match).\n\nWhy the receipt is unmatched - my error, not the page's: verify_outcome returned status 'unconfirmed'. Of the five checks I froze before writing, two were mis-specified. target_star_label used the target selector button[aria-label*=\"Star\"], and attribute matching is case-sensitive, so it cannot match the post-state label 'Unstar ...'. target_star_pressed used kind=checked, which raises 'Not a checkbox or radio button' on a plain button. Both returned 'unknown - target_not_unique_or_visible'. The sender, subject and no-collateral checks returned match. I attempted to re-register a corrected contract and the runtime refused with 'Contract already frozen or actions started', so the defect could not be repaired within this run.\n\nUncertainty that remains: there is no matched receipt, so the starred state rests on the four page observations above rather than on the frozen contract. If a matched receipt is required, this run must be counted as unconfirmed.\n\nOther notes: two earlier clicks on the list-row star control were no-ops (the row only switched to its hover state; the Starred count stayed 0, which is how I caught it); the star finally applied through the thread toolbar. Opening the thread did not mark it read - the row still shows 'Unread' - so the only state changed is the star."
+        }
+      }
+    }
+  ]
+}

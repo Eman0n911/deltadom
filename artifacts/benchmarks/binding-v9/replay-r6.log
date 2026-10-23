@@ -1,0 +1,491 @@
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 4 elements, 2 are <BUTTON>: [(13, 'BUTTON', None), (19, 'BUTTON', None)]
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+unchanged native_history True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+unchanged manual_semantic True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+unchanged full_row_check True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+unchanged context_check True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+unchanged automatic_binding True False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 4 elements, 2 are <BUTTON>: [(19, 'BUTTON', None), (13, 'BUTTON', None)]
+INFO     [native_match] Element index updated 13 → 19 (matched at EXACT level)
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+reorder native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+reorder manual_semantic True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+reorder full_row_check True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+reorder context_check True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+reorder automatic_binding True False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 4 elements, 2 are <BUTTON>: [(25, 'BUTTON', None), (19, 'BUTTON', None)]
+INFO     [native_match] Element index updated 13 → 25 (matched at EXACT level)
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+remount native_history True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+remount manual_semantic True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+remount full_row_check True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+remount context_check True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+remount automatic_binding True False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 4 elements, 2 are <BUTTON>: [(13, 'BUTTON', None), (19, 'BUTTON', None)]
+INFO     [native_match] Element index updated 13 → 19 (matched at EXACT level)
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+wrapper_change native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+wrapper_change manual_semantic True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+wrapper_change full_row_check False False True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+wrapper_change context_check False False True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+wrapper_change automatic_binding True False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 6 elements, 3 are <BUTTON>: [(25, 'BUTTON', None), (13, 'BUTTON', None), (19, 'BUTTON', None)]
+INFO     [native_match] Element index updated 13 → 25 (matched at EXACT level)
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+insert_before native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+insert_before manual_semantic True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+insert_before full_row_check True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+insert_before context_check True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+insert_before automatic_binding True False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 2 elements, 1 are <BUTTON>: [(19, 'BUTTON', None)]
+INFO     [native_match] Element index updated 13 → 19 (matched at EXACT level)
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+target_removed native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+target_removed manual_semantic False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+target_removed full_row_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+target_removed context_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+target_removed automatic_binding False False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 6 elements, 3 are <BUTTON>: [(13, 'BUTTON', None), (19, 'BUTTON', None), (25, 'BUTTON', None)]
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+duplicate_identity native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+duplicate_identity manual_semantic False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+duplicate_identity full_row_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+duplicate_identity context_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+duplicate_identity automatic_binding False False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 4 elements, 2 are <BUTTON>: [(13, 'BUTTON', None), (19, 'BUTTON', None)]
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+name_changed native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+name_changed manual_semantic False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+name_changed full_row_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+name_changed context_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+name_changed automatic_binding False False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 4 elements, 2 are <BUTTON>: [(13, 'BUTTON', None), (19, 'BUTTON', None)]
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+unrelated_timer native_history True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+unrelated_timer manual_semantic True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+unrelated_timer full_row_check True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+unrelated_timer context_check True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+unrelated_timer automatic_binding True False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 4 elements, 2 are <BUTTON>: [(13, 'BUTTON', None), (19, 'BUTTON', None)]
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+url_changed native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+url_changed manual_semantic False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+url_changed full_row_check False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+url_changed context_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+url_changed automatic_binding False False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=1706436846775968605 stable_hash=1706436846775968605
+INFO     [native_match] 🔍 Selector map has 1 elements, 1 are <BUTTON>: [(3, 'BUTTON', None)]
+INFO     [tools] 🖱️ Clicked button "Continue"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+global_unique native_history True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+global_unique manual_semantic True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+global_unique full_row_check True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+global_unique context_check True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+global_unique automatic_binding True False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=1706436846775968605 stable_hash=1706436846775968605
+INFO     [native_match] 🔍 Selector map has 2 elements, 2 are <BUTTON>: [(3, 'BUTTON', None), (11, 'BUTTON', None)]
+INFO     [tools] 🖱️ Clicked button "Continue"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+global_duplicate native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+global_duplicate manual_semantic False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+global_duplicate full_row_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+global_duplicate context_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+global_duplicate automatic_binding False False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 2 elements, 2 are <BUTTON>: [(19, 'BUTTON', None), (13, 'BUTTON', None)]
+INFO     [native_match] Element index updated 13 → 19 (matched at EXACT level)
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_reorder native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_reorder manual_semantic True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_reorder full_row_check True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_reorder context_check True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_reorder automatic_binding True False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 4 elements, 2 are <BUTTON>: [(13, 'BUTTON', None), (19, 'BUTTON', None)]
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+invisible_handler native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+invisible_handler manual_semantic False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+invisible_handler full_row_check False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+invisible_handler context_check False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+invisible_handler automatic_binding False True False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 5 elements, 2 are <BUTTON>: [(13, 'BUTTON', None), (21, 'BUTTON', None)]
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+linked_price_change native_history True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+linked_price_change manual_semantic True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+linked_price_change full_row_check False False True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+linked_price_change context_check False False True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+linked_price_change automatic_binding True False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 4 elements, 2 are <BUTTON>: [(13, 'BUTTON', None), (21, 'BUTTON', None)]
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+linked_status_change native_history True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+linked_status_change manual_semantic True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+linked_status_change full_row_check False False True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+linked_status_change context_check False False True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+linked_status_change automatic_binding True False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 4 elements, 2 are <BUTTON>: [(13, 'BUTTON', None), (19, 'BUTTON', None)]
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+name_prefix_change native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+name_prefix_change manual_semantic False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+name_prefix_change full_row_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+name_prefix_change context_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+name_prefix_change automatic_binding False False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 2 elements, 2 are <BUTTON>: [(13, 'BUTTON', None), (19, 'BUTTON', None)]
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_name_change native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_name_change manual_semantic False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_name_change full_row_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_name_change context_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_name_change automatic_binding False False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 3 elements, 3 are <BUTTON>: [(13, 'BUTTON', None), (19, 'BUTTON', None), (25, 'BUTTON', None)]
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_duplicate native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_duplicate manual_semantic False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_duplicate full_row_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_duplicate context_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_duplicate automatic_binding False False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 4 elements, 2 are <BUTTON>: [(13, 'BUTTON', None), (23, 'BUTTON', None)]
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_price_change native_history True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_price_change manual_semantic True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_price_change full_row_check False False True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_price_change context_check False False True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_price_change automatic_binding False False True
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 4 elements, 2 are <BUTTON>: [(19, 'BUTTON', None), (13, 'BUTTON', None)]
+INFO     [native_match] Element index updated 13 → 19 (matched at EXACT level)
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+same_name_distinct_link native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+same_name_distinct_link manual_semantic True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+same_name_distinct_link full_row_check False False True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+same_name_distinct_link context_check True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+same_name_distinct_link automatic_binding True False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 6 elements, 2 are <BUTTON>: [(23, 'BUTTON', None), (15, 'BUTTON', None)]
+INFO     [native_match] Element index updated 15 → 23 (matched at EXACT level)
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+shared_owner_reorder native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+shared_owner_reorder manual_semantic True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+shared_owner_reorder full_row_check True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+shared_owner_reorder context_check True False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+shared_owner_reorder automatic_binding True False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 6 elements, 2 are <BUTTON>: [(15, 'BUTTON', None), (23, 'BUTTON', None)]
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+record_changed_owner_stays native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+record_changed_owner_stays manual_semantic False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+record_changed_owner_stays full_row_check False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+record_changed_owner_stays context_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+record_changed_owner_stays automatic_binding False False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 3 elements, 1 are <BUTTON>: [(19, 'BUTTON', None)]
+INFO     [native_match] Element index updated 13 → 19 (matched at EXACT level)
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+control_removed native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+control_removed manual_semantic False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+control_removed full_row_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+control_removed context_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+control_removed automatic_binding False False False
+INFO     [native_match] 🔍 Searching for element: <BUTTON> hash=5791712601588036627 stable_hash=5791712601588036627
+INFO     [native_match] 🔍 Selector map has 5 elements, 3 are <BUTTON>: [(13, 'BUTTON', None), (24, 'BUTTON', None), (19, 'BUTTON', None)]
+INFO     [tools] 🖱️ Clicked button "Mark complete"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+control_duplicated native_history False True False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+control_duplicated manual_semantic False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+control_duplicated full_row_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+control_duplicated context_check False False False
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+control_duplicated automatic_binding False False False
+{
+  "native_history": {
+    "correct_action": 7,
+    "wrong_action": 18,
+    "false_refusal": 0,
+    "justified_refusal": 0
+  },
+  "manual_semantic": {
+    "correct_action": 13,
+    "wrong_action": 1,
+    "false_refusal": 0,
+    "justified_refusal": 11
+  },
+  "full_row_check": {
+    "correct_action": 8,
+    "wrong_action": 3,
+    "false_refusal": 5,
+    "justified_refusal": 9
+  },
+  "context_check": {
+    "correct_action": 9,
+    "wrong_action": 1,
+    "false_refusal": 4,
+    "justified_refusal": 11
+  },
+  "automatic_binding": {
+    "correct_action": 12,
+    "wrong_action": 1,
+    "false_refusal": 1,
+    "justified_refusal": 11
+  }
+}

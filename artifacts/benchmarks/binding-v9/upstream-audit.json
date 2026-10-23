@@ -1,0 +1,9 @@
+{
+  "upstream_sha": "3df5806a0d097a1546d92c49bcf1b28c9972c3bd",
+  "url": "https://raw.githubusercontent.com/browser-use/browser-use/3df5806a0d097a1546d92c49bcf1b28c9972c3bd/browser_use/agent/service.py",
+  "method": "_update_action_indices",
+  "installed_version": "0.13.11",
+  "method_ast_identical": true,
+  "installed_method_sha256": "68a6001c9e33f60def882fc95f6207aa27a10b0f920da2f18b31d42f900216cb",
+  "upstream_method_sha256": "68a6001c9e33f60def882fc95f6207aa27a10b0f920da2f18b31d42f900216cb"
+}

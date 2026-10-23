@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "deltadom"
-version = "0.4.0"
+version = "0.5.0.dev9"
 description = "Record, compare and recover browser observations with checked incremental streams."
 license = {file = "LICENSE"}
 requires-python = ">=3.12"

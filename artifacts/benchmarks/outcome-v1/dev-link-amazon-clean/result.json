@@ -1,0 +1,247 @@
+{
+  "arm": "link",
+  "task": "amazon_browse_category",
+  "condition": "clean",
+  "scope": "Browser Use 0.13.11 native agent with restricted tools; text-only desktop relay; not official paper harness score",
+  "claimed_success": true,
+  "evaluation": {
+    "score": 1.0,
+    "final_score": 1.0,
+    "success": true,
+    "reasoning": "Score: 1.000; success=True\nPassed 1/1 checks.\n  [PASS] Cheapest Electronics product added to cart\nAll negative checks passed (no penalties).\nFinal score: 1.000 | Success: True",
+    "checks": [
+      {
+        "desc": "Cheapest Electronics product added to cart",
+        "passed": true,
+        "error": null
+      }
+    ],
+    "negative_checks": [
+      {
+        "desc": "Agent did not add extra items to cart",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify product catalog",
+        "passed": true,
+        "penalty": 0.3,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify saved addresses",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify payment methods",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not place orders",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not write product reviews",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create return requests",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not apply or modify promo codes",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create Q&A posts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify gift cards",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create notifications",
+        "passed": true,
+        "penalty": 0.1,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify wishlist",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify account settings",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      }
+    ]
+  },
+  "error": null,
+  "agent_errors": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "action_units": 9,
+  "model_requests": 8,
+  "provider_usage": null,
+  "model_usage_note": "Counts mailbox requests, not all WorkBuddy internal generations/tool turns; desktop context and tokens unavailable",
+  "wall_seconds": 219.65627279199543,
+  "events": [
+    {
+      "action": {
+        "click": {
+          "index": 92
+        }
+      }
+    },
+    {
+      "action": {
+        "select_dropdown": {
+          "index": 1115,
+          "text": "Price: Low to High"
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1735
+        }
+      }
+    },
+    {
+      "action": {
+        "search_page": {
+          "pattern": "\\$",
+          "regex": true,
+          "case_sensitive": false,
+          "context_chars": 60,
+          "max_results": 10
+        }
+      }
+    },
+    {
+      "action": {
+        "prepare_link_membership": {
+          "entity_indices": [
+            0
+          ],
+          "readback_index": 44
+        }
+      }
+    },
+    {
+      "status": "prepared",
+      "entities": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/product/product_320?session=amazon_amazon_browse_category_9c38ac6c2e&agent_mode=1",
+          "label": "USB-C Charging Cable 6ft",
+          "matching_links": 0,
+          "same_label_other_urls": 0
+        }
+      ],
+      "baseline": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/product/product_320?session=amazon_amazon_browse_category_9c38ac6c2e&agent_mode=1",
+          "label": "USB-C Charging Cable 6ft",
+          "matching_links": 0,
+          "same_label_other_urls": 0
+        }
+      ],
+      "scope": "new observed link membership; not item quantity, selection optimality or task completeness"
+    },
+    {
+      "action": {
+        "click": {
+          "index": 2548
+        }
+      }
+    },
+    {
+      "action": {
+        "verify_link_membership": {}
+      }
+    },
+    {
+      "status": "new_link_membership_observed",
+      "revision": 2,
+      "before": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/product/product_320?session=amazon_amazon_browse_category_9c38ac6c2e&agent_mode=1",
+          "label": "USB-C Charging Cable 6ft",
+          "matching_links": 0,
+          "same_label_other_urls": 0
+        }
+      ],
+      "after": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/product/product_320?session=amazon_amazon_browse_category_9c38ac6c2e&agent_mode=1",
+          "label": "USB-C Charging Cable 6ft",
+          "matching_links": 1,
+          "same_label_other_urls": 0
+        }
+      ]
+    },
+    {
+      "action": {
+        "finish": {
+          "success": true,
+          "text": "Done. The cheapest available item in the Electronics category was added to the cart: 'USB-C Charging Cable 6ft' by CableTech (product_320), price $7.99, quantity 1.\n\nHow each requirement was met:\n1) Electronics category browsed - opened via 'Browse Electronics'; the listing URL carried category=Electronics with 47 results, and the product page breadcrumb reads Home > Electronics > Chargers & Power Adapters.\n2) Cheapest available identified - the category results were sorted with the site's own 'Price: Low to High' control across all 47 results; this cable was the first card and is labelled 'In Stock' with 'Ships from and sold by Amazon.com'. The next card, '2 Pack Portable Charger' at $15.00, is labelled 'Currently unavailable', so it was excluded. Every other readable price on the first results page was $15.00 or higher.\n3) Added to cart - the Add to Cart button produced an 'Added to Cart - USB-C Charging Cable 6ft' confirmation, the header badge went from '0 items' to '1 items', and the cart page (/env/amazon/cart) now shows exactly one line item: 'USB-C Charging Cable 6ft', 7.99, quantity 1, Subtotal (1 item): 7.99.\n\nMembership witness: prepare_link_membership was run before the cart change on the product detail page (entity_indices [0], readback on the Cart link) and returned baseline matching_links 0; verify_link_membership after the change returned 'new_link_membership_observed' with matching_links 1 and same_label_other_urls 0. The witness is reported only as evidence of cart membership, not as evidence of cheapest-selection or of full task correctness - those are supported separately by the sort ordering, the In Stock label, and the cart line item.\n\nLimits worth knowing: the exact dollar amount was not readable in the listing or detail price markup (the price block rendered as empty dollar spans plus a cents fragment); $7.99 comes from the cart page text. And 'cheapest' rests on the site's price-ascending sort over the whole category rather than on a manual comparison of all 47 prices."
+        }
+      }
+    }
+  ]
+}

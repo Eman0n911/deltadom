@@ -1,0 +1,260 @@
+{
+  "arm": "membership",
+  "task": "gmail_star_email",
+  "condition": "intervention",
+  "scope": "Browser Use 0.13.11 native agent with restricted tools; text-only desktop relay; not official paper harness score",
+  "claimed_success": true,
+  "evaluation": {
+    "score": 1.0,
+    "final_score": 1.0,
+    "success": true,
+    "reasoning": "Score: 1.000; success=True\nPassed 1/1 checks.\n  [PASS] Agent starred the target email\nAll negative checks passed (no penalties).\nFinal score: 1.000 | Success: True",
+    "checks": [
+      {
+        "desc": "Agent starred the target email",
+        "passed": true,
+        "error": null
+      }
+    ],
+    "negative_checks": [
+      {
+        "desc": "Agent did not modify other inbox emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify drafts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not send emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not delete emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify contacts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify labels",
+        "passed": true,
+        "penalty": 0.1,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify filters",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      }
+    ]
+  },
+  "error": null,
+  "agent_errors": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "Contract frozen or mutation controls already used",
+    null,
+    null,
+    null
+  ],
+  "action_units": 14,
+  "model_requests": 12,
+  "provider_usage": null,
+  "model_usage_note": "Counts mailbox requests, not all WorkBuddy internal generations/tool turns; desktop context and tokens unavailable",
+  "wall_seconds": 312.2056131249992,
+  "events": [
+    {
+      "action": {
+        "prepare_membership": {
+          "entities": [
+            [
+              "Alice Chen",
+              "Project Update — Q1 Milestones"
+            ]
+          ],
+          "readback_index": 11
+        }
+      }
+    },
+    {
+      "status": "prepared",
+      "source": [
+        {
+          "identity": [
+            "Alice Chen",
+            "Project Update — Q1 Milestones"
+          ],
+          "matches": 1
+        }
+      ],
+      "baseline": [
+        {
+          "identity": [
+            "Alice Chen",
+            "Project Update — Q1 Milestones"
+          ],
+          "matches": 0
+        }
+      ],
+      "readback_url": "http://127.0.0.1:18765/env/gmail/inbox?label=inbox&filter=starred&session=gmail_gmail_star_email_48306bc630&agent_mode=1",
+      "scope": "record membership only; no arbitrary field or task-completeness guarantee"
+    },
+    {
+      "action": {
+        "click": {
+          "index": 387
+        }
+      }
+    },
+    {
+      "action": {
+        "verify_membership": {}
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "before": [
+        {
+          "identity": [
+            "Alice Chen",
+            "Project Update — Q1 Milestones"
+          ],
+          "matches": 0
+        }
+      ],
+      "after": [
+        {
+          "identity": [
+            "Alice Chen",
+            "Project Update — Q1 Milestones"
+          ],
+          "matches": 0
+        }
+      ],
+      "url": "http://127.0.0.1:18765/env/gmail/inbox?label=inbox&filter=starred&session=gmail_gmail_star_email_48306bc630&agent_mode=1"
+    },
+    {
+      "action": {
+        "click": {
+          "index": 734
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 882
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 735
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 734
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1243
+        }
+      }
+    },
+    {
+      "action": {
+        "prepare_membership": {
+          "entities": [
+            [
+              "Alice Chen",
+              "Project Update — Q1 Milestones"
+            ]
+          ],
+          "readback_index": 735
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1486
+        }
+      }
+    },
+    {
+      "action": {
+        "verify_membership": {}
+      }
+    },
+    {
+      "status": "new_membership_observed",
+      "before": [
+        {
+          "identity": [
+            "Alice Chen",
+            "Project Update — Q1 Milestones"
+          ],
+          "matches": 0
+        }
+      ],
+      "after": [
+        {
+          "identity": [
+            "Alice Chen",
+            "Project Update — Q1 Milestones"
+          ],
+          "matches": 1
+        }
+      ],
+      "url": "http://127.0.0.1:18765/env/gmail/inbox?label=inbox&filter=starred&session=gmail_gmail_star_email_48306bc630&agent_mode=1"
+    },
+    {
+      "action": {
+        "finish": {
+          "success": true,
+          "text": "Starred the email from Alice Chen with subject 'Project Update — Q1 Milestones'. Evidence: the registered membership contract (entity ['Alice Chen','Project Update — Q1 Milestones']) went from 0 matches to 1 match when verify_membership reloaded the Starred view; that view now lists the thread with both 'inbox' and 'starred' labels, and the thread's star control reads 'Unstar this thread'. Note: the inbox row star button only produced cosmetic 'Starred thread' snackbars without changing state (two attempts, both unconfirmed by readback); the change persisted only after using the thread-level star control on the opened conversation."
+        }
+      }
+    }
+  ]
+}

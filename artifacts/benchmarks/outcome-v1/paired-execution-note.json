@@ -1,0 +1,7 @@
+{
+  "scope": "e001..e004",
+  "source_bindings_identical": true,
+  "execution": "Separate WorkBuddy conversations, browser processes and BreakingWeb sessions. e002/e003/e004 started while e001 active; model runs can overlap.",
+  "timing_limit": "Wall time includes UI transport, provider queue and concurrent local resource contention. Do not interpret as isolated performance or model speed.",
+  "recorded_at": "2026-10-22T13:39:30.148039+00:00"
+}

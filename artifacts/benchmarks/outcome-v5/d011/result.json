@@ -1,0 +1,486 @@
+{
+  "arm": "macro-simple",
+  "task": "gmail_star_email",
+  "condition": "intervention",
+  "phase": "development",
+  "scope": "Browser Use 0.13.11 native agent with restricted tools; text-only desktop relay; not official paper harness score",
+  "claimed_success": false,
+  "evaluation": {
+    "score": 0.0,
+    "final_score": 0.0,
+    "success": false,
+    "reasoning": "Score: 0.000; success=False\nPassed 0/1 checks.\n  [FAIL] Agent starred the target email (error: no Update entry matched both where and changes predicates)\nAll negative checks passed (no penalties).\nFailures:\n  - missing_update: Star the target email from Alice Chen\nFinal score: 0.000 | Success: False",
+    "checks": [
+      {
+        "desc": "Agent starred the target email",
+        "passed": false,
+        "error": "no Update entry matched both where and changes predicates"
+      }
+    ],
+    "negative_checks": [
+      {
+        "desc": "Agent did not modify other inbox emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify drafts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not send emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not delete emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify contacts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify labels",
+        "passed": true,
+        "penalty": 0.1,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify filters",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      }
+    ],
+    "failures": [
+      {
+        "kind": "missing_update",
+        "description": "Star the target email from Alice Chen",
+        "details": {
+          "entry_index": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "agent_errors": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "action_units": 12,
+  "model_requests": 7,
+  "provider_usage": null,
+  "model_usage_note": "Counts mailbox requests, not all WorkBuddy internal generations/tool turns; desktop context and tokens unavailable",
+  "wall_seconds": 222.5716759999923,
+  "events": [
+    {
+      "action": {
+        "click_and_read": {
+          "click_index": 27,
+          "readback_index": 28,
+          "entity_indices": []
+        }
+      }
+    },
+    {
+      "readback": {
+        "status": "read",
+        "evidence": {
+          "url": "http://127.0.0.1:18765/env/gmail/thread/email_1?session=gmail_gmail_star_email_32d41e448c&agent_mode=1",
+          "region": "main",
+          "text": "Project Update — Q1 Milestones\nAC\nAlice Chen\n<alice.chen@thornton.com>\nto avery.quinn@thornton.com\nJul 7, 6:05 PM\nReply\nReply All\n\nHi team,\n\nHere's the latest update on our Q1 milestones. All deliverables are on track.\n\nPlease review and let me know if you have questions.\n\nThanks,\nAlice",
+          "controls": [
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Back to inbox",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Archive this thread",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Delete this thread",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Star this thread",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Apply label to this thread",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Forward this thread",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Reply to Project Update — Q1 Milestones",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Reply all to Project Update — Q1 Milestones",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            }
+          ],
+          "links": []
+        },
+        "acquisition": {
+          "method": "new_document_navigation",
+          "url": "http://127.0.0.1:18765/env/gmail/thread/email_1?session=gmail_gmail_star_email_32d41e448c&agent_mode=1",
+          "started_monotonic_ns": 104801738021625,
+          "completed_monotonic_ns": 104802447578708,
+          "http_status": 200,
+          "original_page_navigated": false,
+          "scope": "freshly loaded UI document, not a server transaction guarantee",
+          "click_completed_monotonic_ns": 104801737911625,
+          "order": "click attempt returned, then new result document loaded"
+        },
+        "requested_entities": [],
+        "click_result": {
+          "is_done": false,
+          "extracted_content": "Clicked button aria-label=Star Project Update ",
+          "include_extracted_content_only_once": false,
+          "metadata": {
+            "click_x": 282.0,
+            "click_y": 134.5
+          },
+          "include_in_memory": false
+        }
+      },
+      "entities": []
+    },
+    {
+      "action": {
+        "click_and_read": {
+          "click_index": 11,
+          "readback_index": 11,
+          "entity_indices": []
+        }
+      }
+    },
+    {
+      "readback": {
+        "status": "read",
+        "evidence": {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?label=inbox&filter=starred&session=gmail_gmail_star_email_32d41e448c&agent_mode=1",
+          "region": "main",
+          "text": "No messages match this view\n\nTry another mailbox view to find the emails you're looking for.",
+          "controls": [],
+          "links": []
+        },
+        "acquisition": {
+          "method": "new_document_navigation",
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?label=inbox&filter=starred&session=gmail_gmail_star_email_32d41e448c&agent_mode=1",
+          "started_monotonic_ns": 104825829034750,
+          "completed_monotonic_ns": 104826523082000,
+          "http_status": 200,
+          "original_page_navigated": false,
+          "scope": "freshly loaded UI document, not a server transaction guarantee",
+          "click_completed_monotonic_ns": 104825829016208,
+          "order": "click attempt returned, then new result document loaded"
+        },
+        "requested_entities": [],
+        "click_result": {
+          "is_done": false,
+          "extracted_content": "Clicked a \"Starred\n0\" aria-label=Starred",
+          "include_extracted_content_only_once": false,
+          "metadata": {
+            "click_x": 128.0,
+            "click_y": 200.0
+          },
+          "include_in_memory": false
+        }
+      },
+      "entities": []
+    },
+    {
+      "action": {
+        "click_and_read": {
+          "click_index": 10,
+          "readback_index": 0,
+          "entity_indices": []
+        }
+      }
+    },
+    {
+      "readback": {
+        "status": "read",
+        "evidence": {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?label=inbox&filter=starred&session=gmail_gmail_star_email_32d41e448c&agent_mode=1",
+          "region": "main",
+          "text": "No messages match this view\n\nTry another mailbox view to find the emails you're looking for.",
+          "controls": [],
+          "links": []
+        },
+        "acquisition": {
+          "method": "new_document_navigation",
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?label=inbox&filter=starred&session=gmail_gmail_star_email_32d41e448c&agent_mode=1",
+          "started_monotonic_ns": 104848403685083,
+          "completed_monotonic_ns": 104849102119291,
+          "http_status": 200,
+          "original_page_navigated": false,
+          "scope": "freshly loaded UI document, not a server transaction guarantee",
+          "click_completed_monotonic_ns": 104848403657083,
+          "order": "click attempt returned, then new result document loaded"
+        },
+        "requested_entities": [],
+        "click_result": {
+          "is_done": false,
+          "extracted_content": "Clicked a \"Inbox\n11\" aria-label=Inbox",
+          "include_extracted_content_only_once": false,
+          "metadata": {
+            "click_x": 128.0,
+            "click_y": 164.0
+          },
+          "include_in_memory": false
+        }
+      },
+      "entities": []
+    },
+    {
+      "action": {
+        "click_and_read": {
+          "click_index": 503,
+          "readback_index": 503,
+          "entity_indices": []
+        }
+      }
+    },
+    {
+      "readback": {
+        "status": "read",
+        "evidence": {
+          "url": "http://127.0.0.1:18765/env/gmail/thread/email_1?session=gmail_gmail_star_email_32d41e448c&agent_mode=1",
+          "region": "main",
+          "text": "Project Update — Q1 Milestones\nAC\nAlice Chen\n<alice.chen@thornton.com>\nto avery.quinn@thornton.com\nJul 7, 6:05 PM\nReply\nReply All\n\nHi team,\n\nHere's the latest update on our Q1 milestones. All deliverables are on track.\n\nPlease review and let me know if you have questions.\n\nThanks,\nAlice",
+          "controls": [
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Back to inbox",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Archive this thread",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Delete this thread",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Star this thread",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Apply label to this thread",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Forward this thread",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Reply to Project Update — Q1 Milestones",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Reply all to Project Update — Q1 Milestones",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            }
+          ],
+          "links": []
+        },
+        "acquisition": {
+          "method": "new_document_navigation",
+          "url": "http://127.0.0.1:18765/env/gmail/thread/email_1?session=gmail_gmail_star_email_32d41e448c&agent_mode=1",
+          "started_monotonic_ns": 104872974942500,
+          "completed_monotonic_ns": 104873697549708,
+          "http_status": 200,
+          "original_page_navigated": false,
+          "scope": "freshly loaded UI document, not a server transaction guarantee",
+          "click_completed_monotonic_ns": 104872974931041,
+          "order": "click attempt returned, then new result document loaded"
+        },
+        "requested_entities": [],
+        "click_result": {
+          "is_done": false,
+          "extracted_content": "Clicked a \"Project Update — Q1 Milestones...\" aria-label=Open unread thread P",
+          "include_extracted_content_only_once": false,
+          "metadata": {
+            "click_x": 818.65625,
+            "click_y": 134.5
+          },
+          "include_in_memory": false
+        }
+      },
+      "entities": []
+    },
+    {
+      "action": {
+        "click_and_read": {
+          "click_index": 746,
+          "readback_index": 11,
+          "entity_indices": []
+        }
+      }
+    },
+    {
+      "readback": {
+        "status": "read",
+        "evidence": {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?label=inbox&filter=starred&session=gmail_gmail_star_email_32d41e448c&agent_mode=1",
+          "region": "main",
+          "text": "No messages match this view\n\nTry another mailbox view to find the emails you're looking for.",
+          "controls": [],
+          "links": []
+        },
+        "acquisition": {
+          "method": "new_document_navigation",
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?label=inbox&filter=starred&session=gmail_gmail_star_email_32d41e448c&agent_mode=1",
+          "started_monotonic_ns": 104894049441041,
+          "completed_monotonic_ns": 104894734130875,
+          "http_status": 200,
+          "original_page_navigated": false,
+          "scope": "freshly loaded UI document, not a server transaction guarantee",
+          "click_completed_monotonic_ns": 104894049418083,
+          "order": "click attempt returned, then new result document loaded"
+        },
+        "requested_entities": [],
+        "click_result": {
+          "is_done": false,
+          "extracted_content": "Clicked button aria-label=Star this thread",
+          "include_extracted_content_only_once": false,
+          "metadata": {
+            "click_x": 402.0,
+            "click_y": 86.0
+          },
+          "include_in_memory": false
+        }
+      },
+      "entities": []
+    },
+    {
+      "action": {
+        "click": {
+          "index": 11
+        }
+      }
+    },
+    {
+      "action": {
+        "finish": {
+          "success": false,
+          "text": "Unconfirmed: could not get the Alice Chen email starred. I located the exact record — thread 'Project Update — Q1 Milestones' from Alice Chen <alice.chen@thornton.com> to avery.quinn@thornton.com, dated Jul 7, 6:05 PM, currently unread in Inbox. I then made two star attempts on that record: (1) the star control on the inbox row, and (2) the 'Star this thread' control on the thread detail page. Both clicks were accepted and the UI showed a 'Starred' confirmation, but no change persisted. Freshly read evidence after each attempt shows the starred state never took effect: the Starred view reports 'No messages match this view' with a 'Starred 0' badge, and the thread's own star control still reads 'Star this thread' on the page that was just clicked. The Inbox unread count remained 11, so no other state was disturbed. I did not click a third time because the control is a toggle and any earlier click that had actually landed would be undone by another click. Task requirement (this email starred) is therefore unconfirmed."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-22T10:01:31.988789+00:00",
+  "upstream_url": "https://github.com/Arvid-pku/BreakingWeb",
+  "commit": "052f0f0c6cfcdc9efb86eb0183556fcc4fb3606e",
+  "task_yaml_count": 519,
+  "variant_yaml_count": 535,
+  "task_files_by_directory": {
+    "amazon": 70,
+    "booking": 78,
+    "gmail": 84,
+    "lms": 65,
+    "patient_portal": 70,
+    "reddit": 81,
+    "robinhood": 71
+  },
+  "scope": "source inventory only; no environment build or task execution",
+  "not_run": [
+    "environment installation",
+    "official scoring",
+    "model evaluations",
+    "candidate comparison"
+  ],
+  "license_file_found": false,
+  "redistributed": false,
+  "notes": [
+    "No full benchmark score claimed.",
+    "Paper selected 519 pairs; repository has more variants. Pin a pair manifest before comparisons.",
+    "Provider harness is not authorization to use paid APIs or replace the user-specified desktop channels."
+  ]
+}

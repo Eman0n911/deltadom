@@ -1,0 +1,15 @@
+{
+  "python": "3.12.13 (main, Mar 25 2026, 03:16:06) [Clang 22.1.1 ]",
+  "os": "macOS-26.6.2-arm64-arm-64bit",
+  "architecture": "arm64",
+  "chrome_installed_version": "156.0.8078.47",
+  "packages": {
+    "browser-use": "0.13.11",
+    "playwright": "1.64.0",
+    "pydantic": "2.13.5",
+    "httpx": "0.28.1"
+  },
+  "model_channel": "WorkBuddy AI UI, Deepseek-V4.1-Flash label observed",
+  "provider_temperature_seed_tokens": "not exposed by desktop channel",
+  "note": "host metadata; model channel does not provide reproducible provider sampling seed"
+}

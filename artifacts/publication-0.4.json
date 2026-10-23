@@ -1,0 +1,20 @@
+{
+  "repository": "https://github.com/Eman0n911/deltadom",
+  "visibility": "public",
+  "release": "https://github.com/Eman0n911/deltadom/releases/tag/v0.4.0",
+  "prerelease": true,
+  "assets": [
+    {
+      "file": "DeltaDOM-0.4.0-macosx_11_0_arm64.zip",
+      "sha256": "02dea2f35c75e962984a859dddf922a289534db1bfe52c5bc43b94056225f2f3",
+      "download_matches_verified_local": true
+    },
+    {
+      "file": "deltadom-0.4.0-cp312-abi3-macosx_11_0_arm64.whl",
+      "sha256": "fb7f4a06414a4e192daeb1304119c7c213a56a6f4c4f28fc9a64f8ce8ea4065d",
+      "download_matches_verified_local": true
+    }
+  ],
+  "cloud_ci": "not_run: workflow scope unavailable; inactive template shipped",
+  "source_export": "dist/public-v0.4.0-final"
+}

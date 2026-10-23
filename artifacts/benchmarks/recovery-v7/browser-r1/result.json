@@ -1,0 +1,788 @@
+{
+  "scope": "16 scripted browser recovery checks, two previously used development surfaces; no model or official score",
+  "upstream": "052f0f0c6cfcdc9efb86eb0183556fcc4fb3606e",
+  "seed": 42,
+  "sources": {
+    "benchmarks/recovery_v7_browser.py": "85ac4a70857fa0f71e4d8ff46b225e86988c36fbaab3e70ae9b24d28383a5179",
+    "benchmarks/recovery_controls.py": "e2efc8a71d49739d4b4ff1a480b37e6c7a49f3d3a010e01633473218ceaebfdd",
+    "python/deltadom/recovery.py": "046666463b368b123247bf2f4f326ffefafe04ff040c1681a40fbd5e5a3a47ac"
+  },
+  "rows": [
+    {
+      "task": "gmail_star_email",
+      "condition": "clean",
+      "arm": "fresh_exact_check",
+      "callbacks": 1,
+      "reads": [
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_2eb0e0703b&agent_mode=1",
+          "goal_observed": false
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_2eb0e0703b&agent_mode=1",
+          "goal_observed": true
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_2eb0e0703b&agent_mode=1",
+          "goal_observed": true
+        }
+      ],
+      "attempts": [
+        {
+          "status": "injected_ack_loss"
+        },
+        {
+          "status": "goal_already_visible"
+        }
+      ],
+      "status": "completed",
+      "receipt": {
+        "status": "observed",
+        "goal_observed": true
+      },
+      "final_goal_observed": true,
+      "source_document_preserved": true,
+      "source_url_preserved": true,
+      "remaining_pages": 1
+    },
+    {
+      "task": "gmail_star_email",
+      "condition": "clean",
+      "arm": "request_journal",
+      "callbacks": 1,
+      "reads": [
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_e684ffef77&agent_mode=1",
+          "goal_observed": false
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_e684ffef77&agent_mode=1",
+          "goal_observed": true
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_e684ffef77&agent_mode=1",
+          "goal_observed": true
+        }
+      ],
+      "attempts": [
+        {
+          "status": "injected_ack_loss"
+        },
+        {
+          "status": "goal_already_visible"
+        }
+      ],
+      "status": "completed",
+      "receipt": {
+        "status": "observed",
+        "goal_observed": true
+      },
+      "final_goal_observed": true,
+      "source_document_preserved": true,
+      "source_url_preserved": true,
+      "remaining_pages": 1
+    },
+    {
+      "task": "gmail_star_email",
+      "condition": "clean",
+      "arm": "resource_journal",
+      "callbacks": 1,
+      "reads": [
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_ccbb399597&agent_mode=1",
+          "goal_observed": false
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_ccbb399597&agent_mode=1",
+          "goal_observed": true
+        }
+      ],
+      "attempts": [
+        {
+          "status": "injected_ack_loss"
+        },
+        {
+          "status": "not_dispatched"
+        }
+      ],
+      "status": "completed",
+      "receipt": {
+        "status": "observed",
+        "goal_observed": true
+      },
+      "final_goal_observed": true,
+      "source_document_preserved": true,
+      "source_url_preserved": true,
+      "remaining_pages": 1
+    },
+    {
+      "task": "gmail_star_email",
+      "condition": "clean",
+      "arm": "candidate",
+      "callbacks": 1,
+      "reads": [
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_0135df9b92&agent_mode=1",
+          "goal_observed": true
+        }
+      ],
+      "attempts": [
+        {
+          "status": "injected_ack_loss"
+        },
+        {
+          "status": "not_dispatched"
+        }
+      ],
+      "status": "completed",
+      "receipt": {
+        "status": "observed",
+        "goal_observed": true,
+        "evidence": {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_0135df9b92&agent_mode=1",
+          "goal_observed": true
+        },
+        "scope": "UI evidence at read time, not causality or safe-retry proof",
+        "safe_to_retry": false,
+        "resource_released": false
+      },
+      "final_goal_observed": true,
+      "source_document_preserved": true,
+      "source_url_preserved": true,
+      "remaining_pages": 1,
+      "ledger_events": [
+        {
+          "seq": 1,
+          "at_ns": 1792683919688489000,
+          "intent": "initial",
+          "kind": "prepared",
+          "detail": {
+            "revision": 1
+          }
+        },
+        {
+          "seq": 2,
+          "at_ns": 1792683919689588000,
+          "intent": "initial",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 3,
+          "at_ns": 1792683919701709000,
+          "intent": "initial",
+          "kind": "uncertain",
+          "detail": {}
+        },
+        {
+          "seq": 4,
+          "at_ns": 1792683919703267000,
+          "intent": "replanned",
+          "kind": "blocked",
+          "detail": {
+            "holder": "initial",
+            "reason": "resource_has_unsettled_intent",
+            "revision": 1,
+            "status": "blocked"
+          }
+        },
+        {
+          "seq": 5,
+          "at_ns": 1792683920420235000,
+          "intent": "initial",
+          "kind": "read_accepted",
+          "detail": {
+            "evidence": {
+              "goal_observed": true,
+              "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_0135df9b92&agent_mode=1"
+            },
+            "goal_observed": true,
+            "scope": "UI evidence at read time, not causality or safe-retry proof"
+          }
+        }
+      ]
+    },
+    {
+      "task": "gmail_star_email",
+      "condition": "intervention",
+      "arm": "fresh_exact_check",
+      "callbacks": 2,
+      "reads": [
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_978e692889&agent_mode=1",
+          "goal_observed": false
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_978e692889&agent_mode=1",
+          "goal_observed": false
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_978e692889&agent_mode=1",
+          "goal_observed": false
+        }
+      ],
+      "attempts": [
+        {
+          "status": "injected_ack_loss"
+        },
+        {
+          "status": "dispatched_once"
+        }
+      ],
+      "status": "completed",
+      "receipt": {
+        "status": "observed",
+        "goal_observed": false
+      },
+      "final_goal_observed": false,
+      "source_document_preserved": true,
+      "source_url_preserved": true,
+      "remaining_pages": 1
+    },
+    {
+      "task": "gmail_star_email",
+      "condition": "intervention",
+      "arm": "request_journal",
+      "callbacks": 2,
+      "reads": [
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_bf4227bb91&agent_mode=1",
+          "goal_observed": false
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_bf4227bb91&agent_mode=1",
+          "goal_observed": false
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_bf4227bb91&agent_mode=1",
+          "goal_observed": false
+        }
+      ],
+      "attempts": [
+        {
+          "status": "injected_ack_loss"
+        },
+        {
+          "status": "dispatched_once"
+        }
+      ],
+      "status": "completed",
+      "receipt": {
+        "status": "observed",
+        "goal_observed": false
+      },
+      "final_goal_observed": false,
+      "source_document_preserved": true,
+      "source_url_preserved": true,
+      "remaining_pages": 1
+    },
+    {
+      "task": "gmail_star_email",
+      "condition": "intervention",
+      "arm": "resource_journal",
+      "callbacks": 1,
+      "reads": [
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_bf2edc97ba&agent_mode=1",
+          "goal_observed": false
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_bf2edc97ba&agent_mode=1",
+          "goal_observed": false
+        }
+      ],
+      "attempts": [
+        {
+          "status": "injected_ack_loss"
+        },
+        {
+          "status": "not_dispatched"
+        }
+      ],
+      "status": "completed",
+      "receipt": {
+        "status": "observed",
+        "goal_observed": false
+      },
+      "final_goal_observed": false,
+      "source_document_preserved": true,
+      "source_url_preserved": true,
+      "remaining_pages": 1
+    },
+    {
+      "task": "gmail_star_email",
+      "condition": "intervention",
+      "arm": "candidate",
+      "callbacks": 1,
+      "reads": [
+        {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_16d6affaff&agent_mode=1",
+          "goal_observed": false
+        }
+      ],
+      "attempts": [
+        {
+          "status": "injected_ack_loss"
+        },
+        {
+          "status": "not_dispatched"
+        }
+      ],
+      "status": "completed",
+      "receipt": {
+        "status": "observed",
+        "goal_observed": false,
+        "evidence": {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_16d6affaff&agent_mode=1",
+          "goal_observed": false
+        },
+        "scope": "UI evidence at read time, not causality or safe-retry proof",
+        "safe_to_retry": false,
+        "resource_released": false
+      },
+      "final_goal_observed": false,
+      "source_document_preserved": true,
+      "source_url_preserved": true,
+      "remaining_pages": 1,
+      "ledger_events": [
+        {
+          "seq": 1,
+          "at_ns": 1792683929565727000,
+          "intent": "initial",
+          "kind": "prepared",
+          "detail": {
+            "revision": 1
+          }
+        },
+        {
+          "seq": 2,
+          "at_ns": 1792683929566700000,
+          "intent": "initial",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 3,
+          "at_ns": 1792683929576392000,
+          "intent": "initial",
+          "kind": "uncertain",
+          "detail": {}
+        },
+        {
+          "seq": 4,
+          "at_ns": 1792683929577811000,
+          "intent": "replanned",
+          "kind": "blocked",
+          "detail": {
+            "holder": "initial",
+            "reason": "resource_has_unsettled_intent",
+            "revision": 1,
+            "status": "blocked"
+          }
+        },
+        {
+          "seq": 5,
+          "at_ns": 1792683930295503000,
+          "intent": "initial",
+          "kind": "read_accepted",
+          "detail": {
+            "evidence": {
+              "goal_observed": false,
+              "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_16d6affaff&agent_mode=1"
+            },
+            "goal_observed": false,
+            "scope": "UI evidence at read time, not causality or safe-retry proof"
+          }
+        }
+      ]
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "arm": "fresh_exact_check",
+      "callbacks": 1,
+      "reads": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_96f14de29b&agent_mode=1",
+          "goal_observed": false
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_96f14de29b&agent_mode=1",
+          "goal_observed": true
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_96f14de29b&agent_mode=1",
+          "goal_observed": true
+        }
+      ],
+      "attempts": [
+        {
+          "status": "injected_ack_loss"
+        },
+        {
+          "status": "goal_already_visible"
+        }
+      ],
+      "status": "completed",
+      "receipt": {
+        "status": "observed",
+        "goal_observed": true
+      },
+      "final_goal_observed": true,
+      "source_document_preserved": true,
+      "source_url_preserved": true,
+      "remaining_pages": 1
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "arm": "request_journal",
+      "callbacks": 1,
+      "reads": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_29ac49b3fe&agent_mode=1",
+          "goal_observed": false
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_29ac49b3fe&agent_mode=1",
+          "goal_observed": true
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_29ac49b3fe&agent_mode=1",
+          "goal_observed": true
+        }
+      ],
+      "attempts": [
+        {
+          "status": "injected_ack_loss"
+        },
+        {
+          "status": "goal_already_visible"
+        }
+      ],
+      "status": "completed",
+      "receipt": {
+        "status": "observed",
+        "goal_observed": true
+      },
+      "final_goal_observed": true,
+      "source_document_preserved": true,
+      "source_url_preserved": true,
+      "remaining_pages": 1
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "arm": "resource_journal",
+      "callbacks": 1,
+      "reads": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_b014cf1f3d&agent_mode=1",
+          "goal_observed": false
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_b014cf1f3d&agent_mode=1",
+          "goal_observed": true
+        }
+      ],
+      "attempts": [
+        {
+          "status": "injected_ack_loss"
+        },
+        {
+          "status": "not_dispatched"
+        }
+      ],
+      "status": "completed",
+      "receipt": {
+        "status": "observed",
+        "goal_observed": true
+      },
+      "final_goal_observed": true,
+      "source_document_preserved": true,
+      "source_url_preserved": true,
+      "remaining_pages": 1
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "arm": "candidate",
+      "callbacks": 1,
+      "reads": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_fb34fe45fe&agent_mode=1",
+          "goal_observed": true
+        }
+      ],
+      "attempts": [
+        {
+          "status": "injected_ack_loss"
+        },
+        {
+          "status": "not_dispatched"
+        }
+      ],
+      "status": "completed",
+      "receipt": {
+        "status": "observed",
+        "goal_observed": true,
+        "evidence": {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_fb34fe45fe&agent_mode=1",
+          "goal_observed": true
+        },
+        "scope": "UI evidence at read time, not causality or safe-retry proof",
+        "safe_to_retry": false,
+        "resource_released": false
+      },
+      "final_goal_observed": true,
+      "source_document_preserved": true,
+      "source_url_preserved": true,
+      "remaining_pages": 1,
+      "ledger_events": [
+        {
+          "seq": 1,
+          "at_ns": 1792683941424723000,
+          "intent": "initial",
+          "kind": "prepared",
+          "detail": {
+            "revision": 1
+          }
+        },
+        {
+          "seq": 2,
+          "at_ns": 1792683941425510000,
+          "intent": "initial",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 3,
+          "at_ns": 1792683941455894000,
+          "intent": "initial",
+          "kind": "uncertain",
+          "detail": {}
+        },
+        {
+          "seq": 4,
+          "at_ns": 1792683941457257000,
+          "intent": "replanned",
+          "kind": "blocked",
+          "detail": {
+            "holder": "initial",
+            "reason": "resource_has_unsettled_intent",
+            "revision": 1,
+            "status": "blocked"
+          }
+        },
+        {
+          "seq": 5,
+          "at_ns": 1792683942170897000,
+          "intent": "initial",
+          "kind": "read_accepted",
+          "detail": {
+            "evidence": {
+              "goal_observed": true,
+              "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_fb34fe45fe&agent_mode=1"
+            },
+            "goal_observed": true,
+            "scope": "UI evidence at read time, not causality or safe-retry proof"
+          }
+        }
+      ]
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "intervention",
+      "arm": "fresh_exact_check",
+      "callbacks": 2,
+      "reads": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_f809ba5502&agent_mode=1",
+          "goal_observed": false
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_f809ba5502&agent_mode=1",
+          "goal_observed": false
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_f809ba5502&agent_mode=1",
+          "goal_observed": false
+        }
+      ],
+      "attempts": [
+        {
+          "status": "injected_ack_loss"
+        },
+        {
+          "status": "dispatched_once"
+        }
+      ],
+      "status": "completed",
+      "receipt": {
+        "status": "observed",
+        "goal_observed": false
+      },
+      "final_goal_observed": false,
+      "source_document_preserved": true,
+      "source_url_preserved": true,
+      "remaining_pages": 1
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "intervention",
+      "arm": "request_journal",
+      "callbacks": 2,
+      "reads": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_05a85f4c35&agent_mode=1",
+          "goal_observed": false
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_05a85f4c35&agent_mode=1",
+          "goal_observed": false
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_05a85f4c35&agent_mode=1",
+          "goal_observed": false
+        }
+      ],
+      "attempts": [
+        {
+          "status": "injected_ack_loss"
+        },
+        {
+          "status": "dispatched_once"
+        }
+      ],
+      "status": "completed",
+      "receipt": {
+        "status": "observed",
+        "goal_observed": false
+      },
+      "final_goal_observed": false,
+      "source_document_preserved": true,
+      "source_url_preserved": true,
+      "remaining_pages": 1
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "intervention",
+      "arm": "resource_journal",
+      "callbacks": 1,
+      "reads": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_092722c4fd&agent_mode=1",
+          "goal_observed": false
+        },
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_092722c4fd&agent_mode=1",
+          "goal_observed": false
+        }
+      ],
+      "attempts": [
+        {
+          "status": "injected_ack_loss"
+        },
+        {
+          "status": "not_dispatched"
+        }
+      ],
+      "status": "completed",
+      "receipt": {
+        "status": "observed",
+        "goal_observed": false
+      },
+      "final_goal_observed": false,
+      "source_document_preserved": true,
+      "source_url_preserved": true,
+      "remaining_pages": 1
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "intervention",
+      "arm": "candidate",
+      "callbacks": 1,
+      "reads": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_037569995b&agent_mode=1",
+          "goal_observed": false
+        }
+      ],
+      "attempts": [
+        {
+          "status": "injected_ack_loss"
+        },
+        {
+          "status": "not_dispatched"
+        }
+      ],
+      "status": "completed",
+      "receipt": {
+        "status": "observed",
+        "goal_observed": false,
+        "evidence": {
+          "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_037569995b&agent_mode=1",
+          "goal_observed": false
+        },
+        "scope": "UI evidence at read time, not causality or safe-retry proof",
+        "safe_to_retry": false,
+        "resource_released": false
+      },
+      "final_goal_observed": false,
+      "source_document_preserved": true,
+      "source_url_preserved": true,
+      "remaining_pages": 1,
+      "ledger_events": [
+        {
+          "seq": 1,
+          "at_ns": 1792683954059266000,
+          "intent": "initial",
+          "kind": "prepared",
+          "detail": {
+            "revision": 1
+          }
+        },
+        {
+          "seq": 2,
+          "at_ns": 1792683954060019000,
+          "intent": "initial",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 3,
+          "at_ns": 1792683954091387000,
+          "intent": "initial",
+          "kind": "uncertain",
+          "detail": {}
+        },
+        {
+          "seq": 4,
+          "at_ns": 1792683954092853000,
+          "intent": "replanned",
+          "kind": "blocked",
+          "detail": {
+            "holder": "initial",
+            "reason": "resource_has_unsettled_intent",
+            "revision": 1,
+            "status": "blocked"
+          }
+        },
+        {
+          "seq": 5,
+          "at_ns": 1792683954803777000,
+          "intent": "initial",
+          "kind": "read_accepted",
+          "detail": {
+            "evidence": {
+              "goal_observed": false,
+              "url": "http://127.0.0.1:18765/env/amazon/cart?session=amazon_amazon_browse_category_037569995b&agent_mode=1"
+            },
+            "goal_observed": false,
+            "scope": "UI evidence at read time, not causality or safe-retry proof"
+          }
+        }
+      ]
+    }
+  ]
+}

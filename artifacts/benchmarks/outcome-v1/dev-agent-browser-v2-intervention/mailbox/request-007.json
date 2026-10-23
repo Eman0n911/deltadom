@@ -1,0 +1,54 @@
+{
+  "request_id": "007",
+  "messages": [
+    {
+      "role": "system",
+      "cache": false,
+      "content": "Complete the user's browser task using agent-browser native snapshot refs. Only interact with the current local website UI; no evaluator, backend state or external sites. Return one JSON action. click/fill use e-number refs (e.g. e5). Use refresh to independently read page state, back for previous page, scroll_down/up for scrolling. Finish with success=false if unconfirmed. Do not claim success based only on a click or toast.",
+      "name": null
+    },
+    {
+      "role": "user",
+      "cache": false,
+      "content": "{\"task\": \"Find the email from Alice Chen with subject \\\"Project Update — Q1 Milestones\\\" and star it.\", \"step\": 7, \"budget\": 40, \"action_history\": [{\"action\": {\"action\": \"click\", \"target\": \"e34\", \"text\": \"\", \"success\": false}, \"error\": null}, {\"action\": {\"action\": \"refresh\", \"target\": \"\", \"text\": \"\", \"success\": false}, \"error\": null}, {\"action\": {\"action\": \"click\", \"target\": \"e85\", \"text\": \"\", \"success\": false}, \"error\": null}, {\"action\": {\"action\": \"click\", \"target\": \"e86\", \"text\": \"\", \"success\": false}, \"error\": null}, {\"action\": {\"action\": \"click\", \"target\": \"e107\", \"text\": \"\", \"success\": false}, \"error\": null}, {\"action\": {\"action\": \"refresh\", \"target\": \"\", \"text\": \"\", \"success\": false}, \"error\": null}], \"last_error\": null, \"snapshot\": \"- generic [ref=e114] clickable [onclick]\\n  - banner\\n    - StaticText \\\"Gmail\\\"\\n    - search\\n      - textbox \\\"Search mail\\\" [ref=e124]\\n      - button \\\"Run search\\\" [ref=e125]\\n        - StaticText \\\"Search\\\"\\n  - navigation \\\"Gmail navigation\\\" [ref=e115]\\n    - button \\\"Compose a new message\\\" [ref=e117]\\n      - StaticText \\\"Compose\\\"\\n    - complementary \\\"Gmail navigation\\\"\\n      - region \\\"main\\\" [ref=e126]\\n        - link \\\"Inbox\\\" [ref=e130]\\n          - StaticText \\\"Inbox\\\"\\n          - StaticText \\\"11\\\"\\n        - link \\\"Starred\\\" [ref=e131]\\n          - StaticText \\\"Starred\\\"\\n          - StaticText \\\"1\\\"\\n        - link \\\"Sent\\\" [ref=e132]\\n          - StaticText \\\"Sent\\\"\\n          - StaticText \\\"0\\\"\\n        - link \\\"Drafts\\\" [ref=e133]\\n          - StaticText \\\"Drafts\\\"\\n          - StaticText \\\"0\\\"\\n        - link \\\"Archive\\\" [ref=e134]\\n          - StaticText \\\"Archive\\\"\\n        - link \\\"Trash\\\" [ref=e135]\\n          - StaticText \\\"Trash\\\"\\n      - region \\\"manage\\\" [ref=e127]\\n        - link \\\"Settings\\\" [ref=e136]\\n          - StaticText \\\"Settings\\\"\\n        - link \\\"Labels\\\" [ref=e137]\\n          - StaticText \\\"Labels\\\"\\n        - link \\\"Contacts\\\" [ref=e138]\\n          - StaticText \\\"Contacts\\\"\\n  - main \\\"Thread view\\\" [ref=e116]\\n    - button \\\"Back to inbox\\\" [ref=e118]\\n    - button \\\"Archive this thread\\\" [ref=e119]\\n    - button \\\"Delete this thread\\\" [ref=e120]\\n    - button \\\"Unstar this thread\\\" [ref=e121]\\n    - button \\\"Apply label to this thread\\\" [ref=e128]\\n    - button \\\"Forward this thread\\\" [ref=e122]\\n    - region \\\"Email thread\\\" [ref=e123]\\n      - heading \\\"Project Update — Q1 Milestones\\\" [level=2, ref=e129]\\n      - article\\n        - sectionheader\\n          - strong\\n            - StaticText \\\"Alice Chen\\\"\\n          - StaticText \\\"<\\\"\\n          - StaticText \\\"alice.chen@thornton.com\\\"\\n          - StaticText \\\">\\\"\\n          - generic\\n            - StaticText \\\"to avery.quinn@thornton.com\\\"\\n          - StaticText \\\"Starred\\\"\\n          - time\\n            - StaticText \\\"Jul 7, 6:05 PM\\\"\\n          - button \\\"Reply to Project Update — Q1 Milestones\\\" [ref=e139]\\n            - StaticText \\\"Reply\\\"\\n          - button \\\"Reply all to Project Update — Q1 Milestones\\\" [ref=e140]\\n            - StaticText \\\"Reply All\\\"\\n        - paragraph\\n          - StaticText \\\"Hi team,\\\"\\n        - paragraph\\n          - StaticText \\\"Here's the latest update on our Q1 milestones. All deliverables are on track.\\\"\\n        - paragraph\\n          - StaticText \\\"Please review and let me know if you have questions.\\\"\\n        - paragraph\\n          - StaticText \\\"Thanks,\\\"\\n          - LineBreak \\\"\\\\n\\\"\\n          - StaticText \\\"Alice\\\"\\n\"}",
+      "name": null
+    }
+  ],
+  "output_schema": {
+    "properties": {
+      "action": {
+        "enum": [
+          "click",
+          "fill",
+          "scroll_down",
+          "scroll_up",
+          "back",
+          "refresh",
+          "finish"
+        ],
+        "title": "Action",
+        "type": "string"
+      },
+      "target": {
+        "default": "",
+        "title": "Target",
+        "type": "string"
+      },
+      "text": {
+        "default": "",
+        "title": "Text",
+        "type": "string"
+      },
+      "success": {
+        "default": false,
+        "title": "Success",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "action"
+    ],
+    "title": "CLIAction",
+    "type": "object"
+  }
+}

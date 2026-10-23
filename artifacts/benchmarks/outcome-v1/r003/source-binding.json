@@ -1,0 +1,8 @@
+{
+  "benchmarks/outcome_agent.py": "d29ebf43b352c633f2d55e10b4fa3282d06f948ba306cdf2cc3f54f6a3deb98f",
+  "benchmarks/outcome_cli_actor.py": "a899f39a22cd9af216380e54df85c4c4e6a00c5b1e0143b2cd147217fbd7f383",
+  "python/deltadom/outcome.py": "2402aab9d8a3c9c9bac87953f3d3c570d6ec04d7535356224decc907aa7702f7",
+  "python/deltadom/presence.py": "a22ae415c024795a9fae1b7f8612202443e7893d2d1f7ad6d973648b5b2a1201",
+  "benchmarks/observe_v2.py": "52f671575c992ade5b2bf19881152e28b63a876b3b937a27b64e25ff75371cec",
+  "benchmarks/agent-browser.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+}

@@ -1,0 +1,344 @@
+{
+  "arm": "macro-simple",
+  "task": "amazon_browse_category",
+  "condition": "clean",
+  "phase": "exploratory",
+  "scope": "Browser Use 0.13.11 native agent with restricted tools; text-only desktop relay; not official paper harness score",
+  "claimed_success": true,
+  "evaluation": {
+    "score": 1.0,
+    "final_score": 1.0,
+    "success": true,
+    "reasoning": "Score: 1.000; success=True\nPassed 1/1 checks.\n  [PASS] Cheapest Electronics product added to cart\nAll negative checks passed (no penalties).\nFinal score: 1.000 | Success: True",
+    "checks": [
+      {
+        "desc": "Cheapest Electronics product added to cart",
+        "passed": true,
+        "error": null
+      }
+    ],
+    "negative_checks": [
+      {
+        "desc": "Agent did not add extra items to cart",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify product catalog",
+        "passed": true,
+        "penalty": 0.3,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify saved addresses",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify payment methods",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not place orders",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not write product reviews",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create return requests",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not apply or modify promo codes",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create Q&A posts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify gift cards",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create notifications",
+        "passed": true,
+        "penalty": 0.1,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify wishlist",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify account settings",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      }
+    ]
+  },
+  "error": null,
+  "agent_errors": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "action_units": 13,
+  "model_requests": 12,
+  "provider_usage": null,
+  "model_usage_note": "Counts mailbox requests, not all WorkBuddy internal generations/tool turns; desktop context and tokens unavailable",
+  "wall_seconds": 337.7151941249904,
+  "events": [
+    {
+      "action": {
+        "click": {
+          "index": 58
+        }
+      }
+    },
+    {
+      "action": {
+        "select_dropdown": {
+          "index": 1115,
+          "text": "Price: Low to High"
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1734
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 2380
+        }
+      }
+    },
+    {
+      "action": {
+        "click_and_read": {
+          "click_index": 2519,
+          "readback_index": 0,
+          "entity_indices": []
+        }
+      }
+    },
+    {
+      "readback": {
+        "status": "read",
+        "evidence": {
+          "url": "http://127.0.0.1:18765/env/amazon/product/product_320?session=amazon_amazon_browse_category_2ef992cdb9&agent_mode=1",
+          "region": "main",
+          "text": "Home›Electronics›Chargers & Power Adapters›USB-C Charging Cable 6ft\nUSB-C Charging Cable 6ft\nVisit the CableTech Store\n★\n★\n★\n★\n★\n1,727\n1700+ bought in past month\n$799\nprime\n✓\n FREE delivery\nFREE Returns\nIn Stock\nAbout this item\n\nA compact charging accessory for keeping phones, tablets, and everyday devices powered up.\n\nProduct Features\nFast charging support\nBraided nylon cable\n6 foot length\n$799\nprime\n✓\n FREE delivery Saturday, October 24\nFREE Returns\nIn Stock\nShips from and sold by Amazon.com\nQty:\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nAdd to Cart\nBuy Now\nAdd to Wishlist\nCustomer Reviews\nWrite a Review\n★\n★\n★\n★\n★\n4.3 out of 5\n1727 global ratings\n\nNo reviews yet. Be the first to review this product.\n\nCustomer Questions & Answers\nAsk a question\n\nNo questions yet. Be the first to ask a question about this product.",
+          "controls": [
+            {
+              "tag": "select",
+              "type": "select-one",
+              "label": "Select quantity",
+              "value": "1",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Add USB-C Charging Cable 6ft to Cart",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Buy USB-C Charging Cable 6ft Now",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Add USB-C Charging Cable 6ft to Wishlist",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "submit",
+              "label": "Write a Review",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "submit",
+              "label": "Ask a question",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            }
+          ],
+          "links": [
+            {
+              "url": "http://127.0.0.1:18765/env/amazon/home?session=amazon_amazon_browse_category_2ef992cdb9&agent_mode=1",
+              "label": "Home"
+            },
+            {
+              "url": "http://127.0.0.1:18765/env/amazon/search?q=&category=Electronics&session=amazon_amazon_browse_category_2ef992cdb9&agent_mode=1",
+              "label": "Electronics"
+            },
+            {
+              "url": "http://127.0.0.1:18765/env/amazon/search?q=&category=Electronics&subcategory=Chargers+%26+Power+Adapters&session=amazon_amazon_browse_category_2ef992cdb9&agent_mode=1",
+              "label": "Chargers & Power Adapters"
+            },
+            {
+              "url": "http://127.0.0.1:18765/env/amazon/product/product_320?session=amazon_amazon_browse_category_2ef992cdb9&agent_mode=1#",
+              "label": "FREE Returns"
+            },
+            {
+              "url": "http://127.0.0.1:18765/env/amazon/product/product_320?session=amazon_amazon_browse_category_2ef992cdb9&agent_mode=1#",
+              "label": "FREE Returns"
+            }
+          ]
+        },
+        "acquisition": {
+          "method": "new_document_navigation",
+          "url": "http://127.0.0.1:18765/env/amazon/product/product_320?session=amazon_amazon_browse_category_2ef992cdb9&agent_mode=1",
+          "started_monotonic_ns": 105128766284541,
+          "completed_monotonic_ns": 105129456845666,
+          "http_status": 200,
+          "original_page_navigated": false,
+          "scope": "freshly loaded UI document, not a server transaction guarantee",
+          "click_completed_monotonic_ns": 105128766222000,
+          "order": "click attempt returned, then new result document loaded"
+        },
+        "requested_entities": [],
+        "click_result": {
+          "is_done": false,
+          "extracted_content": "Clicked a \"Go to Cart\"",
+          "include_extracted_content_only_once": false,
+          "include_in_memory": false
+        }
+      },
+      "entities": []
+    },
+    {
+      "action": {
+        "click": {
+          "index": 2549
+        }
+      }
+    },
+    {
+      "action": {
+        "select_dropdown": {
+          "index": 2912,
+          "text": "Price: Low to High"
+        }
+      }
+    },
+    {
+      "action": {
+        "scroll": {
+          "down": true,
+          "pages": 10.0
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 3846
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 2542
+        }
+      }
+    },
+    {
+      "action": {
+        "refresh_page": {}
+      }
+    },
+    {
+      "action": {
+        "finish": {
+          "success": true,
+          "text": "Done. Cheapest Electronics item added to cart and verified on a freshly reloaded cart page.\n\nSteps taken:\n1. Opened the Electronics category from the nav bar (47 results).\n2. Applied Sort by: Price: Low to High.\n3. The first (cheapest) result was 'USB-C Charging Cable 6ft' by CableTech at $7.99, marked In Stock; every other item on page 1 was $15.00 or more (rising to $27.31 at the bottom), and page 2 continued in the higher tier, so it is the minimum-priced item in the category.\n4. Added 1 unit to the cart (Add to Cart), then ignored the 'Added to Cart' toast and verified independently.\n\nFresh verification (cart page reloaded):\n- Line item: USB-C Charging Cable 6ft\n- Unit price: $7.99\n- Quantity: 1\n- Subtotal (1 item): $7.99\n- Header cart badge: 1 item\n\nNote: several other listings (e.g. '2 Pack Portable Charger', 'Amazon Basics Bluetooth Headphones') were marked 'Currently unavailable' and could not have been ordered; the chosen item was in stock."
+        }
+      }
+    }
+  ]
+}

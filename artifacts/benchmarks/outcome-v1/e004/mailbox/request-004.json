@@ -1,0 +1,64 @@
+{
+  "request_id": "004",
+  "messages": [
+    {
+      "role": "system",
+      "cache": false,
+      "content": "Complete the user's browser task using agent-browser native snapshot refs. Only interact with the current local website UI; no evaluator, backend state or external sites. Return one JSON action. Element actions use e-number refs (e.g. e5). fill uses text; select uses the visible option label or value in text; press uses a key chord in text. check/uncheck set checkbox state; hover/focus target a ref; get_text/get_value/is_checked read a ref. wait uses seconds (0..10) in text. Use refresh to independently read page state, back for previous page, scroll_down/up for scrolling. Finish with success=false if unconfirmed. Do not claim success based only on a click or toast.",
+      "name": null
+    },
+    {
+      "role": "user",
+      "cache": false,
+      "content": "{\"task\": \"Browse the Electronics category, find the cheapest item available, and add it to your cart.\\n\", \"step\": 4, \"budget\": 40, \"action_history\": [{\"action\": {\"action\": \"click\", \"target\": \"e10\", \"text\": \"\", \"success\": false}, \"error\": null, \"observation\": \"✓ Done\\n\"}, {\"action\": {\"action\": \"select\", \"target\": \"e149\", \"text\": \"Price: Low to High\", \"success\": false}, \"error\": null, \"observation\": \"✓ Done\\n\"}, {\"action\": {\"action\": \"click\", \"target\": \"e226\", \"text\": \"\", \"success\": false}, \"error\": null, \"observation\": \"✓ Done\\n\"}], \"last_error\": null, \"snapshot\": \"- generic [ref=e1] clickable [onclick]\\n  - banner\\n    - link \\\"Amazon Home\\\" [ref=e2]\\n      - StaticText \\\"amazon\\\"\\n    - image\\n    - StaticText \\\"Deliver to\\\"\\n    - StaticText \\\"Benchmark User\\\"\\n    - search\\n      - combobox \\\"Search in department\\\" [expanded=false, ref=e29]: All\\n        - MenuListPopup\\n          - option \\\"All\\\" [selected, ref=e108]\\n          - option \\\"Electronics\\\" [ref=e109]\\n          - option \\\"Books\\\" [ref=e110]\\n          - option \\\"Home & Kitchen\\\" [ref=e111]\\n          - option \\\"Clothing\\\" [ref=e112]\\n          - option \\\"Sports & Outdoors\\\" [ref=e113]\\n          - option \\\"Health & Beauty\\\" [ref=e114]\\n          - option \\\"Toys & Games\\\" [ref=e115]\\n          - option \\\"Office Supplies\\\" [ref=e116]\\n      - textbox \\\"Search Amazon\\\" [ref=e30]\\n      - button \\\"Submit search\\\" [ref=e31]\\n        - image\\n    - navigation \\\"Main navigation\\\" [ref=e3]\\n      - link \\\"Notifications, 1 unread\\\" [ref=e32]\\n        - image\\n        - StaticText \\\"1\\\"\\n      - button \\\"Hello, Jordan Account & Lists ▾\\\" [expanded=false, ref=e66]\\n        - StaticText \\\"Hello, \\\"\\n        - StaticText \\\"Jordan\\\"\\n        - StaticText \\\"Account & Lists ▾\\\"\\n      - link \\\"Returns & Orders\\\" [ref=e33]\\n        - StaticText \\\"Returns\\\"\\n        - StaticText \\\"& Orders\\\"\\n      - link \\\"Orders\\\" [ref=e34]\\n        - StaticText \\\"Orders\\\"\\n      - link \\\"Shopping cart, 0 items\\\" [ref=e35]\\n        - StaticText \\\"0\\\"\\n        - StaticText \\\"Cart\\\"\\n    - link \\\"All\\\" [ref=e4]\\n    - link \\\"Today's Deals\\\" [ref=e5]\\n    - link \\\"Customer Service\\\" [ref=e6]\\n    - link \\\"Registry\\\" [ref=e7]\\n    - link \\\"Gift Cards\\\" [ref=e8]\\n    - link \\\"Sell\\\" [ref=e9]\\n    - link \\\"Electronics\\\" [ref=e10]\\n    - link \\\"Books\\\" [ref=e11]\\n    - link \\\"Clothing\\\" [ref=e12]\\n    - link \\\"Home & Kitchen\\\" [ref=e13]\\n    - link \\\"Sports\\\" [ref=e14]\\n  - main\\n    - navigation \\\"Breadcrumb\\\" [ref=e238]\\n      - link \\\"Home\\\" [ref=e248]\\n      - StaticText \\\"›\\\"\\n      - link \\\"Electronics\\\" [ref=e249]\\n      - StaticText \\\"›\\\"\\n      - link \\\"Browse subcategory Bedding & Linens\\\" [ref=e250]\\n        - StaticText \\\"Bedding & Linens\\\"\\n      - StaticText \\\"›USB-C Charging Cable 6ft Refurbished\\\"\\n    - image \\\"USB-C Charging Cable 6ft Refurbished\\\"\\n    - heading \\\"USB-C Charging Cable 6ft Refurbished\\\" [level=1, ref=e239]\\n    - generic\\n      - StaticText \\\"Visit the OEM Reseller Store\\\"\\n    - StaticText \\\"410\\\"\\n    - separator\\n    - generic\\n      - StaticText \\\"$799\\\"\\n    - generic\\n      - StaticText \\\"prime\\\"\\n      - StaticText \\\"✓\\\"\\n      - StaticText \\\"FREE delivery\\\"\\n    - link \\\"FREE Returns\\\" [ref=e251]\\n    - StaticText \\\"In Stock\\\"\\n    - heading \\\"About this item\\\" [level=3, ref=e240]\\n    - paragraph\\n      - StaticText \\\"From weeknight dinners to weekend entertaining, this professional bedding & linens is up to the task. Built with lifetime manufacturer warranty and finished with stackable design saves cabinet space so it looks as good as it performs.\\\"\\n    - heading \\\"Product Features\\\" [level=3, ref=e241]\\n    - list\\n      - listitem [level=1]\\n        - ListMarker \\\"• \\\"\\n        - StaticText \\\"Ergonomic soft-grip handle for comfort\\\"\\n      - listitem [level=1]\\n        - ListMarker \\\"• \\\"\\n        - StaticText \\\"Stackable design saves cabinet space\\\"\\n      - listitem [level=1]\\n        - ListMarker \\\"• \\\"\\n        - StaticText \\\"Sustainably sourced bamboo construction\\\"\\n    - generic\\n      - StaticText \\\"$799\\\"\\n    - generic\\n      - generic\\n        - StaticText \\\"prime\\\"\\n        - StaticText \\\"✓\\\"\\n      - StaticText \\\"FREE delivery \\\"\\n      - strong\\n        - StaticText \\\"Saturday, October 24\\\"\\n    - link \\\"FREE Returns\\\" [ref=e252]\\n    - StaticText \\\"In Stock\\\"\\n    - generic\\n      - StaticText \\\"Ships from and sold by \\\"\\n      - strong\\n        - StaticText \\\"Amazon.com\\\"\\n    - LabelText\\n      - StaticText \\\"Qty:\\\"\\n    - combobox \\\"Select quantity\\\" [expanded=false, ref=e242]: 1\\n      - MenuListPopup\\n        - option \\\"1\\\" [selected, ref=e257]\\n        - option \\\"2\\\" [ref=e258]\\n        - option \\\"3\\\" [ref=e259]\\n        - option \\\"4\\\" [ref=e260]\\n        - option \\\"5\\\" [ref=e261]\\n        - option \\\"6\\\" [ref=e262]\\n        - option \\\"7\\\" [ref=e263]\\n        - option \\\"8\\\" [ref=e264]\\n        - option \\\"9\\\" [ref=e265]\\n        - option \\\"10\\\" [ref=e266]\\n    - button \\\"Add USB-C Charging Cable 6ft Refurbished to Cart\\\" [ref=e243]\\n      - StaticText \\\"Add to Cart\\\"\\n    - button \\\"Buy USB-C Charging Cable 6ft Refurbished Now\\\" [ref=e244]\\n      - StaticText \\\"Buy Now\\\"\\n    - button \\\"Add USB-C Charging Cable 6ft Refurbished to Wishlist\\\" [ref=e245]\\n      - StaticText \\\"Add to Wishlist\\\"\\n    - region \\\"Customer reviews\\\" [ref=e246]\\n      - heading \\\"Customer Reviews\\\" [level=2, ref=e253]\\n      - button \\\"Write a Review\\\" [ref=e254]\\n      - StaticText \\\"4.3\\\"\\n      - StaticText \\\" out of 5\\\"\\n      - StaticText \\\"410\\\"\\n      - StaticText \\\" global ratings\\\"\\n      - paragraph\\n        - StaticText \\\"No reviews yet. Be the first to review this product.\\\"\\n    - region \\\"Questions and Answers\\\" [ref=e247]\\n      - heading \\\"Customer Questions & Answers\\\" [level=2, ref=e255]\\n      - button \\\"Ask a question\\\" [ref=e256]\\n      - paragraph\\n        - StaticText \\\"No questions yet. Be the first to ask a question about this product.\\\"\\n  - contentinfo\\n    - button \\\"Back to top\\\" [ref=e65]\\n    - heading \\\"Get to Know Us\\\" [level=4, ref=e20]\\n    - link \\\"About Amazon\\\" [ref=e21]\\n    - heading \\\"Your Account\\\" [level=4, ref=e22]\\n    - link \\\"Your Orders\\\" [ref=e23]\\n    - link \\\"Your Wishlist\\\" [ref=e24]\\n    - link \\\"Account Settings\\\" [ref=e25]\\n    - heading \\\"Shop With Us\\\" [level=4, ref=e26]\\n    - link \\\"Your Cart\\\" [ref=e27]\\n    - link \\\"Today's Deals\\\" [ref=e28]\\n    - StaticText \\\"amazon\\\"\\n    - StaticText \\\"BreakingWeb Simulated Environment\\\"\\n\"}",
+      "name": null
+    }
+  ],
+  "output_schema": {
+    "properties": {
+      "action": {
+        "enum": [
+          "click",
+          "fill",
+          "select",
+          "press",
+          "check",
+          "uncheck",
+          "hover",
+          "focus",
+          "get_text",
+          "get_value",
+          "is_checked",
+          "wait",
+          "scroll_down",
+          "scroll_up",
+          "back",
+          "refresh",
+          "finish"
+        ],
+        "title": "Action",
+        "type": "string"
+      },
+      "target": {
+        "default": "",
+        "title": "Target",
+        "type": "string"
+      },
+      "text": {
+        "default": "",
+        "title": "Text",
+        "type": "string"
+      },
+      "success": {
+        "default": false,
+        "title": "Success",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "action"
+    ],
+    "title": "CLIAction",
+    "type": "object"
+  }
+}

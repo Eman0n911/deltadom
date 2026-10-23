@@ -1,5 +1,20 @@
 # DeltaDOM
 
+![DeltaDOM: a cursor tethered to its intended ticket as surrounding records move](docs/assets/brand/identity-thread.png)
+
+**Keep hold of the intended record.** Bind a click to visible identity and recheck during real input.
+
+![Concept animation: follow the same record through a reorder; pause when its identity changes](docs/assets/brand/identity-motion.gif)
+
+*Illustrative motion, not an execution recording or a guarantee of business correctness.*
+[Static alternative](docs/assets/brand/identity-motion-still.png) · [Usage and limits](docs/ACTION-BINDING.md)
+
+**Private local preview: 0.5.0.dev9.** The new prototype records one selected control’s visible record identity and checks it during trusted input dispatch. A prebuilt Mac arm64 preview and real-browser demo have been tested locally; this preview has not been published. It is not a general Browser Use replacement. [Usage](docs/BINDING-PREVIEW.md) · [Full comparisons and counterexamples](benchmarks/BINDING-V9-RESULTS.md). The older 0.4 downloads below do not contain these features.
+
+> **Private development — 2026-10-22.** Public distribution of 0.4 has stopped. Release links below require repository access. End-to-end competitive advantage remains unproven; see the [research decision](docs/DIRECTION.md). Making the repository public again requires fresh explicit authorization from its owner.
+
+The earlier local prototype adds durable recovery and exact HTTP replay fencing. Fixed browser fault tests show a narrow recovery benefit, with missed duplicates and legitimate-repeat false blocks retained. This is not a general protection layer or a released feature. See the [results](benchmarks/RECOVERY-V7-V8-RESULTS.md) and [SDK boundaries](docs/RECOVERY-V7-V8.md).
+
 **See what changed. Recover what the browser agent saw.**
 
 [中文](README.md) · [Download](https://github.com/Eman0n911/deltadom/releases/tag/v0.4.0) · [Recording guide](docs/RECORDING.md) · [Evidence](benchmarks/RECORDING-RESULTS.md)

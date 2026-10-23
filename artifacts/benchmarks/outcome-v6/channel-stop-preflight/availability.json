@@ -1,0 +1,5 @@
+{
+  "status": "mechanical_stop_preflight",
+  "responses_received": 0,
+  "reason": "test controller cancellation without model calls or scoring"
+}

@@ -1,0 +1,194 @@
+{
+  "arm": "simple-fixed",
+  "task": "gmail_star_email",
+  "condition": "intervention",
+  "phase": "development",
+  "scope": "Browser Use 0.13.11 native agent with restricted tools; text-only desktop relay; not official paper harness score",
+  "claimed_success": true,
+  "evaluation": {
+    "score": 1.0,
+    "final_score": 1.0,
+    "success": true,
+    "reasoning": "Score: 1.000; success=True\nPassed 1/1 checks.\n  [PASS] Agent starred the target email\nAll negative checks passed (no penalties).\nFinal score: 1.000 | Success: True",
+    "checks": [
+      {
+        "desc": "Agent starred the target email",
+        "passed": true,
+        "error": null
+      }
+    ],
+    "negative_checks": [
+      {
+        "desc": "Agent did not modify other inbox emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify drafts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not send emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not delete emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify contacts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify labels",
+        "passed": true,
+        "penalty": 0.1,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify filters",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      }
+    ]
+  },
+  "error": null,
+  "agent_errors": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "action_units": 14,
+  "model_requests": 14,
+  "provider_usage": null,
+  "model_usage_note": "Counts mailbox requests, not all WorkBuddy internal generations/tool turns; desktop context and tokens unavailable",
+  "wall_seconds": 259.4349794170121,
+  "events": [
+    {
+      "action": {
+        "click": {
+          "index": 28
+        }
+      }
+    },
+    {
+      "action": {
+        "refresh_page": {}
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 377
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 376
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 857
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1100
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 377
+        }
+      }
+    },
+    {
+      "action": {
+        "refresh_page": {}
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1192
+        }
+      }
+    },
+    {
+      "action": {
+        "refresh_page": {}
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1579
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1563
+        }
+      }
+    },
+    {
+      "action": {
+        "refresh_page": {}
+      }
+    },
+    {
+      "action": {
+        "finish": {
+          "success": true,
+          "text": "Starred the email from Alice Chen with subject \"Project Update — Q1 Milestones\" (thread email_1, received Jul 7, 6:05 PM). Verified, not assumed: after the star click the row's star control changed from \"Star ...\" to \"Unstar ...\" and gained a \"starred\" label, and the Starred mailbox view — empty before the successful click — now lists exactly this one thread, still present after a full page reload. Sender and subject were checked against the opened conversation header (Alice Chen <alice.chen@thornton.com>) as well as the inbox row. Note on the path: the first click on the inbox row star, and a later click on the in-thread \"Star this thread\" button, both showed a \"Starred\" status word while writing nothing (the Starred view stayed empty across a hard reload); only after reloading the inbox for a clean page load did the same row-level star click actually persist. No other message was modified, archived, or deleted."
+        }
+      }
+    }
+  ]
+}

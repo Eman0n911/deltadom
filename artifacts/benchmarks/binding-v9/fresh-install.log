@@ -1,0 +1,24 @@
+[1/3] 创建独立运行环境…
+Using CPython 3.12.13
+Creating virtual environment at: .bench/install-binding-v9/clean folder/DeltaDOM-0.5.0.dev9-macosx_11_0_arm64/.deltadom-env
+Activate with: source '.bench/install-binding-v9/clean folder/DeltaDOM-0.5.0.dev9-macosx_11_0_arm64/.deltadom-env/bin/activate'
+[2/3] 安装已编译的程序…
+Using Python 3.12.13 environment at: .bench/install-binding-v9/clean folder/DeltaDOM-0.5.0.dev9-macosx_11_0_arm64/.deltadom-env
+Resolved 5 packages in 475ms
+Downloading playwright (41.2MiB)
+ Downloaded playwright
+Prepared 2 packages in 2.76s
+Installed 5 packages in 9ms
+ + deltadom==0.5.0.dev9 (from file:///HOME/Desktop/d4luv918/cvd/deltadom/.bench/install-binding-v9/clean%20folder/DeltaDOM-0.5.0.dev9-macosx_11_0_arm64/wheels/deltadom-0.5.0.dev9-cp312-abi3-macosx_11_0_arm64.whl)
+ + greenlet==3.5.6
+ + playwright==1.64.1
+ + pyee==14.0.0
+ + typing-extensions==4.16.0
+[3/3] 检查浏览器…
+normal clicked ['/A']
+locator_race clicked ['/Z']
+guard_race blocked []
+reorder clicked ['/A']
+四种行为均已复现，结果：/HOME/Desktop/d4luv918/cvd/deltadom/artifacts/benchmarks/binding-v9/installed-demo.json
+DeltaDOM ready | Python 3.12.13 | chrome 156.0.8078.47
+下一步：deltadom demo

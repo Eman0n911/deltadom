@@ -1,0 +1,11 @@
+{
+  "benchmarks/outcome_agent.py": "83b51163e0a109224f5687986f224cafde2134641a11a159fce0b819c7fedd51",
+  "benchmarks/outcome_cli_actor.py": "a899f39a22cd9af216380e54df85c4c4e6a00c5b1e0143b2cd147217fbd7f383",
+  "python/deltadom/outcome.py": "2402aab9d8a3c9c9bac87953f3d3c570d6ec04d7535356224decc907aa7702f7",
+  "python/deltadom/presence.py": "d78a97dc1b081334445938b9e8ab8a460000005ae730dbb4dbedc6bf888c5453",
+  "benchmarks/observe_v2.py": "52f671575c992ade5b2bf19881152e28b63a876b3b937a27b64e25ff75371cec",
+  "benchmarks/agent-browser.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+  "python/deltadom/link_outcome.py": "c693504b342bd83fd5900cb33bcde9f959c54d4ed123f44bda688fb7fff1c18f",
+  "python/deltadom/readback.py": "c99750fb75808404b49a6c4b90da3a5887c1362fa20a23017b678b4f55a86a38",
+  "python/deltadom/browser_use_delivery.py": "a3aab022028639bfda2cf672984762d5c74e60eb6064a59a4696aebafeb26852"
+}

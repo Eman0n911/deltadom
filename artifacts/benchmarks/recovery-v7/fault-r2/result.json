@@ -1,0 +1,1999 @@
+{
+  "scope": "12 constructed deterministic fault cases x 4 arms, no model; not task scores",
+  "sources": {
+    "benchmarks/recovery_v7.py": "0d6350e5563bc9e30b4373cfb0aa973feadded513ebd70168987178fa74b3ff4",
+    "benchmarks/recovery_controls.py": "e2efc8a71d49739d4b4ff1a480b37e6c7a49f3d3a010e01633473218ceaebfdd",
+    "python/deltadom/recovery.py": "046666463b368b123247bf2f4f326ffefafe04ff040c1681a40fbd5e5a3a47ac"
+  },
+  "summary": {
+    "fresh_exact_check": {
+      "cells": 12,
+      "duplicate_effects": 4,
+      "invalid_binding_admissions": 1,
+      "false_confirmations": 1,
+      "desired_effect_count_reached": 7
+    },
+    "request_journal": {
+      "cells": 12,
+      "duplicate_effects": 3,
+      "invalid_binding_admissions": 0,
+      "false_confirmations": 1,
+      "desired_effect_count_reached": 9
+    },
+    "resource_journal": {
+      "cells": 12,
+      "duplicate_effects": 0,
+      "invalid_binding_admissions": 0,
+      "false_confirmations": 0,
+      "desired_effect_count_reached": 11
+    },
+    "candidate": {
+      "cells": 12,
+      "duplicate_effects": 0,
+      "invalid_binding_admissions": 0,
+      "false_confirmations": 0,
+      "desired_effect_count_reached": 11
+    }
+  },
+  "rows": [
+    {
+      "case": "normal",
+      "arm": "fresh_exact_check",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "goal_already_visible"
+        }
+      ]
+    },
+    {
+      "case": "normal",
+      "arm": "request_journal",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 1,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "not_dispatched"
+        }
+      ]
+    },
+    {
+      "case": "normal",
+      "arm": "resource_journal",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 1,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "not_dispatched"
+        }
+      ]
+    },
+    {
+      "case": "normal",
+      "arm": "candidate",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 0,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "not_dispatched"
+        }
+      ],
+      "ledger_events": [
+        {
+          "seq": 1,
+          "at_ns": 1792683717680185000,
+          "intent": "op-1",
+          "kind": "prepared",
+          "detail": {
+            "revision": 1
+          }
+        },
+        {
+          "seq": 2,
+          "at_ns": 1792683717680966000,
+          "intent": "op-1",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 3,
+          "at_ns": 1792683717681623000,
+          "intent": "op-1",
+          "kind": "returned",
+          "detail": {}
+        }
+      ]
+    },
+    {
+      "case": "loss_before_dispatch",
+      "arm": "fresh_exact_check",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "goal_already_visible"
+        }
+      ]
+    },
+    {
+      "case": "loss_before_dispatch",
+      "arm": "request_journal",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 1,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "not_dispatched"
+        }
+      ]
+    },
+    {
+      "case": "loss_before_dispatch",
+      "arm": "resource_journal",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 1,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "not_dispatched"
+        }
+      ]
+    },
+    {
+      "case": "loss_before_dispatch",
+      "arm": "candidate",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 0,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "not_dispatched"
+        }
+      ],
+      "ledger_events": [
+        {
+          "seq": 1,
+          "at_ns": 1792683717687652000,
+          "intent": "op-1",
+          "kind": "prepared",
+          "detail": {
+            "revision": 1
+          }
+        },
+        {
+          "seq": 2,
+          "at_ns": 1792683717689115000,
+          "intent": "op-1",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 3,
+          "at_ns": 1792683717689711000,
+          "intent": "op-1",
+          "kind": "returned",
+          "detail": {}
+        }
+      ]
+    },
+    {
+      "case": "loss_after_remote_commit",
+      "arm": "fresh_exact_check",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ConnectionError"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "goal_already_visible"
+        }
+      ]
+    },
+    {
+      "case": "loss_after_remote_commit",
+      "arm": "request_journal",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ConnectionError"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "goal_already_visible"
+        }
+      ]
+    },
+    {
+      "case": "loss_after_remote_commit",
+      "arm": "resource_journal",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 1,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ConnectionError"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "not_dispatched"
+        }
+      ]
+    },
+    {
+      "case": "loss_after_remote_commit",
+      "arm": "candidate",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 0,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ConnectionError"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "not_dispatched"
+        }
+      ],
+      "ledger_events": [
+        {
+          "seq": 1,
+          "at_ns": 1792683717695750000,
+          "intent": "op-1",
+          "kind": "prepared",
+          "detail": {
+            "revision": 1
+          }
+        },
+        {
+          "seq": 2,
+          "at_ns": 1792683717696390000,
+          "intent": "op-1",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 3,
+          "at_ns": 1792683717696862000,
+          "intent": "op-1",
+          "kind": "uncertain",
+          "detail": {}
+        },
+        {
+          "seq": 4,
+          "at_ns": 1792683717697792000,
+          "intent": "op-2",
+          "kind": "blocked",
+          "detail": {
+            "holder": "op-1",
+            "reason": "resource_has_unsettled_intent",
+            "revision": 1,
+            "status": "blocked"
+          }
+        }
+      ]
+    },
+    {
+      "case": "commit_hidden",
+      "arm": "fresh_exact_check",
+      "callback_calls": 2,
+      "effects": [
+        "record-A",
+        "record-A"
+      ],
+      "duplicate_effects": 1,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": false,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": true
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ConnectionError"
+        },
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "dispatched_once"
+        }
+      ]
+    },
+    {
+      "case": "commit_hidden",
+      "arm": "request_journal",
+      "callback_calls": 2,
+      "effects": [
+        "record-A",
+        "record-A"
+      ],
+      "duplicate_effects": 1,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": false,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": true
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ConnectionError"
+        },
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "dispatched_once"
+        }
+      ]
+    },
+    {
+      "case": "commit_hidden",
+      "arm": "resource_journal",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 1,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": true
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ConnectionError"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "not_dispatched"
+        }
+      ]
+    },
+    {
+      "case": "commit_hidden",
+      "arm": "candidate",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 0,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": true
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ConnectionError"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "not_dispatched"
+        }
+      ],
+      "ledger_events": [
+        {
+          "seq": 1,
+          "at_ns": 1792683717703033000,
+          "intent": "op-1",
+          "kind": "prepared",
+          "detail": {
+            "revision": 1
+          }
+        },
+        {
+          "seq": 2,
+          "at_ns": 1792683717703711000,
+          "intent": "op-1",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 3,
+          "at_ns": 1792683717704246000,
+          "intent": "op-1",
+          "kind": "uncertain",
+          "detail": {}
+        },
+        {
+          "seq": 4,
+          "at_ns": 1792683717705159000,
+          "intent": "op-2",
+          "kind": "blocked",
+          "detail": {
+            "holder": "op-1",
+            "reason": "resource_has_unsettled_intent",
+            "revision": 1,
+            "status": "blocked"
+          }
+        }
+      ]
+    },
+    {
+      "case": "same_id_concurrent",
+      "arm": "fresh_exact_check",
+      "callback_calls": 2,
+      "effects": [
+        "record-A",
+        "record-A"
+      ],
+      "duplicate_effects": 1,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": false,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "callback_entered"
+        },
+        {
+          "event": "callback_entered"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        }
+      ]
+    },
+    {
+      "case": "same_id_concurrent",
+      "arm": "request_journal",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 1,
+      "events": [
+        {
+          "event": "callback_entered"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "not_dispatched"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        }
+      ]
+    },
+    {
+      "case": "same_id_concurrent",
+      "arm": "resource_journal",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 1,
+      "events": [
+        {
+          "event": "callback_entered"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "not_dispatched"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        }
+      ]
+    },
+    {
+      "case": "same_id_concurrent",
+      "arm": "candidate",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 0,
+      "events": [
+        {
+          "event": "callback_entered"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "not_dispatched"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        }
+      ],
+      "ledger_events": [
+        {
+          "seq": 1,
+          "at_ns": 1792683717709773000,
+          "intent": "op-1",
+          "kind": "prepared",
+          "detail": {
+            "revision": 1
+          }
+        },
+        {
+          "seq": 2,
+          "at_ns": 1792683717710371000,
+          "intent": "op-1",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 3,
+          "at_ns": 1792683717711711000,
+          "intent": "op-1",
+          "kind": "returned",
+          "detail": {}
+        }
+      ]
+    },
+    {
+      "case": "new_id_concurrent",
+      "arm": "fresh_exact_check",
+      "callback_calls": 2,
+      "effects": [
+        "record-A",
+        "record-A"
+      ],
+      "duplicate_effects": 1,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": false,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "callback_entered"
+        },
+        {
+          "event": "callback_entered"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "dispatched_once"
+        }
+      ]
+    },
+    {
+      "case": "new_id_concurrent",
+      "arm": "request_journal",
+      "callback_calls": 2,
+      "effects": [
+        "record-A",
+        "record-A"
+      ],
+      "duplicate_effects": 1,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": false,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "callback_entered"
+        },
+        {
+          "event": "callback_entered"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "dispatched_once"
+        }
+      ]
+    },
+    {
+      "case": "new_id_concurrent",
+      "arm": "resource_journal",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 1,
+      "events": [
+        {
+          "event": "callback_entered"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "not_dispatched"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        }
+      ]
+    },
+    {
+      "case": "new_id_concurrent",
+      "arm": "candidate",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 0,
+      "events": [
+        {
+          "event": "callback_entered"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "not_dispatched"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        }
+      ],
+      "ledger_events": [
+        {
+          "seq": 1,
+          "at_ns": 1792683717717222000,
+          "intent": "op-1",
+          "kind": "prepared",
+          "detail": {
+            "revision": 1
+          }
+        },
+        {
+          "seq": 2,
+          "at_ns": 1792683717717725000,
+          "intent": "op-1",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 3,
+          "at_ns": 1792683717718289000,
+          "intent": "op-2",
+          "kind": "blocked",
+          "detail": {
+            "holder": "op-1",
+            "reason": "resource_has_unsettled_intent",
+            "revision": 1,
+            "status": "blocked"
+          }
+        },
+        {
+          "seq": 4,
+          "at_ns": 1792683717719308000,
+          "intent": "op-1",
+          "kind": "returned",
+          "detail": {}
+        }
+      ]
+    },
+    {
+      "case": "unrelated_object",
+      "arm": "fresh_exact_check",
+      "callback_calls": 2,
+      "effects": [
+        "record-A",
+        "record-B"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": true
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ConnectionError"
+        },
+        {
+          "event": "effect",
+          "resource": "record-B",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "dispatched_once"
+        }
+      ]
+    },
+    {
+      "case": "unrelated_object",
+      "arm": "request_journal",
+      "callback_calls": 2,
+      "effects": [
+        "record-A",
+        "record-B"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": true
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ConnectionError"
+        },
+        {
+          "event": "effect",
+          "resource": "record-B",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "dispatched_once"
+        }
+      ]
+    },
+    {
+      "case": "unrelated_object",
+      "arm": "resource_journal",
+      "callback_calls": 2,
+      "effects": [
+        "record-A",
+        "record-B"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": true
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ConnectionError"
+        },
+        {
+          "event": "effect",
+          "resource": "record-B",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "dispatched_once"
+        }
+      ]
+    },
+    {
+      "case": "unrelated_object",
+      "arm": "candidate",
+      "callback_calls": 2,
+      "effects": [
+        "record-A",
+        "record-B"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 0,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": true
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ConnectionError"
+        },
+        {
+          "event": "effect",
+          "resource": "record-B",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "dispatched_once"
+        }
+      ],
+      "ledger_events": [
+        {
+          "seq": 1,
+          "at_ns": 1792683717725003000,
+          "intent": "op-1",
+          "kind": "prepared",
+          "detail": {
+            "revision": 1
+          }
+        },
+        {
+          "seq": 2,
+          "at_ns": 1792683717725609000,
+          "intent": "op-1",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 3,
+          "at_ns": 1792683717726191000,
+          "intent": "op-1",
+          "kind": "uncertain",
+          "detail": {}
+        },
+        {
+          "seq": 4,
+          "at_ns": 1792683717727096000,
+          "intent": "op-2",
+          "kind": "prepared",
+          "detail": {
+            "revision": 1
+          }
+        },
+        {
+          "seq": 5,
+          "at_ns": 1792683717727680000,
+          "intent": "op-2",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 6,
+          "at_ns": 1792683717728194000,
+          "intent": "op-2",
+          "kind": "returned",
+          "detail": {}
+        }
+      ]
+    },
+    {
+      "case": "payload_conflict",
+      "arm": "fresh_exact_check",
+      "callback_calls": 2,
+      "effects": [
+        "record-A",
+        "record-B"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": true,
+      "false_confirmation": false,
+      "desired_effect_count_reached": false,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": true
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "effect",
+          "resource": "record-B",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        }
+      ]
+    },
+    {
+      "case": "payload_conflict",
+      "arm": "request_journal",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 1,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": true
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ValueError"
+        }
+      ]
+    },
+    {
+      "case": "payload_conflict",
+      "arm": "resource_journal",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 1,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": true
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ValueError"
+        }
+      ]
+    },
+    {
+      "case": "payload_conflict",
+      "arm": "candidate",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 0,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": true
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "IntentConflict"
+        }
+      ],
+      "ledger_events": [
+        {
+          "seq": 1,
+          "at_ns": 1792683717733330000,
+          "intent": "op-1",
+          "kind": "prepared",
+          "detail": {
+            "revision": 1
+          }
+        },
+        {
+          "seq": 2,
+          "at_ns": 1792683717734040000,
+          "intent": "op-1",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 3,
+          "at_ns": 1792683717734545000,
+          "intent": "op-1",
+          "kind": "returned",
+          "detail": {}
+        }
+      ]
+    },
+    {
+      "case": "delayed_old_verification",
+      "arm": "fresh_exact_check",
+      "callback_calls": 2,
+      "effects": [
+        "record-A",
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": true,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "old_read_completion",
+          "result": {
+            "status": "observed",
+            "goal_observed": true
+          }
+        }
+      ]
+    },
+    {
+      "case": "delayed_old_verification",
+      "arm": "request_journal",
+      "callback_calls": 2,
+      "effects": [
+        "record-A",
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": true,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "old_read_completion",
+          "result": {
+            "status": "observed",
+            "goal_observed": true
+          }
+        }
+      ]
+    },
+    {
+      "case": "delayed_old_verification",
+      "arm": "resource_journal",
+      "callback_calls": 2,
+      "effects": [
+        "record-A",
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "old_read_completion",
+          "result": {
+            "status": "stale",
+            "goal_observed": null
+          }
+        }
+      ]
+    },
+    {
+      "case": "delayed_old_verification",
+      "arm": "candidate",
+      "callback_calls": 2,
+      "effects": [
+        "record-A",
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 0,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "old_read_completion",
+          "result": {
+            "status": "stale",
+            "goal_observed": null,
+            "evidence": null,
+            "scope": "UI evidence at read time, not causality or safe-retry proof",
+            "safe_to_retry": false,
+            "resource_released": false
+          }
+        }
+      ],
+      "ledger_events": [
+        {
+          "seq": 1,
+          "at_ns": 1792683717741676000,
+          "intent": "op-1",
+          "kind": "prepared",
+          "detail": {
+            "revision": 1
+          }
+        },
+        {
+          "seq": 2,
+          "at_ns": 1792683717742284000,
+          "intent": "op-1",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 3,
+          "at_ns": 1792683717742806000,
+          "intent": "op-1",
+          "kind": "returned",
+          "detail": {}
+        },
+        {
+          "seq": 4,
+          "at_ns": 1792683717744315000,
+          "intent": "op-1",
+          "kind": "explicit_settlement",
+          "detail": {
+            "reason": "fixture confirms prior operation terminal"
+          }
+        },
+        {
+          "seq": 5,
+          "at_ns": 1792683717744856000,
+          "intent": "op-2",
+          "kind": "prepared",
+          "detail": {
+            "revision": 3
+          }
+        },
+        {
+          "seq": 6,
+          "at_ns": 1792683717745496000,
+          "intent": "op-2",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 7,
+          "at_ns": 1792683717746035000,
+          "intent": "op-2",
+          "kind": "returned",
+          "detail": {}
+        },
+        {
+          "seq": 8,
+          "at_ns": 1792683717746906000,
+          "intent": "op-1",
+          "kind": "stale_read_rejected",
+          "detail": {
+            "evidence": {
+              "captured_before_second_intent": true
+            },
+            "goal_observed": true,
+            "scope": "UI evidence at read time, not causality or safe-retry proof"
+          }
+        }
+      ]
+    },
+    {
+      "case": "read_error",
+      "arm": "fresh_exact_check",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 1,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "read_error_result",
+          "result": {
+            "status": "observed",
+            "goal_observed": null
+          }
+        }
+      ]
+    },
+    {
+      "case": "read_error",
+      "arm": "request_journal",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 1,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "read_error_result",
+          "result": {
+            "status": "observed",
+            "goal_observed": null
+          }
+        }
+      ]
+    },
+    {
+      "case": "read_error",
+      "arm": "resource_journal",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 1,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "read_error_result",
+          "result": {
+            "status": "observed",
+            "goal_observed": null
+          }
+        }
+      ]
+    },
+    {
+      "case": "read_error",
+      "arm": "candidate",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 0,
+      "events": [
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "dispatched_once"
+        },
+        {
+          "event": "read_error_result",
+          "result": {
+            "status": "observed",
+            "goal_observed": null,
+            "evidence": {
+              "error": "TimeoutError"
+            },
+            "scope": "UI evidence at read time, not causality or safe-retry proof",
+            "safe_to_retry": false,
+            "resource_released": false
+          }
+        }
+      ],
+      "ledger_events": [
+        {
+          "seq": 1,
+          "at_ns": 1792683717751597000,
+          "intent": "op-1",
+          "kind": "prepared",
+          "detail": {
+            "revision": 1
+          }
+        },
+        {
+          "seq": 2,
+          "at_ns": 1792683717752254000,
+          "intent": "op-1",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 3,
+          "at_ns": 1792683717752734000,
+          "intent": "op-1",
+          "kind": "returned",
+          "detail": {}
+        },
+        {
+          "seq": 4,
+          "at_ns": 1792683717754159000,
+          "intent": "op-1",
+          "kind": "read_accepted",
+          "detail": {
+            "evidence": {
+              "error": "TimeoutError"
+            },
+            "goal_observed": null,
+            "scope": "UI evidence at read time, not causality or safe-retry proof"
+          }
+        }
+      ]
+    },
+    {
+      "case": "negative_after_unknown",
+      "arm": "fresh_exact_check",
+      "callback_calls": 2,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ConnectionError"
+        },
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "dispatched_once"
+        }
+      ]
+    },
+    {
+      "case": "negative_after_unknown",
+      "arm": "request_journal",
+      "callback_calls": 2,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ConnectionError"
+        },
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "dispatched_once"
+        }
+      ]
+    },
+    {
+      "case": "negative_after_unknown",
+      "arm": "resource_journal",
+      "callback_calls": 1,
+      "effects": [],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": false,
+      "pre_action_UI_reads": 1,
+      "events": [
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ConnectionError"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "not_dispatched"
+        }
+      ]
+    },
+    {
+      "case": "negative_after_unknown",
+      "arm": "candidate",
+      "callback_calls": 1,
+      "effects": [],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": false,
+      "pre_action_UI_reads": 0,
+      "events": [
+        {
+          "event": "attempt_result",
+          "id": "op-1",
+          "status": "ConnectionError"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "not_dispatched"
+        }
+      ],
+      "ledger_events": [
+        {
+          "seq": 1,
+          "at_ns": 1792683717758861000,
+          "intent": "op-1",
+          "kind": "prepared",
+          "detail": {
+            "revision": 1
+          }
+        },
+        {
+          "seq": 2,
+          "at_ns": 1792683717759507000,
+          "intent": "op-1",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 3,
+          "at_ns": 1792683717760035000,
+          "intent": "op-1",
+          "kind": "uncertain",
+          "detail": {}
+        },
+        {
+          "seq": 4,
+          "at_ns": 1792683717760951000,
+          "intent": "op-2",
+          "kind": "blocked",
+          "detail": {
+            "holder": "op-1",
+            "reason": "resource_has_unsettled_intent",
+            "revision": 1,
+            "status": "blocked"
+          }
+        }
+      ]
+    },
+    {
+      "case": "cancellation",
+      "arm": "fresh_exact_check",
+      "callback_calls": 2,
+      "effects": [
+        "record-A",
+        "record-A"
+      ],
+      "duplicate_effects": 1,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": false,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "caller_cancelled_after_submit"
+        },
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "dispatched_once"
+        }
+      ]
+    },
+    {
+      "case": "cancellation",
+      "arm": "request_journal",
+      "callback_calls": 2,
+      "effects": [
+        "record-A",
+        "record-A"
+      ],
+      "duplicate_effects": 1,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": false,
+      "pre_action_UI_reads": 2,
+      "events": [
+        {
+          "event": "caller_cancelled_after_submit"
+        },
+        {
+          "event": "effect",
+          "resource": "record-A",
+          "hidden_from_UI": false
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "dispatched_once"
+        }
+      ]
+    },
+    {
+      "case": "cancellation",
+      "arm": "resource_journal",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 1,
+      "events": [
+        {
+          "event": "caller_cancelled_after_submit"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "not_dispatched"
+        }
+      ]
+    },
+    {
+      "case": "cancellation",
+      "arm": "candidate",
+      "callback_calls": 1,
+      "effects": [
+        "record-A"
+      ],
+      "duplicate_effects": 0,
+      "invalid_binding_admitted": false,
+      "false_confirmation": false,
+      "desired_effect_count_reached": true,
+      "pre_action_UI_reads": 0,
+      "events": [
+        {
+          "event": "caller_cancelled_after_submit"
+        },
+        {
+          "event": "attempt_result",
+          "id": "op-2",
+          "status": "not_dispatched"
+        }
+      ],
+      "ledger_events": [
+        {
+          "seq": 1,
+          "at_ns": 1792683717766266000,
+          "intent": "op-1",
+          "kind": "prepared",
+          "detail": {
+            "revision": 1
+          }
+        },
+        {
+          "seq": 2,
+          "at_ns": 1792683717766885000,
+          "intent": "op-1",
+          "kind": "dispatched",
+          "detail": {}
+        },
+        {
+          "seq": 3,
+          "at_ns": 1792683717767466000,
+          "intent": "op-1",
+          "kind": "uncertain",
+          "detail": {}
+        },
+        {
+          "seq": 4,
+          "at_ns": 1792683717768343000,
+          "intent": "op-2",
+          "kind": "blocked",
+          "detail": {
+            "holder": "op-1",
+            "reason": "resource_has_unsettled_intent",
+            "revision": 1,
+            "status": "blocked"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "arm": "native",
+  "task": "gmail_star_email",
+  "condition": "intervention",
+  "scope": "Browser Use 0.13.11 native agent, text-only desktop model relay; not official paper harness score",
+  "claimed_success": false,
+  "evaluation": {
+    "score": 0.0,
+    "final_score": 0.0,
+    "success": false,
+    "reasoning": "Score: 0.000; success=False\nPassed 0/1 checks.\n  [FAIL] Agent starred the target email (error: no Update entry matched both where and changes predicates)\nAll negative checks passed (no penalties).\nFailures:\n  - missing_update: Star the target email from Alice Chen\nFinal score: 0.000 | Success: False",
+    "checks": [
+      {
+        "desc": "Agent starred the target email",
+        "passed": false,
+        "error": "no Update entry matched both where and changes predicates"
+      }
+    ],
+    "negative_checks": [
+      {
+        "desc": "Agent did not modify other inbox emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify drafts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not send emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not delete emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify contacts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify labels",
+        "passed": true,
+        "penalty": 0.1,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify filters",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      }
+    ],
+    "failures": [
+      {
+        "kind": "missing_update",
+        "description": "Star the target email from Alice Chen",
+        "details": {
+          "entry_index": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "model_calls": 10,
+  "provider_usage": null,
+  "wall_seconds": 254.0120179589867,
+  "events": [
+    {
+      "action": {
+        "click": {
+          "index": 27
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 12
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 11
+        }
+      }
+    },
+    {
+      "action": {
+        "find_elements": {
+          "selector": "button[aria-label*=\"Project Update\"]",
+          "attributes": [
+            "aria-label",
+            "aria-pressed",
+            "title",
+            "class"
+          ],
+          "max_results": 20,
+          "include_text": true
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 503
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 746
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 12
+        }
+      }
+    },
+    {
+      "action": {
+        "refresh_page": {}
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 838
+        }
+      }
+    },
+    {
+      "action": {
+        "finish": {
+          "success": false,
+          "text": "Located the correct email but could NOT confirm it was starred, so reporting failure.\n\nTarget found: thread email_1, sender Alice Chen <alice.chen@thornton.com>, subject exactly 'Project Update — Q1 Milestones' (Jul 7, 6:05 PM, label inbox, unread).\n\nAttempts made (UI only):\n1. Clicked the star toggle on the inbox list row. The app showed a 'Starred thread — Project Update — Q1 Milestones' toast, but the row's star control kept its unstarred label.\n2. Opened the thread and clicked the toolbar control labelled 'Star this thread'. The app again showed a 'Starred' toast.\n\nVerification that failed:\n- Starred folder showed 'No messages match this view' on three separate reads (two navigations plus an explicit reload).\n- The Starred nav item carried no count badge (count 0) while Inbox correctly showed 11.\n- After returning to the inbox, the Alice Chen row rendered identically to before the clicks: still 'Unread thread from Alice Chen: Project Update — Q1 Milestones' with an unstarred star control.\n\nConclusion: the star controls acknowledge clicks with a toast but the starred state never persists. Since no UI surface confirms the email is starred, success is false. I deliberately did not click the star a third time, because without a reliable state readout another click could toggle an existing star off."
+        }
+      }
+    }
+  ]
+}

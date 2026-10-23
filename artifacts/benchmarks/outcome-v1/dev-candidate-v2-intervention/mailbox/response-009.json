@@ -1,0 +1,33 @@
+{
+  "thinking": "Step 9. Back on the inbox (Alice row [1012], its star [865], Starred nav link [377]). I am re-registering the contract because the first one was partly unbuildable, not because the task changed: kind=checked on a plain button throws 'Not a checkbox or radio button', and the star aria-label is static ('Star ...' before and after), so no label check can ever pass. Keeping those would guarantee an 'unconfirmed' verdict regardless of the truth. The honest, page-supported channel is the Starred view itself: it is a real same-site result view (URL filter=starred) that lists exactly the starred mail. So the frozen contract now asks: after the write, reload the Starred view and confirm the row is from Alice Chen and carries the subject 'Project Update — Q1 Milestones'. readback_index=377 is the Starred link as currently observed. Scope is still anchored on the sender name, never on star state, so the selector does not encode the desired outcome. Residual limitation I accept and will report: this contract can express presence but not absence, so 'no other thread was starred' cannot be asserted as a check; I will read it off the Starred listing instead.",
+  "evaluation_previous_goal": "The Inbox link click succeeded and the inbox re-rendered with fresh indices; the target row is present and still unstarred. Verdict: Success.",
+  "memory": "Inbox indices now: Starred nav [377], Alice row [1012], star button [865]. Starred folder was empty (0) before the retry. New contract (2 checks) evaluates on the Starred view: target sender 'Alice Chen' and target subject present. Next: click [865] to star, then verify_outcome.",
+  "next_goal": "Re-register a contract that can actually be evaluated: presence of the target thread in the Starred view.",
+  "current_plan_item": 1,
+  "action": [
+    {
+      "register_checks": {
+        "checks": [
+          {
+            "key": "starred_view_target_sender",
+            "scope": "article[aria-label*=\"Alice Chen\"]",
+            "identity": "Alice Chen",
+            "target": "strong",
+            "kind": "text",
+            "expected": "Alice Chen"
+          },
+          {
+            "key": "starred_view_target_subject",
+            "scope": "article[aria-label*=\"Alice Chen\"]",
+            "identity": "Project Update — Q1 Milestones",
+            "target": "a[aria-label]",
+            "kind": "attribute",
+            "attribute": "aria-label",
+            "expected": "Open unread thread Project Update — Q1 Milestones"
+          }
+        ],
+        "readback_index": 377
+      }
+    }
+  ]
+}

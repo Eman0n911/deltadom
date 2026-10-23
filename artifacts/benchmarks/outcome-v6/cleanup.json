@@ -1,0 +1,79 @@
+{
+  "reason": "SIGINT was caught by native agent recovery; stop only the five quota-blocked owned trials and their descendants",
+  "owned_pids": [
+    76457,
+    76474,
+    76475,
+    76480,
+    76481,
+    76482,
+    76485,
+    76487,
+    78313,
+    80616,
+    80625,
+    80636,
+    80648,
+    80649,
+    80650,
+    80652,
+    80653,
+    80654,
+    80655,
+    80666,
+    80667,
+    80671,
+    80672,
+    80675,
+    80677,
+    80678,
+    80679,
+    80680,
+    80696,
+    80697,
+    80701,
+    80702,
+    80703,
+    80707,
+    80708,
+    80709,
+    80710,
+    80719,
+    80720,
+    80726,
+    80727,
+    80728,
+    80730,
+    80731,
+    80732
+  ],
+  "root_pids": [
+    76457,
+    80616,
+    80655,
+    80680,
+    80710
+  ],
+  "commands": {
+    "80680": [
+      93389,
+      ".bench/venv/bin/python benchmarks/outcome_agent.py --task amazon_browse_category --phase exploratory --condition clean --arm auto-control --output artifacts/benchmarks/outcome-v6/c003"
+    ],
+    "80710": [
+      93389,
+      ".bench/venv/bin/python benchmarks/outcome_agent.py --task amazon_browse_category --phase exploratory --condition clean --arm auto-signal --output artifacts/benchmarks/outcome-v6/c004"
+    ],
+    "80616": [
+      93389,
+      ".bench/venv/bin/python benchmarks/outcome_agent.py --task amazon_browse_category --phase exploratory --condition clean --arm simple-fixed --output artifacts/benchmarks/outcome-v6/c001"
+    ],
+    "76457": [
+      93389,
+      ".bench/venv/bin/python benchmarks/outcome_agent.py --task amazon_browse_category --phase exploratory --condition clean --arm inline --output artifacts/benchmarks/outcome-v5/f003"
+    ],
+    "80655": [
+      93389,
+      ".bench/venv/bin/python benchmarks/outcome_agent.py --task amazon_browse_category --phase exploratory --condition clean --arm macro-simple --output artifacts/benchmarks/outcome-v6/c002"
+    ]
+  }
+}

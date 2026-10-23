@@ -1,0 +1,9 @@
+{
+  "timing": "after r001 and while r002 runs, before any confirmation agent-browser run",
+  "candidate_changed": false,
+  "native_simple_behavior_changed": false,
+  "file": "benchmarks/outcome_cli_actor.py",
+  "before": "e406280599c090b1e918b4f5230c7e7ab274056fa7e80c8925ac728996b116bf",
+  "after": "a899f39a22cd9af216380e54df85c4c4e6a00c5b1e0143b2cd147217fbd7f383",
+  "reason": "Preflight CLI help shows select, checkbox, key and read tools absent from scaffold. Restore these before comparison to avoid weakening baseline. CLI chat exists but requires API-backed model; desktop relay uses controlled scaffold."
+}

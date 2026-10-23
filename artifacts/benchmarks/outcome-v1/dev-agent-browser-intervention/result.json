@@ -1,0 +1,94 @@
+{
+  "arm": "agent-browser",
+  "task": "gmail_star_email",
+  "condition": "intervention",
+  "scope": "agent-browser 0.39.1 native CLI with controlled scaffold; text-only desktop relay; not official paper harness score",
+  "claimed_success": null,
+  "evaluation": {
+    "score": 0.0,
+    "final_score": 0.0,
+    "success": false,
+    "reasoning": "Score: 0.000; success=False\nPassed 0/1 checks.\n  [FAIL] Agent starred the target email (error: no Update entry matched both where and changes predicates)\nAll negative checks passed (no penalties).\nFailures:\n  - missing_update: Star the target email from Alice Chen\nFinal score: 0.000 | Success: False",
+    "checks": [
+      {
+        "desc": "Agent starred the target email",
+        "passed": false,
+        "error": "no Update entry matched both where and changes predicates"
+      }
+    ],
+    "negative_checks": [
+      {
+        "desc": "Agent did not modify other inbox emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify drafts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not send emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not delete emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify contacts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify labels",
+        "passed": true,
+        "penalty": 0.1,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify filters",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      }
+    ],
+    "failures": [
+      {
+        "kind": "missing_update",
+        "description": "Star the target email from Alice Chen",
+        "details": {
+          "entry_index": 0
+        }
+      }
+    ]
+  },
+  "error": "RuntimeError: agent-browser exit 1: ✗ Session name 'dd-outcome-gmail_gmail_star_email_36799a430e' is too long. Socket path would be 113 bytes (max 103).\nUse a shorter session name or set AGENT_BROWSER_SOCKET_DIR to a shorter path.\n ",
+  "agent_errors": [],
+  "model_requests": 0,
+  "provider_usage": null,
+  "model_usage_note": "Counts mailbox requests, not all WorkBuddy internal generations/tool turns; desktop context and tokens unavailable",
+  "wall_seconds": 0.08512104199326131,
+  "events": []
+}

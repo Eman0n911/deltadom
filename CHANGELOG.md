@@ -1,4 +1,14 @@
-# 0.4.0 — checked recordings (experimental)
+# 更新记录
+
+## 0.5.0.dev9 — private local preview, 2026-10-23
+
+- Add automatic visible record binding and trusted input propagation checks.
+- Add Option/Alt target selection, single bound-click replay, and a local browser demo.
+- Preserve all fixed benchmark outcomes, including baseline role corrections and failed candidates.
+- Verify prebuilt Mac arm64 installation in a fresh directory. No publication.
+
+
+## 0.4.0 — checked recordings (experimental)
 
 - Add `record`, `replay`, `diff`, explicit interrupted-prefix recovery, and a folder-local `run.py` launcher.
 - Add DDT1 streamed recordings with bounded decode, adaptive previous-state dictionary, full checkpoints, per-record checks and end seal. Ordinary whole-session gzip remains the smaller offline archival option in measured cases.
@@ -7,7 +17,6 @@
 - Include local demo recording and native dependency license notices in distributable wheels.
 - Preserve the 0.3 negative performance results and raw synthetic evidence. Publish no general task success or cost advantage claim.
 
-# 更新记录
 
 ## 0.3.0 — 本地修复预览，2026-10-22
 

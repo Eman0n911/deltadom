@@ -1,0 +1,200 @@
+{
+  "arm": "simple-fixed",
+  "task": "gmail_star_email",
+  "condition": "intervention",
+  "phase": "development",
+  "scope": "Browser Use 0.13.11 native agent with restricted tools; text-only desktop relay; not official paper harness score",
+  "claimed_success": true,
+  "evaluation": {
+    "score": 1.0,
+    "final_score": 1.0,
+    "success": true,
+    "reasoning": "Score: 1.000; success=True\nPassed 1/1 checks.\n  [PASS] Agent starred the target email\nAll negative checks passed (no penalties).\nFinal score: 1.000 | Success: True",
+    "checks": [
+      {
+        "desc": "Agent starred the target email",
+        "passed": true,
+        "error": null
+      }
+    ],
+    "negative_checks": [
+      {
+        "desc": "Agent did not modify other inbox emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify drafts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not send emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not delete emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify contacts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify labels",
+        "passed": true,
+        "penalty": 0.1,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify filters",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      }
+    ]
+  },
+  "error": null,
+  "agent_errors": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "action_units": 14,
+  "model_requests": 14,
+  "provider_usage": null,
+  "model_usage_note": "Counts mailbox requests, not all WorkBuddy internal generations/tool turns; desktop context and tokens unavailable",
+  "wall_seconds": 430.5807760000025,
+  "events": [
+    {
+      "action": {
+        "click": {
+          "index": 27
+        }
+      }
+    },
+    {
+      "action": {
+        "refresh_page": {}
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 378
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 377
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 857
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1100
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 378
+        }
+      }
+    },
+    {
+      "action": {
+        "go_back": {
+          "description": "Back to the Alice Chen thread page"
+        }
+      }
+    },
+    {
+      "action": {
+        "input": {
+          "index": 371,
+          "text": "Project Update — Q1 Milestones",
+          "clear": true
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 467
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1293
+        }
+      }
+    },
+    {
+      "action": {
+        "refresh_page": {}
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1330
+        }
+      }
+    },
+    {
+      "action": {
+        "finish": {
+          "success": true,
+          "text": "Starred the email from Alice Chen with subject 'Project Update — Q1 Milestones'. Verified by two independent fresh reads: after reloading the search results, the thread's star control reads 'Unstar Project Update — Q1 Milestones' and the row shows a 'starred' label; the Starred folder also lists the thread with the same 'Unstar' control and 'starred' label."
+        }
+      }
+    }
+  ]
+}

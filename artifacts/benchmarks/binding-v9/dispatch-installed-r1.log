@@ -1,0 +1,176 @@
+False unchanged manual_locator True False
+False unchanged manual_precheck True False
+False unchanged atomic_dom True False
+False unchanged binding True False
+False unchanged dispatch_guard True False
+False remount manual_locator True False
+False remount manual_precheck True False
+False remount atomic_dom True False
+False remount binding True False
+False remount dispatch_guard True False
+False reorder manual_locator True False
+False reorder manual_precheck True False
+False reorder atomic_dom True False
+False reorder binding True False
+False reorder dispatch_guard True False
+False duplicate manual_locator False False
+False duplicate manual_precheck False False
+False duplicate atomic_dom False False
+False duplicate binding False False
+False duplicate dispatch_guard False False
+False removed manual_locator False False
+False removed manual_precheck False False
+False removed atomic_dom False False
+False removed binding False False
+False removed dispatch_guard False False
+False hover_recycle manual_locator False True
+False hover_recycle manual_precheck False True
+False hover_recycle atomic_dom True False
+False hover_recycle binding False True
+False hover_recycle dispatch_guard False False
+False pointerdown_recycle manual_locator False True
+False pointerdown_recycle manual_precheck False True
+False pointerdown_recycle atomic_dom True False
+False pointerdown_recycle binding False True
+False pointerdown_recycle dispatch_guard False False
+False ancestor_click_recycle manual_locator False True
+False ancestor_click_recycle manual_precheck False True
+False ancestor_click_recycle atomic_dom False True
+False ancestor_click_recycle binding False True
+False ancestor_click_recycle dispatch_guard False False
+False window_click_recycle manual_locator False True
+False window_click_recycle manual_precheck False True
+False window_click_recycle atomic_dom False True
+False window_click_recycle binding False True
+False window_click_recycle dispatch_guard False False
+False pointerdown_write manual_locator False True
+False pointerdown_write manual_precheck False True
+False pointerdown_write atomic_dom True False
+False pointerdown_write binding False True
+False pointerdown_write dispatch_guard False True
+False hidden_handler manual_locator False True
+False hidden_handler manual_precheck False True
+False hidden_handler atomic_dom False True
+False hidden_handler binding False True
+False hidden_handler dispatch_guard False True
+True unchanged manual_locator True False
+True unchanged manual_precheck True False
+True unchanged atomic_dom False False
+True unchanged binding True False
+True unchanged dispatch_guard True False
+True remount manual_locator True False
+True remount manual_precheck True False
+True remount atomic_dom False False
+True remount binding True False
+True remount dispatch_guard True False
+True reorder manual_locator True False
+True reorder manual_precheck True False
+True reorder atomic_dom False False
+True reorder binding True False
+True reorder dispatch_guard True False
+True duplicate manual_locator False False
+True duplicate manual_precheck False False
+True duplicate atomic_dom False False
+True duplicate binding False False
+True duplicate dispatch_guard False False
+True removed manual_locator False False
+True removed manual_precheck False False
+True removed atomic_dom False False
+True removed binding False False
+True removed dispatch_guard False False
+True hover_recycle manual_locator False True
+True hover_recycle manual_precheck False True
+True hover_recycle atomic_dom False False
+True hover_recycle binding False True
+True hover_recycle dispatch_guard False False
+True pointerdown_recycle manual_locator False True
+True pointerdown_recycle manual_precheck False True
+True pointerdown_recycle atomic_dom False False
+True pointerdown_recycle binding False True
+True pointerdown_recycle dispatch_guard False False
+True ancestor_click_recycle manual_locator False True
+True ancestor_click_recycle manual_precheck False True
+True ancestor_click_recycle atomic_dom False False
+True ancestor_click_recycle binding False True
+True ancestor_click_recycle dispatch_guard False False
+True window_click_recycle manual_locator False True
+True window_click_recycle manual_precheck False True
+True window_click_recycle atomic_dom False False
+True window_click_recycle binding False True
+True window_click_recycle dispatch_guard False False
+True pointerdown_write manual_locator False True
+True pointerdown_write manual_precheck False True
+True pointerdown_write atomic_dom False False
+True pointerdown_write binding False True
+True pointerdown_write dispatch_guard False True
+True hidden_handler manual_locator False True
+True hidden_handler manual_precheck False True
+True hidden_handler atomic_dom False False
+True hidden_handler binding False True
+True hidden_handler dispatch_guard False True
+{
+  "False": {
+    "manual_locator": {
+      "correct_effect": 3,
+      "wrong_effect": 6,
+      "false_refusal": 0,
+      "refusal": 2
+    },
+    "manual_precheck": {
+      "correct_effect": 3,
+      "wrong_effect": 6,
+      "false_refusal": 0,
+      "refusal": 2
+    },
+    "atomic_dom": {
+      "correct_effect": 6,
+      "wrong_effect": 3,
+      "false_refusal": 0,
+      "refusal": 2
+    },
+    "binding": {
+      "correct_effect": 3,
+      "wrong_effect": 6,
+      "false_refusal": 0,
+      "refusal": 2
+    },
+    "dispatch_guard": {
+      "correct_effect": 3,
+      "wrong_effect": 2,
+      "false_refusal": 0,
+      "refusal": 6
+    }
+  },
+  "True": {
+    "manual_locator": {
+      "correct_effect": 3,
+      "wrong_effect": 6,
+      "false_refusal": 0,
+      "refusal": 2
+    },
+    "manual_precheck": {
+      "correct_effect": 3,
+      "wrong_effect": 6,
+      "false_refusal": 0,
+      "refusal": 2
+    },
+    "atomic_dom": {
+      "correct_effect": 0,
+      "wrong_effect": 0,
+      "false_refusal": 3,
+      "refusal": 11
+    },
+    "binding": {
+      "correct_effect": 3,
+      "wrong_effect": 6,
+      "false_refusal": 0,
+      "refusal": 2
+    },
+    "dispatch_guard": {
+      "correct_effect": 3,
+      "wrong_effect": 2,
+      "false_refusal": 0,
+      "refusal": 6
+    }
+  }
+}

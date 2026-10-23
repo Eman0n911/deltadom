@@ -1,0 +1,36 @@
+{
+  "recorded_at": "2026-10-22T15:58:42.797031+00:00",
+  "full_suite": {
+    "passed": 59,
+    "seconds": 48.78,
+    "command": "DELTADOM_CHANNEL=chrome .venv/bin/pytest -q",
+    "note": "before adding final forward-permit process-exit test"
+  },
+  "final_focused_suite": {
+    "passed": 13,
+    "seconds": 0.31,
+    "command": "DELTADOM_CHANNEL=chrome .venv/bin/pytest -q tests/test_recovery.py",
+    "note": "includes one additional process-exit test; 60 distinct tests passed across these runs"
+  },
+  "ruff": "all changed Python files passed",
+  "fixed_diagnostics": {
+    "v7_corrected_cells": 48,
+    "breakingweb_scripted_UI_cells": 16,
+    "v8_real_HTTP_cells": 32
+  },
+  "source_after_network_run": "constructor also rejects credentials in origin; network-r1 saved exact executed source",
+  "upstream_tasks_modified": false,
+  "model_calls": 0,
+  "model_spend": 0,
+  "paid_use_authorized": true,
+  "github_visibility_verified": "private",
+  "publication_or_push": false,
+  "owned_breakingweb_service_stopped": true,
+  "sources": {
+    "python/deltadom/recovery.py": "d625fb30374572287a0f892ca1c46da004210cccb3e977f37f654fd0f28bb057",
+    "python/deltadom/network_fence.py": "14e1abb011aefd583bdb39c4ea5af9c6a844aa0e1a675212ba106fafd7bd4c52",
+    "tests/test_recovery.py": "f2b06ec7a9144f8f2b60841a9ee4d08b429a795a0f98605219aa99cad5ec5ed6"
+  },
+  "retained_development_cells": 48,
+  "retained_development_note": "fault-r1 incomplete baseline; not used for strongest-control conclusions"
+}

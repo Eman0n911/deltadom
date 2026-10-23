@@ -1,5 +1,17 @@
 # DeltaDOM
 
+![DeltaDOM 概念插画：工单在移动，光标通过蓝线连接原来的目标](docs/assets/brand/identity-thread.png)
+
+**让点击跟着目标走。** 保存记录的可见身份，在真实点击过程中继续核对。
+
+[概念动图](#常见场景别把隔壁工单关掉) · [本地试用](docs/BINDING-PREVIEW.md) · [实测与边界](benchmarks/BINDING-V9-RESULTS.md)
+
+> **私密研发中（2026-10-23）。** 0.4 已停止公开分发；以下体验包入口仅供已有仓库访问权限的人使用。当前尚未证明端到端竞争优势，新的方向、负结果与继续投入标准见[研发决策](docs/DIRECTION.md)。未经项目所有者重新明确授权，不恢复公开。
+
+最新本地预览 **0.5.0.dev9** 研究“列表变了，还能否点对原来的记录”：可以用 Option/Alt 点击保存一个目标，并在真实输入事件中再次核对。已完成独立目录的免编译安装和浏览器演示；固定场景及七站全部按钮对比已完成，观察到局部能力差异；尚未获得通用 Browser Use 替代品的证据。[直接试用说明](docs/BINDING-PREVIEW.md) · [接口与限制](docs/ACTION-BINDING.md)。此预览没有上传 GitHub，下面的 0.4 下载包不包含这些新能力。
+
+此前原型研究“断线后怎样避免重复提交”：已实现对象级未决写入隔离和请求转发防重放。真实浏览器故障诊断出现一项范围有限的恢复收益，也保留了合法重复操作被误拦等反例；尚不能作为通用保护层。见[使用方法](docs/RECOVERY-V7-V8.md)、[固定样本与强基线结果](benchmarks/RECOVERY-V7-V8-RESULTS.md)。原型尚未纳入 0.4 发布包。
+
 **网页哪里变了，一步一步查清楚。**
 
 [English](README.en.md) · [下载体验包](https://github.com/Eman0n911/deltadom/releases/tag/v0.4.0) · [安装说明](START_HERE.md) · [实测比较](benchmarks/RECORDING-RESULTS.md) · [Python SDK](docs/SDK.md)
@@ -8,7 +20,40 @@ DeltaDOM 记录浏览器看到的页面内容，显示每一步的变化，出�
 
 **0.4 是实验版。** 已验证 Apple 芯片 Mac 的免编译安装。演示不需要 API Key、模型账号或编程经验。
 
-## 三步试用
+## 新原型：先看实际点击
+
+### 常见场景：别把隔壁工单关掉
+
+待处理列表一直在刷新。你选中了那张工单，它换位置时继续跟随；输入期间发现
+记录身份改变，就暂停这次点击，留待重新检查。
+
+![概念动画：蓝色目标工单换位置，光标仍跟随；目标换成橙色工单后，连接断开并暂停点击](docs/assets/brand/identity-motion.gif)
+
+*插画与动图用于表达机制，不是执行录像或效果保证。*
+[静态版本](docs/assets/brand/identity-motion-still.png) · [真实浏览器演示与限制](docs/TICKET-QUEUE-STORY.md)
+
+### 打开本地预览
+
+使用本地交付的 **DeltaDOM-0.5.0.dev9-macosx_11_0_arm64.zip**，解压后双击
+**Start DeltaDOM.command**。它会安装预编译程序并打开真实浏览器演示，无需模型账号。
+此文件尚未上传 GitHub；下面的旧版下载地址不包含新原型。
+
+在新体验包目录中，也可以保存自己的一个点击目标：
+
+```sh
+python3 run.py bind https://你的网页地址 --output action.json
+python3 run.py bound-click action.json
+```
+
+第一步在浏览器中按住 Option/Alt 点击选取；第二步按记录身份执行一次真实点击，
+并保留浏览器供你核对结果。发现身份改变就停止，没有自动重试，也不把点击等同于
+业务成功。[详细使用步骤](docs/BINDING-PREVIEW.md)。
+
+普通排序时，本版与强简单上下文核对在 281 个按钮上打平；输入开始后的固定变化
+诊断中，Browser Use 原生点击与人工点击前核对各有 6 类错误效果，本版降为 2 类。
+这不是完整任务成功率。[协议、强基线、全部反例与结果](benchmarks/BINDING-V9-RESULTS.md)。
+
+## 旧版 0.4：观察录制体验
 
 1. [下载并解压 Mac 体验包](https://github.com/Eman0n911/deltadom/releases/download/v0.4.0/DeltaDOM-0.4.0-macosx_11_0_arm64.zip)。需要 Python 3.12+（或 uv）与 Google Chrome。
 2. 双击 **Start DeltaDOM.command**，或在解压目录运行 `python3 install.py`。

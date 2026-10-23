@@ -8,6 +8,8 @@ from importlib.metadata import version
 
 from playwright.async_api import Error as PlaywrightError
 
+from .binding_cli import click_file, pick
+from .binding_cli import demo as binding_demo
 from .demo import run
 from .recording import diff_tape, inspect_tape, record_page
 from .runtime import BrowserUnavailable, inspect_browser
@@ -48,9 +50,33 @@ def main():
     diff.add_argument("file")
     diff.add_argument("--before", type=int, required=True)
     diff.add_argument("--after", type=int, required=True)
+    bind = commands.add_parser("bind", help="在浏览器中用 Option/Alt 点击，保存一个操作目标")
+    bind.add_argument("url")
+    bind.add_argument("--output", default="action.json")
+    bind.add_argument("--channel", choices=["auto", "chrome", "chromium"], default="auto")
+    bound = commands.add_parser("bound-click", help="按照保存的记录身份执行一次带防护的点击")
+    bound.add_argument("file")
+    bound.add_argument("--channel", choices=["auto", "chrome", "chromium"], default="auto")
+    bound.add_argument("--headless", action="store_true")
+    bound.add_argument("--wait-for-login", action="store_true")
+    bound.add_argument("--json", action="store_true", help="输出完整机器可读回执")
+    binding = commands.add_parser("binding-demo", help="观看真实浏览器的记录识别和输入拦截演示")
+    binding.add_argument("--channel", choices=["auto", "chrome", "chromium"], default="auto")
+    binding.add_argument("--headless", action="store_true")
+    binding.add_argument("--output", default="deltadom-output/binding-demo.json")
+    binding.add_argument("--keep-open", action="store_true")
     args = parser.parse_args()
     try:
-        if args.command == "record":
+        if args.command == "bind":
+            asyncio.run(pick(args.url,args.output,channel=args.channel))
+        elif args.command == "bound-click":
+            receipt=asyncio.run(click_file(args.file,channel=args.channel,headless=args.headless,
+                                          wait_for_login=args.wait_for_login,json_output=args.json))
+            if receipt['status']!='clicked':raise SystemExit(2)
+        elif args.command == "binding-demo":
+            asyncio.run(binding_demo(args.output,channel=args.channel,headless=args.headless,
+                                     delay=0 if args.headless else 1.2,keep_open=args.keep_open))
+        elif args.command == "record":
             print("录制到本地文件；页面文字和表单内容可能包含隐私，请勿直接公开记录。")
             asyncio.run(
                 record_page(

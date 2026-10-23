@@ -1,0 +1,897 @@
+{
+  "scope": "mechanical fresh UI reads only; no actor, task completion or official score",
+  "sha256": {
+    "benchmarks/outcome_v5_preflight.py": "e1a7695cada447ce477b700c698a01b158463087219a0f671b7cf43130f123c6",
+    "python/deltadom/readback.py": "b0715c4122dc70e0c7c6a6d89410f08803ec43ee0f05567396966f88f69dab61",
+    "artifacts/benchmarks/outcome-v5/protocol.json": "05fe5423002665bc9efa0b6873b778755ba7a5e5e349939acae5dbee956650ea"
+  },
+  "rows": [
+    {
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "entity_count": 23,
+      "candidate": {
+        "status": "unconfirmed",
+        "error": "ValueError: readback failed or redirected"
+      },
+      "code_baseline_counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "agreement": false,
+      "actor_document_preserved": true,
+      "actor_url_preserved": false,
+      "probe_pages_closed": true,
+      "status": "failed"
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "intervention",
+      "entity_count": 24,
+      "candidate": {
+        "status": "unconfirmed",
+        "error": "ValueError: readback failed or redirected"
+      },
+      "code_baseline_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "agreement": false,
+      "actor_document_preserved": true,
+      "actor_url_preserved": false,
+      "probe_pages_closed": true,
+      "status": "failed"
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "clean",
+      "entity_count": 29,
+      "candidate": {
+        "status": "present",
+        "entities": [
+          {
+            "url": "http://127.0.0.1:18765/env/booking/deals?session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "See all deals",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_104?session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Hotel El Palace Barcelona\nBarcelona, Spain\n-25%\n★★★★★\n9.1\nSuperb\n2,345 reviews\n€657\n€496",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_114?session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Yurbban Passage Hotel & Spa\nBarcelona, Spain\n★★★★\n8.6\nFabulous\n€145per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_131?session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Residenza Maritti\nRome, Italy\n★★★\n8.6\nFabulous\n€127per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_135?session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Generator Rome\nRome, Italy\n★★\n7.4\nGood\n€74per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_141?session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Hotel Santa Maria\nRome, Italy\n-25%\n★★★\n8.8\nFabulous\n2,345 reviews\n€204\n€153\nGenius",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_144?session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Hotel Campo de' Fiori\nRome, Italy\n★★★\n7.8\nGood\n€75per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_159?session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "FIVE Palm Jumeirah\nDubai, United Arab Emirates\n★★★★★\n8.6\nFabulous\nAED 464per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_163?session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "The Oberoi, Dubai\nDubai, United Arab Emirates\n★★★★★\n9.1\nSuperb\nAED 320per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_31?session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Bob Hotel\nParis, France\n-26%\n★★★\n7.8\nGood\n3,456 reviews\n€329\n€245\nGenius",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_52?session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Nui. HOSTEL & BAR LOUNGE\nTokyo, Japan\n★★\n8.0\nVery Good\n¥96per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_72?session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Nohga Hotel Ueno\nTokyo, Japan\n-25%\n★★★★\n8.8\nFabulous\n1,890 reviews\n¥393\n¥294\nGenius",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_7?session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "The Greenwich Hotel\nNew York, United States\n-26%\n★★★★★\n9.3\nSuperb\n1,234 reviews\n$1,216\n$905",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_80?session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "One Aldwych\nLondon, United Kingdom\n★★★★★\n9.0\nSuperb\n£613per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_96?session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Mondrian London\nLondon, United Kingdom\n-25%\n★★★★★\n8.7\nFabulous\n3,456 reviews\n£752\n£566\nGenius",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Bangkok&session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Bangkok\n\nThailand\n\n23 properties\n\nFrom $35 per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Barcelona&session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Barcelona\n\nSpain\n\n24 properties\n\nFrom $63 per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Barcelona+beach+hotel&check_in=2026-06-20&check_out=2026-06-25&guests=2&session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Barcelona beach hotel\n\n2026/6/20 – 2026/6/25\n\n2 guests",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Dubai&session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Dubai\n\nUnited Arab Emirates\n\n23 properties\n\nFrom $85 per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=London&session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "London\n\nUnited Kingdom\n\n28 properties\n\nFrom $109 per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=London+boutique+hotel&check_in=2026-05-20&check_out=2026-05-24&guests=2&session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "London boutique hotel\n\n2026/5/20 – 2026/5/24\n\n2 guests",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=New+York&check_in=2026-03-15&check_out=2026-03-18&guests=2&session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "New York\n\n2026/3/15 – 2026/3/18\n\n2 guests",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=New+York&session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "New York\n\nUnited States\n\n28 properties\n\nFrom $109 per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Paris&check_in=2026-04-01&check_out=2026-04-05&guests=2&session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Paris\n\n2026/4/1 – 2026/4/5\n\n2 guests",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Paris&session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Paris\n\nFrance\n\n25 properties\n\nFrom $89 per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Rome&session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Rome\n\nItaly\n\n24 properties\n\nFrom $74 per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Rome+family+hotel&check_in=2026-07-01&check_out=2026-07-07&guests=4&session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Rome family hotel\n\n2026/7/1 – 2026/7/7\n\n4 guests, 2 rooms",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Tokyo&session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Tokyo\n\nJapan\n\n26 properties\n\nFrom $75 per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Tokyo+hotels+near+Shinjuku&check_in=2026-05-10&check_out=2026-05-15&guests=1&session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1",
+            "label": "Tokyo hotels near Shinjuku\n\n2026/5/10 – 2026/5/15\n\n1 guest",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          }
+        ],
+        "scope": "visible link membership at read time only; not quantity, new insertion, selection optimality, persistence guarantee or complete task success",
+        "readback_url": "http://127.0.0.1:18765/env/booking/home?session=booking_booking_frontier_account_overhaul_1566ec94ff&agent_mode=1"
+      },
+      "code_baseline_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "agreement": true,
+      "actor_document_preserved": true,
+      "actor_url_preserved": true,
+      "probe_pages_closed": true,
+      "status": "passed"
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "intervention",
+      "entity_count": 29,
+      "candidate": {
+        "status": "present",
+        "entities": [
+          {
+            "url": "http://127.0.0.1:18765/env/booking/deals?session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "See all deals",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_104?session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Hotel El Palace Barcelona\nBarcelona, Spain\n-25%\n★★★★★\n9.1\nSuperb\n2,345 reviews\n€657\n€496",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_114?session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Yurbban Passage Hotel & Spa\nBarcelona, Spain\n★★★★\n8.6\nFabulous\n€145per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_131?session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Residenza Maritti\nRome, Italy\n★★★\n8.6\nFabulous\n€127per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_135?session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Generator Rome\nRome, Italy\n★★\n7.4\nGood\n€74per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_141?session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Hotel Santa Maria\nRome, Italy\n-25%\n★★★\n8.8\nFabulous\n2,345 reviews\n€204\n€153\nGenius",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_144?session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Hotel Campo de' Fiori\nRome, Italy\n★★★\n7.8\nGood\n€75per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_159?session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "FIVE Palm Jumeirah\nDubai, United Arab Emirates\n★★★★★\n8.6\nFabulous\nAED 464per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_163?session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "The Oberoi, Dubai\nDubai, United Arab Emirates\n★★★★★\n9.1\nSuperb\nAED 320per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_31?session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Bob Hotel\nParis, France\n-26%\n★★★\n7.8\nGood\n3,456 reviews\n€329\n€245\nGenius",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_52?session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Nui. HOSTEL & BAR LOUNGE\nTokyo, Japan\n★★\n8.0\nVery Good\n¥96per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_72?session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Nohga Hotel Ueno\nTokyo, Japan\n-25%\n★★★★\n8.8\nFabulous\n1,890 reviews\n¥393\n¥294\nGenius",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_7?session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "The Greenwich Hotel\nNew York, United States\n-26%\n★★★★★\n9.3\nSuperb\n1,234 reviews\n$1,216\n$905",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_80?session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "One Aldwych\nLondon, United Kingdom\n★★★★★\n9.0\nSuperb\n£613per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/property/prop_96?session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Mondrian London\nLondon, United Kingdom\n-25%\n★★★★★\n8.7\nFabulous\n3,456 reviews\n£752\n£566\nGenius",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Bangkok&session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Bangkok\n\nThailand\n\n23 properties\n\nFrom $35 per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Barcelona&session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Barcelona\n\nSpain\n\n24 properties\n\nFrom $63 per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Barcelona+beach+hotel&check_in=2026-06-20&check_out=2026-06-25&guests=2&session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Barcelona beach hotel\n\n2026/6/20 – 2026/6/25\n\n2 guests",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Dubai&session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Dubai\n\nUnited Arab Emirates\n\n23 properties\n\nFrom $85 per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=London&session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "London\n\nUnited Kingdom\n\n28 properties\n\nFrom $109 per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=London+boutique+hotel&check_in=2026-05-20&check_out=2026-05-24&guests=2&session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "London boutique hotel\n\n2026/5/20 – 2026/5/24\n\n2 guests",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=New+York&check_in=2026-03-15&check_out=2026-03-18&guests=2&session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "New York\n\n2026/3/15 – 2026/3/18\n\n2 guests",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=New+York&session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "New York\n\nUnited States\n\n28 properties\n\nFrom $109 per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Paris&check_in=2026-04-01&check_out=2026-04-05&guests=2&session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Paris\n\n2026/4/1 – 2026/4/5\n\n2 guests",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Paris&session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Paris\n\nFrance\n\n25 properties\n\nFrom $89 per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Rome&session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Rome\n\nItaly\n\n24 properties\n\nFrom $74 per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Rome+family+hotel&check_in=2026-07-01&check_out=2026-07-07&guests=4&session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Rome family hotel\n\n2026/7/1 – 2026/7/7\n\n4 guests, 2 rooms",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Tokyo&session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Tokyo\n\nJapan\n\n26 properties\n\nFrom $75 per night",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/booking/search?destination=Tokyo+hotels+near+Shinjuku&check_in=2026-05-10&check_out=2026-05-15&guests=1&session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1",
+            "label": "Tokyo hotels near Shinjuku\n\n2026/5/10 – 2026/5/15\n\n1 guest",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          }
+        ],
+        "scope": "visible link membership at read time only; not quantity, new insertion, selection optimality, persistence guarantee or complete task success",
+        "readback_url": "http://127.0.0.1:18765/env/booking/home?session=booking_booking_frontier_account_overhaul_6ca96eb1e5&agent_mode=1"
+      },
+      "code_baseline_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "agreement": true,
+      "actor_document_preserved": true,
+      "actor_url_preserved": true,
+      "probe_pages_closed": true,
+      "status": "passed"
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "clean",
+      "entity_count": 16,
+      "candidate": {
+        "status": "present",
+        "entities": [
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_12?session=gmail_gmail_escalation_chain_376b2a5386&agent_mode=1",
+            "label": "Quarterly metrics recap\nI pulled the loose ends into one note for easier review. Nothing looks blocked right now, but we still need one decision on timing. Happy to",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_13?session=gmail_gmail_escalation_chain_376b2a5386&agent_mode=1",
+            "label": "Follow-up on venue estimate\nPassing along the current draft so you have it in one place. Most of the edits were minor, with one budget line still waiting on approval. N",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_16?session=gmail_gmail_escalation_chain_376b2a5386&agent_mode=1",
+            "label": "Agenda draft for Monday check-in\nSharing the latest notes before tomorrow's check-in. The team is aligned on the main path and only needs confirmation on the follow-up items",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_1?session=gmail_gmail_escalation_chain_376b2a5386&agent_mode=1",
+            "label": "CRITICAL: Payment Gateway Timeout - Order #88419\nReporting a payment gateway timeout on Order #88419. Customer unable to complete checkout. Gateway returns 504 after 30s. Affects EU-West re",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_22?session=gmail_gmail_escalation_chain_376b2a5386&agent_mode=1",
+            "label": "Agenda draft for Monday check-in\nSharing the latest notes before tomorrow's check-in. Nothing looks blocked right now, but we still need one decision on timing. If you want,",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_25?session=gmail_gmail_escalation_chain_376b2a5386&agent_mode=1",
+            "label": "Notes from the partner sync\nI pulled the loose ends into one note for easier review. Nothing looks blocked right now, but we still need one decision on timing. If you w",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_2?session=gmail_gmail_escalation_chain_376b2a5386&agent_mode=1",
+            "label": "Re: CRITICAL: Payment Gateway Timeout - Order #88419\nUpdate: On-call engineer is looking into it. Will report back shortly. Thanks, Keiko",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_30?session=gmail_gmail_escalation_chain_376b2a5386&agent_mode=1",
+            "label": "Quarterly metrics recap\nSending a quick status update from today's working session. The open items are mostly ownership questions rather than scope changes. Happy t",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_32?session=gmail_gmail_escalation_chain_376b2a5386&agent_mode=1",
+            "label": "Customer feedback from pilot cohort\nSharing the latest notes before tomorrow's check-in. The open items are mostly ownership questions rather than scope changes. Happy to conso",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_36?session=gmail_gmail_escalation_chain_376b2a5386&agent_mode=1",
+            "label": "Quarterly metrics recap\nSending a quick status update from today's working session. Nothing looks blocked right now, but we still need one decision on timing. If yo",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_37?session=gmail_gmail_escalation_chain_376b2a5386&agent_mode=1",
+            "label": "Notes from the partner sync\nSending a quick status update from today's working session. The open items are mostly ownership questions rather than scope changes. No resp",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_3?session=gmail_gmail_escalation_chain_376b2a5386&agent_mode=1",
+            "label": "Re: CRITICAL: Payment Gateway Timeout - Order #88419\nResolved. Root cause was a stale connection pool. On-call engineer applied the fix at 2:15pm. Order #88419 has been reprocessed successfully",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_42?session=gmail_gmail_escalation_chain_376b2a5386&agent_mode=1",
+            "label": "Customer feedback from pilot cohort\nSending a quick status update from today's working session. The open items are mostly ownership questions rather than scope changes. If you",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_4?session=gmail_gmail_escalation_chain_376b2a5386&agent_mode=1",
+            "label": "CRITICAL: Payment Gateway Timeout - Order #88421\nReporting a payment gateway timeout on Order #88421. Customer unable to complete checkout. Gateway returns 504 after 30s. Affects US-East re",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_5?session=gmail_gmail_escalation_chain_376b2a5386&agent_mode=1",
+            "label": "Re: CRITICAL: Payment Gateway Timeout - Order #88421\nIssue still unresolved as of 3pm. No response from on-call. NOTE: If escalation is slow, you can skip the team lead and go directly to VP of",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_7?session=gmail_gmail_escalation_chain_376b2a5386&agent_mode=1",
+            "label": "Reminder on document review timing\nPassing along the current draft so you have it in one place. Nothing looks blocked right now, but we still need one decision on timing. Happ",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          }
+        ],
+        "scope": "visible link membership at read time only; not quantity, new insertion, selection optimality, persistence guarantee or complete task success",
+        "readback_url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_escalation_chain_376b2a5386&agent_mode=1"
+      },
+      "code_baseline_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "agreement": true,
+      "actor_document_preserved": true,
+      "actor_url_preserved": true,
+      "probe_pages_closed": true,
+      "status": "passed"
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "intervention",
+      "entity_count": 16,
+      "candidate": {
+        "status": "present",
+        "entities": [
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_16?session=gmail_gmail_escalation_chain_5618f3e717&agent_mode=1",
+            "label": "Agenda draft for Monday check-in\nSharing the latest notes before tomorrow's check-in. The team is aligned on the main path and only needs confirmation on the follow-up items",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_1?session=gmail_gmail_escalation_chain_5618f3e717&agent_mode=1",
+            "label": "CRITICAL: Payment Gateway Timeout - Order #88419\nReporting a payment gateway timeout on Order #88419. Customer unable to complete checkout. Gateway returns 504 after 30s. Affects EU-West re",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_22280?session=gmail_gmail_escalation_chain_5618f3e717&agent_mode=1",
+            "label": "Escalation Chain Contacts\nHi team, sharing a quick update. Please review and let me know if anything needs adjustment.",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_23396?session=gmail_gmail_escalation_chain_5618f3e717&agent_mode=1",
+            "label": "Issue Routing Rules\nJust wanted to flag this for your attention. Happy to discuss in our next sync.",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_2?session=gmail_gmail_escalation_chain_5618f3e717&agent_mode=1",
+            "label": "Re: CRITICAL: Payment Gateway Timeout - Order #88419\nUpdate: On-call engineer is looking into it. Will report back shortly. Thanks, Keiko",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_30?session=gmail_gmail_escalation_chain_5618f3e717&agent_mode=1",
+            "label": "Quarterly metrics recap\nSending a quick status update from today's working session. The open items are mostly ownership questions rather than scope changes. Happy t",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_35203?session=gmail_gmail_escalation_chain_5618f3e717&agent_mode=1",
+            "label": "Holiday calendar finalized\nPassing this along for visibility. No immediate action required from your side.",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_36?session=gmail_gmail_escalation_chain_5618f3e717&agent_mode=1",
+            "label": "Quarterly metrics recap\nSending a quick status update from today's working session. Nothing looks blocked right now, but we still need one decision on timing. If yo",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_37?session=gmail_gmail_escalation_chain_5618f3e717&agent_mode=1",
+            "label": "Notes from the partner sync\nSending a quick status update from today's working session. The open items are mostly ownership questions rather than scope changes. No resp",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_3?session=gmail_gmail_escalation_chain_5618f3e717&agent_mode=1",
+            "label": "Re: CRITICAL: Payment Gateway Timeout - Order #88419\nResolved. Root cause was a stale connection pool. On-call engineer applied the fix at 2:15pm. Order #88419 has been reprocessed successfully",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_46048?session=gmail_gmail_escalation_chain_5618f3e717&agent_mode=1",
+            "label": "Escalation Protocol Update\nHi team, sharing a quick update. Please review and let me know if anything needs adjustment.",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_4?session=gmail_gmail_escalation_chain_5618f3e717&agent_mode=1",
+            "label": "CRITICAL: Payment Gateway Timeout - Order #88421\nReporting a payment gateway timeout on Order #88421. Customer unable to complete checkout. Gateway returns 504 after 30s. Affects US-East re",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_58520?session=gmail_gmail_escalation_chain_5618f3e717&agent_mode=1",
+            "label": "Security awareness update\nPassing this along for visibility. No immediate action required from your side.",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_5?session=gmail_gmail_escalation_chain_5618f3e717&agent_mode=1",
+            "label": "Re: CRITICAL: Payment Gateway Timeout - Order #88421\nIssue still unresolved as of 3pm. No response from on-call. NOTE: If escalation is slow, you can skip the team lead and go directly to VP of",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_81482?session=gmail_gmail_escalation_chain_5618f3e717&agent_mode=1",
+            "label": "Issue Priority Matrix\nHi team, sharing a quick update. Please review and let me know if anything needs adjustment.",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/gmail/thread/email_89131?session=gmail_gmail_escalation_chain_5618f3e717&agent_mode=1",
+            "label": "Priority Assignment Changes\nPassing this along for visibility. No immediate action required from your side.",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          }
+        ],
+        "scope": "visible link membership at read time only; not quantity, new insertion, selection optimality, persistence guarantee or complete task success",
+        "readback_url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_escalation_chain_5618f3e717&agent_mode=1"
+      },
+      "code_baseline_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "agreement": true,
+      "actor_document_preserved": true,
+      "actor_url_preserved": true,
+      "probe_pages_closed": true,
+      "status": "passed"
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "clean",
+      "entity_count": 2,
+      "candidate": {
+        "status": "present",
+        "entities": [
+          {
+            "url": "http://127.0.0.1:18765/env/lms/courses/course_1?session=lms_lms_complete_mixed_module_4b77a47551&agent_mode=1",
+            "label": "CS101\nIntroduction to Computer Science\nProf. Garcia\nSpring 2026 -- 3 credits\nDrop deadline: 2027/2/20",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/lms/courses/course_2?session=lms_lms_complete_mixed_module_4b77a47551&agent_mode=1",
+            "label": "CHEM101\nGeneral Chemistry\nProf. Morris\nSpring 2026 -- 4 credits\nDrop deadline: 2027/2/20",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          }
+        ],
+        "scope": "visible link membership at read time only; not quantity, new insertion, selection optimality, persistence guarantee or complete task success",
+        "readback_url": "http://127.0.0.1:18765/env/lms/courses?session=lms_lms_complete_mixed_module_4b77a47551&agent_mode=1"
+      },
+      "code_baseline_counts": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "actor_document_preserved": true,
+      "actor_url_preserved": true,
+      "probe_pages_closed": true,
+      "status": "passed"
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "intervention",
+      "entity_count": 2,
+      "candidate": {
+        "status": "present",
+        "entities": [
+          {
+            "url": "http://127.0.0.1:18765/env/lms/courses/course_1?session=lms_lms_complete_mixed_module_1f73df10a3&agent_mode=1",
+            "label": "CS101\nIntroduction to Computer Science\nProf. Garcia\nSpring 2026 -- 3 credits\nDrop deadline: 2027/2/21",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          },
+          {
+            "url": "http://127.0.0.1:18765/env/lms/courses/course_2?session=lms_lms_complete_mixed_module_1f73df10a3&agent_mode=1",
+            "label": "CHEM101\nGeneral Chemistry\nProf. Morris\nSpring 2026 -- 4 credits\nDrop deadline: 2027/2/17",
+            "matching_links": 1,
+            "same_label_other_urls": 0
+          }
+        ],
+        "scope": "visible link membership at read time only; not quantity, new insertion, selection optimality, persistence guarantee or complete task success",
+        "readback_url": "http://127.0.0.1:18765/env/lms/courses?session=lms_lms_complete_mixed_module_1f73df10a3&agent_mode=1"
+      },
+      "code_baseline_counts": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "actor_document_preserved": true,
+      "actor_url_preserved": true,
+      "probe_pages_closed": true,
+      "status": "passed"
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "clean",
+      "entity_count": 0,
+      "status": "unsupported_no_entity_links"
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "intervention",
+      "entity_count": 0,
+      "status": "unsupported_no_entity_links"
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "clean",
+      "status": "error",
+      "error": "Error: Page.evaluate: Error: need one visible main region\n    at eval (eval at evaluate (:370:30), <anonymous>:4:37)\n    at UtilityScript.evaluate (<anonymous>:377:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "intervention",
+      "status": "error",
+      "error": "Error: Page.evaluate: Error: need one visible main region\n    at eval (eval at evaluate (:370:30), <anonymous>:4:37)\n    at UtilityScript.evaluate (<anonymous>:377:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "clean",
+      "entity_count": 0,
+      "status": "unsupported_no_entity_links"
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "intervention",
+      "entity_count": 0,
+      "status": "unsupported_no_entity_links"
+    }
+  ]
+}

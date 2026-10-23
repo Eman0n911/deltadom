@@ -1,0 +1,60 @@
+{
+  "thinking": "Step 3. The previous register_checks call was rejected by the runtime with 'OutcomeCheck.__init__() got an unexpected keyword argument identity_text', so nothing was frozen and the page is untouched - the star button [27] still reads 'Star Project Update — Q1 Milestones'. The error tells me the accepted field is 'identity', not my duplicate alias, so I drop the alias and resubmit exactly the same five checks. This is a schema fix, not a change of what I am asserting: sender identity, subject identity, starred state of the target (label + pressed), and a negative control that the Theo Rivera thread is still unstarred. Scopes remain anchored on sender text only, so no selector encodes the desired state.",
+  "evaluation_previous_goal": "register_checks failed with a schema error (unknown keyword 'identity_text'); no checks were frozen and no page state changed. Verdict: Failure, recoverable by resubmitting with 'identity'.",
+  "memory": "Runtime accepts check field 'identity' (not 'identity_text'). Page unchanged: article [26] Alice Chen / 'Project Update — Q1 Milestones', star button [27] still unstarred. Resubmitting the same five checks now, then click [27], then verify_outcome.",
+  "next_goal": "Re-register the five outcome checks with the accepted 'identity' field before any write.",
+  "current_plan_item": 1,
+  "action": [
+    {
+      "register_checks": {
+        "checks": [
+          {
+            "key": "target_thread_sender",
+            "scope": "article[aria-label*=\"Alice Chen\"]",
+            "identity": "Alice Chen",
+            "target": "strong",
+            "kind": "text",
+            "expected": "Alice Chen"
+          },
+          {
+            "key": "target_thread_subject",
+            "scope": "article[aria-label*=\"Alice Chen\"]",
+            "identity": "Project Update — Q1 Milestones",
+            "target": "a[aria-label]",
+            "kind": "attribute",
+            "expected": "Open unread thread Project Update — Q1 Milestones",
+            "attribute": "aria-label"
+          },
+          {
+            "key": "target_star_label",
+            "scope": "article[aria-label*=\"Alice Chen\"]",
+            "identity": "Alice Chen",
+            "target": "button[aria-label*=\"Star\"]",
+            "kind": "attribute",
+            "expected": "Starred Project Update — Q1 Milestones",
+            "attribute": "aria-label"
+          },
+          {
+            "key": "target_star_pressed",
+            "scope": "article[aria-label*=\"Alice Chen\"]",
+            "identity": "Alice Chen",
+            "target": "button[aria-label*=\"Star\"]",
+            "kind": "checked",
+            "expected": true,
+            "attribute": "aria-pressed"
+          },
+          {
+            "key": "no_collateral_star_theo_rivera",
+            "scope": "article[aria-label*=\"Theo Rivera\"]",
+            "identity": "Theo Rivera",
+            "target": "button[aria-label*=\"Star\"]",
+            "kind": "attribute",
+            "expected": "Star Follow-up on venue estimate",
+            "attribute": "aria-label"
+          }
+        ],
+        "readback_index": 0
+      }
+    }
+  ]
+}

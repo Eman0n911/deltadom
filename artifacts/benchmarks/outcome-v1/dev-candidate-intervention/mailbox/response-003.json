@@ -1,0 +1,32 @@
+{
+  "thinking": "Observed facts: the Starred view URL is /env/gmail/inbox?label=inbox&filter=starred and it currently renders 'No messages match this view' with the Starred nav count at 0. The inbox already showed the target thread exactly once (Alice Chen, 'Project Update — Q1 Milestones', unread) and the inbox Starred count was 0 before any write, so a change to 1 thread in the Starred view is a real state change, not a pre-existing condition. The session token in the URL differs between the two page loads (d34f9ad vs a46e749), so mailbox state is not keyed to that token and the readback URL can be the observed path plus filter without a session value. I register checks now, before any write. Checks use state-independent CSS (article / strong / button) and pin identity by exact visible subject text, never by the desired starred label.",
+  "evaluation_previous_goal": "Click on Starred succeeded. It opened the Starred filtered view, which is empty ('No messages match this view') and shows Starred count 0. This gives me both the readback URL shape and the pre-write baseline.",
+  "memory": "Pre-write baseline: Starred view empty, Starred nav count 0, inbox Starred count 0. Target thread: Alice Chen / 'Project Update — Q1 Milestones', unread, inbox article 26, star button 27 aria-label 'Star ...'. Readback URL: http://127.0.0.1:18765/env/gmail/inbox?label=inbox&filter=starred",
+  "next_goal": "Freeze two outcome checks (thread present in Starred view with exact sender identity; star control reads starred) with the Starred filter URL as readback.",
+  "action": [
+    {
+      "register_checks": {
+        "checks": [
+          {
+            "key": "starred_view_contains_alice_q1_thread",
+            "scope": "article",
+            "identity": "Project Update — Q1 Milestones",
+            "target": "strong",
+            "kind": "text",
+            "expected": "Alice Chen"
+          },
+          {
+            "key": "star_control_reads_starred",
+            "scope": "article",
+            "identity": "Project Update — Q1 Milestones",
+            "target": "button",
+            "kind": "attribute",
+            "attribute": "aria-label",
+            "expected": "Unstar Project Update — Q1 Milestones"
+          }
+        ],
+        "readback_url": "http://127.0.0.1:18765/env/gmail/inbox?label=inbox&filter=starred"
+      }
+    }
+  ]
+}

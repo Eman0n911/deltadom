@@ -1,0 +1,8 @@
+{
+  "browser_use": "0.13.11",
+  "playwright": "1.64.0",
+  "agent_browser": "0.39.1",
+  "breakingweb": "052f0f0c6cfcdc9efb86eb0183556fcc4fb3606e",
+  "seed": 42,
+  "model_channel": "WorkBuddy Deepseek-V4.1-Flash; ChatGPT Desktop if available"
+}

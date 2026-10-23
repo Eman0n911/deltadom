@@ -1,0 +1,307 @@
+{
+  "arm": "inline",
+  "task": "gmail_star_email",
+  "condition": "clean",
+  "phase": "development",
+  "scope": "Browser Use 0.13.11 native agent with restricted tools; text-only desktop relay; not official paper harness score",
+  "claimed_success": true,
+  "evaluation": {
+    "score": 1.0,
+    "final_score": 1.0,
+    "success": true,
+    "reasoning": "Score: 1.000; success=True\nPassed 1/1 checks.\n  [PASS] Agent starred the target email\nAll negative checks passed (no penalties).\nFinal score: 1.000 | Success: True",
+    "checks": [
+      {
+        "desc": "Agent starred the target email",
+        "passed": true,
+        "error": null
+      }
+    ],
+    "negative_checks": [
+      {
+        "desc": "Agent did not modify other inbox emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify drafts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not send emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not delete emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify contacts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify labels",
+        "passed": true,
+        "penalty": 0.1,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify filters",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      }
+    ]
+  },
+  "error": null,
+  "agent_errors": [
+    null,
+    null,
+    null
+  ],
+  "action_units": 4,
+  "model_requests": 3,
+  "provider_usage": null,
+  "model_usage_note": "Counts mailbox requests, not all WorkBuddy internal generations/tool turns; desktop context and tokens unavailable",
+  "wall_seconds": 100.93407262500841,
+  "events": [
+    {
+      "action": {
+        "click_and_read": {
+          "click_index": 27,
+          "readback_index": 0,
+          "entity_indices": []
+        }
+      }
+    },
+    {
+      "readback": {
+        "status": "read",
+        "evidence": {
+          "url": "http://127.0.0.1:18765/env/gmail/inbox?session=gmail_gmail_star_email_4e777e4eee&agent_mode=1",
+          "region": "main",
+          "text": "Primary\nPromotions\nUpdates\nAll Mail\nMark all read\n1–8 of 8\nAlice Chen\nUNREAD\nProject Update — Q1 Milestones\nHi team, Here's the latest update on our Q1 milestones. All deliverables are on track. Please review and let me know if you have questions.\ninbox\nstarred\nJul 7, 6:05 PM\nTheo Rivera\nFollow-up on venue estimate\nPassing along the current draft so you have it in one place. Most of the edits were minor, with one budget line still waiting on approval. N\ninbox\nAttachment\nJul 5, 6:05 PM\nPriya Rivera\nReminder on document review timing\nPassing along the current draft so you have it in one place. Nothing looks blocked right now, but we still need one decision on timing. Happ\ninbox\nJul 3, 7:05 PM\nSofia Brooks\nUNREAD\nQuarterly metrics recap\nI pulled the loose ends into one note for easier review. Nothing looks blocked right now, but we still need one decision on timing. Happy to\ninbox\nJul 2, 2:05 PM\nElena Patel\nUpdated rollout checklist\nPassing along the current draft so you have it in one place. The open items are mostly ownership questions rather than scope changes. Happy\ninbox\nJun 24, 1:05 PM\nSofia Patel\nReminder on document review timing\nSending a quick status update from today's working session. The open items are mostly ownership questions rather than scope changes. If you\ninbox\nJun 19, 2:05 PM\nTheo Nguyen\nUNREAD\nFollow-up on venue estimate\nSending a quick status update from today's working session. The open items are mostly ownership questions rather than scope changes. No resp\ninbox\nJun 19, 1:05 PM\nTheo Brooks\nUNREAD\nNotes from the partner sync\nSharing the latest notes before tomorrow's check-in. Most of the edits were minor, with one budget line still waiting on approval. No respon\ninbox\nJun 19, 12:05 PM",
+          "controls": [
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Primary",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Promotions",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Updates",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "All Mail",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Mark all as read",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Previous page",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Next page",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Unstar Project Update — Q1 Milestones",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Star Follow-up on venue estimate",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Star Reminder on document review timing",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Star Quarterly metrics recap",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Star Updated rollout checklist",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Star Reminder on document review timing",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Star Follow-up on venue estimate",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            },
+            {
+              "tag": "button",
+              "type": "button",
+              "label": "Star Notes from the partner sync",
+              "value": "",
+              "checked": null,
+              "ariaChecked": null,
+              "ariaPressed": null
+            }
+          ],
+          "links": [
+            {
+              "url": "http://127.0.0.1:18765/env/gmail/thread/email_1?session=gmail_gmail_star_email_4e777e4eee&agent_mode=1",
+              "label": "Project Update — Q1 Milestones\nHi team, Here's the latest update on our Q1 milestones. All deliverables are on track. Please review and let me know if you have questions."
+            },
+            {
+              "url": "http://127.0.0.1:18765/env/gmail/thread/email_9?session=gmail_gmail_star_email_4e777e4eee&agent_mode=1",
+              "label": "Follow-up on venue estimate\nPassing along the current draft so you have it in one place. Most of the edits were minor, with one budget line still waiting on approval. N"
+            },
+            {
+              "url": "http://127.0.0.1:18765/env/gmail/thread/email_3?session=gmail_gmail_star_email_4e777e4eee&agent_mode=1",
+              "label": "Reminder on document review timing\nPassing along the current draft so you have it in one place. Nothing looks blocked right now, but we still need one decision on timing. Happ"
+            },
+            {
+              "url": "http://127.0.0.1:18765/env/gmail/thread/email_8?session=gmail_gmail_star_email_4e777e4eee&agent_mode=1",
+              "label": "Quarterly metrics recap\nI pulled the loose ends into one note for easier review. Nothing looks blocked right now, but we still need one decision on timing. Happy to"
+            },
+            {
+              "url": "http://127.0.0.1:18765/env/gmail/thread/email_7?session=gmail_gmail_star_email_4e777e4eee&agent_mode=1",
+              "label": "Updated rollout checklist\nPassing along the current draft so you have it in one place. The open items are mostly ownership questions rather than scope changes. Happy"
+            },
+            {
+              "url": "http://127.0.0.1:18765/env/gmail/thread/email_6?session=gmail_gmail_star_email_4e777e4eee&agent_mode=1",
+              "label": "Reminder on document review timing\nSending a quick status update from today's working session. The open items are mostly ownership questions rather than scope changes. If you"
+            },
+            {
+              "url": "http://127.0.0.1:18765/env/gmail/thread/email_10?session=gmail_gmail_star_email_4e777e4eee&agent_mode=1",
+              "label": "Follow-up on venue estimate\nSending a quick status update from today's working session. The open items are mostly ownership questions rather than scope changes. No resp"
+            },
+            {
+              "url": "http://127.0.0.1:18765/env/gmail/thread/email_4?session=gmail_gmail_star_email_4e777e4eee&agent_mode=1",
+              "label": "Notes from the partner sync\nSharing the latest notes before tomorrow's check-in. Most of the edits were minor, with one budget line still waiting on approval. No respon"
+            }
+          ]
+        },
+        "requested_entities": [],
+        "click_result": {
+          "is_done": false,
+          "extracted_content": "Clicked button aria-label=Star Project Update ",
+          "include_extracted_content_only_once": false,
+          "metadata": {
+            "click_x": 282.0,
+            "click_y": 134.5
+          },
+          "include_in_memory": false
+        }
+      },
+      "entities": []
+    },
+    {
+      "action": {
+        "refresh_page": {}
+      }
+    },
+    {
+      "action": {
+        "finish": {
+          "success": true,
+          "text": "Starred the email from Alice Chen with subject \"Project Update — Q1 Milestones\". It was the only Alice Chen thread in the inbox (single page, 8 rows), so the sender/subject match was unambiguous. Verification: after clicking the star control the row showed the 'starred' label and the control changed to 'Unstar Project Update — Q1 Milestones'; I then reloaded the inbox and both signals persisted in the freshly rendered page (article 'Unread thread from Alice Chen: Project Update — Q1 Milestones', label 'starred', star button now 'Unstar Project Update — Q1 Milestones'). The star is applied and confirmed against freshly read visible state, not an optimistic update. No other requirements were specified and no retry was needed."
+        }
+      }
+    }
+  ]
+}

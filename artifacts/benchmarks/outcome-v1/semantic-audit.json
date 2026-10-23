@@ -1,0 +1,15 @@
+{
+  "task": "amazon_browse_category",
+  "condition": "intervention",
+  "audit_timing": "after all four e001..e004 actor outputs sealed and evaluated",
+  "instruction": "Browse the Electronics category, find the cheapest item available, and add it to your cart.\n",
+  "upstream_variant": "breakingweb/injector/variants/amazon_browse_category__cheapest_decoy.yaml",
+  "upstream_commit": "052f0f0c6cfcdc9efb86eb0183556fcc4fb3606e",
+  "findings": [
+    "Variant adds three products at the same $7.99 lowest price as original product; instruction does not specify a tie-break or canonical SKU.",
+    "Evaluator accepts the original product_id only; e001 mismatch is official scoring failure but does not establish literal user-task failure.",
+    "The first two cart-add POSTs silently no-op by variant definition. A successful third add does not prove that explicitly choosing quantity=1 fixed a quantity bug."
+  ],
+  "handling": "Retain the selected case and all official scores. Do not remove it, relabel raw evaluator output, or claim candidate superiority based on the canonical-SKU mismatch. Semantic failure for e001 remains unestablished.",
+  "candidate_vs_strong_controls": "Candidate 19 requests/19 units; simple 17 requests/16 units; agent-browser 16 requests/16 units. No observed advantage over strong controls on this pilot."
+}

@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-22T23:17:09.538099+08:00",
+  "python_suite": {
+    "passed": 47,
+    "failed": 0,
+    "command": "DELTADOM_CHANNEL=chrome .venv/bin/pytest -q"
+  },
+  "lint": "changed Python files passed Ruff",
+  "all_frozen_ui_read_checks": 14,
+  "single_write_component_checks": 12,
+  "native_tool_and_message_delivery_checks": 2,
+  "model_stop_preflight": {
+    "no_model_responses": true,
+    "no_official_evaluation": true,
+    "clean_exit": true
+  },
+  "scope": "local/component checks are not model success-rate evidence",
+  "sources": {
+    "python/deltadom/action_readback.py": "8c41a5bb54a08b8c437924a1f392bd8ead50ab59d8ee0cea3c316220a60aadc3",
+    "python/deltadom/readback.py": "c99750fb75808404b49a6c4b90da3a5887c1362fa20a23017b678b4f55a86a38",
+    "python/deltadom/browser_use_delivery.py": "f6bd985b8d554f3fea5f12ca48ca905c50199cfd017e4fc107feeae47c918fc1",
+    "benchmarks/outcome_agent.py": "a02961ce3002f0df2b7b0f4c0bb4673142a358f0a7fb71c0d9e930a892f9308b"
+  }
+}

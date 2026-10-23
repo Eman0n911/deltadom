@@ -1,0 +1,31 @@
+{
+  "scope": "native context construction, not model efficacy",
+  "browser_use": "0.13.11",
+  "source_record": "r001/history.json",
+  "next_native_packet": "r001/mailbox/request-004.json",
+  "full_tool_payload_present_in_actual_packet": false,
+  "short_memory_present_in_actual_packet": true,
+  "reproduction": {
+    "stock": {
+      "read_chars": 0,
+      "complete_payload_in_read_state": false,
+      "short_memory_retained": true
+    },
+    "delivery_patch": {
+      "read_chars": 7370,
+      "complete_payload_in_read_state": true,
+      "short_memory_retained": true
+    }
+  },
+  "installed_source_identity": {
+    "browser_use/tools/service.py": {
+      "sha256": "25746ddfe719c0a800b2b4fcc399aea4fc8be20c48b04ab4118841fd5419eb73",
+      "matches_installed_wheel_record": true
+    },
+    "browser_use/agent/message_manager/service.py": {
+      "sha256": "b9a9ccc6e0c039f18d18ca20477022aa450286576c9c57adbc7ddebf1aa08a56",
+      "matches_installed_wheel_record": true
+    }
+  },
+  "limitations": "Does not repair DOM price formatting, native 60k context cap, semantic correctness or lost replies. Patch must also be applied to strong baselines before positive attribution."
+}

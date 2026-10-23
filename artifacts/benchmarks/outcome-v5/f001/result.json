@@ -1,0 +1,194 @@
+{
+  "arm": "simple-fixed",
+  "task": "amazon_browse_category",
+  "condition": "clean",
+  "phase": "exploratory",
+  "scope": "Browser Use 0.13.11 native agent with restricted tools; text-only desktop relay; not official paper harness score",
+  "claimed_success": true,
+  "evaluation": {
+    "score": 1.0,
+    "final_score": 1.0,
+    "success": true,
+    "reasoning": "Score: 1.000; success=True\nPassed 1/1 checks.\n  [PASS] Cheapest Electronics product added to cart\nAll negative checks passed (no penalties).\nFinal score: 1.000 | Success: True",
+    "checks": [
+      {
+        "desc": "Cheapest Electronics product added to cart",
+        "passed": true,
+        "error": null
+      }
+    ],
+    "negative_checks": [
+      {
+        "desc": "Agent did not add extra items to cart",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify product catalog",
+        "passed": true,
+        "penalty": 0.3,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify saved addresses",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify payment methods",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not place orders",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not write product reviews",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create return requests",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not apply or modify promo codes",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create Q&A posts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify gift cards",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create notifications",
+        "passed": true,
+        "penalty": 0.1,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify wishlist",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify account settings",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      }
+    ]
+  },
+  "error": null,
+  "agent_errors": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "action_units": 7,
+  "model_requests": 7,
+  "provider_usage": null,
+  "max_actions_per_step": 5,
+  "model_usage_note": "Counts mailbox requests, not all WorkBuddy internal generations/tool turns; desktop context and tokens unavailable",
+  "wall_seconds": 171.49604808399454,
+  "events": [
+    {
+      "action": {
+        "click": {
+          "index": 56
+        }
+      }
+    },
+    {
+      "action": {
+        "select_dropdown": {
+          "index": 1115,
+          "text": "Price: Low to High"
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1735
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 2380
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 2519
+        }
+      }
+    },
+    {
+      "action": {
+        "refresh_page": {}
+      }
+    },
+    {
+      "action": {
+        "finish": {
+          "success": true,
+          "text": "Browsed the Electronics category (47 results), sorted by Price: Low to High, and identified the cheapest item: USB-C Charging Cable 6ft by CableTech at $7.99 (all other listings were $15.00 or more). Opened its product page (In Stock), clicked Add to Cart, then opened the cart and reloaded the page. The reloaded cart independently shows one line item 'USB-C Charging Cable 6ft', price $7.99, Qty 1, Subtotal $7.99, with the cart badge at 1 item."
+        }
+      }
+    }
+  ]
+}

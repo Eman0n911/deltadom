@@ -1,0 +1,1311 @@
+{
+  "scope": "8 constructed real-browser HTTP cases x4 arms; not BreakingWeb or model/task scores",
+  "sources": {
+    "benchmarks/recovery_v8_network.py": "47a2d422e2e2b00bc34a1596c1de77f856668cb3108c2efd748fb5069073e200",
+    "python/deltadom/network_fence.py": "c7ef05452142284155f1620d0ff70c87a716ec684f9d9ef592ad2b5fb4a5ae2b",
+    "python/deltadom/recovery.py": "d625fb30374572287a0f892ca1c46da004210cccb3e977f37f654fd0f28bb057"
+  },
+  "summary": {
+    "native_playwright": {
+      "cells": 8,
+      "correct_effect_counts": 3,
+      "extra_effects": 5,
+      "missing_effects": 0,
+      "errors": 0
+    },
+    "resource_journal": {
+      "cells": 8,
+      "correct_effect_counts": 3,
+      "extra_effects": 5,
+      "missing_effects": 0,
+      "errors": 0
+    },
+    "memory_request_gate": {
+      "cells": 8,
+      "correct_effect_counts": 4,
+      "extra_effects": 3,
+      "missing_effects": 1,
+      "errors": 0
+    },
+    "durable_request_gate": {
+      "cells": 8,
+      "correct_effect_counts": 5,
+      "extra_effects": 2,
+      "missing_effects": 1,
+      "errors": 0
+    }
+  },
+  "rows": [
+    {
+      "case": "single",
+      "arm": "native_playwright",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 1,
+      "extra_effects": 0,
+      "missing_effects": 0,
+      "correct_effect_count": true,
+      "decisions": [],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "single-native_playwright",
+          "path": "/effect?case=single&sid=single-native_playwright",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "single",
+      "arm": "resource_journal",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 1,
+      "extra_effects": 0,
+      "missing_effects": 0,
+      "correct_effect_count": true,
+      "decisions": [],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "single-resource_journal",
+          "path": "/effect?case=single&sid=single-resource_journal",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "single",
+      "arm": "memory_request_gate",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 1,
+      "extra_effects": 0,
+      "missing_effects": 0,
+      "correct_effect_count": true,
+      "decisions": [
+        {
+          "admitted": true,
+          "signature": "befe405337203f712f58fbe06776996a0cfa749fd327cc43f26ba2eb2112fac4",
+          "method": "POST"
+        }
+      ],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "single-memory_request_gate",
+          "path": "/effect?case=single&sid=single-memory_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "single",
+      "arm": "durable_request_gate",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 1,
+      "extra_effects": 0,
+      "missing_effects": 0,
+      "correct_effect_count": true,
+      "decisions": [
+        {
+          "admitted": true,
+          "signature": "a627fd2411068873e0d3930a4b6c22e82c97dbc1a3299b08f68a2be7b7684ddc",
+          "method": "POST"
+        }
+      ],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "single-durable_request_gate",
+          "path": "/effect?case=single&sid=single-durable_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "parallel_identical",
+      "arm": "native_playwright",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 1,
+      "missing_effects": 0,
+      "correct_effect_count": false,
+      "decisions": [],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          },
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "parallel_identical-native_playwright",
+          "path": "/effect?case=parallel_identical&sid=parallel_identical-native_playwright",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "parallel_identical-native_playwright",
+          "path": "/effect?case=parallel_identical&sid=parallel_identical-native_playwright",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "parallel_identical",
+      "arm": "resource_journal",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 1,
+      "missing_effects": 0,
+      "correct_effect_count": false,
+      "decisions": [],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          },
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "parallel_identical-resource_journal",
+          "path": "/effect?case=parallel_identical&sid=parallel_identical-resource_journal",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "parallel_identical-resource_journal",
+          "path": "/effect?case=parallel_identical&sid=parallel_identical-resource_journal",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "parallel_identical",
+      "arm": "memory_request_gate",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 1,
+      "extra_effects": 0,
+      "missing_effects": 0,
+      "correct_effect_count": true,
+      "decisions": [
+        {
+          "admitted": true,
+          "signature": "65d4d5b80fd1e0ea8695b837efe968ea6a80854e5007207c4b36bd91ac642395",
+          "method": "POST"
+        },
+        {
+          "admitted": false,
+          "signature": "65d4d5b80fd1e0ea8695b837efe968ea6a80854e5007207c4b36bd91ac642395",
+          "method": "POST"
+        }
+      ],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          },
+          {
+            "error": "TypeError"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "parallel_identical-memory_request_gate",
+          "path": "/effect?case=parallel_identical&sid=parallel_identical-memory_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "parallel_identical",
+      "arm": "durable_request_gate",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 1,
+      "extra_effects": 0,
+      "missing_effects": 0,
+      "correct_effect_count": true,
+      "decisions": [
+        {
+          "admitted": true,
+          "signature": "2195d85ec28e7f4e2f9ba888428ca82cfb2b91187552e482302fc14d6a7c9a14",
+          "method": "POST"
+        },
+        {
+          "admitted": false,
+          "signature": "2195d85ec28e7f4e2f9ba888428ca82cfb2b91187552e482302fc14d6a7c9a14",
+          "method": "POST"
+        }
+      ],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          },
+          {
+            "error": "TypeError"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "parallel_identical-durable_request_gate",
+          "path": "/effect?case=parallel_identical&sid=parallel_identical-durable_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "lost_reply_retry",
+      "arm": "native_playwright",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 1,
+      "missing_effects": 0,
+      "correct_effect_count": false,
+      "decisions": [],
+      "UI_results": [
+        [
+          {
+            "error": "TypeError"
+          },
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "lost_reply_retry-native_playwright",
+          "path": "/effect?case=lost_reply_retry&sid=lost_reply_retry-native_playwright",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "lost_reply_retry-native_playwright",
+          "path": "/effect?case=lost_reply_retry&sid=lost_reply_retry-native_playwright",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "lost_reply_retry",
+      "arm": "resource_journal",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 1,
+      "missing_effects": 0,
+      "correct_effect_count": false,
+      "decisions": [],
+      "UI_results": [
+        [
+          {
+            "error": "TypeError"
+          },
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "lost_reply_retry-resource_journal",
+          "path": "/effect?case=lost_reply_retry&sid=lost_reply_retry-resource_journal",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "lost_reply_retry-resource_journal",
+          "path": "/effect?case=lost_reply_retry&sid=lost_reply_retry-resource_journal",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "lost_reply_retry",
+      "arm": "memory_request_gate",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 1,
+      "extra_effects": 0,
+      "missing_effects": 0,
+      "correct_effect_count": true,
+      "decisions": [
+        {
+          "admitted": true,
+          "signature": "4235c688e210ebc1e85b30213125d051f1e8a55842b364ddcd2ec6d17875b06a",
+          "method": "POST"
+        },
+        {
+          "admitted": false,
+          "signature": "4235c688e210ebc1e85b30213125d051f1e8a55842b364ddcd2ec6d17875b06a",
+          "method": "POST"
+        }
+      ],
+      "UI_results": [
+        [
+          {
+            "error": "TypeError"
+          },
+          {
+            "error": "TypeError"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "lost_reply_retry-memory_request_gate",
+          "path": "/effect?case=lost_reply_retry&sid=lost_reply_retry-memory_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "lost_reply_retry",
+      "arm": "durable_request_gate",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 1,
+      "extra_effects": 0,
+      "missing_effects": 0,
+      "correct_effect_count": true,
+      "decisions": [
+        {
+          "admitted": true,
+          "signature": "efb4b367b10b11ef0001254dbbd2a9d6f398319d475a3a92547e2c3a84e03c0c",
+          "method": "POST"
+        },
+        {
+          "admitted": false,
+          "signature": "efb4b367b10b11ef0001254dbbd2a9d6f398319d475a3a92547e2c3a84e03c0c",
+          "method": "POST"
+        }
+      ],
+      "UI_results": [
+        [
+          {
+            "error": "TypeError"
+          },
+          {
+            "error": "TypeError"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "lost_reply_retry-durable_request_gate",
+          "path": "/effect?case=lost_reply_retry&sid=lost_reply_retry-durable_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "browser_restart",
+      "arm": "native_playwright",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 1,
+      "missing_effects": 0,
+      "correct_effect_count": false,
+      "decisions": [],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ],
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "browser_restart-native_playwright",
+          "path": "/effect?case=browser_restart&sid=browser_restart-native_playwright",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "browser_restart-native_playwright",
+          "path": "/effect?case=browser_restart&sid=browser_restart-native_playwright",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "browser_restart",
+      "arm": "resource_journal",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 1,
+      "missing_effects": 0,
+      "correct_effect_count": false,
+      "decisions": [],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ],
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "browser_restart-resource_journal",
+          "path": "/effect?case=browser_restart&sid=browser_restart-resource_journal",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "browser_restart-resource_journal",
+          "path": "/effect?case=browser_restart&sid=browser_restart-resource_journal",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "browser_restart",
+      "arm": "memory_request_gate",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 1,
+      "missing_effects": 0,
+      "correct_effect_count": false,
+      "decisions": [
+        {
+          "admitted": true,
+          "signature": "a4ea54f04e7d266ba311c5cd72e3558a9d88c4ece9ece31d3475696dbd0798fe",
+          "method": "POST"
+        },
+        {
+          "admitted": true,
+          "signature": "a4ea54f04e7d266ba311c5cd72e3558a9d88c4ece9ece31d3475696dbd0798fe",
+          "method": "POST"
+        }
+      ],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ],
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "browser_restart-memory_request_gate",
+          "path": "/effect?case=browser_restart&sid=browser_restart-memory_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "browser_restart-memory_request_gate",
+          "path": "/effect?case=browser_restart&sid=browser_restart-memory_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "browser_restart",
+      "arm": "durable_request_gate",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 1,
+      "extra_effects": 0,
+      "missing_effects": 0,
+      "correct_effect_count": true,
+      "decisions": [
+        {
+          "admitted": true,
+          "signature": "08d66c7098633dd3226d884ebfa0268d7cd45e22cfa1fb24164dce221cce61f6",
+          "method": "POST"
+        },
+        {
+          "admitted": false,
+          "signature": "08d66c7098633dd3226d884ebfa0268d7cd45e22cfa1fb24164dce221cce61f6",
+          "method": "POST"
+        }
+      ],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ],
+        [
+          {
+            "error": "TypeError"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "browser_restart-durable_request_gate",
+          "path": "/effect?case=browser_restart&sid=browser_restart-durable_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "different_bodies",
+      "arm": "native_playwright",
+      "desired_effects": 2,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 0,
+      "missing_effects": 0,
+      "correct_effect_count": true,
+      "decisions": [],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          },
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "different_bodies-native_playwright",
+          "path": "/effect?case=different_bodies&sid=different_bodies-native_playwright",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "different_bodies-native_playwright",
+          "path": "/effect?case=different_bodies&sid=different_bodies-native_playwright",
+          "body": "{\"item\":\"B\"}",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "different_bodies",
+      "arm": "resource_journal",
+      "desired_effects": 2,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 0,
+      "missing_effects": 0,
+      "correct_effect_count": true,
+      "decisions": [],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          },
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "different_bodies-resource_journal",
+          "path": "/effect?case=different_bodies&sid=different_bodies-resource_journal",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "different_bodies-resource_journal",
+          "path": "/effect?case=different_bodies&sid=different_bodies-resource_journal",
+          "body": "{\"item\":\"B\"}",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "different_bodies",
+      "arm": "memory_request_gate",
+      "desired_effects": 2,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 0,
+      "missing_effects": 0,
+      "correct_effect_count": true,
+      "decisions": [
+        {
+          "admitted": true,
+          "signature": "8d5b91afb58482e4b2e065a76956fa8176c4f75e8dc8d28c121dfeec7523d9bf",
+          "method": "POST"
+        },
+        {
+          "admitted": true,
+          "signature": "bc4c4ff2654ebf92c33b77d68b75d9abefdfb4fa3a347fc19720170c517b5328",
+          "method": "POST"
+        }
+      ],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          },
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "different_bodies-memory_request_gate",
+          "path": "/effect?case=different_bodies&sid=different_bodies-memory_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "different_bodies-memory_request_gate",
+          "path": "/effect?case=different_bodies&sid=different_bodies-memory_request_gate",
+          "body": "{\"item\":\"B\"}",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "different_bodies",
+      "arm": "durable_request_gate",
+      "desired_effects": 2,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 0,
+      "missing_effects": 0,
+      "correct_effect_count": true,
+      "decisions": [
+        {
+          "admitted": true,
+          "signature": "a40c54fbf50dbc3a6b32d00b4a4afb51d39c1847e4ecf07184bf40f7c1a1063d",
+          "method": "POST"
+        },
+        {
+          "admitted": true,
+          "signature": "956061e6d47ff30196679e7ad81a2b5b6cae04f5d6a103635c967bd5751191e6",
+          "method": "POST"
+        }
+      ],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          },
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "different_bodies-durable_request_gate",
+          "path": "/effect?case=different_bodies&sid=different_bodies-durable_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "different_bodies-durable_request_gate",
+          "path": "/effect?case=different_bodies&sid=different_bodies-durable_request_gate",
+          "body": "{\"item\":\"B\"}",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "equivalent_different_bytes",
+      "arm": "native_playwright",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 1,
+      "missing_effects": 0,
+      "correct_effect_count": false,
+      "decisions": [],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          },
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "equivalent_different_bytes-native_playwright",
+          "path": "/effect?case=equivalent_different_bytes&sid=equivalent_different_bytes-native_playwright",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "equivalent_different_bytes-native_playwright",
+          "path": "/effect?case=equivalent_different_bytes&sid=equivalent_different_bytes-native_playwright",
+          "body": "{ \"item\" : \"A\" }",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "equivalent_different_bytes",
+      "arm": "resource_journal",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 1,
+      "missing_effects": 0,
+      "correct_effect_count": false,
+      "decisions": [],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          },
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "equivalent_different_bytes-resource_journal",
+          "path": "/effect?case=equivalent_different_bytes&sid=equivalent_different_bytes-resource_journal",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "equivalent_different_bytes-resource_journal",
+          "path": "/effect?case=equivalent_different_bytes&sid=equivalent_different_bytes-resource_journal",
+          "body": "{ \"item\" : \"A\" }",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "equivalent_different_bytes",
+      "arm": "memory_request_gate",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 1,
+      "missing_effects": 0,
+      "correct_effect_count": false,
+      "decisions": [
+        {
+          "admitted": true,
+          "signature": "efd90a5f03bbc3a237682c535d4dc85ac558f77cb80d8ffb1976a2f1703dbc09",
+          "method": "POST"
+        },
+        {
+          "admitted": true,
+          "signature": "6c274d8397c4616762941b235f03cf899898ac7d473ca9a49e8a469eab6249dd",
+          "method": "POST"
+        }
+      ],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          },
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "equivalent_different_bytes-memory_request_gate",
+          "path": "/effect?case=equivalent_different_bytes&sid=equivalent_different_bytes-memory_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "equivalent_different_bytes-memory_request_gate",
+          "path": "/effect?case=equivalent_different_bytes&sid=equivalent_different_bytes-memory_request_gate",
+          "body": "{ \"item\" : \"A\" }",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "equivalent_different_bytes",
+      "arm": "durable_request_gate",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 1,
+      "missing_effects": 0,
+      "correct_effect_count": false,
+      "decisions": [
+        {
+          "admitted": true,
+          "signature": "a6e24d02481ec8b6afd5c97d531317bffb37d93c169184230f7ef57aa3046b3a",
+          "method": "POST"
+        },
+        {
+          "admitted": true,
+          "signature": "15bf3255c321538f457d5dfea91a94c1274fd6ecee013bdb22c4bdc4c1b8da68",
+          "method": "POST"
+        }
+      ],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          },
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "equivalent_different_bytes-durable_request_gate",
+          "path": "/effect?case=equivalent_different_bytes&sid=equivalent_different_bytes-durable_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "equivalent_different_bytes-durable_request_gate",
+          "path": "/effect?case=equivalent_different_bytes&sid=equivalent_different_bytes-durable_request_gate",
+          "body": "{ \"item\" : \"A\" }",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "legitimate_repeat",
+      "arm": "native_playwright",
+      "desired_effects": 2,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 0,
+      "missing_effects": 0,
+      "correct_effect_count": true,
+      "decisions": [],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          },
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "legitimate_repeat-native_playwright",
+          "path": "/effect?case=legitimate_repeat&sid=legitimate_repeat-native_playwright",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "legitimate_repeat-native_playwright",
+          "path": "/effect?case=legitimate_repeat&sid=legitimate_repeat-native_playwright",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "legitimate_repeat",
+      "arm": "resource_journal",
+      "desired_effects": 2,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 0,
+      "missing_effects": 0,
+      "correct_effect_count": true,
+      "decisions": [],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          },
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "legitimate_repeat-resource_journal",
+          "path": "/effect?case=legitimate_repeat&sid=legitimate_repeat-resource_journal",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "legitimate_repeat-resource_journal",
+          "path": "/effect?case=legitimate_repeat&sid=legitimate_repeat-resource_journal",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "legitimate_repeat",
+      "arm": "memory_request_gate",
+      "desired_effects": 2,
+      "actor_callbacks": 1,
+      "server_effects": 1,
+      "extra_effects": 0,
+      "missing_effects": 1,
+      "correct_effect_count": false,
+      "decisions": [
+        {
+          "admitted": true,
+          "signature": "881651eacd73149951ba5879147b45675304f26bcf88d971497b8c3b26049316",
+          "method": "POST"
+        },
+        {
+          "admitted": false,
+          "signature": "881651eacd73149951ba5879147b45675304f26bcf88d971497b8c3b26049316",
+          "method": "POST"
+        }
+      ],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          },
+          {
+            "error": "TypeError"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "legitimate_repeat-memory_request_gate",
+          "path": "/effect?case=legitimate_repeat&sid=legitimate_repeat-memory_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "legitimate_repeat",
+      "arm": "durable_request_gate",
+      "desired_effects": 2,
+      "actor_callbacks": 1,
+      "server_effects": 1,
+      "extra_effects": 0,
+      "missing_effects": 1,
+      "correct_effect_count": false,
+      "decisions": [
+        {
+          "admitted": true,
+          "signature": "58e9f71718ceb157adfe0dc5d2746c567004c41fe2b0429847944a2e6bd94f2f",
+          "method": "POST"
+        },
+        {
+          "admitted": false,
+          "signature": "58e9f71718ceb157adfe0dc5d2746c567004c41fe2b0429847944a2e6bd94f2f",
+          "method": "POST"
+        }
+      ],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          },
+          {
+            "error": "TypeError"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "legitimate_repeat-durable_request_gate",
+          "path": "/effect?case=legitimate_repeat&sid=legitimate_repeat-durable_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "redirect_307",
+      "arm": "native_playwright",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 1,
+      "missing_effects": 0,
+      "correct_effect_count": false,
+      "decisions": [],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "redirect_307-native_playwright",
+          "path": "/effect?case=redirect_307&sid=redirect_307-native_playwright",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "redirect_307-native_playwright",
+          "path": "/redirect-target?case=redirect_307&sid=redirect_307-native_playwright",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "redirect_307",
+      "arm": "resource_journal",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 1,
+      "missing_effects": 0,
+      "correct_effect_count": false,
+      "decisions": [],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "redirect_307-resource_journal",
+          "path": "/effect?case=redirect_307&sid=redirect_307-resource_journal",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "redirect_307-resource_journal",
+          "path": "/redirect-target?case=redirect_307&sid=redirect_307-resource_journal",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "redirect_307",
+      "arm": "memory_request_gate",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 1,
+      "missing_effects": 0,
+      "correct_effect_count": false,
+      "decisions": [
+        {
+          "admitted": true,
+          "signature": "3f321694ed0b3d97c2bfd8994db1699aabe40e74860a5adc76034963bd332fc6",
+          "method": "POST"
+        }
+      ],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "redirect_307-memory_request_gate",
+          "path": "/effect?case=redirect_307&sid=redirect_307-memory_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "redirect_307-memory_request_gate",
+          "path": "/redirect-target?case=redirect_307&sid=redirect_307-memory_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "case": "redirect_307",
+      "arm": "durable_request_gate",
+      "desired_effects": 1,
+      "actor_callbacks": 1,
+      "server_effects": 2,
+      "extra_effects": 1,
+      "missing_effects": 0,
+      "correct_effect_count": false,
+      "decisions": [
+        {
+          "admitted": true,
+          "signature": "fe1bfa04ca033680d470baec7947a87510e396bc79763b66d1489a3d294e0500",
+          "method": "POST"
+        }
+      ],
+      "UI_results": [
+        [
+          {
+            "status": 200,
+            "text": "{\"ack\":true}"
+          }
+        ]
+      ],
+      "server_events": [
+        {
+          "sid": "redirect_307-durable_request_gate",
+          "path": "/effect?case=redirect_307&sid=redirect_307-durable_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 1
+        },
+        {
+          "sid": "redirect_307-durable_request_gate",
+          "path": "/redirect-target?case=redirect_307&sid=redirect_307-durable_request_gate",
+          "body": "{\"item\":\"A\"}",
+          "effect_number": 2
+        }
+      ],
+      "status": "completed"
+    }
+  ]
+}

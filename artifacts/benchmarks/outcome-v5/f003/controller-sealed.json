@@ -1,0 +1,6 @@
+{
+  "status": "partial_channel_block",
+  "responses_received": 4,
+  "claimed_success": null,
+  "official_evaluation": "not_run_due_channel_limit"
+}

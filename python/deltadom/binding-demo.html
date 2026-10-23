@@ -1,0 +1,12 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>DeltaDOM · 点击身份检查</title>
+<style>body{font:16px system-ui;margin:48px auto;max-width:760px;color:#24292f;background:#fff}h1{font-size:25px}article{display:flex;align-items:center;justify-content:space-between;border:1px solid #d0d7de;padding:20px;margin:12px 0;border-radius:6px}a{color:#0969da}button{font:inherit;padding:8px 18px;border:1px solid #d0d7de;border-radius:6px;background:#f6f8fa}p{line-height:1.7}#status{padding:16px;background:#f6f8fa;min-height:24px}small{color:#57606a}</style>
+<h1>点击前，记录还是原来那一条吗？</h1><p id="explanation"></p>
+<main><article><a href="/A">记录 A</a><button>标记完成</button></article>
+<article><a href="/B">记录 B</a><button>标记完成</button></article></main>
+<p id="status">等待真实浏览器输入……</p><small>本地演示，无模型调用。结果只表示输入是否发出，不保证服务器业务结果。</small>
+<script>
+window.effects=[];window.mode='normal';
+window.setMode=mode=>{window.mode=mode;document.querySelector('#explanation').textContent={normal:'正常页面：对记录 A 执行一次点击。',locator_race:'普通定位器：找到 A 后，页面在鼠标经过时把这一行换成 Z。',guard_race:'同样的变化：在输入事件传播时重新核对，发现已变成 Z 就阻止点击。',reorder:'列表顺序变化：按照记录身份找到 A，而不是使用原来的位置。'}[mode]};
+document.querySelector('button').addEventListener('pointermove',e=>{if(!window.mode.endsWith('race'))return;const a=e.target.closest('article').querySelector('a');a.href='/Z';a.textContent='记录 Z';},{once:true});
+document.addEventListener('click',e=>{if(e.target.tagName==='BUTTON')window.effects.push(e.target.closest('article').querySelector('a').getAttribute('href'))});
+</script></html>

@@ -1,0 +1,78 @@
+{
+  "upstream": "052f0f0c6cfcdc9efb86eb0183556fcc4fb3606e",
+  "seed": 42,
+  "selection": "minimum SHA256(deltadom-outcome-v1/task_id/variant) per environment, all variants eligible; previously inspected gmail_star_email excluded",
+  "dev": [
+    {
+      "env": "gmail",
+      "task_id": "gmail_star_email",
+      "variant": "gmail_star_email__star_retry.yaml"
+    }
+  ],
+  "confirmation": [
+    {
+      "env": "amazon",
+      "task_id": "amazon_browse_category",
+      "variant": "amazon_browse_category__cheapest_decoy.yaml"
+    },
+    {
+      "env": "booking",
+      "task_id": "booking_frontier_account_overhaul",
+      "variant": "booking_frontier_account_overhaul__account_retry_v2.yaml"
+    },
+    {
+      "env": "gmail",
+      "task_id": "gmail_escalation_chain",
+      "variant": "gmail_escalation_chain__state_tracking.yaml"
+    },
+    {
+      "env": "lms",
+      "task_id": "lms_complete_mixed_module",
+      "variant": "lms_complete_mixed_module__module_ordering_shift_v1.yaml"
+    },
+    {
+      "env": "patient_portal",
+      "task_id": "pp_transfer_prescription",
+      "variant": "pp_transfer_prescription__pharmacy_shadow_v1.yaml"
+    },
+    {
+      "env": "reddit",
+      "task_id": "reddit_community_builder",
+      "variant": "reddit_community_builder__notification_shadow_v2.yaml"
+    },
+    {
+      "env": "robinhood",
+      "task_id": "rh_live_multi_stock_limits",
+      "variant": "rh_live_multi_stock_limits__planning_v1.yaml"
+    }
+  ],
+  "conditions": [
+    "clean",
+    "intervention"
+  ],
+  "model_channel": "WorkBuddy Deepseek-V4.1-Flash; ChatGPT Desktop if available",
+  "selection_does_not_use": [
+    "outcomes",
+    "difficulty",
+    "primitive",
+    "candidate support"
+  ],
+  "status": "frozen before candidate implementation",
+  "version": "v6",
+  "hypothesis": "Attach a fresh UI read to the existing native action only after observed HTTP writes complete; avoid new tools, contracts and model-directed verification detours.",
+  "arms": [
+    "simple-fixed",
+    "macro-simple",
+    "auto-control",
+    "auto-signal"
+  ],
+  "strong_control": "auto-control attaches the same read after every non-link click; macro-simple has the same sidecar acquisition and native batching. No private response content, endpoint-specific rules or retry loop.",
+  "bounds": {
+    "native_actions_per_step": 5,
+    "primitive_action_units": 40,
+    "max_model_steps": 40,
+    "automatic_write_retries": 0
+  },
+  "criterion": "Equal or better task completion and false-success behavior at equal primitive budget; fewer model requests is secondary. Compare against the strongest working control; do not credit an inactive mechanism.",
+  "run_order": "retain original seven tasks and both conditions in order; development includes prior Gmail and Amazon cases, not held-out. No task replacements; every unexecuted cell remains not_run."
+}

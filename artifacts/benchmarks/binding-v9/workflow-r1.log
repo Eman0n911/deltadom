@@ -1,0 +1,457 @@
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 4 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A (in Record AMark complete)' -> main > article:nth-of-type(1) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A (in Record AMark complete)'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 2 total button elements, filtering by text 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A (in Record AMark complete)
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A (in Record AMark complete)' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+unchanged workflow_semantic True False False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 4 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A (in Record AMark complete)' -> main > article:nth-of-type(2) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A (in Record AMark complete)'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(2) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 2 total button elements, filtering by text 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(2) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A (in Record AMark complete)
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A (in Record AMark complete)' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+reorder workflow_semantic True False False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 4 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A (in Record AMark complete)' -> main > article:nth-of-type(1) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A (in Record AMark complete)'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 2 total button elements, filtering by text 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A (in Record AMark complete)
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A (in Record AMark complete)' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+remount workflow_semantic True False False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 4 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A (in Record AMark complete)' -> main > article:nth-of-type(2) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A (in Record AMark complete)'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(2) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 2 total button elements, filtering by text 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(2) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A (in Record AMark complete)
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A (in Record AMark complete)' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+wrapper_change workflow_semantic False True False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 6 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A (in Record AMark complete)' -> main > article:nth-of-type(2) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A (in Record AMark complete)'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(2) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 3 total button elements, filtering by text 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 2: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(2) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A (in Record AMark complete)
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A (in Record AMark complete)' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+insert_before workflow_semantic True False False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 2 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using semantic mapping: 'Record A (in Record AMark complete)' -> button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A (in Record AMark complete)'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 1 total button elements, filtering by text 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A (in Record AMark complete)
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A (in Record AMark complete)' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+target_removed workflow_semantic False True False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 6 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A (in Record AMark complete)' -> main > article:nth-of-type(1) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A (in Record AMark complete)'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 3 total button elements, filtering by text 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 2: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A (in Record AMark complete)
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A (in Record AMark complete)' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+duplicate_identity workflow_semantic False True False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 4 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A (in Record AMark complete)' -> main > article:nth-of-type(1) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A (in Record AMark complete)'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 2 total button elements, filtering by text 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A (in Record AMark complete)
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A (in Record AMark complete)' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+name_changed workflow_semantic False True False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 4 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A (in Record AMark complete)' -> main > article:nth-of-type(1) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A (in Record AMark complete)'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 2 total button elements, filtering by text 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A (in Record AMark complete)
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A (in Record AMark complete)' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+unrelated_timer workflow_semantic True False False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 4 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A (in Record AMark complete)' -> main > article:nth-of-type(1) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A (in Record AMark complete)'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 2 total button elements, filtering by text 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A (in Record AMark complete)
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A (in Record AMark complete)' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+url_changed workflow_semantic False True False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 1 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using semantic mapping: 'Continue' -> button
+INFO     [workflow_use.workflow.semantic_executor] ✅ Clicked element by text (exact match): 'Continue' -> BUTTON: 'Continue'
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Continue
+INFO     [workflow_use.workflow.semantic_executor] Verification: After 'Continue' click - URL: http://replay.test/list, Title: replay.test/list
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+global_unique workflow_semantic True False False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 2 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Continue' -> main > button:nth-of-type(1)
+INFO     [workflow_use.workflow.semantic_executor] ✅ Clicked element by text (exact match): 'Continue' -> BUTTON: 'Continue'
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Continue
+INFO     [workflow_use.workflow.semantic_executor] Verification: After 'Continue' click - URL: http://replay.test/list, Title: replay.test/list
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+global_duplicate workflow_semantic False True False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 2 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A' -> main > article:nth-of-type(2) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(2) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 2 total button elements, filtering by text 'Record A'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(2) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_reorder workflow_semantic True False False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 4 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A (in Record AMark complete)' -> main > article:nth-of-type(1) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A (in Record AMark complete)'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 2 total button elements, filtering by text 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A (in Record AMark complete)
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A (in Record AMark complete)' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+invisible_handler workflow_semantic False True False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 5 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A (in Record AMark complete$10)' -> main > article:nth-of-type(1) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A (in Record AMark complete$10)'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A (in Record AMark complete$10)'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 2 total button elements, filtering by text 'Record A (in Record AMark complete$10)'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A (in Record AMark complete$10)'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A (in Record AMark complete$10)
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A (in Record AMark complete$10)' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+linked_price_change workflow_semantic True False False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 4 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A (in Record AMark completePending)' -> main > article:nth-of-type(1) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A (in Record AMark completePending)'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A (in Record AMark completePending)'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 2 total button elements, filtering by text 'Record A (in Record AMark completePending)'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A (in Record AMark completePending)'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A (in Record AMark completePending)
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A (in Record AMark completePending)' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+linked_status_change workflow_semantic True False False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 4 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A (in Record AMark complete)' -> main > article:nth-of-type(1) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A (in Record AMark complete)'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 2 total button elements, filtering by text 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A (in Record AMark complete)
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A (in Record AMark complete)' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+name_prefix_change workflow_semantic False True False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 2 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A' -> main > article:nth-of-type(1) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 2 total button elements, filtering by text 'Record A'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_name_change workflow_semantic False True False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 3 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A' -> main > article:nth-of-type(1) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 3 total button elements, filtering by text 'Record A'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 2: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_duplicate workflow_semantic False True False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 4 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A' -> main > article:nth-of-type(1) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 2 total button elements, filtering by text 'Record A'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+no_link_price_change workflow_semantic True False False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 4 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A (in Record AMark complete)' -> main > article:nth-of-type(1) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A (in Record AMark complete)'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 2 total button elements, filtering by text 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A (in Record AMark complete)
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A (in Record AMark complete)' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+same_name_distinct_link workflow_semantic False True False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 6 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A' -> main > article:nth-of-type(2) > button
+INFO     [workflow_use.workflow.semantic_executor] ✅ Clicked element by text (exact match): 'Record A' -> A: 'Record A'
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+shared_owner_reorder workflow_semantic False False True
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 6 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A' -> main > article:nth-of-type(1) > button
+INFO     [workflow_use.workflow.semantic_executor] ✅ Clicked element by text (exact match): 'Record A' -> A: 'Record A'
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+record_changed_owner_stays workflow_semantic False False False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 3 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A (in Record AMark complete)' -> main > article:nth-of-type(2) > button
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A (in Record AMark complete)'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(2) > button
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 1 total button elements, filtering by text 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(2) > button
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A (in Record AMark complete)
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A (in Record AMark complete)' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+control_removed workflow_semantic False True False
+INFO     [workflow_use.workflow.semantic_executor] Refreshed semantic mapping with 5 elements
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: Step attributes: ['construct', 'container_hint', 'copy', 'cssSelector', 'description', 'dict', 'elementHash', 'elementTag', 'expected_outcome', 'from_orm', 'interaction_type', 'json', 'model_computed_fields', 'model_config', 'model_construct', 'model_copy', 'model_dump', 'model_dump_json', 'model_extra', 'model_fields', 'model_fields_set', 'model_json_schema', 'model_parametrized_name', 'model_post_init', 'model_rebuild', 'model_validate', 'model_validate_json', 'model_validate_strings', 'output', 'parse_file', 'parse_obj', 'parse_raw', 'position_hint', 'schema', 'schema_json', 'selectorStrategies', 'target_text', 'type', 'update_forward_refs', 'validate', 'verification_checks', 'wait_time', 'xpath']
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: hasattr selectorStrategies: True
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies value: None
+INFO     [workflow_use.workflow.semantic_executor] 🔍 DEBUG: selectorStrategies truthy: False
+INFO     [workflow_use.workflow.semantic_executor] Using hierarchical selector: 'Record A (in Record AMark complete)' -> main > article:nth-of-type(1) > button:nth-of-type(1)
+WARNING  [workflow_use.workflow.semantic_executor] ❌ Could not find element by text: 'Record A (in Record AMark complete)'
+WARNING  [workflow_use.workflow.semantic_executor] ⚠️ Could not find element by text: 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] 🔄 Falling back to selector strategy: main > article:nth-of-type(1) > button:nth-of-type(1)
+INFO     [workflow_use.workflow.semantic_executor] 🔍 Found 3 total button elements, filtering by text 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Button 0: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 1: 'Mark complete'...
+INFO     [workflow_use.workflow.semantic_executor] Button 2: 'Mark complete'...
+WARNING  [workflow_use.workflow.semantic_executor] ❌ No buttons found with text containing 'Record A (in Record AMark complete)'
+INFO     [workflow_use.workflow.semantic_executor] Successfully clicked button using original selector: main > article:nth-of-type(1) > button:nth-of-type(1)
+INFO     [workflow_use.workflow.semantic_executor] 🖱️ Clicked element: Record A (in Record AMark complete)
+INFO     [workflow_use.workflow.semantic_executor] Verification: Button 'Record A (in Record AMark complete)' still exists and clickable: visible=True, enabled=True
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+control_duplicated workflow_semantic False True False
+{
+  "workflow_semantic": {
+    "correct_action": 10,
+    "wrong_action": 13,
+    "false_refusal": 1,
+    "justified_refusal": 1
+  }
+}

@@ -1,0 +1,1563 @@
+{
+  "upstream": "052f0f0c6cfcdc9efb86eb0183556fcc4fb3606e",
+  "seed": 42,
+  "cells": [
+    {
+      "task": {
+        "env": "amazon",
+        "task_id": "amazon_browse_category",
+        "variant": "amazon_browse_category__cheapest_decoy.yaml"
+      },
+      "condition": "clean",
+      "buttons": [
+        {
+          "xpath": "html/body/div[1]/div/header/div[1]/form/button",
+          "name": "Submit search",
+          "native_index": 204
+        },
+        {
+          "xpath": "html/body/div[1]/div/header/div[1]/nav/div/button",
+          "name": "Hello, Jordan Account & Lists ▾",
+          "native_index": 47
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "task": {
+        "env": "amazon",
+        "task_id": "amazon_browse_category",
+        "variant": "amazon_browse_category__cheapest_decoy.yaml"
+      },
+      "condition": "intervention",
+      "buttons": [
+        {
+          "xpath": "html/body/div[1]/div/header/div[1]/form/button",
+          "name": "Submit search",
+          "native_index": 203
+        },
+        {
+          "xpath": "html/body/div[1]/div/header/div[1]/nav/div/button",
+          "name": "Hello, Jordan Account & Lists ▾",
+          "native_index": 46
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "task": {
+        "env": "booking",
+        "task_id": "booking_frontier_account_overhaul",
+        "variant": "booking_frontier_account_overhaul__account_retry_v2.yaml"
+      },
+      "condition": "clean",
+      "buttons": [
+        {
+          "xpath": "html/body/div[1]/div/main/div/section[1]/div/form/button",
+          "name": "Search",
+          "native_index": 9
+        },
+        {
+          "xpath": "html/body/div[1]/div/main/div/section[3]/div[1]/button",
+          "name": "Clear all",
+          "native_index": 30
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "task": {
+        "env": "booking",
+        "task_id": "booking_frontier_account_overhaul",
+        "variant": "booking_frontier_account_overhaul__account_retry_v2.yaml"
+      },
+      "condition": "intervention",
+      "buttons": [
+        {
+          "xpath": "html/body/div[1]/div/main/div/section[1]/div/form/button",
+          "name": "Search",
+          "native_index": 9
+        },
+        {
+          "xpath": "html/body/div[1]/div/main/div/section[3]/div[1]/button",
+          "name": "Clear all",
+          "native_index": 31
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "task": {
+        "env": "gmail",
+        "task_id": "gmail_escalation_chain",
+        "variant": "gmail_escalation_chain__state_tracking.yaml"
+      },
+      "condition": "clean",
+      "buttons": [
+        {
+          "xpath": "html/body/div[1]/div/header/div[2]/form/button",
+          "name": "Run search",
+          "native_index": 142
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/nav/button",
+          "name": "Compose a new message",
+          "native_index": 12
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/div/div[1]/div/button[1]",
+          "name": "Primary",
+          "native_index": 21
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/div/div[1]/div/button[2]",
+          "name": "Promotions",
+          "native_index": 22
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/div/div[1]/div/button[3]",
+          "name": "Updates",
+          "native_index": 23
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/div/div[1]/div/button[4]",
+          "name": "All Mail",
+          "native_index": 24
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/div/div[1]/button",
+          "name": "Mark all as read",
+          "native_index": 25
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/div/div[2]/button[1]",
+          "name": "Previous page",
+          "native_index": 26
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/div/div[2]/button[2]",
+          "name": "Next page",
+          "native_index": 27
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[1]/button",
+          "name": "Star Re: CRITICAL: Payment Gateway Timeout - Order #88421",
+          "native_index": 29
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[2]/button",
+          "name": "Star CRITICAL: Payment Gateway Timeout - Order #88421",
+          "native_index": 34
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[3]/button",
+          "name": "Star Re: CRITICAL: Payment Gateway Timeout - Order #88419",
+          "native_index": 39
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[4]/button",
+          "name": "Star Re: CRITICAL: Payment Gateway Timeout - Order #88419",
+          "native_index": 44
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[5]/button",
+          "name": "Star CRITICAL: Payment Gateway Timeout - Order #88419",
+          "native_index": 49
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[6]/button",
+          "name": "Star Quarterly metrics recap",
+          "native_index": 54
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[7]/button",
+          "name": "Star Follow-up on venue estimate",
+          "native_index": 58
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[8]/button",
+          "name": "Star Reminder on document review timing",
+          "native_index": 63
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[9]/button",
+          "name": "Star Quarterly metrics recap",
+          "native_index": 68
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[10]/button",
+          "name": "Star Quarterly metrics recap",
+          "native_index": 73
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[11]/button",
+          "name": "Star Customer feedback from pilot cohort",
+          "native_index": 78
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[12]/button",
+          "name": "Star Agenda draft for Monday check-in",
+          "native_index": 83
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[13]/button",
+          "name": "Star Agenda draft for Monday check-in",
+          "native_index": 88
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[14]/button",
+          "name": "Star Notes from the partner sync",
+          "native_index": 92
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[15]/button",
+          "name": "Star Notes from the partner sync",
+          "native_index": 97
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[16]/button",
+          "name": "Star Customer feedback from pilot cohort",
+          "native_index": 102
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "task": {
+        "env": "gmail",
+        "task_id": "gmail_escalation_chain",
+        "variant": "gmail_escalation_chain__state_tracking.yaml"
+      },
+      "condition": "intervention",
+      "buttons": [
+        {
+          "xpath": "html/body/div[1]/div/header/div[2]/form/button",
+          "name": "Run search",
+          "native_index": 140
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/nav/button",
+          "name": "Compose a new message",
+          "native_index": 8
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/div/div[1]/div/button[1]",
+          "name": "Primary",
+          "native_index": 18
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/div/div[1]/div/button[2]",
+          "name": "Promotions",
+          "native_index": 19
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/div/div[1]/div/button[3]",
+          "name": "Updates",
+          "native_index": 20
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/div/div[1]/div/button[4]",
+          "name": "All Mail",
+          "native_index": 21
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/div/div[1]/button",
+          "name": "Mark all as read",
+          "native_index": 22
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/div/div[2]/button[1]",
+          "name": "Previous page",
+          "native_index": 23
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/div/div[2]/button[2]",
+          "name": "Next page",
+          "native_index": 24
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[1]/button",
+          "name": "Star Issue Priority Matrix",
+          "native_index": 26
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[2]/button",
+          "name": "Star Escalation Protocol Update",
+          "native_index": 31
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[3]/button",
+          "name": "Star Re: CRITICAL: Payment Gateway Timeout - Order #88419",
+          "native_index": 36
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[4]/button",
+          "name": "Star Quarterly metrics recap",
+          "native_index": 41
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[5]/button",
+          "name": "Star Re: CRITICAL: Payment Gateway Timeout - Order #88419",
+          "native_index": 46
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[6]/button",
+          "name": "Star Holiday calendar finalized",
+          "native_index": 51
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[7]/button",
+          "name": "Star CRITICAL: Payment Gateway Timeout - Order #88419",
+          "native_index": 55
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[8]/button",
+          "name": "Star Agenda draft for Monday check-in",
+          "native_index": 60
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[9]/button",
+          "name": "Star Security awareness update",
+          "native_index": 65
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[10]/button",
+          "name": "Star Priority Assignment Changes",
+          "native_index": 70
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[11]/button",
+          "name": "Star Notes from the partner sync",
+          "native_index": 75
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[12]/button",
+          "name": "Star Re: CRITICAL: Payment Gateway Timeout - Order #88421",
+          "native_index": 80
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[13]/button",
+          "name": "Star Issue Routing Rules",
+          "native_index": 85
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[14]/button",
+          "name": "Star Escalation Chain Contacts",
+          "native_index": 90
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[15]/button",
+          "name": "Star Quarterly metrics recap",
+          "native_index": 95
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/main/section/article[16]/button",
+          "name": "Star CRITICAL: Payment Gateway Timeout - Order #88421",
+          "native_index": 100
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "task": {
+        "env": "lms",
+        "task_id": "lms_complete_mixed_module",
+        "variant": "lms_complete_mixed_module__module_ordering_shift_v1.yaml"
+      },
+      "condition": "clean",
+      "buttons": [],
+      "status": "completed"
+    },
+    {
+      "task": {
+        "env": "lms",
+        "task_id": "lms_complete_mixed_module",
+        "variant": "lms_complete_mixed_module__module_ordering_shift_v1.yaml"
+      },
+      "condition": "intervention",
+      "buttons": [],
+      "status": "completed"
+    },
+    {
+      "task": {
+        "env": "patient_portal",
+        "task_id": "pp_transfer_prescription",
+        "variant": "pp_transfer_prescription__pharmacy_shadow_v1.yaml"
+      },
+      "condition": "clean",
+      "buttons": [
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[1]/div[2]/button[1]",
+          "name": "Request refill for Metformin 500mg",
+          "native_index": 13
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[1]/div[2]/button[2]",
+          "name": "Transfer Metformin 500mg to another pharmacy",
+          "native_index": 14
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[2]/div[2]/button[1]",
+          "name": "Request refill for Gabapentin 300mg",
+          "native_index": 15
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[2]/div[2]/button[2]",
+          "name": "Transfer Gabapentin 300mg to another pharmacy",
+          "native_index": 16
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[3]/div[2]/button[1]",
+          "name": "Request refill for Lisinopril 10mg",
+          "native_index": 17
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[3]/div[2]/button[2]",
+          "name": "Transfer Lisinopril 10mg to another pharmacy",
+          "native_index": 18
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[4]/div[2]/button[1]",
+          "name": "Request refill for Warfarin 5mg",
+          "native_index": 19
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[4]/div[2]/button[2]",
+          "name": "Transfer Warfarin 5mg to another pharmacy",
+          "native_index": 20
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[5]/div[2]/button[1]",
+          "name": "Request refill for Pantoprazole 40mg",
+          "native_index": 21
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[5]/div[2]/button[2]",
+          "name": "Transfer Pantoprazole 40mg to another pharmacy",
+          "native_index": 22
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[6]/div[2]/button[1]",
+          "name": "Request refill for Levothyroxine 75mcg",
+          "native_index": 23
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[6]/div[2]/button[2]",
+          "name": "Transfer Levothyroxine 75mcg to another pharmacy",
+          "native_index": 24
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[7]/div[2]/button[1]",
+          "name": "Request refill for Losartan 50mg",
+          "native_index": 25
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[7]/div[2]/button[2]",
+          "name": "Transfer Losartan 50mg to another pharmacy",
+          "native_index": 26
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[8]/div[2]/button[1]",
+          "name": "Request refill for Amlodipine 5mg",
+          "native_index": 27
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[8]/div[2]/button[2]",
+          "name": "Transfer Amlodipine 5mg to another pharmacy",
+          "native_index": 28
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/button",
+          "name": "Show inactive prescriptions",
+          "native_index": 29
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "task": {
+        "env": "patient_portal",
+        "task_id": "pp_transfer_prescription",
+        "variant": "pp_transfer_prescription__pharmacy_shadow_v1.yaml"
+      },
+      "condition": "intervention",
+      "buttons": [
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[1]/div[2]/button[1]",
+          "name": "Request refill for Omeprazole 20mg",
+          "native_index": 15
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[1]/div[2]/button[2]",
+          "name": "Transfer Omeprazole 20mg to another pharmacy",
+          "native_index": 16
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[2]/div[2]/button[1]",
+          "name": "Request refill for Levothyroxine 75mcg",
+          "native_index": 17
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[2]/div[2]/button[2]",
+          "name": "Transfer Levothyroxine 75mcg to another pharmacy",
+          "native_index": 18
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[3]/div[2]/button[1]",
+          "name": "Request refill for Losartan 50mg",
+          "native_index": 19
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[3]/div[2]/button[2]",
+          "name": "Transfer Losartan 50mg to another pharmacy",
+          "native_index": 20
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[4]/div[2]/button[1]",
+          "name": "Request refill for Metformin 500mg",
+          "native_index": 21
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[4]/div[2]/button[2]",
+          "name": "Transfer Metformin 500mg to another pharmacy",
+          "native_index": 22
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[5]/div[2]/button[1]",
+          "name": "Request refill for Metformin 500mg",
+          "native_index": 23
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[5]/div[2]/button[2]",
+          "name": "Transfer Metformin 500mg to another pharmacy",
+          "native_index": 24
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[6]/div[2]/button[1]",
+          "name": "Request refill for Gabapentin 300mg",
+          "native_index": 25
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[6]/div[2]/button[2]",
+          "name": "Transfer Gabapentin 300mg to another pharmacy",
+          "native_index": 26
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[7]/div[2]/button[1]",
+          "name": "Request refill for Lisinopril 10mg",
+          "native_index": 27
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[7]/div[2]/button[2]",
+          "name": "Transfer Lisinopril 10mg to another pharmacy",
+          "native_index": 28
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[8]/div[2]/button[1]",
+          "name": "Request refill for Warfarin 5mg",
+          "native_index": 29
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[1]/div/article[8]/div[2]/button[2]",
+          "name": "Transfer Warfarin 5mg to another pharmacy",
+          "native_index": 30
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "task": {
+        "env": "reddit",
+        "task_id": "reddit_community_builder",
+        "variant": "reddit_community_builder__notification_shadow_v2.yaml"
+      },
+      "condition": "clean",
+      "buttons": [
+        {
+          "xpath": "html/body/div[1]/div/header/div[2]/form/button",
+          "name": "Run search",
+          "native_index": 138
+        },
+        {
+          "xpath": "html/body/div[1]/div/header/div[3]/button",
+          "name": "View your profile",
+          "native_index": 7
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/nav/button",
+          "name": "Create a new post",
+          "native_index": 8
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[1]/div/button[1]",
+          "name": "Hot",
+          "native_index": 26
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[1]/div/button[2]",
+          "name": "New",
+          "native_index": 27
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[1]/div/button[3]",
+          "name": "Top",
+          "native_index": 28
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[1]/div/button[4]",
+          "name": "Rising",
+          "native_index": 29
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[1]/div[1]/button[1]",
+          "name": "Go to r/AskReddit",
+          "native_index": 30
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[1]/div[1]/button[2]",
+          "name": "u/TechExplorer99",
+          "native_index": 31
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[1]/div[4]/div/button[1]",
+          "name": "Upvote",
+          "native_index": 33
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[1]/div[4]/div/button[2]",
+          "name": "Downvote",
+          "native_index": 34
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[1]/div[4]/button[1]",
+          "name": "22 comments",
+          "native_index": 35
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[1]/div[4]/button[2]",
+          "name": "Save",
+          "native_index": 36
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[1]/div[4]/button[3]",
+          "name": "Hide",
+          "native_index": 37
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[1]/div[4]/button[4]",
+          "name": "Share",
+          "native_index": 260
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[2]/div[1]/button[1]",
+          "name": "Go to r/gaming",
+          "native_index": 38
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[2]/div[1]/button[2]",
+          "name": "u/HerrMilkmann",
+          "native_index": 39
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[2]/div[3]/div/button[1]",
+          "name": "Upvote",
+          "native_index": 41
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[2]/div[3]/div/button[2]",
+          "name": "Downvote",
+          "native_index": 42
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[2]/div[3]/button[1]",
+          "name": "6 comments",
+          "native_index": 43
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[2]/div[3]/button[2]",
+          "name": "Save",
+          "native_index": 44
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[2]/div[3]/button[3]",
+          "name": "Hide",
+          "native_index": 45
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[2]/div[3]/button[4]",
+          "name": "Share",
+          "native_index": 291
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[3]/div[1]/button[1]",
+          "name": "Go to r/movies",
+          "native_index": 46
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[3]/div[1]/button[2]",
+          "name": "u/CoffeeAndCode",
+          "native_index": 47
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[3]/div[4]/div/button[1]",
+          "name": "Upvote",
+          "native_index": 49
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[3]/div[4]/div/button[2]",
+          "name": "Downvote",
+          "native_index": 50
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[3]/div[4]/button[1]",
+          "name": "11 comments",
+          "native_index": 51
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[3]/div[4]/button[2]",
+          "name": "Save",
+          "native_index": 52
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[3]/div[4]/button[3]",
+          "name": "Hide",
+          "native_index": 53
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[3]/div[4]/button[4]",
+          "name": "Share",
+          "native_index": 325
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[4]/div[1]/button[1]",
+          "name": "Go to r/AskReddit",
+          "native_index": 54
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[4]/div[1]/button[2]",
+          "name": "u/TechExplorer99",
+          "native_index": 55
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[4]/div[4]/div/button[1]",
+          "name": "Upvote",
+          "native_index": 57
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[4]/div[4]/div/button[2]",
+          "name": "Downvote",
+          "native_index": 58
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[4]/div[4]/button[1]",
+          "name": "16 comments",
+          "native_index": 59
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[4]/div[4]/button[2]",
+          "name": "Save",
+          "native_index": 60
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[4]/div[4]/button[3]",
+          "name": "Hide",
+          "native_index": 61
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[4]/div[4]/button[4]",
+          "name": "Share",
+          "native_index": 359
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[5]/div[1]/button[1]",
+          "name": "Go to r/news",
+          "native_index": 62
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[5]/div[1]/button[2]",
+          "name": "u/CodeMonkey_X",
+          "native_index": 63
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[5]/div[2]/div/button[1]",
+          "name": "Upvote",
+          "native_index": 65
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[5]/div[2]/div/button[2]",
+          "name": "Downvote",
+          "native_index": 66
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[5]/div[2]/button[1]",
+          "name": "21 comments",
+          "native_index": 67
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[5]/div[2]/button[2]",
+          "name": "Save",
+          "native_index": 68
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[5]/div[2]/button[3]",
+          "name": "Hide",
+          "native_index": 69
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[5]/div[2]/button[4]",
+          "name": "Share",
+          "native_index": 392
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[6]/div[1]/button[1]",
+          "name": "Go to r/worldnews",
+          "native_index": 70
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[6]/div[1]/button[2]",
+          "name": "u/ryushin6",
+          "native_index": 71
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[6]/div[3]/div/button[1]",
+          "name": "Upvote",
+          "native_index": 73
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[6]/div[3]/div/button[2]",
+          "name": "Downvote",
+          "native_index": 74
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[6]/div[3]/button[1]",
+          "name": "0 comments",
+          "native_index": 75
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[6]/div[3]/button[2]",
+          "name": "Save",
+          "native_index": 76
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[6]/div[3]/button[3]",
+          "name": "Hide",
+          "native_index": 77
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[6]/div[3]/button[4]",
+          "name": "Share",
+          "native_index": 421
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[7]/div[1]/button[1]",
+          "name": "Go to r/technology",
+          "native_index": 78
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[7]/div[1]/button[2]",
+          "name": "u/ThreadReader",
+          "native_index": 79
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[7]/div[3]/div/button[1]",
+          "name": "Upvote",
+          "native_index": 81
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[7]/div[3]/div/button[2]",
+          "name": "Downvote",
+          "native_index": 82
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[7]/div[3]/button[1]",
+          "name": "0 comments",
+          "native_index": 83
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[7]/div[3]/button[2]",
+          "name": "Save",
+          "native_index": 84
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[7]/div[3]/button[3]",
+          "name": "Hide",
+          "native_index": 85
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[7]/div[3]/button[4]",
+          "name": "Share",
+          "native_index": 450
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[8]/div[1]/button[1]",
+          "name": "Go to r/nottheonion",
+          "native_index": 86
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[8]/div[1]/button[2]",
+          "name": "u/DeepDiver",
+          "native_index": 87
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/aside/div[1]/div[2]/button[1]",
+          "name": "Go to r/funny",
+          "native_index": 1180
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/aside/div[1]/div[2]/button[2]",
+          "name": "Go to r/AskReddit",
+          "native_index": 1190
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/aside/div[1]/div[2]/button[3]",
+          "name": "Go to r/worldnews",
+          "native_index": 1200
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/aside/div[1]/div[2]/button[4]",
+          "name": "Go to r/gaming",
+          "native_index": 1210
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/aside/div[1]/div[2]/button[5]",
+          "name": "Go to r/todayilearned",
+          "native_index": 1220
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/aside/div[1]/div[2]/button[6]",
+          "name": "See more",
+          "native_index": 1230
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/aside/div[2]/div/button",
+          "name": "Try Now",
+          "native_index": 1240
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "task": {
+        "env": "reddit",
+        "task_id": "reddit_community_builder",
+        "variant": "reddit_community_builder__notification_shadow_v2.yaml"
+      },
+      "condition": "intervention",
+      "buttons": [
+        {
+          "xpath": "html/body/div[1]/div/header/div[2]/form/button",
+          "name": "Run search",
+          "native_index": 141
+        },
+        {
+          "xpath": "html/body/div[1]/div/header/div[3]/button",
+          "name": "View your profile",
+          "native_index": 11
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/nav/button",
+          "name": "Create a new post",
+          "native_index": 12
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[1]/div/button[1]",
+          "name": "Hot",
+          "native_index": 30
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[1]/div/button[2]",
+          "name": "New",
+          "native_index": 31
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[1]/div/button[3]",
+          "name": "Top",
+          "native_index": 32
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[1]/div/button[4]",
+          "name": "Rising",
+          "native_index": 33
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[1]/div[1]/button[1]",
+          "name": "Go to r/AskReddit",
+          "native_index": 34
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[1]/div[1]/button[2]",
+          "name": "u/TechExplorer99",
+          "native_index": 35
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[1]/div[4]/div/button[1]",
+          "name": "Upvote",
+          "native_index": 37
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[1]/div[4]/div/button[2]",
+          "name": "Downvote",
+          "native_index": 38
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[1]/div[4]/button[1]",
+          "name": "22 comments",
+          "native_index": 39
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[1]/div[4]/button[2]",
+          "name": "Save",
+          "native_index": 40
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[1]/div[4]/button[3]",
+          "name": "Hide",
+          "native_index": 41
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[1]/div[4]/button[4]",
+          "name": "Share",
+          "native_index": 262
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[2]/div[1]/button[1]",
+          "name": "Go to r/gaming",
+          "native_index": 42
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[2]/div[1]/button[2]",
+          "name": "u/HerrMilkmann",
+          "native_index": 43
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[2]/div[3]/div/button[1]",
+          "name": "Upvote",
+          "native_index": 45
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[2]/div[3]/div/button[2]",
+          "name": "Downvote",
+          "native_index": 46
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[2]/div[3]/button[1]",
+          "name": "6 comments",
+          "native_index": 47
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[2]/div[3]/button[2]",
+          "name": "Save",
+          "native_index": 48
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[2]/div[3]/button[3]",
+          "name": "Hide",
+          "native_index": 49
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[2]/div[3]/button[4]",
+          "name": "Share",
+          "native_index": 293
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[3]/div[1]/button[1]",
+          "name": "Go to r/movies",
+          "native_index": 50
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[3]/div[1]/button[2]",
+          "name": "u/CoffeeAndCode",
+          "native_index": 51
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[3]/div[4]/div/button[1]",
+          "name": "Upvote",
+          "native_index": 53
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[3]/div[4]/div/button[2]",
+          "name": "Downvote",
+          "native_index": 54
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[3]/div[4]/button[1]",
+          "name": "11 comments",
+          "native_index": 55
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[3]/div[4]/button[2]",
+          "name": "Save",
+          "native_index": 56
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[3]/div[4]/button[3]",
+          "name": "Hide",
+          "native_index": 57
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[3]/div[4]/button[4]",
+          "name": "Share",
+          "native_index": 327
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[4]/div[1]/button[1]",
+          "name": "Go to r/AskReddit",
+          "native_index": 58
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[4]/div[1]/button[2]",
+          "name": "u/TechExplorer99",
+          "native_index": 59
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[4]/div[4]/div/button[1]",
+          "name": "Upvote",
+          "native_index": 61
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[4]/div[4]/div/button[2]",
+          "name": "Downvote",
+          "native_index": 62
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[4]/div[4]/button[1]",
+          "name": "16 comments",
+          "native_index": 63
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[4]/div[4]/button[2]",
+          "name": "Save",
+          "native_index": 64
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[4]/div[4]/button[3]",
+          "name": "Hide",
+          "native_index": 65
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[4]/div[4]/button[4]",
+          "name": "Share",
+          "native_index": 361
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[5]/div[1]/button[1]",
+          "name": "Go to r/news",
+          "native_index": 66
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[5]/div[1]/button[2]",
+          "name": "u/CodeMonkey_X",
+          "native_index": 67
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[5]/div[2]/div/button[1]",
+          "name": "Upvote",
+          "native_index": 69
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[5]/div[2]/div/button[2]",
+          "name": "Downvote",
+          "native_index": 70
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[5]/div[2]/button[1]",
+          "name": "21 comments",
+          "native_index": 71
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[5]/div[2]/button[2]",
+          "name": "Save",
+          "native_index": 72
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[5]/div[2]/button[3]",
+          "name": "Hide",
+          "native_index": 73
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[5]/div[2]/button[4]",
+          "name": "Share",
+          "native_index": 394
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[6]/div[1]/button[1]",
+          "name": "Go to r/worldnews",
+          "native_index": 74
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[6]/div[1]/button[2]",
+          "name": "u/ryushin6",
+          "native_index": 75
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[6]/div[3]/div/button[1]",
+          "name": "Upvote",
+          "native_index": 77
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[6]/div[3]/div/button[2]",
+          "name": "Downvote",
+          "native_index": 78
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[6]/div[3]/button[1]",
+          "name": "0 comments",
+          "native_index": 79
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[6]/div[3]/button[2]",
+          "name": "Save",
+          "native_index": 80
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[6]/div[3]/button[3]",
+          "name": "Hide",
+          "native_index": 81
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[6]/div[3]/button[4]",
+          "name": "Share",
+          "native_index": 423
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[7]/div[1]/button[1]",
+          "name": "Go to r/technology",
+          "native_index": 82
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[7]/div[1]/button[2]",
+          "name": "u/ThreadReader",
+          "native_index": 83
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[7]/div[3]/div/button[1]",
+          "name": "Upvote",
+          "native_index": 85
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[7]/div[3]/div/button[2]",
+          "name": "Downvote",
+          "native_index": 86
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[7]/div[3]/button[1]",
+          "name": "0 comments",
+          "native_index": 87
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[7]/div[3]/button[2]",
+          "name": "Save",
+          "native_index": 88
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[7]/div[3]/button[3]",
+          "name": "Hide",
+          "native_index": 89
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[7]/div[3]/button[4]",
+          "name": "Share",
+          "native_index": 452
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[8]/div[1]/button[1]",
+          "name": "Go to r/nottheonion",
+          "native_index": 90
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/div/div[2]/article[8]/div[1]/button[2]",
+          "name": "u/DeepDiver",
+          "native_index": 91
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/aside/div[1]/div[2]/button[1]",
+          "name": "Go to r/funny",
+          "native_index": 1182
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/aside/div[1]/div[2]/button[2]",
+          "name": "Go to r/AskReddit",
+          "native_index": 1192
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/aside/div[1]/div[2]/button[3]",
+          "name": "Go to r/worldnews",
+          "native_index": 1202
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/aside/div[1]/div[2]/button[4]",
+          "name": "Go to r/gaming",
+          "native_index": 1212
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/aside/div[1]/div[2]/button[5]",
+          "name": "Go to r/todayilearned",
+          "native_index": 1222
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/aside/div[1]/div[2]/button[6]",
+          "name": "See more",
+          "native_index": 1232
+        },
+        {
+          "xpath": "html/body/div[1]/div/div/div/div/aside/div[2]/div/button",
+          "name": "Try Now",
+          "native_index": 1241
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "task": {
+        "env": "robinhood",
+        "task_id": "rh_live_multi_stock_limits",
+        "variant": "rh_live_multi_stock_limits__planning_v1.yaml"
+      },
+      "condition": "clean",
+      "buttons": [
+        {
+          "xpath": "html/body/div/div/header/div[2]/form/button",
+          "name": "Run search",
+          "native_index": 81
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/div[2]/div/button[1]",
+          "name": "Show 1D range",
+          "native_index": 21
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/div[2]/div/button[2]",
+          "name": "Show 1W range",
+          "native_index": 22
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/div[2]/div/button[3]",
+          "name": "Show 1M range",
+          "native_index": 23
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/div[2]/div/button[4]",
+          "name": "Show 3M range",
+          "native_index": 24
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/div[2]/div/button[5]",
+          "name": "Show YTD range",
+          "native_index": 25
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/div[2]/div/button[6]",
+          "name": "Show 1Y range",
+          "native_index": 26
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/div[2]/div/button[7]",
+          "name": "Show MAX range",
+          "native_index": 27
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[1]",
+          "name": "100 Most Popular",
+          "native_index": 28
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[2]",
+          "name": "Daily Movers",
+          "native_index": 29
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[3]",
+          "name": "Technology",
+          "native_index": 30
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[4]",
+          "name": "ETFs",
+          "native_index": 31
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[5]",
+          "name": "Energy",
+          "native_index": 32
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[6]",
+          "name": "Healthcare",
+          "native_index": 33
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[7]",
+          "name": "Cannabis",
+          "native_index": 34
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[8]",
+          "name": "Pharma",
+          "native_index": 35
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[9]",
+          "name": "Crypto",
+          "native_index": 36
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[10]",
+          "name": "China",
+          "native_index": 37
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[11]",
+          "name": "Automotive",
+          "native_index": 38
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[12]",
+          "name": "Banking",
+          "native_index": 39
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[13]",
+          "name": "Real Estate",
+          "native_index": 40
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[14]",
+          "name": "Food & Drink",
+          "native_index": 41
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[15]",
+          "name": "Entertainment",
+          "native_index": 42
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "task": {
+        "env": "robinhood",
+        "task_id": "rh_live_multi_stock_limits",
+        "variant": "rh_live_multi_stock_limits__planning_v1.yaml"
+      },
+      "condition": "intervention",
+      "buttons": [
+        {
+          "xpath": "html/body/div/div/header/div[2]/form/button",
+          "name": "Run search",
+          "native_index": 81
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/div[2]/div/button[1]",
+          "name": "Show 1D range",
+          "native_index": 21
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/div[2]/div/button[2]",
+          "name": "Show 1W range",
+          "native_index": 22
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/div[2]/div/button[3]",
+          "name": "Show 1M range",
+          "native_index": 23
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/div[2]/div/button[4]",
+          "name": "Show 3M range",
+          "native_index": 24
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/div[2]/div/button[5]",
+          "name": "Show YTD range",
+          "native_index": 25
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/div[2]/div/button[6]",
+          "name": "Show 1Y range",
+          "native_index": 26
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/div[2]/div/button[7]",
+          "name": "Show MAX range",
+          "native_index": 27
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[1]",
+          "name": "100 Most Popular",
+          "native_index": 28
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[2]",
+          "name": "Daily Movers",
+          "native_index": 29
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[3]",
+          "name": "Technology",
+          "native_index": 30
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[4]",
+          "name": "ETFs",
+          "native_index": 31
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[5]",
+          "name": "Energy",
+          "native_index": 32
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[6]",
+          "name": "Healthcare",
+          "native_index": 33
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[7]",
+          "name": "Cannabis",
+          "native_index": 34
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[8]",
+          "name": "Pharma",
+          "native_index": 35
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[9]",
+          "name": "Crypto",
+          "native_index": 36
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[10]",
+          "name": "China",
+          "native_index": 37
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[11]",
+          "name": "Automotive",
+          "native_index": 38
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[12]",
+          "name": "Banking",
+          "native_index": 39
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[13]",
+          "name": "Real Estate",
+          "native_index": 40
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[14]",
+          "name": "Food & Drink",
+          "native_index": 41
+        },
+        {
+          "xpath": "html/body/div/div/div/main/div/section[2]/div/button[15]",
+          "name": "Entertainment",
+          "native_index": 42
+        }
+      ],
+      "status": "completed"
+    }
+  ]
+}

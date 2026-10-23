@@ -1,0 +1,21 @@
+{
+  "arm": "auto-signal",
+  "task": "gmail_star_email",
+  "condition": "clean",
+  "phase": "development",
+  "scope": "Browser Use 0.13.11 native agent with restricted tools; text-only desktop relay; not official paper harness score",
+  "claimed_success": null,
+  "evaluation": {
+    "success": null,
+    "not_run": "desktop_channel_unavailable"
+  },
+  "error": null,
+  "agent_errors": [],
+  "action_units": 0,
+  "model_requests": 1,
+  "provider_usage": null,
+  "max_actions_per_step": 5,
+  "model_usage_note": "Counts mailbox requests, not all WorkBuddy internal generations/tool turns; desktop context and tokens unavailable",
+  "wall_seconds": 33.949570374999894,
+  "events": []
+}

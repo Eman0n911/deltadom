@@ -1,0 +1,17 @@
+<!doctype html><title>Identity diagnostic</title>
+<p id="outside">0</p><main>
+<article id="row"><span class="entity">Invoice A</span>
+<span class="amount">100</span><span class="updated">Updated 0</span>
+<button>Approve</button></article>
+<article id="other"><span class="entity">Invoice C</span>
+<span class="amount">100</span><span class="updated">Updated 0</span>
+<button>Approve</button></article></main>
+<script>
+window.actions = []; window.hiddenOverride = null;
+document.addEventListener('click', event => {
+  if (event.target.tagName !== 'BUTTON') return;
+  const row = event.target.closest('article');
+  window.actions.push({entity: window.hiddenOverride || row.querySelector('.entity').textContent,
+    amount: row.querySelector('.amount').textContent});
+});
+</script>

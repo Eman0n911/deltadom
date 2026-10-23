@@ -1,0 +1,240 @@
+{
+  "arm": "candidate",
+  "task": "gmail_star_email",
+  "condition": "intervention",
+  "scope": "Browser Use 0.13.11 native agent with restricted tools; text-only desktop relay; not official paper harness score",
+  "claimed_success": null,
+  "evaluation": {
+    "score": 1.0,
+    "final_score": 1.0,
+    "success": true,
+    "reasoning": "Score: 1.000; success=True\nPassed 1/1 checks.\n  [PASS] Agent starred the target email\nAll negative checks passed (no penalties).\nFinal score: 1.000 | Success: True",
+    "checks": [
+      {
+        "desc": "Agent starred the target email",
+        "passed": true,
+        "error": null
+      }
+    ],
+    "negative_checks": [
+      {
+        "desc": "Agent did not modify other inbox emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify drafts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not send emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not delete emails",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify contacts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify labels",
+        "passed": true,
+        "penalty": 0.1,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify filters",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      }
+    ]
+  },
+  "error": null,
+  "model_requests": 18,
+  "provider_usage": null,
+  "model_usage_note": "Counts mailbox requests, not all WorkBuddy internal generations/tool turns; desktop context and tokens unavailable",
+  "wall_seconds": 382.49401391700667,
+  "events": [
+    {
+      "action": {
+        "find_elements": {
+          "selector": "a[href]",
+          "attributes": [
+            "href",
+            "aria-label"
+          ],
+          "max_results": 30,
+          "include_text": true
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 11
+        }
+      }
+    },
+    {
+      "action": {
+        "register_checks": {
+          "checks": [
+            {
+              "key": "starred_view_contains_alice_q1_thread",
+              "scope": "article",
+              "identity": "Project Update — Q1 Milestones",
+              "target": "strong",
+              "kind": "text",
+              "expected": "Alice Chen"
+            },
+            {
+              "key": "star_control_reads_starred",
+              "scope": "article",
+              "identity": "Project Update — Q1 Milestones",
+              "target": "button",
+              "kind": "attribute",
+              "attribute": "aria-label",
+              "expected": "Unstar Project Update — Q1 Milestones"
+            }
+          ],
+          "readback_url": "http://127.0.0.1:18765/env/gmail/inbox?label=inbox&filter=starred"
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 10
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 499
+        }
+      }
+    },
+    {
+      "action": {
+        "verify_outcome": {}
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 11
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 10
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 868
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 11
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 10
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1229
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1472
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 11
+        }
+      }
+    },
+    {
+      "action": {
+        "finish": {
+          "success": true,
+          "text": "Starred Alice Chen's 'Project Update — Q1 Milestones' (thread email_1). Evidence, from two visible views. (1) Thread view: the header star control changed from 'Star this thread' to 'Unstar this thread' and a 'Starred' label appeared on the message. (2) Starred list view (filter=starred), which rendered 'No messages match this view' before the write and now lists exactly one row: Alice Chen / 'Project Update — Q1 Milestones', carrying a 'Label: starred' chip and a star control reading 'Unstar Project Update — Q1 Milestones'. Identity: only one thread from Alice Chen existed, the subject matched exactly including the em dash, and the opened message showed sender alice.chen@thornton.com to avery.quinn@thornton.com, Jul 7 6:05 PM. Limitation 1 (verification channel): register_checks was refused with 'Contract already frozen or actions started' because I had already clicked the Starred nav link, and verify_outcome then refused with 'Register checks first'. No contract of mine was ever stored, so the checks above are my own reads of visible page fields, not a harness verify_outcome receipt. Limitation 2 (path): the list-level star button did nothing across two attempts (label stayed 'Star ...', Starred view stayed empty), so I opened the thread and used the in-thread star control. Opening the thread was an extra step; the row still shows Unread, so read state was not altered. Coverage: the starred filter and the starred label both confirm the single intended thread; I did not attempt to prove that no other message is starred, beyond the Starred view containing exactly this one row."
+        }
+      }
+    },
+    {
+      "action": {
+        "register_checks": {
+          "checks": [
+            {
+              "key": "starred_view_contains_alice_q1_thread",
+              "scope": "article",
+              "identity": "Project Update — Q1 Milestones",
+              "target": "strong",
+              "kind": "text",
+              "expected": "Alice Chen"
+            },
+            {
+              "key": "star_control_reads_starred",
+              "scope": "article",
+              "identity": "Project Update — Q1 Milestones",
+              "target": "button",
+              "kind": "attribute",
+              "attribute": "aria-label",
+              "expected": "Unstar Project Update — Q1 Milestones"
+            }
+          ],
+          "readback_url": "http://127.0.0.1:18765/env/gmail/inbox?label=inbox&filter=starred"
+        }
+      }
+    }
+  ]
+}

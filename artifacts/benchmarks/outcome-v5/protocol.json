@@ -1,0 +1,78 @@
+{
+  "version": "v5",
+  "upstream": "052f0f0c6cfcdc9efb86eb0183556fcc4fb3606e",
+  "seed": 42,
+  "selection": "retain v1 complete task list; do not replace or omit unsupported tasks",
+  "tasks": [
+    {
+      "env": "amazon",
+      "task_id": "amazon_browse_category",
+      "variant": "amazon_browse_category__cheapest_decoy.yaml"
+    },
+    {
+      "env": "booking",
+      "task_id": "booking_frontier_account_overhaul",
+      "variant": "booking_frontier_account_overhaul__account_retry_v2.yaml"
+    },
+    {
+      "env": "gmail",
+      "task_id": "gmail_escalation_chain",
+      "variant": "gmail_escalation_chain__state_tracking.yaml"
+    },
+    {
+      "env": "lms",
+      "task_id": "lms_complete_mixed_module",
+      "variant": "lms_complete_mixed_module__module_ordering_shift_v1.yaml"
+    },
+    {
+      "env": "patient_portal",
+      "task_id": "pp_transfer_prescription",
+      "variant": "pp_transfer_prescription__pharmacy_shadow_v1.yaml"
+    },
+    {
+      "env": "reddit",
+      "task_id": "reddit_community_builder",
+      "variant": "reddit_community_builder__notification_shadow_v2.yaml"
+    },
+    {
+      "env": "robinhood",
+      "task_id": "rh_live_multi_stock_limits",
+      "variant": "rh_live_multi_stock_limits__planning_v1.yaml"
+    }
+  ],
+  "development": [
+    {
+      "env": "gmail",
+      "task_id": "gmail_star_email",
+      "variant": "gmail_star_email__star_retry.yaml"
+    }
+  ],
+  "conditions": [
+    "clean",
+    "intervention"
+  ],
+  "arms": [
+    "simple-fixed",
+    "macro-simple",
+    "inline"
+  ],
+  "model_channel": "WorkBuddy Deepseek-V4.1-Flash desktop only",
+  "bounds": {
+    "steps": 40,
+    "primitive_action_units": 40,
+    "request_timeout_seconds": 600,
+    "episode_timeout_seconds": 2400,
+    "automatic_write_retries": 0
+  },
+  "changes": [
+    "shared full read result delivery fix",
+    "optional click-and-read macro in macro-simple and inline with identical acquisition and primitive budget",
+    "inline checks observed entity URLs/names; macro-simple receives full rendered evidence with same URLs",
+    "no mandatory prepare roundtrip or absent-to-present claim",
+    "no task-success gate from partial receipt"
+  ],
+  "primary": "official success, false success, and request counts at equal primitive budget; ambiguous official scoring retained separately",
+  "strong_code_control": "independent exact href+visible-name programmatic readback on same fresh views; candidate must agree; equal results are parity not innovation",
+  "run_order": "mechanical on all 14 frozen cells, then development gmail both conditions all arms, then confirmation order unchanged; preserve unrun cells",
+  "decision": "no promotion on a failed mechanical gate; no claim of broad advantage from development. Keep all attempts. No retry tuning, variants or task replacement."
+}

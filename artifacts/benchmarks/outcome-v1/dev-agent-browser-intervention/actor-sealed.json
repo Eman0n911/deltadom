@@ -1,0 +1,1 @@
+{"claimed_success": null, "error": "RuntimeError: agent-browser exit 1: \u2717 Session name 'dd-outcome-gmail_gmail_star_email_36799a430e' is too long. Socket path would be 113 bytes (max 103).\nUse a shorter session name or set AGENT_BROWSER_SOCKET_DIR to a shorter path.\n "}

@@ -1,0 +1,9 @@
+{
+  "source": "WorkBuddy visible desktop UI, 2026-10-23 Asia/Shanghai",
+  "model": "Deepseek-V4.1-Flash",
+  "free_reset_local": "2026-10-23 12:12:00",
+  "visible_points_balance": 880,
+  "paid_mode_activated": false,
+  "model_calls_this_experiment": 0,
+  "task_model_results": "not_run"
+}

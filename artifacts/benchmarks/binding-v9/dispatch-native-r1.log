@@ -1,0 +1,110 @@
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+False unchanged native_tools True False
+WARNING  [BrowserSession] Could not get element geometry from any method, falling back to JavaScript click
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+False remount native_tools False False
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+False reorder native_tools True False
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+False duplicate native_tools True False
+WARNING  [BrowserSession] Could not get element geometry from any method, falling back to JavaScript click
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+False removed native_tools False False
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+False hover_recycle native_tools False True
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+False pointerdown_recycle native_tools False True
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+False ancestor_click_recycle native_tools False True
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+False window_click_recycle native_tools False True
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+False pointerdown_write native_tools False True
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+False hidden_handler native_tools False True
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+True unchanged native_tools True False
+WARNING  [BrowserSession] Could not get element geometry from any method, falling back to JavaScript click
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+True remount native_tools False False
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+True reorder native_tools True False
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+True duplicate native_tools True False
+WARNING  [BrowserSession] Could not get element geometry from any method, falling back to JavaScript click
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+True removed native_tools False False
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+True hover_recycle native_tools False True
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+True pointerdown_recycle native_tools False True
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+True ancestor_click_recycle native_tools False True
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+True window_click_recycle native_tools False True
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+True pointerdown_write native_tools False True
+INFO     [tools] 🖱️ Clicked button "Approve"
+INFO     [BrowserSession] [SessionManager] Cleared all owned data (targets, sessions, mappings)
+INFO     [BrowserSession] ✅ Browser session reset complete
+True hidden_handler native_tools False True
+{
+  "False": {
+    "native_tools": {
+      "correct_effect": 3,
+      "wrong_effect": 6,
+      "false_refusal": 1,
+      "refusal": 2
+    }
+  },
+  "True": {
+    "native_tools": {
+      "correct_effect": 3,
+      "wrong_effect": 6,
+      "false_refusal": 1,
+      "refusal": 2
+    }
+  }
+}

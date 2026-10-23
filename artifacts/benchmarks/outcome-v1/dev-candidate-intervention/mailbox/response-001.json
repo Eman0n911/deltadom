@@ -1,0 +1,18 @@
+{
+  "thinking": "Inbox lists exactly one thread from Alice Chen with subject 'Project Update — Q1 Milestones' (element 26, star button 27, aria-label 'Star Project Update — Q1 Milestones'). Before any write I must freeze checks and a readback_url taken from an observed same-site UI link. The Starred nav link (element 11) is the natural readback page, but its href is not in the dump, so I first read the nav hrefs (read-only) to get the exact URL.",
+  "evaluation_previous_goal": "Initial step; no previous action to evaluate.",
+  "memory": "Target: star Alice Chen's 'Project Update — Q1 Milestones'. Inbox article index 26, star button index 27, currently labeled 'Star ...' (unstarred). Need readback URL for Starred view.",
+  "next_goal": "Read hrefs of same-site nav links so the readback_url points at the real Starred page URL.",
+  "action": [
+    {
+      "find_elements": {
+        "selector": "a[href]",
+        "attributes": [
+          "href",
+          "aria-label"
+        ],
+        "max_results": 30
+      }
+    }
+  ]
+}

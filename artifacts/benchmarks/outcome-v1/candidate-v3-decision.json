@@ -1,0 +1,16 @@
+{
+  "decision": "reject candidate v3 as a competitive default; stop expansion of this frozen candidate",
+  "evidence": [
+    "dev-membership-intervention/result.json",
+    "dev-simple-intervention/result.json",
+    "dev-agent-browser-v2-intervention/result.json",
+    "r001/result.json",
+    "r002/result.json",
+    "r003/result.json",
+    "r004/result.json"
+  ],
+  "reason": "No request-cost benefit on development task; clean first hash-selected confirmation task blocked by own guard while three controls complete it. Mixed timeout settings prohibit positive comparative claims anyway.",
+  "remaining_cells": "not_run, not counted as failures",
+  "follow_up": "link v4 is exploratory on the now-inspected amazon task; must not be mixed into v3 confirmation or advertised as unseen confirmation",
+  "no_new_sample_selection": true
+}

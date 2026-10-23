@@ -1,0 +1,17 @@
+{
+  "stage": "v5.2 before native-batch comparison",
+  "native_source": "browser_use/agent/service.py Agent.__init__ max_actions_per_step default 5; multi_act defers done after another action",
+  "changes": [
+    "restore native max_actions_per_step=5 to ALL v5 arms, keeping 40 primitive units and zero automatic retries",
+    "apply native deferred-done guard to custom finish alias in ALL arms",
+    "readback_index=0 means resulting current page after click; observed nonzero links and entity grounding remain before click"
+  ],
+  "not_evidence_for_competitive_gain": "d001-d012 and a001-a003 used the artificial one-action scaffold; preserve as development/exploratory diagnostics only",
+  "samples": "same original seven pairs, both conditions, same order, all three arms; no substitution",
+  "limits": {
+    "primitive_units": 40,
+    "max_model_steps": 40,
+    "single_request_timeout_s": 600,
+    "episode_timeout_s": 2400
+  }
+}

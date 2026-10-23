@@ -1,0 +1,65 @@
+{
+  "thinking": "Step 2. My previous read-only DOM probe returned only a match count (8 articles) and no attribute detail, so probing further would waste steps; I will build the selectors from attributes that are already visible in browser_state. The target is unambiguous: exactly one article matches 'Alice Chen', and its subject is 'Project Update — Q1 Milestones'. Now I must freeze the outcome checks before any write. Design decisions: (1) every scope is anchored on sender identity ('Alice Chen'), never on star state, so no selector encodes the desired end state; (2) the star control is selected by button[aria-label*=\"Star\"], which matches both the pre-state 'Star ...' and any post-state beginning with 'Star...', so the target selector is state-independent; (3) coverage is not just the easy part: I assert sender identity, subject identity, the starred state of the target, and a negative control that a distractor thread (Theo Rivera) was not starred. Uncertainty I am recording now: the page printer shows no aria-pressed on the star buttons, so the starred state may be expressed only in the aria-label. I register both signals so verification evidence shows which one the page actually uses; if only one is available I will say so rather than silently drop it. readback_index=0 because the inbox itself is the same-site view I will read back.",
+  "evaluation_previous_goal": "The DOM probe ran (8 articles matched) but returned no attribute detail, so it gave no usable selector information. Verdict: partial - count confirmed, attributes not returned.",
+  "memory": "Inbox at 127.0.0.1:18765. Target = article [26] 'Unread thread from Alice Chen: Project Update — Q1 Milestones', star button [27] aria-label 'Star Project Update — Q1 Milestones', currently unstarred. Frozen checks: sender text 'Alice Chen'; subject via article anchor aria-label; star label -> 'Starred ...'; aria-pressed -> true; negative control on Theo Rivera thread still 'Star Follow-up on venue estimate'. Next: click [27] only, then verify_outcome.",
+  "next_goal": "Freeze the five outcome checks (identity + starred state + no collateral star) before touching any control.",
+  "current_plan_item": 1,
+  "action": [
+    {
+      "register_checks": {
+        "checks": [
+          {
+            "key": "target_thread_sender",
+            "scope": "article[aria-label*=\"Alice Chen\"]",
+            "identity": "Alice Chen",
+            "identity_text": "Alice Chen",
+            "target": "strong",
+            "kind": "text",
+            "expected": "Alice Chen"
+          },
+          {
+            "key": "target_thread_subject",
+            "scope": "article[aria-label*=\"Alice Chen\"]",
+            "identity": "Project Update — Q1 Milestones",
+            "identity_text": "Project Update — Q1 Milestones",
+            "target": "a[aria-label]",
+            "kind": "attribute",
+            "attribute": "aria-label",
+            "expected": "Open unread thread Project Update — Q1 Milestones"
+          },
+          {
+            "key": "target_star_label",
+            "scope": "article[aria-label*=\"Alice Chen\"]",
+            "identity": "Alice Chen",
+            "identity_text": "Alice Chen",
+            "target": "button[aria-label*=\"Star\"]",
+            "kind": "attribute",
+            "attribute": "aria-label",
+            "expected": "Starred Project Update — Q1 Milestones"
+          },
+          {
+            "key": "target_star_pressed",
+            "scope": "article[aria-label*=\"Alice Chen\"]",
+            "identity": "Alice Chen",
+            "identity_text": "Alice Chen",
+            "target": "button[aria-label*=\"Star\"]",
+            "kind": "checked",
+            "attribute": "aria-pressed",
+            "expected": true
+          },
+          {
+            "key": "no_collateral_star_theo_rivera",
+            "scope": "article[aria-label*=\"Theo Rivera\"]",
+            "identity": "Theo Rivera",
+            "identity_text": "Theo Rivera",
+            "target": "button[aria-label*=\"Star\"]",
+            "kind": "attribute",
+            "attribute": "aria-label",
+            "expected": "Star Follow-up on venue estimate"
+          }
+        ],
+        "readback_index": 0
+      }
+    }
+  ]
+}

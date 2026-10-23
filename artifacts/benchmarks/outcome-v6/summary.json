@@ -1,0 +1,429 @@
+{
+  "trials": [
+    {
+      "id": "c001",
+      "status": "blocked_before_model",
+      "requests": 1,
+      "responses": 0,
+      "availability": "artifacts/benchmarks/outcome-v6/c001/availability.json"
+    },
+    {
+      "id": "c002",
+      "status": "blocked_before_model",
+      "requests": 1,
+      "responses": 0,
+      "availability": "artifacts/benchmarks/outcome-v6/c002/availability.json"
+    },
+    {
+      "id": "c003",
+      "status": "blocked_before_model",
+      "requests": 1,
+      "responses": 0,
+      "availability": "artifacts/benchmarks/outcome-v6/c003/availability.json"
+    },
+    {
+      "id": "c004",
+      "status": "blocked_before_model",
+      "requests": 1,
+      "responses": 0,
+      "availability": "artifacts/benchmarks/outcome-v6/c004/availability.json"
+    }
+  ],
+  "planned_model_cells": [
+    {
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "arm": "simple-fixed",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "arm": "macro-simple",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "arm": "auto-control",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "arm": "auto-signal",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "intervention",
+      "arm": "simple-fixed",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "intervention",
+      "arm": "macro-simple",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "intervention",
+      "arm": "auto-control",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "intervention",
+      "arm": "auto-signal",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "clean",
+      "arm": "simple-fixed",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "clean",
+      "arm": "macro-simple",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "clean",
+      "arm": "auto-control",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "clean",
+      "arm": "auto-signal",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "intervention",
+      "arm": "simple-fixed",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "intervention",
+      "arm": "macro-simple",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "intervention",
+      "arm": "auto-control",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "intervention",
+      "arm": "auto-signal",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "clean",
+      "arm": "simple-fixed",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "clean",
+      "arm": "macro-simple",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "clean",
+      "arm": "auto-control",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "clean",
+      "arm": "auto-signal",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "intervention",
+      "arm": "simple-fixed",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "intervention",
+      "arm": "macro-simple",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "intervention",
+      "arm": "auto-control",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "intervention",
+      "arm": "auto-signal",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "clean",
+      "arm": "simple-fixed",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "clean",
+      "arm": "macro-simple",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "clean",
+      "arm": "auto-control",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "clean",
+      "arm": "auto-signal",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "intervention",
+      "arm": "simple-fixed",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "intervention",
+      "arm": "macro-simple",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "intervention",
+      "arm": "auto-control",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "intervention",
+      "arm": "auto-signal",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "clean",
+      "arm": "simple-fixed",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "clean",
+      "arm": "macro-simple",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "clean",
+      "arm": "auto-control",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "clean",
+      "arm": "auto-signal",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "intervention",
+      "arm": "simple-fixed",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "intervention",
+      "arm": "macro-simple",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "intervention",
+      "arm": "auto-control",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "intervention",
+      "arm": "auto-signal",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "clean",
+      "arm": "simple-fixed",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "clean",
+      "arm": "macro-simple",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "clean",
+      "arm": "auto-control",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "clean",
+      "arm": "auto-signal",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "intervention",
+      "arm": "simple-fixed",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "intervention",
+      "arm": "macro-simple",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "intervention",
+      "arm": "auto-control",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "intervention",
+      "arm": "auto-signal",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "clean",
+      "arm": "simple-fixed",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "clean",
+      "arm": "macro-simple",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "clean",
+      "arm": "auto-control",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "clean",
+      "arm": "auto-signal",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "intervention",
+      "arm": "simple-fixed",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "intervention",
+      "arm": "macro-simple",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "intervention",
+      "arm": "auto-control",
+      "trials": [],
+      "status": "not_run"
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "intervention",
+      "arm": "auto-signal",
+      "trials": [],
+      "status": "not_run"
+    }
+  ],
+  "no_aggregate_rate": "development revisions and exploratory/confirmation cases must not be pooled",
+  "mechanical_only": "mechanical-r3 has 14 UI-read checks, not task completion",
+  "ambiguity": "Amazon intervention includes tied-lowest SKUs; retain official score without equating it with literal task semantics"
+}

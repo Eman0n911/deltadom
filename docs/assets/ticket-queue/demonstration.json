@@ -1,0 +1,496 @@
+{
+  "scope": "Illustrative local ticket fixture. Not a customer deployment or independent benchmark.",
+  "cases": [
+    {
+      "case": "initial",
+      "binding": {
+        "version": 1,
+        "document_url": "http://ticket-story.test/queue",
+        "target": {
+          "tag": "button",
+          "role": "",
+          "type": "",
+          "name": "标记完成"
+        },
+        "anchors": [
+          {
+            "url": "http://ticket-story.test/tickets/1842",
+            "name": "#1842"
+          }
+        ],
+        "mode": "relational",
+        "scope_tag": "tr"
+      },
+      "receipt": {
+        "status": "captured"
+      },
+      "effects": []
+    },
+    {
+      "case": "ordinary",
+      "binding": {
+        "version": 1,
+        "document_url": "http://ticket-story.test/queue",
+        "target": {
+          "tag": "button",
+          "role": "",
+          "type": "",
+          "name": "标记完成"
+        },
+        "anchors": [
+          {
+            "url": "http://ticket-story.test/tickets/1842",
+            "name": "#1842"
+          }
+        ],
+        "mode": "relational",
+        "scope_tag": "tr"
+      },
+      "receipt": {
+        "status": "clicked",
+        "method": "semantic Locator.click"
+      },
+      "effects": [
+        {
+          "record": "#2197",
+          "trusted": true
+        }
+      ]
+    },
+    {
+      "case": "guarded",
+      "binding": {
+        "version": 1,
+        "document_url": "http://ticket-story.test/queue",
+        "target": {
+          "tag": "button",
+          "role": "",
+          "type": "",
+          "name": "标记完成"
+        },
+        "anchors": [
+          {
+            "url": "http://ticket-story.test/tickets/1842",
+            "name": "#1842"
+          }
+        ],
+        "mode": "relational",
+        "scope_tag": "tr"
+      },
+      "receipt": {
+        "status": "blocked",
+        "reason": "identity_not_found",
+        "events": [
+          {
+            "type": "pointerdown",
+            "phase": 1,
+            "at": "window",
+            "trusted": true,
+            "valid": false
+          },
+          {
+            "type": "pointerup",
+            "phase": 1,
+            "at": "window",
+            "trusted": true,
+            "valid": false
+          },
+          {
+            "type": "click",
+            "phase": 1,
+            "at": "window",
+            "trusted": true,
+            "valid": false
+          }
+        ],
+        "error": null,
+        "scope": "input blocked; earlier listener side effects cannot be undone"
+      },
+      "effects": []
+    },
+    {
+      "case": "reorder",
+      "binding": {
+        "version": 1,
+        "document_url": "http://ticket-story.test/queue",
+        "target": {
+          "tag": "button",
+          "role": "",
+          "type": "",
+          "name": "标记完成"
+        },
+        "anchors": [
+          {
+            "url": "http://ticket-story.test/tickets/1842",
+            "name": "#1842"
+          }
+        ],
+        "mode": "relational",
+        "scope_tag": "tr"
+      },
+      "receipt": {
+        "status": "clicked",
+        "events": [
+          {
+            "type": "pointerdown",
+            "phase": 1,
+            "at": "window",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerdown",
+            "phase": 1,
+            "at": "#document",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerdown",
+            "phase": 1,
+            "at": "HTML",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerdown",
+            "phase": 1,
+            "at": "BODY",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerdown",
+            "phase": 1,
+            "at": "MAIN",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerdown",
+            "phase": 1,
+            "at": "TABLE",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerdown",
+            "phase": 1,
+            "at": "TBODY",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerdown",
+            "phase": 1,
+            "at": "TR",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerdown",
+            "phase": 1,
+            "at": "TD",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerdown",
+            "phase": 2,
+            "at": "BUTTON",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mousedown",
+            "phase": 1,
+            "at": "window",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mousedown",
+            "phase": 1,
+            "at": "#document",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mousedown",
+            "phase": 1,
+            "at": "HTML",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mousedown",
+            "phase": 1,
+            "at": "BODY",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mousedown",
+            "phase": 1,
+            "at": "MAIN",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mousedown",
+            "phase": 1,
+            "at": "TABLE",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mousedown",
+            "phase": 1,
+            "at": "TBODY",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mousedown",
+            "phase": 1,
+            "at": "TR",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mousedown",
+            "phase": 1,
+            "at": "TD",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mousedown",
+            "phase": 2,
+            "at": "BUTTON",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerup",
+            "phase": 1,
+            "at": "window",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerup",
+            "phase": 1,
+            "at": "#document",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerup",
+            "phase": 1,
+            "at": "HTML",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerup",
+            "phase": 1,
+            "at": "BODY",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerup",
+            "phase": 1,
+            "at": "MAIN",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerup",
+            "phase": 1,
+            "at": "TABLE",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerup",
+            "phase": 1,
+            "at": "TBODY",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerup",
+            "phase": 1,
+            "at": "TR",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerup",
+            "phase": 1,
+            "at": "TD",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "pointerup",
+            "phase": 2,
+            "at": "BUTTON",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mouseup",
+            "phase": 1,
+            "at": "window",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mouseup",
+            "phase": 1,
+            "at": "#document",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mouseup",
+            "phase": 1,
+            "at": "HTML",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mouseup",
+            "phase": 1,
+            "at": "BODY",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mouseup",
+            "phase": 1,
+            "at": "MAIN",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mouseup",
+            "phase": 1,
+            "at": "TABLE",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mouseup",
+            "phase": 1,
+            "at": "TBODY",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mouseup",
+            "phase": 1,
+            "at": "TR",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mouseup",
+            "phase": 1,
+            "at": "TD",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "mouseup",
+            "phase": 2,
+            "at": "BUTTON",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "click",
+            "phase": 1,
+            "at": "window",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "click",
+            "phase": 1,
+            "at": "#document",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "click",
+            "phase": 1,
+            "at": "HTML",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "click",
+            "phase": 1,
+            "at": "BODY",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "click",
+            "phase": 1,
+            "at": "MAIN",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "click",
+            "phase": 1,
+            "at": "TABLE",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "click",
+            "phase": 1,
+            "at": "TBODY",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "click",
+            "phase": 1,
+            "at": "TR",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "click",
+            "phase": 1,
+            "at": "TD",
+            "trusted": true,
+            "valid": true
+          },
+          {
+            "type": "click",
+            "phase": 2,
+            "at": "BUTTON",
+            "trusted": true,
+            "valid": true
+          }
+        ],
+        "error": null,
+        "scope": "trusted UI input only; outcome not verified"
+      },
+      "effects": [
+        {
+          "record": "#1842",
+          "trusted": true
+        }
+      ]
+    }
+  ]
+}

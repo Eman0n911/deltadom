@@ -1,0 +1,263 @@
+{
+  "arm": "simple",
+  "task": "amazon_browse_category",
+  "condition": "intervention",
+  "phase": "exploratory",
+  "scope": "Browser Use 0.13.11 native agent with restricted tools; text-only desktop relay; not official paper harness score",
+  "claimed_success": true,
+  "evaluation": {
+    "score": 1.0,
+    "final_score": 1.0,
+    "success": true,
+    "reasoning": "Score: 1.000; success=True\nPassed 1/1 checks.\n  [PASS] Cheapest Electronics product added to cart\nAll negative checks passed (no penalties).\nFinal score: 1.000 | Success: True",
+    "checks": [
+      {
+        "desc": "Cheapest Electronics product added to cart",
+        "passed": true,
+        "error": null
+      }
+    ],
+    "negative_checks": [
+      {
+        "desc": "Agent did not add extra items to cart",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify product catalog",
+        "passed": true,
+        "penalty": 0.3,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify saved addresses",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify payment methods",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not place orders",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not write product reviews",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create return requests",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not apply or modify promo codes",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create Q&A posts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify gift cards",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create notifications",
+        "passed": true,
+        "penalty": 0.1,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify wishlist",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify account settings",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      }
+    ]
+  },
+  "error": null,
+  "agent_errors": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "action_units": 16,
+  "model_requests": 17,
+  "provider_usage": null,
+  "model_usage_note": "Counts mailbox requests, not all WorkBuddy internal generations/tool turns; desktop context and tokens unavailable",
+  "wall_seconds": 301.36833012499847,
+  "events": [
+    {
+      "action": {
+        "click": {
+          "index": 94
+        }
+      }
+    },
+    {
+      "action": {
+        "select_dropdown": {
+          "index": 1110,
+          "text": "Price: Low to High"
+        }
+      }
+    },
+    {
+      "action": {
+        "extract": {
+          "query": "List every product card in the current order, giving for each: product name, exact current price (including cents), whether it says 'Currently unavailable', and rating count. Return as a numbered list.",
+          "extract_links": false,
+          "extract_images": false,
+          "start_from_char": 0,
+          "already_collected": []
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1718
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 2351
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 2488
+        }
+      }
+    },
+    {
+      "action": {
+        "go_back": {}
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 2752
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 2734
+        }
+      }
+    },
+    {
+      "action": {
+        "go_back": {}
+      }
+    },
+    {
+      "action": {
+        "go_back": {}
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 3600
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 4191
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 4330
+        }
+      }
+    },
+    {
+      "action": {
+        "refresh_page": {}
+      }
+    },
+    {
+      "action": {
+        "finish": {
+          "success": true,
+          "text": "Added the cheapest available Electronics item to the cart. Opened the Electronics category (50 results), sorted by 'Price: Low to High'. The lowest price is $7.99; the 'USB-C Charging Cable 6ft Refurbished' listing at that price could not be added (two Add to Cart attempts both left the cart empty), so I used the equally cheap 'USB-C Charging Cable 6ft' by CableTech. Verified after a full reload of /env/amazon/cart: line item 'USB-C Charging Cable 6ft', quantity 1, price $7.99, subtotal $7.99, header cart badge = 1 item."
+        }
+      }
+    }
+  ]
+}

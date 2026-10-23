@@ -1,0 +1,16 @@
+{
+  "stage": "v5.1 development clarification, before d007-d012",
+  "reason": "d002/d003 both reread despite a successful independent read; d005 explicitly misinterpreted readback as pre-click",
+  "change": "explicit acquisition order and actual monotonic timestamps; identical clarification for both macro arms; no retry changes",
+  "fixed_followup": [
+    "d007 simple-fixed clean",
+    "d008 macro-simple clean",
+    "d009 inline clean",
+    "d010 simple-fixed intervention",
+    "d011 macro-simple intervention",
+    "d012 inline intervention"
+  ],
+  "task": "gmail_star_email",
+  "all_v5_trials_retained": true,
+  "next": "retain full original confirmation list and order; model cells not yet run remain not_run"
+}

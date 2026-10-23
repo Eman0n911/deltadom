@@ -1,0 +1,726 @@
+{
+  "trials": [
+    {
+      "run": "dev-agent-browser-intervention",
+      "development": true,
+      "task": "gmail_star_email",
+      "condition": "intervention",
+      "arm": "agent-browser",
+      "backend_success": false,
+      "score": 0.0,
+      "claimed_success": null,
+      "official_success_mismatch": false,
+      "usable_success": false,
+      "protected_state_failures": 0,
+      "model_requests": 0,
+      "action_units": null,
+      "wall_seconds": 0.08512104199326131,
+      "error": "RuntimeError: agent-browser exit 1: ✗ Session name 'dd-outcome-gmail_gmail_star_email_36799a430e' is too long. Socket path would be 113 bytes (max 103).\nUse a shorter session name or set AGENT_BROWSER_SOCKET_DIR to a shorter path.\n ",
+      "agent_errors": []
+    },
+    {
+      "run": "dev-agent-browser-v2-intervention",
+      "development": true,
+      "task": "gmail_star_email",
+      "condition": "intervention",
+      "arm": "agent-browser",
+      "backend_success": true,
+      "score": 1.0,
+      "claimed_success": true,
+      "official_success_mismatch": false,
+      "usable_success": true,
+      "protected_state_failures": 0,
+      "model_requests": 7,
+      "action_units": 7,
+      "wall_seconds": 241.4281075829931,
+      "error": null,
+      "agent_errors": []
+    },
+    {
+      "run": "dev-candidate-intervention",
+      "development": true,
+      "task": "gmail_star_email",
+      "condition": "intervention",
+      "arm": "candidate",
+      "backend_success": true,
+      "score": 1.0,
+      "claimed_success": null,
+      "official_success_mismatch": false,
+      "usable_success": false,
+      "protected_state_failures": 0,
+      "model_requests": 18,
+      "action_units": null,
+      "wall_seconds": 382.49401391700667,
+      "error": null,
+      "agent_errors": []
+    },
+    {
+      "run": "dev-candidate-v2-intervention",
+      "development": true,
+      "task": "gmail_star_email",
+      "condition": "intervention",
+      "arm": "candidate",
+      "backend_success": true,
+      "score": 1.0,
+      "claimed_success": false,
+      "official_success_mismatch": false,
+      "usable_success": false,
+      "protected_state_failures": 0,
+      "model_requests": 18,
+      "action_units": null,
+      "wall_seconds": 416.64801279200765,
+      "error": null,
+      "agent_errors": []
+    },
+    {
+      "run": "dev-link-amazon-clean",
+      "development": true,
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "arm": "link",
+      "backend_success": true,
+      "score": 1.0,
+      "claimed_success": true,
+      "official_success_mismatch": false,
+      "usable_success": true,
+      "protected_state_failures": 0,
+      "model_requests": 8,
+      "action_units": 9,
+      "wall_seconds": 219.65627279199543,
+      "error": null,
+      "agent_errors": []
+    },
+    {
+      "run": "dev-membership-intervention",
+      "development": true,
+      "task": "gmail_star_email",
+      "condition": "intervention",
+      "arm": "membership",
+      "backend_success": true,
+      "score": 1.0,
+      "claimed_success": true,
+      "official_success_mismatch": false,
+      "usable_success": true,
+      "protected_state_failures": 0,
+      "model_requests": 12,
+      "action_units": 14,
+      "wall_seconds": 312.2056131249992,
+      "error": null,
+      "agent_errors": [
+        "Contract frozen or mutation controls already used"
+      ]
+    },
+    {
+      "run": "dev-native-intervention",
+      "development": true,
+      "task": "gmail_star_email",
+      "condition": "intervention",
+      "arm": "native",
+      "backend_success": false,
+      "score": 0.0,
+      "claimed_success": false,
+      "official_success_mismatch": false,
+      "usable_success": false,
+      "protected_state_failures": 0,
+      "model_requests": 10,
+      "action_units": null,
+      "wall_seconds": 254.0120179589867,
+      "error": null,
+      "agent_errors": []
+    },
+    {
+      "run": "dev-simple-intervention",
+      "development": true,
+      "task": "gmail_star_email",
+      "condition": "intervention",
+      "arm": "simple",
+      "backend_success": true,
+      "score": 1.0,
+      "claimed_success": true,
+      "official_success_mismatch": false,
+      "usable_success": true,
+      "protected_state_failures": 0,
+      "model_requests": 9,
+      "action_units": null,
+      "wall_seconds": 223.79205312499835,
+      "error": null,
+      "agent_errors": []
+    },
+    {
+      "run": "e001",
+      "development": true,
+      "task": "amazon_browse_category",
+      "condition": "intervention",
+      "arm": "native",
+      "backend_success": false,
+      "score": 0.0,
+      "claimed_success": true,
+      "official_success_mismatch": true,
+      "usable_success": false,
+      "protected_state_failures": 0,
+      "model_requests": 13,
+      "action_units": 13,
+      "wall_seconds": 1397.0979598749982,
+      "error": null,
+      "agent_errors": []
+    },
+    {
+      "run": "e002",
+      "development": true,
+      "task": "amazon_browse_category",
+      "condition": "intervention",
+      "arm": "simple",
+      "backend_success": true,
+      "score": 1.0,
+      "claimed_success": true,
+      "official_success_mismatch": false,
+      "usable_success": true,
+      "protected_state_failures": 0,
+      "model_requests": 17,
+      "action_units": 16,
+      "wall_seconds": 301.36833012499847,
+      "error": null,
+      "agent_errors": []
+    },
+    {
+      "run": "e003",
+      "development": true,
+      "task": "amazon_browse_category",
+      "condition": "intervention",
+      "arm": "link",
+      "backend_success": true,
+      "score": 1.0,
+      "claimed_success": true,
+      "official_success_mismatch": false,
+      "usable_success": true,
+      "protected_state_failures": 0,
+      "model_requests": 19,
+      "action_units": 19,
+      "wall_seconds": 838.160781833998,
+      "error": null,
+      "agent_errors": []
+    },
+    {
+      "run": "e004",
+      "development": true,
+      "task": "amazon_browse_category",
+      "condition": "intervention",
+      "arm": "agent-browser",
+      "backend_success": true,
+      "score": 1.0,
+      "claimed_success": true,
+      "official_success_mismatch": false,
+      "usable_success": true,
+      "protected_state_failures": 0,
+      "model_requests": 16,
+      "action_units": 16,
+      "wall_seconds": 240.72888604199397,
+      "error": null,
+      "agent_errors": [
+        "RuntimeError: agent-browser exit 1: ✗ Could not locate element with role=link name=Go to Cart\n ",
+        "RuntimeError: agent-browser exit 1: ✗ Could not locate element with role=link name=Go to Cart\n "
+      ]
+    },
+    {
+      "run": "r001",
+      "development": false,
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "arm": "native",
+      "backend_success": true,
+      "score": 1.0,
+      "claimed_success": true,
+      "official_success_mismatch": false,
+      "usable_success": true,
+      "protected_state_failures": 0,
+      "model_requests": 7,
+      "action_units": 7,
+      "wall_seconds": 175.23403083300218,
+      "error": null,
+      "agent_errors": []
+    },
+    {
+      "run": "r002",
+      "development": false,
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "arm": "simple",
+      "backend_success": true,
+      "score": 1.0,
+      "claimed_success": true,
+      "official_success_mismatch": false,
+      "usable_success": true,
+      "protected_state_failures": 0,
+      "model_requests": 9,
+      "action_units": 7,
+      "wall_seconds": 377.4107500409882,
+      "error": null,
+      "agent_errors": [
+        "LLM call timed out after 90 seconds. Keep your thinking and output short.",
+        "LLM call timed out after 90 seconds. Keep your thinking and output short."
+      ]
+    },
+    {
+      "run": "r003",
+      "development": false,
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "arm": "membership",
+      "backend_success": false,
+      "score": 0.0,
+      "claimed_success": null,
+      "official_success_mismatch": false,
+      "usable_success": false,
+      "protected_state_failures": 0,
+      "model_requests": 7,
+      "action_units": 8,
+      "wall_seconds": 262.9344084589975,
+      "error": null,
+      "agent_errors": [
+        "Contract frozen or mutation controls already used",
+        "Contract frozen or mutation controls already used",
+        "Invalid model output format. Please follow the correct schema.\nDetails: 1 validation error for AgentOutput\naction.0.click\n  Extra inputs are not permitted [type=extra_forbidden, input_value={'index': 2380}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      ]
+    },
+    {
+      "run": "r004",
+      "development": false,
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "arm": "agent-browser",
+      "backend_success": true,
+      "score": 1.0,
+      "claimed_success": true,
+      "official_success_mismatch": false,
+      "usable_success": true,
+      "protected_state_failures": 0,
+      "model_requests": 7,
+      "action_units": 7,
+      "wall_seconds": 362.67563720900216,
+      "error": null,
+      "agent_errors": [
+        "RuntimeError: agent-browser exit 1: ✗ Could not locate element with role=link name=Go to Cart\n "
+      ]
+    }
+  ],
+  "confirmation": [
+    {
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "arm": "native",
+      "status": "recorded",
+      "runs": [
+        "r001"
+      ]
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "arm": "simple",
+      "status": "recorded",
+      "runs": [
+        "r002"
+      ]
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "arm": "membership",
+      "status": "recorded",
+      "runs": [
+        "r003"
+      ]
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "clean",
+      "arm": "agent-browser",
+      "status": "recorded",
+      "runs": [
+        "r004"
+      ]
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "intervention",
+      "arm": "native",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "intervention",
+      "arm": "simple",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "intervention",
+      "arm": "membership",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "amazon_browse_category",
+      "condition": "intervention",
+      "arm": "agent-browser",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "clean",
+      "arm": "native",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "clean",
+      "arm": "simple",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "clean",
+      "arm": "membership",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "clean",
+      "arm": "agent-browser",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "intervention",
+      "arm": "native",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "intervention",
+      "arm": "simple",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "intervention",
+      "arm": "membership",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "booking_frontier_account_overhaul",
+      "condition": "intervention",
+      "arm": "agent-browser",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "clean",
+      "arm": "native",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "clean",
+      "arm": "simple",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "clean",
+      "arm": "membership",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "clean",
+      "arm": "agent-browser",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "intervention",
+      "arm": "native",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "intervention",
+      "arm": "simple",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "intervention",
+      "arm": "membership",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "gmail_escalation_chain",
+      "condition": "intervention",
+      "arm": "agent-browser",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "clean",
+      "arm": "native",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "clean",
+      "arm": "simple",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "clean",
+      "arm": "membership",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "clean",
+      "arm": "agent-browser",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "intervention",
+      "arm": "native",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "intervention",
+      "arm": "simple",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "intervention",
+      "arm": "membership",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "lms_complete_mixed_module",
+      "condition": "intervention",
+      "arm": "agent-browser",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "clean",
+      "arm": "native",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "clean",
+      "arm": "simple",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "clean",
+      "arm": "membership",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "clean",
+      "arm": "agent-browser",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "intervention",
+      "arm": "native",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "intervention",
+      "arm": "simple",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "intervention",
+      "arm": "membership",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "pp_transfer_prescription",
+      "condition": "intervention",
+      "arm": "agent-browser",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "clean",
+      "arm": "native",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "clean",
+      "arm": "simple",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "clean",
+      "arm": "membership",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "clean",
+      "arm": "agent-browser",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "intervention",
+      "arm": "native",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "intervention",
+      "arm": "simple",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "intervention",
+      "arm": "membership",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "reddit_community_builder",
+      "condition": "intervention",
+      "arm": "agent-browser",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "clean",
+      "arm": "native",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "clean",
+      "arm": "simple",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "clean",
+      "arm": "membership",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "clean",
+      "arm": "agent-browser",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "intervention",
+      "arm": "native",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "intervention",
+      "arm": "simple",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "intervention",
+      "arm": "membership",
+      "status": "not_run",
+      "runs": []
+    },
+    {
+      "task": "rh_live_multi_stock_limits",
+      "condition": "intervention",
+      "arm": "agent-browser",
+      "status": "not_run",
+      "runs": []
+    }
+  ],
+  "confirmation_complete": false,
+  "provider_tokens_cost": null,
+  "scope": "Controlled text-only desktop relay, not official paper harness or full BreakingWeb score",
+  "semantic_audit": {
+    "task": "amazon_browse_category",
+    "condition": "intervention",
+    "audit_timing": "after all four e001..e004 actor outputs sealed and evaluated",
+    "instruction": "Browse the Electronics category, find the cheapest item available, and add it to your cart.\n",
+    "upstream_variant": "breakingweb/injector/variants/amazon_browse_category__cheapest_decoy.yaml",
+    "upstream_commit": "052f0f0c6cfcdc9efb86eb0183556fcc4fb3606e",
+    "findings": [
+      "Variant adds three products at the same $7.99 lowest price as original product; instruction does not specify a tie-break or canonical SKU.",
+      "Evaluator accepts the original product_id only; e001 mismatch is official scoring failure but does not establish literal user-task failure.",
+      "The first two cart-add POSTs silently no-op by variant definition. A successful third add does not prove that explicitly choosing quantity=1 fixed a quantity bug."
+    ],
+    "handling": "Retain the selected case and all official scores. Do not remove it, relabel raw evaluator output, or claim candidate superiority based on the canonical-SKU mismatch. Semantic failure for e001 remains unestablished.",
+    "candidate_vs_strong_controls": "Candidate 19 requests/19 units; simple 17 requests/16 units; agent-browser 16 requests/16 units. No observed advantage over strong controls on this pilot."
+  }
+}

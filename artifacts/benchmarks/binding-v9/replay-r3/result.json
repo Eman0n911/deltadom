@@ -1,0 +1,5845 @@
+{
+  "scope": "native replay matching + real UI actions, not full autonomous agent scores",
+  "sources": {
+    "benchmarks/binding_v9.py": "893de4935a7dfa224c84fd65e76b39e974c2038afd82f636d849fa6d46807802",
+    "python/deltadom/binding.py": "39c4565eed0ca52cfc85b6fb26ae3e7196680f67f5f95a39ac3a916404738cb0",
+    "python/deltadom/binding.js": "6d9269f727b79798759d535bc9134da62b9879f6773aca3e22e7480d78efbe64"
+  },
+  "summary": {
+    "native_history": {
+      "correct_action": 7,
+      "wrong_action": 17,
+      "false_refusal": 0,
+      "justified_refusal": 0
+    },
+    "manual_semantic": {
+      "correct_action": 13,
+      "wrong_action": 1,
+      "false_refusal": 0,
+      "justified_refusal": 10
+    },
+    "full_row_check": {
+      "correct_action": 8,
+      "wrong_action": 2,
+      "false_refusal": 5,
+      "justified_refusal": 9
+    },
+    "automatic_binding": {
+      "correct_action": 12,
+      "wrong_action": 2,
+      "false_refusal": 1,
+      "justified_refusal": 9
+    }
+  },
+  "original_summary": {
+    "native_history": {
+      "correct_action": 4,
+      "wrong_action": 10,
+      "false_refusal": 0,
+      "justified_refusal": 0
+    },
+    "manual_semantic": {
+      "correct_action": 8,
+      "wrong_action": 1,
+      "false_refusal": 0,
+      "justified_refusal": 5
+    },
+    "full_row_check": {
+      "correct_action": 7,
+      "wrong_action": 2,
+      "false_refusal": 1,
+      "justified_refusal": 4
+    },
+    "automatic_binding": {
+      "correct_action": 8,
+      "wrong_action": 1,
+      "false_refusal": 0,
+      "justified_refusal": 5
+    }
+  },
+  "rows": [
+    {
+      "case": "unchanged",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.6015625,
+          "click_y": 58.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "unchanged",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "unchanged",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "unchanged",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked",
+        "candidate_count": 1,
+        "scope": "one UI click; outcome not verified"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "reorder",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.9140625,
+          "click_y": 20.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/B",
+          "name": "Record B",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "reorder",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "reorder",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "reorder",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked",
+        "candidate_count": 1,
+        "scope": "one UI click; outcome not verified"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "remount",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.6015625,
+          "click_y": 58.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "remount",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "remount",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "remount",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked",
+        "candidate_count": 1,
+        "scope": "one UI click; outcome not verified"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "wrapper_change",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.9140625,
+          "click_y": 101.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/B",
+          "name": "Record B",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "wrapper_change",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "wrapper_change",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "unresolved"
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": true,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "wrapper_change",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked",
+        "candidate_count": 1,
+        "scope": "one UI click; outcome not verified"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "insert_before",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 129.7421875,
+          "click_y": 20.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/C",
+          "name": "Record C",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "insert_before",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "insert_before",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "insert_before",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked",
+        "candidate_count": 1,
+        "scope": "one UI click; outcome not verified"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "target_removed",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.9140625,
+          "click_y": 58.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/B",
+          "name": "Record B",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "target_removed",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "actions": [],
+      "error": "TimeoutError: Locator.click: Timeout 500ms exceeded.\nCall log:\n  - waiting for get_by_role(\"article\").filter(has=get_by_role(\"link\", name=\"Record A\", exact=True).and_(locator(\"a[href=\\\"/records/A\\\"]\"))).get_by_role(\"button\", name=\"Mark complete\", exact=True)\n",
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "target_removed",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "unresolved"
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "target_removed",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "unresolved",
+        "reason": "identity_not_found",
+        "candidate_count": 0,
+        "element": null
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "duplicate_identity",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.6015625,
+          "click_y": 58.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "duplicate_identity",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "actions": [],
+      "error": "Error: Locator.click: Error: strict mode violation: get_by_role(\"article\").filter(has=get_by_role(\"link\", name=\"Record A\", exact=True).and_(locator(\"a[href=\\\"/records/A\\\"]\"))).get_by_role(\"button\", name=\"Mark complete\", exact=True) resolved to 2 elements:\n    1) <button>Mark complete</button> aka get_by_role(\"button\", name=\"Mark complete\").first\n    2) <button>Mark complete</button> aka get_by_role(\"button\", name=\"Mark complete\").nth(2)\n\nCall log:\n  - waiting for get_by_role(\"article\").filter(has=get_by_role(\"link\", name=\"Record A\", exact=True).and_(locator(\"a[href=\\\"/records/A\\\"]\"))).get_by_role(\"button\", name=\"Mark complete\", exact=True)\n",
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "duplicate_identity",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "unresolved"
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "duplicate_identity",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "unresolved",
+        "reason": "ambiguous_identity",
+        "candidate_count": 2,
+        "element": null
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "name_changed",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.0703125,
+          "click_y": 58.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record Z",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "name_changed",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "actions": [],
+      "error": "TimeoutError: Locator.click: Timeout 500ms exceeded.\nCall log:\n  - waiting for get_by_role(\"article\").filter(has=get_by_role(\"link\", name=\"Record A\", exact=True).and_(locator(\"a[href=\\\"/records/A\\\"]\"))).get_by_role(\"button\", name=\"Mark complete\", exact=True)\n",
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "name_changed",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "unresolved"
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "name_changed",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "unresolved",
+        "reason": "identity_not_found",
+        "candidate_count": 0,
+        "element": null
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "unrelated_timer",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.6015625,
+          "click_y": 58.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "unrelated_timer",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "unrelated_timer",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "unrelated_timer",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked",
+        "candidate_count": 1,
+        "scope": "one UI click; outcome not verified"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "url_changed",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.6015625,
+          "click_y": 58.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/Z",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "url_changed",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "actions": [],
+      "error": "TimeoutError: Locator.click: Timeout 500ms exceeded.\nCall log:\n  - waiting for get_by_role(\"article\").filter(has=get_by_role(\"link\", name=\"Record A\", exact=True).and_(locator(\"a[href=\\\"/records/A\\\"]\"))).get_by_role(\"button\", name=\"Mark complete\", exact=True)\n",
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "url_changed",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/Z",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "url_changed",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "unresolved",
+        "reason": "identity_not_found",
+        "candidate_count": 0,
+        "element": null
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "global_unique",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 6,
+        "backend_node_id": 3,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/button",
+        "element_hash": 1706436846775968605,
+        "stable_hash": 1706436846775968605,
+        "bounds": {
+          "x": 8.0,
+          "y": 8.0,
+          "width": 69.359375,
+          "height": 21.0
+        },
+        "ax_name": "Continue"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Continue"
+          },
+          "anchors": [],
+          "mode": "unique_control"
+        }
+      },
+      "correct_target_available": true,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Continue\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 42.6796875,
+          "click_y": 18.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "button": "Continue"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "global_unique",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 6,
+        "backend_node_id": 3,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/button",
+        "element_hash": 1706436846775968605,
+        "stable_hash": 1706436846775968605,
+        "bounds": {
+          "x": 8.0,
+          "y": 8.0,
+          "width": 69.359375,
+          "height": 21.0
+        },
+        "ax_name": "Continue"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Continue"
+          },
+          "anchors": [],
+          "mode": "unique_control"
+        }
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "button": "Continue"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "global_unique",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 6,
+        "backend_node_id": 3,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/button",
+        "element_hash": 1706436846775968605,
+        "stable_hash": 1706436846775968605,
+        "bounds": {
+          "x": 8.0,
+          "y": 8.0,
+          "width": 69.359375,
+          "height": 21.0
+        },
+        "ax_name": "Continue"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Continue"
+          },
+          "anchors": [],
+          "mode": "unique_control"
+        }
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "button": "Continue"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "global_unique",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 6,
+        "backend_node_id": 3,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/button",
+        "element_hash": 1706436846775968605,
+        "stable_hash": 1706436846775968605,
+        "bounds": {
+          "x": 8.0,
+          "y": 8.0,
+          "width": 69.359375,
+          "height": 21.0
+        },
+        "ax_name": "Continue"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Continue"
+          },
+          "anchors": [],
+          "mode": "unique_control"
+        }
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked",
+        "candidate_count": 1,
+        "scope": "one UI click; outcome not verified"
+      },
+      "actions": [
+        {
+          "button": "Continue"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "global_duplicate",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 6,
+        "backend_node_id": 3,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/button",
+        "element_hash": 1706436846775968605,
+        "stable_hash": 1706436846775968605,
+        "bounds": {
+          "x": 8.0,
+          "y": 8.0,
+          "width": 69.359375,
+          "height": 21.0
+        },
+        "ax_name": "Continue"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Continue"
+          },
+          "anchors": [],
+          "mode": "unique_control"
+        }
+      },
+      "correct_target_available": false,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Continue\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 42.6796875,
+          "click_y": 18.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "button": "Continue"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "global_duplicate",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 6,
+        "backend_node_id": 3,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/button",
+        "element_hash": 1706436846775968605,
+        "stable_hash": 1706436846775968605,
+        "bounds": {
+          "x": 8.0,
+          "y": 8.0,
+          "width": 69.359375,
+          "height": 21.0
+        },
+        "ax_name": "Continue"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Continue"
+          },
+          "anchors": [],
+          "mode": "unique_control"
+        }
+      },
+      "correct_target_available": false,
+      "actions": [],
+      "error": "Error: Locator.click: Error: strict mode violation: get_by_role(\"button\", name=\"Continue\", exact=True) resolved to 2 elements:\n    1) <button>Continue</button> aka get_by_role(\"button\", name=\"Continue\").first\n    2) <button>Continue</button> aka get_by_role(\"button\", name=\"Continue\").nth(1)\n\nCall log:\n  - waiting for get_by_role(\"button\", name=\"Continue\", exact=True)\n",
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "global_duplicate",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 6,
+        "backend_node_id": 3,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/button",
+        "element_hash": 1706436846775968605,
+        "stable_hash": 1706436846775968605,
+        "bounds": {
+          "x": 8.0,
+          "y": 8.0,
+          "width": 69.359375,
+          "height": 21.0
+        },
+        "ax_name": "Continue"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Continue"
+          },
+          "anchors": [],
+          "mode": "unique_control"
+        }
+      },
+      "correct_target_available": false,
+      "actions": [],
+      "error": "Error: Locator.click: Error: strict mode violation: get_by_role(\"button\", name=\"Continue\", exact=True) resolved to 2 elements:\n    1) <button>Continue</button> aka get_by_role(\"button\", name=\"Continue\").first\n    2) <button>Continue</button> aka get_by_role(\"button\", name=\"Continue\").nth(1)\n\nCall log:\n  - waiting for get_by_role(\"button\", name=\"Continue\", exact=True)\n",
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "global_duplicate",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 6,
+        "backend_node_id": 3,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/button",
+        "element_hash": 1706436846775968605,
+        "stable_hash": 1706436846775968605,
+        "bounds": {
+          "x": 8.0,
+          "y": 8.0,
+          "width": 69.359375,
+          "height": 21.0
+        },
+        "ax_name": "Continue"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Continue"
+          },
+          "anchors": [],
+          "mode": "unique_control"
+        }
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "unresolved",
+        "reason": "ambiguous_identity",
+        "candidate_count": 2,
+        "element": null
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "no_link_reorder",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [],
+          "texts": [
+            "Record A"
+          ],
+          "mode": "textual"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.9140625,
+          "click_y": 20.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/B",
+          "name": "Record B",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "no_link_reorder",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [],
+          "texts": [
+            "Record A"
+          ],
+          "mode": "textual"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "no_link_reorder",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [],
+          "texts": [
+            "Record A"
+          ],
+          "mode": "textual"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "no_link_reorder",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [],
+          "texts": [
+            "Record A"
+          ],
+          "mode": "textual"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked",
+        "candidate_count": 1,
+        "scope": "one UI click; outcome not verified"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "invisible_handler",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.6015625,
+          "click_y": 58.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/Z",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "invisible_handler",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/Z",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "invisible_handler",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/Z",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "invisible_handler",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "clicked",
+        "candidate_count": 1,
+        "scope": "one UI click; outcome not verified"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/Z",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "linked_price_change",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.6015625,
+          "click_y": 58.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "linked_price_change",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "linked_price_change",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "unresolved"
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": true,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "linked_price_change",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked",
+        "candidate_count": 1,
+        "scope": "one UI click; outcome not verified"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "linked_status_change",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.6015625,
+          "click_y": 58.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "linked_status_change",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "linked_status_change",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "unresolved"
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": true,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "linked_status_change",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked",
+        "candidate_count": 1,
+        "scope": "one UI click; outcome not verified"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "name_prefix_change",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 138.5859375,
+          "click_y": 58.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record AZ",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "name_prefix_change",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "actions": [],
+      "error": "TimeoutError: Locator.click: Timeout 500ms exceeded.\nCall log:\n  - waiting for get_by_role(\"article\").filter(has=get_by_role(\"link\", name=\"Record A\", exact=True).and_(locator(\"a[href=\\\"/records/A\\\"]\"))).get_by_role(\"button\", name=\"Mark complete\", exact=True)\n",
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "name_prefix_change",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "unresolved"
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "name_prefix_change",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "unresolved",
+        "reason": "identity_not_found",
+        "candidate_count": 0,
+        "element": null
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "no_link_name_change",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [],
+          "texts": [
+            "Record A"
+          ],
+          "mode": "textual"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.0703125,
+          "click_y": 58.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/B",
+          "name": "Record B",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "no_link_name_change",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [],
+          "texts": [
+            "Record A"
+          ],
+          "mode": "textual"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "actions": [],
+      "error": "TimeoutError: Locator.click: Timeout 500ms exceeded.\nCall log:\n  - waiting for get_by_role(\"article\").filter(has=get_by_text(\"Record A\", exact=True)).get_by_role(\"button\", name=\"Mark complete\", exact=True)\n",
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "no_link_name_change",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [],
+          "texts": [
+            "Record A"
+          ],
+          "mode": "textual"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "unresolved"
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "no_link_name_change",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [],
+          "texts": [
+            "Record A"
+          ],
+          "mode": "textual"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "unresolved",
+        "reason": "identity_not_found",
+        "candidate_count": 0,
+        "element": null
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "no_link_duplicate",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [],
+          "texts": [
+            "Record A"
+          ],
+          "mode": "textual"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.6015625,
+          "click_y": 58.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "no_link_duplicate",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [],
+          "texts": [
+            "Record A"
+          ],
+          "mode": "textual"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "actions": [],
+      "error": "Error: Locator.click: Error: strict mode violation: get_by_role(\"article\").filter(has=get_by_text(\"Record A\", exact=True)).get_by_role(\"button\", name=\"Mark complete\", exact=True) resolved to 2 elements:\n    1) <button>Mark complete</button> aka get_by_role(\"button\", name=\"Mark complete\").first\n    2) <button>Mark complete</button> aka get_by_role(\"button\", name=\"Mark complete\").nth(2)\n\nCall log:\n  - waiting for get_by_role(\"article\").filter(has=get_by_text(\"Record A\", exact=True)).get_by_role(\"button\", name=\"Mark complete\", exact=True)\n",
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "no_link_duplicate",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [],
+          "texts": [
+            "Record A"
+          ],
+          "mode": "textual"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "unresolved"
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "no_link_duplicate",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [],
+          "texts": [
+            "Record A"
+          ],
+          "mode": "textual"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "unresolved",
+        "reason": "ambiguous_identity",
+        "candidate_count": 2,
+        "element": null
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "no_link_price_change",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [],
+          "texts": [
+            "$10",
+            "Record A"
+          ],
+          "mode": "textual"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.6015625,
+          "click_y": 58.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "no_link_price_change",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [],
+          "texts": [
+            "$10",
+            "Record A"
+          ],
+          "mode": "textual"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "no_link_price_change",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [],
+          "texts": [
+            "$10",
+            "Record A"
+          ],
+          "mode": "textual"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "unresolved"
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": true,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "no_link_price_change",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [],
+          "texts": [
+            "$10",
+            "Record A"
+          ],
+          "mode": "textual"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "unresolved",
+        "reason": "identity_not_found",
+        "candidate_count": 0,
+        "element": null
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": true,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "same_name_distinct_link",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.6015625,
+          "click_y": 20.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/B",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "same_name_distinct_link",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "same_name_distinct_link",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "unresolved"
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": true,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "same_name_distinct_link",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked",
+        "candidate_count": 1,
+        "scope": "one UI click; outcome not verified"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "shared_owner_reorder",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 13,
+        "backend_node_id": 15,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 179.390625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 231.4140625,
+          "click_y": 20.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/B",
+          "name": "Record B",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "shared_owner_reorder",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 13,
+        "backend_node_id": 15,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 179.390625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "shared_owner_reorder",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 13,
+        "backend_node_id": 15,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 179.390625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "shared_owner_reorder",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 13,
+        "backend_node_id": 15,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 179.390625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": true,
+      "result": {
+        "status": "clicked",
+        "candidate_count": 1,
+        "scope": "one UI click; outcome not verified"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": true,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "record_changed_owner_stays",
+      "arm": "native_history",
+      "status": "harness_error",
+      "error": "Page.evaluate: SyntaxError: missing ) after argument list\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:370:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "case": "record_changed_owner_stays",
+      "arm": "manual_semantic",
+      "status": "harness_error",
+      "error": "Page.evaluate: SyntaxError: missing ) after argument list\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:370:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "case": "record_changed_owner_stays",
+      "arm": "full_row_check",
+      "status": "harness_error",
+      "error": "Page.evaluate: SyntaxError: missing ) after argument list\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:370:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "case": "record_changed_owner_stays",
+      "arm": "automatic_binding",
+      "status": "harness_error",
+      "error": "Page.evaluate: SyntaxError: missing ) after argument list\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:370:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "case": "control_removed",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.9140625,
+          "click_y": 80.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/B",
+          "name": "Record B",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "control_removed",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "actions": [],
+      "error": "TimeoutError: Locator.click: Timeout 500ms exceeded.\nCall log:\n  - waiting for get_by_role(\"article\").filter(has=get_by_role(\"link\", name=\"Record A\", exact=True).and_(locator(\"a[href=\\\"/records/A\\\"]\"))).get_by_role(\"button\", name=\"Mark complete\", exact=True)\n",
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "control_removed",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "unresolved"
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "control_removed",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "clicked",
+        "candidate_count": 1,
+        "scope": "one UI click; outcome not verified"
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/B",
+          "name": "Record B",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "control_duplicated",
+      "arm": "native_history",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "is_done": false,
+        "extracted_content": "Clicked button \"Mark complete\"",
+        "include_extracted_content_only_once": false,
+        "metadata": {
+          "click_x": 128.6015625,
+          "click_y": 58.5
+        },
+        "include_in_memory": false
+      },
+      "actions": [
+        {
+          "url": "http://replay.test/records/A",
+          "name": "Record A",
+          "button": "Mark complete"
+        }
+      ],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": true,
+      "false_refusal": false,
+      "justified_refusal": false,
+      "status": "completed"
+    },
+    {
+      "case": "control_duplicated",
+      "arm": "manual_semantic",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "actions": [],
+      "error": "Error: Locator.click: Error: strict mode violation: get_by_role(\"article\").filter(has=get_by_role(\"link\", name=\"Record A\", exact=True).and_(locator(\"a[href=\\\"/records/A\\\"]\"))).get_by_role(\"button\", name=\"Mark complete\", exact=True) resolved to 2 elements:\n    1) <button>Mark complete</button> aka get_by_role(\"button\", name=\"Mark complete\").first\n    2) <button>Mark complete</button> aka get_by_role(\"button\", name=\"Mark complete\").nth(1)\n\nCall log:\n  - waiting for get_by_role(\"article\").filter(has=get_by_role(\"link\", name=\"Record A\", exact=True).and_(locator(\"a[href=\\\"/records/A\\\"]\"))).get_by_role(\"button\", name=\"Mark complete\", exact=True)\n",
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "control_duplicated",
+      "arm": "full_row_check",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "unresolved"
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    },
+    {
+      "case": "control_duplicated",
+      "arm": "automatic_binding",
+      "history_element": {
+        "node_id": 11,
+        "backend_node_id": 13,
+        "frame_id": null,
+        "node_type": 1,
+        "node_value": "",
+        "node_name": "BUTTON",
+        "attributes": {},
+        "x_path": "html/body/main/article[1]/button",
+        "element_hash": 5791712601588036627,
+        "stable_hash": 5791712601588036627,
+        "bounds": {
+          "x": 76.890625,
+          "y": 48.0,
+          "width": 103.421875,
+          "height": 21.0
+        },
+        "ax_name": "Mark complete"
+      },
+      "binding_capture": {
+        "status": "bound",
+        "binding": {
+          "version": 1,
+          "document_url": "http://replay.test/list",
+          "target": {
+            "tag": "button",
+            "role": "",
+            "type": "",
+            "name": "Mark complete"
+          },
+          "anchors": [
+            {
+              "url": "http://replay.test/records/A",
+              "name": "Record A"
+            }
+          ],
+          "mode": "relational"
+        },
+        "scope_tag": "article"
+      },
+      "correct_target_available": false,
+      "result": {
+        "status": "unresolved",
+        "reason": "identity_not_found",
+        "candidate_count": 0,
+        "element": null
+      },
+      "actions": [],
+      "error": null,
+      "correct_action": false,
+      "wrong_action": false,
+      "false_refusal": false,
+      "justified_refusal": true,
+      "status": "completed"
+    }
+  ]
+}

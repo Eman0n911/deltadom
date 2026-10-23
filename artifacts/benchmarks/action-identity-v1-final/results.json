@@ -1,0 +1,473 @@
+{
+  "scope": "8 local deterministic diagnostic fixtures, 4 branches, no models; not a mainstream agent benchmark",
+  "versions": {
+    "python": "3.12.13",
+    "playwright": "1.64.0",
+    "deltadom": "0.4.0",
+    "browser": "156.0.8078.47"
+  },
+  "git_base": "2a0c52ee7b0ef780dabeafed5a55a2bbbb5637e0",
+  "sha256": {
+    "benchmarks/action_identity_v1.py": "ff31afcd60a0ffdfdfeb8835064489ad97f9e1e25dd01746525b537062060c3e",
+    "benchmarks/IDENTITY-PROTOCOL.md": "e3ba313f396d07deef45b5b44b3e872d69bd10b97e81c1fe3ca05d072ca4c439",
+    "python/deltadom/hook.py": "a0912fd8dcc80b14e2c8421c9824d855f139ecc558fcdf9db82f42b51aa1dc79",
+    "python/deltadom/snapshot.js": "b0c5d06c8212d0ed4e5dbb4c618b2921c8a0500097d3fee7a6b839ce98158401"
+  },
+  "not_run": [
+    "models",
+    "Browser Use actor",
+    "Stagehand actor",
+    "agent-browser actor",
+    "automatic task constraint generation",
+    "action-time races",
+    "held-out sites"
+  ],
+  "summary": {
+    "deltadom_target": {
+      "correct_action": 4,
+      "wrong_action": 3,
+      "blocked_valid": 1,
+      "blocked_invalid": 0
+    },
+    "whole_page_guard": {
+      "correct_action": 1,
+      "wrong_action": 1,
+      "blocked_valid": 4,
+      "blocked_invalid": 2
+    },
+    "row_guard": {
+      "correct_action": 2,
+      "wrong_action": 1,
+      "blocked_valid": 3,
+      "blocked_invalid": 2
+    },
+    "semantic_locator": {
+      "correct_action": 5,
+      "wrong_action": 1,
+      "blocked_valid": 0,
+      "blocked_invalid": 2
+    }
+  },
+  "rows": [
+    {
+      "case": "unchanged",
+      "arm": "deltadom_target",
+      "valid_target_available": true,
+      "outcome": "correct_action",
+      "actions": [
+        {
+          "entity": "Invoice A",
+          "amount": "100"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 44.34
+    },
+    {
+      "case": "unchanged",
+      "arm": "whole_page_guard",
+      "valid_target_available": true,
+      "outcome": "correct_action",
+      "actions": [
+        {
+          "entity": "Invoice A",
+          "amount": "100"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 34.349
+    },
+    {
+      "case": "unchanged",
+      "arm": "row_guard",
+      "valid_target_available": true,
+      "outcome": "correct_action",
+      "actions": [
+        {
+          "entity": "Invoice A",
+          "amount": "100"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 31.229
+    },
+    {
+      "case": "unchanged",
+      "arm": "semantic_locator",
+      "valid_target_available": true,
+      "outcome": "correct_action",
+      "actions": [
+        {
+          "entity": "Invoice A",
+          "amount": "100"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 40.797
+    },
+    {
+      "case": "entity_swap",
+      "arm": "deltadom_target",
+      "valid_target_available": false,
+      "outcome": "wrong_action",
+      "actions": [
+        {
+          "entity": "Invoice B",
+          "amount": "100"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 32.114
+    },
+    {
+      "case": "entity_swap",
+      "arm": "whole_page_guard",
+      "valid_target_available": false,
+      "outcome": "blocked_invalid",
+      "actions": [],
+      "error": {
+        "type": "StaleObservationError",
+        "message": "experimental whole-page guard"
+      },
+      "action_elapsed_ms_diagnostic_only": 0.006
+    },
+    {
+      "case": "entity_swap",
+      "arm": "row_guard",
+      "valid_target_available": false,
+      "outcome": "blocked_invalid",
+      "actions": [],
+      "error": {
+        "type": "StaleObservationError",
+        "message": "experimental row guard"
+      },
+      "action_elapsed_ms_diagnostic_only": 0.008
+    },
+    {
+      "case": "entity_swap",
+      "arm": "semantic_locator",
+      "valid_target_available": false,
+      "outcome": "blocked_invalid",
+      "actions": [],
+      "error": {
+        "type": "TimeoutError",
+        "message": "Locator.click: Timeout 300ms exceeded.\nCall log:\n  - waiting for get_by_role(\"article\").filter(has=get_by_text(\"Invoice A\", exact=True)).filter(has=get_by_text(\"100\", exact=True)).get_by_role(\"button\", name=\"Approve\", exact=True)\n"
+      },
+      "action_elapsed_ms_diagnostic_only": 301.949
+    },
+    {
+      "case": "amount_change",
+      "arm": "deltadom_target",
+      "valid_target_available": false,
+      "outcome": "wrong_action",
+      "actions": [
+        {
+          "entity": "Invoice A",
+          "amount": "900"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 32.275
+    },
+    {
+      "case": "amount_change",
+      "arm": "whole_page_guard",
+      "valid_target_available": false,
+      "outcome": "blocked_invalid",
+      "actions": [],
+      "error": {
+        "type": "StaleObservationError",
+        "message": "experimental whole-page guard"
+      },
+      "action_elapsed_ms_diagnostic_only": 0.005
+    },
+    {
+      "case": "amount_change",
+      "arm": "row_guard",
+      "valid_target_available": false,
+      "outcome": "blocked_invalid",
+      "actions": [],
+      "error": {
+        "type": "StaleObservationError",
+        "message": "experimental row guard"
+      },
+      "action_elapsed_ms_diagnostic_only": 0.008
+    },
+    {
+      "case": "amount_change",
+      "arm": "semantic_locator",
+      "valid_target_available": false,
+      "outcome": "blocked_invalid",
+      "actions": [],
+      "error": {
+        "type": "TimeoutError",
+        "message": "Locator.click: Timeout 300ms exceeded.\nCall log:\n  - waiting for get_by_role(\"article\").filter(has=get_by_text(\"Invoice A\", exact=True)).filter(has=get_by_text(\"100\", exact=True)).get_by_role(\"button\", name=\"Approve\", exact=True)\n"
+      },
+      "action_elapsed_ms_diagnostic_only": 301.384
+    },
+    {
+      "case": "outside_ticker",
+      "arm": "deltadom_target",
+      "valid_target_available": true,
+      "outcome": "correct_action",
+      "actions": [
+        {
+          "entity": "Invoice A",
+          "amount": "100"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 36.619
+    },
+    {
+      "case": "outside_ticker",
+      "arm": "whole_page_guard",
+      "valid_target_available": true,
+      "outcome": "blocked_valid",
+      "actions": [],
+      "error": {
+        "type": "StaleObservationError",
+        "message": "experimental whole-page guard"
+      },
+      "action_elapsed_ms_diagnostic_only": 0.004
+    },
+    {
+      "case": "outside_ticker",
+      "arm": "row_guard",
+      "valid_target_available": true,
+      "outcome": "correct_action",
+      "actions": [
+        {
+          "entity": "Invoice A",
+          "amount": "100"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 35.446
+    },
+    {
+      "case": "outside_ticker",
+      "arm": "semantic_locator",
+      "valid_target_available": true,
+      "outcome": "correct_action",
+      "actions": [
+        {
+          "entity": "Invoice A",
+          "amount": "100"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 38.52
+    },
+    {
+      "case": "inside_ticker",
+      "arm": "deltadom_target",
+      "valid_target_available": true,
+      "outcome": "correct_action",
+      "actions": [
+        {
+          "entity": "Invoice A",
+          "amount": "100"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 40.739
+    },
+    {
+      "case": "inside_ticker",
+      "arm": "whole_page_guard",
+      "valid_target_available": true,
+      "outcome": "blocked_valid",
+      "actions": [],
+      "error": {
+        "type": "StaleObservationError",
+        "message": "experimental whole-page guard"
+      },
+      "action_elapsed_ms_diagnostic_only": 0.005
+    },
+    {
+      "case": "inside_ticker",
+      "arm": "row_guard",
+      "valid_target_available": true,
+      "outcome": "blocked_valid",
+      "actions": [],
+      "error": {
+        "type": "StaleObservationError",
+        "message": "experimental row guard"
+      },
+      "action_elapsed_ms_diagnostic_only": 0.008
+    },
+    {
+      "case": "inside_ticker",
+      "arm": "semantic_locator",
+      "valid_target_available": true,
+      "outcome": "correct_action",
+      "actions": [
+        {
+          "entity": "Invoice A",
+          "amount": "100"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 36.702
+    },
+    {
+      "case": "row_remount",
+      "arm": "deltadom_target",
+      "valid_target_available": true,
+      "outcome": "blocked_valid",
+      "actions": [],
+      "error": {
+        "type": "StaleObservationError",
+        "message": "document or target changed; observe again"
+      },
+      "action_elapsed_ms_diagnostic_only": 1.554
+    },
+    {
+      "case": "row_remount",
+      "arm": "whole_page_guard",
+      "valid_target_available": true,
+      "outcome": "blocked_valid",
+      "actions": [],
+      "error": {
+        "type": "StaleObservationError",
+        "message": "experimental whole-page guard"
+      },
+      "action_elapsed_ms_diagnostic_only": 0.004
+    },
+    {
+      "case": "row_remount",
+      "arm": "row_guard",
+      "valid_target_available": true,
+      "outcome": "blocked_valid",
+      "actions": [],
+      "error": {
+        "type": "StaleObservationError",
+        "message": "experimental row guard"
+      },
+      "action_elapsed_ms_diagnostic_only": 0.006
+    },
+    {
+      "case": "row_remount",
+      "arm": "semantic_locator",
+      "valid_target_available": true,
+      "outcome": "correct_action",
+      "actions": [
+        {
+          "entity": "Invoice A",
+          "amount": "100"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 35.321
+    },
+    {
+      "case": "row_reorder",
+      "arm": "deltadom_target",
+      "valid_target_available": true,
+      "outcome": "correct_action",
+      "actions": [
+        {
+          "entity": "Invoice A",
+          "amount": "100"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 36.985
+    },
+    {
+      "case": "row_reorder",
+      "arm": "whole_page_guard",
+      "valid_target_available": true,
+      "outcome": "blocked_valid",
+      "actions": [],
+      "error": {
+        "type": "StaleObservationError",
+        "message": "experimental whole-page guard"
+      },
+      "action_elapsed_ms_diagnostic_only": 0.004
+    },
+    {
+      "case": "row_reorder",
+      "arm": "row_guard",
+      "valid_target_available": true,
+      "outcome": "blocked_valid",
+      "actions": [],
+      "error": {
+        "type": "StaleObservationError",
+        "message": "experimental row guard"
+      },
+      "action_elapsed_ms_diagnostic_only": 0.008
+    },
+    {
+      "case": "row_reorder",
+      "arm": "semantic_locator",
+      "valid_target_available": true,
+      "outcome": "correct_action",
+      "actions": [
+        {
+          "entity": "Invoice A",
+          "amount": "100"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 39.057
+    },
+    {
+      "case": "invisible_meaning_change",
+      "arm": "deltadom_target",
+      "valid_target_available": false,
+      "outcome": "wrong_action",
+      "actions": [
+        {
+          "entity": "Invoice B",
+          "amount": "100"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 39.768
+    },
+    {
+      "case": "invisible_meaning_change",
+      "arm": "whole_page_guard",
+      "valid_target_available": false,
+      "outcome": "wrong_action",
+      "actions": [
+        {
+          "entity": "Invoice B",
+          "amount": "100"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 42.24
+    },
+    {
+      "case": "invisible_meaning_change",
+      "arm": "row_guard",
+      "valid_target_available": false,
+      "outcome": "wrong_action",
+      "actions": [
+        {
+          "entity": "Invoice B",
+          "amount": "100"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 43.226
+    },
+    {
+      "case": "invisible_meaning_change",
+      "arm": "semantic_locator",
+      "valid_target_available": false,
+      "outcome": "wrong_action",
+      "actions": [
+        {
+          "entity": "Invoice B",
+          "amount": "100"
+        }
+      ],
+      "error": null,
+      "action_elapsed_ms_diagnostic_only": 40.916
+    }
+  ]
+}

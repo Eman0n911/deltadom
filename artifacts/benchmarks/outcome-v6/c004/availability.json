@@ -1,0 +1,13 @@
+{
+  "observed_at_local": "2026-10-22T22:54:35.211902+08:00",
+  "channel": "WorkBuddy Deepseek-V4.1-Flash desktop",
+  "ui_notice": "当前您在Deepseek-V4.1-Flash模型的免费使用量已超出频率限制，可在2026-10-23 12:12:00重置后使用。您可消耗积分继续使用该模型或切换至其他模型。",
+  "paid_continuation_enabled": false,
+  "resume_after_ui_time": "2026-10-23 12:12:00",
+  "scope": "model-channel availability, not a task or candidate failure",
+  "status": "blocked_before_model",
+  "responses_received": 0,
+  "controller_action": "SIGINT owned trial for resource cleanup; any finally-evaluator output is diagnostic only, excluded from task comparison",
+  "cleanup": "SIGINT caught by framework recovery; SIGTERM owned process tree. No completed model/task result.",
+  "requests_at_stop": 1
+}

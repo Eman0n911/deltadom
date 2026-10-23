@@ -1,0 +1,15 @@
+{
+  "candidate": "membership v3",
+  "sources": {
+    "benchmarks/outcome_agent.py": "98fc3ac0806fe930da925f48e4c73377463a4442c2d8c2fa5c7f02f44c719488",
+    "benchmarks/outcome_cli_actor.py": "e406280599c090b1e918b4f5230c7e7ab274056fa7e80c8925ac728996b116bf",
+    "python/deltadom/outcome.py": "2402aab9d8a3c9c9bac87953f3d3c570d6ec04d7535356224decc907aa7702f7",
+    "python/deltadom/presence.py": "a22ae415c024795a9fae1b7f8612202443e7893d2d1f7ad6d973648b5b2a1201",
+    "benchmarks/observe_v2.py": "52f671575c992ade5b2bf19881152e28b63a876b3b937a27b64e25ff75371cec",
+    "benchmarks/agent-browser.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "benchmarks/OUTCOME-PROTOCOL.md": "ededc3ae43cd8da43369ff02b743df4c7937108bc3b0ec6ea6dedb03361769d3",
+    "artifacts/benchmarks/outcome-v1/manifest.json": "3ec1096cffb4484aa5909e92af6ae9ad51b03708324f4b5c7eb4dfc6bddd6e03"
+  },
+  "acceptance": "requires full fixed set; partial negative evidence may reject, never accept",
+  "run_order": "manifest task order; clean then intervention; native,simple,membership,agent-browser"
+}

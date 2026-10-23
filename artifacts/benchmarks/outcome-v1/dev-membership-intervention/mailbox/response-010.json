@@ -1,0 +1,14 @@
+{
+  "thinking": "The re-prepare was refused with 'Contract frozen or mutation controls already used', which tells me the contract registered at step 1 is still the binding one and cannot be re-declared. That is fine: the frozen contract already names this exact entity and the Starred readback view, and its baseline was 0 matches, so it can still judge a new mutation honestly. The thread's own star control [1486] is still labelled 'Star this thread' (unstarred). I will use that control, then run the frozen verify.",
+  "evaluation_previous_goal": "prepare_membership was refused ('Contract frozen or mutation controls already used'); the original contract remains in force and no state changed. Verdict: Failure (expected, contract is single-use)",
+  "memory": "Contract is frozen to entity ['Alice Chen','Project Update — Q1 Milestones'] + Starred readback; no re-prepare possible. Thread star control is [1486], still unstarred. Next: click [1486] then verify_membership.",
+  "next_goal": "Use the in-thread star control [1486] to star the target email, then verify against the frozen contract.",
+  "current_plan_item": 4,
+  "action": [
+    {
+      "click": {
+        "index": 1486
+      }
+    }
+  ]
+}

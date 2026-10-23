@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>工单列表 · DeltaDOM 场景演示</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #fff; color: #1f2328; font: 16px -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
+  header { padding: 20px 36px; border-bottom: 1px solid #d1d9e0; display: flex; justify-content: space-between; align-items: center; }
+  header strong { font-size: 17px; }
+  .label { font-size: 13px; color: #59636e; }
+  main { margin: 30px 36px; }
+  h1 { font-size: 28px; letter-spacing: -.5px; margin: 9px 0 12px; }
+  p { line-height: 1.6; margin: 8px 0; }
+  .intent { padding: 14px 18px; background: #f6f8fa; border-left: 3px solid #0969da; margin: 22px 0; }
+  .intent span { color: #59636e; font-size: 14px; margin-right: 14px; }
+  table { border-collapse: collapse; width: 100%; margin: 20px 0; font-size: 15px; }
+  th { color: #59636e; background: #f6f8fa; font-size: 13px; font-weight: 500; text-align: left; }
+  td, th { border-bottom: 1px solid #d1d9e0; padding: 17px 15px; }
+  th:first-child { width: 120px; }
+  th:nth-child(3) { width: 150px; }
+  th:last-child { width: 150px; }
+  a { color: #0969da; text-decoration: none; font-weight: 600; }
+  button { font: inherit; font-size: 14px; border: 1px solid #d1d9e0; border-radius: 6px; padding: 7px 12px; background: #f6f8fa; color: #1f2328; }
+  .state { font-size: 13px; }
+  #notice { font-size: 14px; color: #59636e; min-height: 23px; }
+  #outcome { padding: 16px 18px; border: 1px solid #d1d9e0; border-radius: 6px; line-height: 1.6; }
+  #outcome strong { display: block; font-size: 17px; margin-bottom: 3px; }
+  #outcome.bad { border-color: #ff8182; background: #fff8f8; }
+  #outcome.good { border-color: #4ac26b; background: #f6fff8; }
+  #outcome.stop { border-color: #d4a72c; background: #fffdf2; }
+  footer { margin: 24px 36px; color: #59636e; font-size: 12px; line-height: 1.7; }
+</style>
+<header><strong>DeltaDOM / 工单处理</strong><span class="label">本地模拟页面 · 真实浏览器点击</span></header>
+<main>
+  <div class="label" id="step">01 / 选定目标</div>
+  <h1 id="heading">要完成的是 #1842，不是“第一行”。</h1>
+  <p id="intro">客服已经处理好发票问题，准备将对应工单标记完成。</p>
+  <div class="intent"><span>本次目标</span><strong>#1842 · 发票抬头更正</strong></div>
+  <table aria-label="工单列表">
+    <thead><tr><th>工单编号</th><th>问题</th><th>状态</th><th>操作</th></tr></thead>
+    <tbody>
+      <tr><td><a href="/tickets/1842">#1842</a></td><td class="subject">发票抬头更正</td><td class="state">待处理</td><td><button>标记完成</button></td></tr>
+      <tr><td><a href="/tickets/1906">#1906</a></td><td class="subject">收货地址修改</td><td class="state">待处理</td><td><button>标记完成</button></td></tr>
+      <tr><td><a href="/tickets/2073">#2073</a></td><td class="subject">包裹配送查询</td><td class="state">待处理</td><td><button>标记完成</button></td></tr>
+    </tbody>
+  </table>
+  <p id="notice">三个按钮都叫“标记完成”，但属于三张不同工单。</p>
+  <div id="outcome"><strong>记住工单身份</strong>保存目标工单的可见编号链接，以及要执行的“标记完成”操作。</div>
+</main>
+<footer>演示中的工单与变化均为模拟。状态来自本页实际事件处理结果，不涉及客户系统或服务器业务确认。</footer>
+<script>
+  window.effects = [];
+  window.configure = mode => {
+    const copy = {
+      initial: ['01 / 选定目标', '要完成的是 #1842，不是“第一行”。', '客服已经处理好发票问题，准备将对应工单标记完成。'],
+      ordinary: ['02 / 普通定位后点击', '按钮没换，工单已经换了。', '先正确找到 #1842；鼠标经过时，页面刷新并复用这一行。'],
+      guarded: ['03 / DeltaDOM 输入期间核验', '发现工单变了，这次点击就停下。', '相同的页面变化，相同的点击目标；输入传播时再次核对工单身份。'],
+      reorder: ['补充 / 只改变列表顺序', '工单换了位置，仍能找到原来的它。', '按照可见工单身份重放，不依赖录制时的行号。'],
+    }[mode];
+    ['step', 'heading', 'intro'].forEach((id, i) => document.getElementById(id).textContent = copy[i]);
+    if (mode === 'ordinary' || mode === 'guarded') {
+      document.querySelector('tbody button').addEventListener('pointermove', event => {
+        const row = event.target.closest('tr');
+        row.querySelector('a').href = '/tickets/2197';
+        row.querySelector('a').textContent = '#2197';
+        row.querySelector('.subject').textContent = '退款金额待核对';
+        document.getElementById('notice').textContent = '已触发同一模拟刷新：#1842 被 #2197 替换，按钮文字仍是“标记完成”。';
+      }, {once: true});
+    }
+  };
+  document.addEventListener('click', event => {
+    if (event.target.tagName !== 'BUTTON') return;
+    const row = event.target.closest('tr');
+    window.effects.push({record: row.querySelector('a').textContent, trusted: event.isTrusted});
+    row.querySelector('.state').textContent = '已完成';
+  });
+  window.showOutcome = ({kind, title, text}) => {
+    const outcome = document.getElementById('outcome');
+    outcome.className = kind;
+    outcome.replaceChildren();
+    const strong = document.createElement('strong'); strong.textContent = title;
+    outcome.append(strong, document.createTextNode(text));
+  };
+</script>
+</html>

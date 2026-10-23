@@ -1,0 +1,28 @@
+{
+  "scope": "exhaustive input-identity audit, not task completion or server outcome",
+  "sources": {
+    "benchmarks/binding_v9_buttons.py": "79737b581fb96bfbd96f7d2e601a3d8555126558c50a1b6759882add6cc30dbc",
+    "python/deltadom/binding.py": "39c4565eed0ca52cfc85b6fb26ae3e7196680f67f5f95a39ac3a916404738cb0",
+    "python/deltadom/binding.js": "fe23460f8f2befd21f123fd65162911aa0992c0aa2df480df90fc0391893ca0c",
+    "python/deltadom/dispatch.py": "27ddfa3950dd67b6d5ee6e983f96e68a012416fcf04bd2623e283da00772adef"
+  },
+  "inventory_sha256": "78fe7a038220b80fe32c6f9cb587292f5b101571bee706bcba55ce934ccf74e4",
+  "summary": {
+    "native_history": {
+      "correct_input": 185,
+      "wrong_input": 94,
+      "refusal": 2
+    },
+    "full_row_check": {
+      "correct_input": 253,
+      "wrong_input": 0,
+      "refusal": 28
+    },
+    "dispatch_guard": {
+      "correct_input": 279,
+      "wrong_input": 0,
+      "refusal": 2
+    }
+  },
+  "cells": 843
+}

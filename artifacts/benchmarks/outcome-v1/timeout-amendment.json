@@ -1,0 +1,9 @@
+{
+  "timing": "during r002, before r003",
+  "finding": "Browser Use default llm_timeout=90 overrides mailbox600 despite step_timeout650; r002 request002 cancelled before reply",
+  "change": "llm_timeout=600 on later runs; raw earlier requests and failed step preserved",
+  "candidate_changed": false,
+  "before": "98fc3ac0806fe930da925f48e4c73377463a4442c2d8c2fa5c7f02f44c719488",
+  "after": "d29ebf43b352c633f2d55e10b4fa3282d06f948ba306cdf2cc3f54f6a3deb98f",
+  "comparison_limit": "r001/r002 do not share later timeout configuration; cannot use this partial group for a positive advantage claim"
+}

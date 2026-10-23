@@ -1,0 +1,10 @@
+{
+  "time": "2026-10-22T13:51:05.609904+00:00",
+  "type": "resume WorkBuddy repetition warning",
+  "at": "response-014.json.tmp",
+  "ui_message": "模型可能在重复操作；继续执行可能无法取得新进展，建议停止后调整要求再试",
+  "action": "clicked one-time Continue within the predeclared 40-action/request budget",
+  "task_hints_added": false,
+  "settings_changed": false,
+  "limitation": "Desktop watchdog pause/resume affects wall time and is not a native model throughput measurement"
+}

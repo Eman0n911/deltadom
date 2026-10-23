@@ -1,0 +1,64 @@
+[
+  {
+    "action": {
+      "action": "click",
+      "target": "e34",
+      "text": "",
+      "success": false
+    },
+    "error": null
+  },
+  {
+    "action": {
+      "action": "refresh",
+      "target": "",
+      "text": "",
+      "success": false
+    },
+    "error": null
+  },
+  {
+    "action": {
+      "action": "click",
+      "target": "e85",
+      "text": "",
+      "success": false
+    },
+    "error": null
+  },
+  {
+    "action": {
+      "action": "click",
+      "target": "e86",
+      "text": "",
+      "success": false
+    },
+    "error": null
+  },
+  {
+    "action": {
+      "action": "click",
+      "target": "e107",
+      "text": "",
+      "success": false
+    },
+    "error": null
+  },
+  {
+    "action": {
+      "action": "refresh",
+      "target": "",
+      "text": "",
+      "success": false
+    },
+    "error": null
+  },
+  {
+    "action": {
+      "action": "finish",
+      "target": "",
+      "text": "",
+      "success": true
+    }
+  }
+]

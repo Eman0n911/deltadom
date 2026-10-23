@@ -33,6 +33,8 @@ observation = await delta.observe()
 
 支持 click、fill、select、check、uncheck。一次动作消耗一次 observation；过期状态、替换节点、捕获字段或捕获子树已变化的目标会拒绝执行，需要重新 observe。业务任务结束条件由调用者验证。
 
+**已确认的边界：** 按钮之外的订单名、金额或表单上下文变化，可能不改变按钮及其子树，当前 `act` 不会因此拒绝。它不是业务身份或任务约束校验器。需要此类约束时，调用者必须使用包含订单身份与条件的语义定位和结果核对；仅重新 `observe` 并按同一按钮 ID 执行仍不够。见[真实浏览器反例与强简单基线](../benchmarks/IDENTITY-RESULTS.md)。可见页面完全不变而后台/JS 意义变化，也不能仅靠 DOM 判定。
+
 ## 保存上下文
 
 每次 delta 都依赖 base_seq。保留最近 full + 连续 delta，或通过 StateMirror 重建。丢帧、切换接收者或模型上下文裁剪时，调用 `await delta.observe(force_full=True)`。只把一个 delta 发给没有历史的模型，会缺少信息。

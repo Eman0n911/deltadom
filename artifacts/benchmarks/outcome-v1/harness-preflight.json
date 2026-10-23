@@ -1,0 +1,49 @@
+{
+  "scope": "scripted CLI capability check, not model efficacy",
+  "earlier_test_issue": "regex did not allow attributes before ref; not a native CLI failure",
+  "actual": {
+    "selected": "Beta",
+    "checked": true,
+    "text": "Hello"
+  },
+  "actions": [
+    {
+      "action": {
+        "action": "select",
+        "target": "e2",
+        "text": "Beta",
+        "success": false
+      },
+      "error": null,
+      "observation": "\u2713 Done\n"
+    },
+    {
+      "action": {
+        "action": "check",
+        "target": "e1",
+        "text": "",
+        "success": false
+      },
+      "error": null,
+      "observation": "\u2713 Done\n"
+    },
+    {
+      "action": {
+        "action": "fill",
+        "target": "e3",
+        "text": "Hello",
+        "success": false
+      },
+      "error": null,
+      "observation": "\u2713 Done\n"
+    },
+    {
+      "action": {
+        "action": "finish",
+        "target": "",
+        "text": "",
+        "success": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,373 @@
+{
+  "arm": "link",
+  "task": "amazon_browse_category",
+  "condition": "intervention",
+  "phase": "exploratory",
+  "scope": "Browser Use 0.13.11 native agent with restricted tools; text-only desktop relay; not official paper harness score",
+  "claimed_success": true,
+  "evaluation": {
+    "score": 1.0,
+    "final_score": 1.0,
+    "success": true,
+    "reasoning": "Score: 1.000; success=True\nPassed 1/1 checks.\n  [PASS] Cheapest Electronics product added to cart\nAll negative checks passed (no penalties).\nFinal score: 1.000 | Success: True",
+    "checks": [
+      {
+        "desc": "Cheapest Electronics product added to cart",
+        "passed": true,
+        "error": null
+      }
+    ],
+    "negative_checks": [
+      {
+        "desc": "Agent did not add extra items to cart",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify product catalog",
+        "passed": true,
+        "penalty": 0.3,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify saved addresses",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify payment methods",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not place orders",
+        "passed": true,
+        "penalty": 0.2,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not write product reviews",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create return requests",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not apply or modify promo codes",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create Q&A posts",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create or modify gift cards",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not create notifications",
+        "passed": true,
+        "penalty": 0.1,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify wishlist",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      },
+      {
+        "desc": "Agent did not modify account settings",
+        "passed": true,
+        "penalty": 0.15,
+        "kind": "invariant",
+        "_kind": "invariant",
+        "source": "protected_state"
+      }
+    ]
+  },
+  "error": null,
+  "agent_errors": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "action_units": 19,
+  "model_requests": 19,
+  "provider_usage": null,
+  "model_usage_note": "Counts mailbox requests, not all WorkBuddy internal generations/tool turns; desktop context and tokens unavailable",
+  "wall_seconds": 838.160781833998,
+  "events": [
+    {
+      "action": {
+        "click": {
+          "index": 95
+        }
+      }
+    },
+    {
+      "action": {
+        "select_dropdown": {
+          "index": 1110,
+          "text": "Price: Low to High"
+        }
+      }
+    },
+    {
+      "action": {
+        "extract": {
+          "query": "List every product result card on this page in display order. For each: its full title, its exact displayed price including the dollar sign and cents, and whether it says 'Currently unavailable'. Return a numbered list only, no commentary.",
+          "extract_links": false,
+          "extract_images": false,
+          "start_from_char": 0,
+          "already_collected": []
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 1793
+        }
+      }
+    },
+    {
+      "action": {
+        "search_page": {
+          "pattern": "7.99",
+          "regex": false,
+          "case_sensitive": false,
+          "context_chars": 120,
+          "max_results": 10
+        }
+      }
+    },
+    {
+      "action": {
+        "search_page": {
+          "pattern": "799",
+          "regex": false,
+          "case_sensitive": false,
+          "context_chars": 150,
+          "max_results": 10
+        }
+      }
+    },
+    {
+      "action": {
+        "prepare_link_membership": {
+          "entity_indices": [
+            0
+          ],
+          "readback_index": 51
+        }
+      }
+    },
+    {
+      "status": "prepared",
+      "entities": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/product/product_320?session=amazon_amazon_browse_category_285bf732f8&agent_mode=1",
+          "label": "USB-C Charging Cable 6ft",
+          "matching_links": 0,
+          "same_label_other_urls": 0
+        }
+      ],
+      "baseline": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/product/product_320?session=amazon_amazon_browse_category_285bf732f8&agent_mode=1",
+          "label": "USB-C Charging Cable 6ft",
+          "matching_links": 0,
+          "same_label_other_urls": 0
+        }
+      ],
+      "scope": "new observed link membership; not item quantity, selection optimality or task completeness"
+    },
+    {
+      "action": {
+        "click": {
+          "index": 2352
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 2520
+        }
+      }
+    },
+    {
+      "action": {
+        "verify_link_membership": {}
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "revision": 3,
+      "before": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/product/product_320?session=amazon_amazon_browse_category_285bf732f8&agent_mode=1",
+          "label": "USB-C Charging Cable 6ft",
+          "matching_links": 0,
+          "same_label_other_urls": 0
+        }
+      ],
+      "after": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/product/product_320?session=amazon_amazon_browse_category_285bf732f8&agent_mode=1",
+          "label": "USB-C Charging Cable 6ft",
+          "matching_links": 0,
+          "same_label_other_urls": 0
+        }
+      ]
+    },
+    {
+      "action": {
+        "go_back": {
+          "description": "Return to the USB-C Charging Cable 6ft detail page after the empty-cart check"
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 3198
+        }
+      }
+    },
+    {
+      "action": {
+        "verify_link_membership": {}
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "revision": 5,
+      "before": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/product/product_320?session=amazon_amazon_browse_category_285bf732f8&agent_mode=1",
+          "label": "USB-C Charging Cable 6ft",
+          "matching_links": 0,
+          "same_label_other_urls": 0
+        }
+      ],
+      "after": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/product/product_320?session=amazon_amazon_browse_category_285bf732f8&agent_mode=1",
+          "label": "USB-C Charging Cable 6ft",
+          "matching_links": 0,
+          "same_label_other_urls": 0
+        }
+      ]
+    },
+    {
+      "action": {
+        "go_back": {
+          "description": "Back to product_320 to set quantity before a final add attempt"
+        }
+      }
+    },
+    {
+      "action": {
+        "select_dropdown": {
+          "index": 3849,
+          "text": "1"
+        }
+      }
+    },
+    {
+      "action": {
+        "click": {
+          "index": 3874
+        }
+      }
+    },
+    {
+      "action": {
+        "verify_link_membership": {}
+      }
+    },
+    {
+      "status": "new_link_membership_observed",
+      "revision": 8,
+      "before": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/product/product_320?session=amazon_amazon_browse_category_285bf732f8&agent_mode=1",
+          "label": "USB-C Charging Cable 6ft",
+          "matching_links": 0,
+          "same_label_other_urls": 0
+        }
+      ],
+      "after": [
+        {
+          "url": "http://127.0.0.1:18765/env/amazon/product/product_320?session=amazon_amazon_browse_category_285bf732f8&agent_mode=1",
+          "label": "USB-C Charging Cable 6ft",
+          "matching_links": 1,
+          "same_label_other_urls": 0
+        }
+      ]
+    },
+    {
+      "action": {
+        "finish": {
+          "success": true,
+          "text": "Added the cheapest available Electronics item to the cart: 'USB-C Charging Cable 6ft' by CableTech, $7.99.\n\nEvidence chain:\n1. Category: opened the Electronics listing from the home page (category=Electronics, 50 results); the product page breadcrumb reads Home > Electronics > Chargers & Power Adapters.\n2. Cheapest: set Sort by = 'Price: Low to High'. The page-order price list read $7.99, $7.99, $7.99, $7.99, then $15.00, $15.00, $15.00, $15.00, $15.00, $15.00, $17.99, $18.82. So the minimum price in Electronics is $7.99 and no cheaper item exists in the 50 results. Two of the more expensive items were marked 'Currently unavailable' and were excluded, so the cheapest AVAILABLE item is still $7.99.\n3. Selected item: the plain 'USB-C Charging Cable 6ft' among the four $7.99 cables, because it showed the strongest availability signals (In Stock, 1,727 ratings, 1700+ bought in past month, sold by Amazon.com).\n4. Membership: prepare_link_membership was called before the change (baseline 0 matching links for product_320). After adding, verify_link_membership returned status 'new_link_membership_observed' with matching_links 0 -> 1. The cart page independently shows 'USB-C Charging Cable 6ft', Qty 1, price 7.99, Subtotal 7.99, and the header badge reads 1 item.\n\nCaveats I am stating rather than hiding:\n- The $7.99 minimum is a four-way tie (Refurbished, 2-Pack, Pro Edition, plain 6ft). The task requirement 'cheapest item' is met on price; there is no single uniquely cheapest product.\n- The membership witness only proves the chosen entity appears in the cart view. Price minimality rests on the sorted listing and the visible cart price, not on the witness.\n- Add to Cart silently did nothing twice: it showed an 'Added to Cart' panel while the cart stayed empty. It only persisted once the Qty select was explicitly set to 1. Anyone reproducing this should set the quantity first."
+        }
+      }
+    }
+  ]
+}

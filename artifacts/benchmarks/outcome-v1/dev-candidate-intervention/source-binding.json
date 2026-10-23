@@ -1,0 +1,5 @@
+{
+  "benchmarks/outcome_agent.py": "a6456731e66f59634cb0fe024c287e906f7a8ac13744b62d9cda4e518ef40238",
+  "benchmarks/outcome_cli_actor.py": "333d4a6caf4b7217c95fc49ce9c06ead73461f5e09bd3190aed3d1374bd9099d",
+  "python/deltadom/outcome.py": "2402aab9d8a3c9c9bac87953f3d3c570d6ec04d7535356224decc907aa7702f7"
+}
