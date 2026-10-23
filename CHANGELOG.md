@@ -1,5 +1,11 @@
 # 更新记录
 
+## Unreleased — recorder size-limit fix
+
+- Keep Browser Use running when a serialized step exceeds 16 MiB: save an explicit omission record with step, message count and byte sizes, then resume normal recording on subsequent steps.
+- Report `omitted_snapshots` during replay; a valid end seal does not imply complete message coverage. Direct TapeWriter size limits and other error propagation remain unchanged.
+- Align the Rust crate and lockfile version (`0.5.0-dev.9`, SemVer) with Python (`0.5.0.dev9`, PEP 440). Previously built preview packages are unchanged.
+
 ## 0.5.0.dev9 — private local preview, 2026-10-23
 
 - Add automatic visible record binding and trusted input propagation checks.

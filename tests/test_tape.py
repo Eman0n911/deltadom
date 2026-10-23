@@ -1,3 +1,4 @@
+import base64
 import json
 import random
 import struct
@@ -6,7 +7,7 @@ from types import SimpleNamespace
 import pytest
 from deltadom.demo import fixture_server
 from deltadom.recording import BrowserUseRecorder, inspect_tape, record_page
-from deltadom.tape import HEADER, MAGIC, TapeError, TapeWriter, read_tape
+from deltadom.tape import HEADER, MAGIC, MAX_BYTES, TapeError, TapeWriter, read_tape
 
 
 def test_tape_roundtrip_checkpoints_and_full_fallback(tmp_path):
@@ -107,6 +108,93 @@ async def test_browser_use_callback_copies_complete_inputs_without_mutating(tmp_
     assert entry["messages"] == [m.data for m in messages]
     assert agent._message_manager.last_input_messages is messages
     assert messages[1].data is content
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize(
+    "steps,screenshot_kib,omitted", [(40, 200, False), (10, 800, False), (20, 800, True)]
+)
+async def test_browser_use_screenshot_history_does_not_abort_agent(
+    tmp_path, steps, screenshot_kib, omitted
+):
+    # Exercise the awaited callback with full base64 image messages, not a model trial.
+    class Message:
+        def __init__(self, content):
+            self.content = content
+
+        def model_dump(self, mode):
+            return {"role": "user", "content": self.content}
+
+    image = base64.b64encode(b"x" * (screenshot_kib * 1024)).decode("ascii")
+    content = [{"type": "image_url", "image_url": {"url": "data:image/png;base64," + image}}]
+    messages = [Message(content) for _ in range(steps)]
+    agent = SimpleNamespace(
+        _message_manager=SimpleNamespace(last_input_messages=messages),
+        state=SimpleNamespace(n_steps=steps, last_model_output=None, last_result=[]),
+    )
+    path = tmp_path / "history.ddt"
+    with BrowserUseRecorder(path) as recorder:
+        await recorder.on_step_end(agent)
+        assert agent._message_manager.last_input_messages is messages
+        assert all(m.content is content for m in messages)
+        # Repeated oversize steps must also return, then ordinary recording must resume.
+        agent.state.n_steps += 1
+        await recorder.on_step_end(agent)
+        agent.state.n_steps += 1
+        agent._message_manager.last_input_messages = [Message("next step still executes")]
+        await recorder.on_step_end(agent)
+    rows = [json.loads(row.text) for row in read_tape(path)]
+    assert [row["step"] for row in rows] == [steps, steps + 1, steps + 2]
+    if omitted:
+        for row in rows[:2]:
+            assert row["status"] == "omitted"
+            assert row["reason"] == "snapshot_too_large"
+            assert row["message_count"] == steps
+            assert row["raw_bytes"] > row["limit_bytes"] == MAX_BYTES
+            assert not {"messages", "model_output", "action_results"} & row.keys()
+    else:
+        assert rows[0]["messages"] == [m.model_dump(mode="json") for m in messages]
+    assert rows[2]["messages"][0]["content"] == "next step still executes"
+    report = inspect_tape(path)
+    assert report["verified"] and report["complete"]
+    assert report["omitted_snapshots"] == (2 if omitted else 0)
+    # An unrelated agent failure still leaves an explicitly incomplete, recoverable prefix.
+    path.write_bytes(path.read_bytes()[: -HEADER.size])
+    recovered = inspect_tape(path, recover=True)
+    assert not recovered["complete"] and recovered["recovered_prefix"]
+    assert recovered["omitted_snapshots"] == report["omitted_snapshots"]
+
+
+def test_tape_size_limit_uses_utf8_bytes_and_preserves_writer(tmp_path):
+    path = tmp_path / "limit.ddt"
+    with TapeWriter(path) as writer:
+        writer.add("x" * MAX_BYTES)  # The exact boundary is valid.
+        with pytest.raises(ValueError, match="snapshot exceeds 16 MiB"):
+            writer.add("界" * (MAX_BYTES // 3 + 1))
+        writer.add("after rejected record")
+    rows = list(read_tape(path))
+    assert len(rows) == 2 and rows[1].text == "after rejected record"
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize("error", [ValueError("unrelated writer error"), OSError("disk full")])
+async def test_callback_does_not_mislabel_other_errors_as_size_omissions(tmp_path, monkeypatch, error):
+    agent = SimpleNamespace(
+        _message_manager=SimpleNamespace(last_input_messages=[]),
+        state=SimpleNamespace(n_steps=1, last_model_output=None, last_result=[]),
+    )
+    path = tmp_path / "failed-callback.ddt"
+
+    def fail(_):
+        raise error
+
+    with pytest.raises(type(error), match=str(error)), BrowserUseRecorder(path) as recorder:
+        await recorder.on_step_end(agent)
+        monkeypatch.setattr(recorder.tape, "add", fail)
+        await recorder.on_step_end(agent)
+    report = inspect_tape(path, recover=True)
+    assert report["snapshots"] == 1 and report["omitted_snapshots"] == 0
+    assert not report["complete"] and report["recovered_prefix"]
 
 
 def test_recover_only_verified_prefix_and_diff(tmp_path):

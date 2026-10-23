@@ -129,7 +129,7 @@ The recording format uses standard zlib with the previous frame as a dictionary.
 - V9 saves and replays one click at a time; it does not plan complete tasks. It currently supports common top-level HTML controls and requires the exact saved URL. Some changes escape detection. It cannot undo earlier handler side effects or confirm server-side business results.
 - Exact recovery means the captured semantic nodes or native text, not complete HTML, video, or browser state. Playwright capture excludes iframe internals, closed shadow roots and canvas pixels.
 - Page observation includes a default 60 ms settling window. It can report instability but cannot guarantee the page will not change later.
-- A single recorded step is limited to 16 MiB. Damaged records fail validation. `replay --recover` restores a verified prefix from an interrupted recording and marks it incomplete. Integrity hashes do not authenticate origin.
+- A single recorded step is limited to 16 MiB; message arrays containing history and base64 screenshots can naturally exceed it. `BrowserUseRecorder` then saves an omission marker with the step, message count and byte size without interrupting the agent. Replay reports `omitted_snapshots`; omitted content cannot be recovered. Other write or serialization errors still propagate. Damaged records fail validation. `replay --recover` restores a verified prefix from an interrupted recording and marks it incomplete. Integrity hashes do not authenticate origin.
 - The Mac arm64 preview has been installed and verified locally. Source or build checks on other platforms are not installation verification of their downloadable packages.
 
 ## Development and contributions

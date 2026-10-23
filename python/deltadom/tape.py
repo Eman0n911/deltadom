@@ -25,6 +25,15 @@ class TapeError(ValueError):
         self.incomplete = incomplete
 
 
+class SnapshotTooLarge(ValueError):
+    """Rejected before any write or stream-state change."""
+
+    def __init__(self, raw_bytes):
+        super().__init__("snapshot exceeds 16 MiB")
+        self.raw_bytes = raw_bytes
+        self.limit_bytes = MAX_BYTES
+
+
 @dataclass(frozen=True)
 class TapeEntry:
     seq: int
@@ -49,7 +58,7 @@ class TapeWriter:
             raise ValueError("recording is closed")
         raw = text.encode("utf-8")
         if len(raw) > MAX_BYTES:
-            raise ValueError("snapshot exceeds 16 MiB")
+            raise SnapshotTooLarge(len(raw))
         full = zlib.compress(raw, 6)
         kind, payload = b"F", full
         if self.seq % self.interval and self._previous:

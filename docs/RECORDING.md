@@ -42,7 +42,13 @@ with BrowserUseRecorder("agent.ddt") as recorder:
 
 记录每步结束时 MessageManager 保留的最后一份输入消息、模型输出和动作结果。消息内的图片字段也保留。**这不是每次 provider 请求的网络记录**：步内重试、provider 包装、usage 和计费信息不在此接口保证内；失败步骤也可能保留上一份输入，须结合动作错误判断。若已有 `on_step_end`，请在原回调中显式调用 `await recorder.on_step_end(agent)`。
 
-使用了 Browser Use 的 `_message_manager` 内部字段；升级 Browser Use 后应重新执行接口检查。记录失败会使回调报错，避免悄悄漏记。已通过真实 `Agent.run` 的接口测试，测试响应器是固定脚本，不是模型能力或任务成功率试验。证据：[native-agent-contract](../artifacts/benchmarks/native-agent-contract/results.json)。
+消息数组可能包含历史和 base64 截图，16 MiB 上限针对序列化后的整条 UTF-8 记录，不是单张截图。含 20 张各 800 KiB 截图的消息数组，仅图片经 base64 编码就约 20.83 MiB，可能自然超限；具体保留多少历史取决于 Browser Use 版本与配置。
+
+超限时，`BrowserUseRecorder` 写入 `status: "omitted"`、`reason: "snapshot_too_large"` 的占位记录，包含原智能体步号 `step`、消息数 `message_count`、实际字节数 `raw_bytes` 和上限 `limit_bytes`，不保存该步消息、模型输出或动作结果。回调正常返回，不修改智能体输入，后续步骤继续尝试完整录制。`replay` 报告 `omitted_snapshots`；即使 `verified: true` 和 `complete: true`，也只表示文件完整且校验通过，不代表没有省略的消息。省略内容无法恢复。
+
+本次修复仅处理明确的超限错误。磁盘写入、序列化、接口不兼容等其他错误仍会抛出；若异常退出上下文，文件不带结束封条，已有完整记录可用 `replay --recover` 恢复，不应说成已记录数据全部丢失。
+
+使用了 Browser Use 的 `_message_manager` 内部字段；升级 Browser Use 后应重新执行接口检查。已通过真实 `Agent.run` 的接口测试，测试响应器是固定脚本，不是模型能力或任务成功率试验。历史证据：[native-agent-contract](../artifacts/benchmarks/native-agent-contract/results.json)。
 
 ## 任意文本观察也可以记录
 
@@ -58,6 +64,6 @@ for entry in read_tape("observations.ddt"):
     print(entry.seq, entry.text)
 ```
 
-例如 `tape.add(dom_state.llm_representation())` 可保存原生 Browser Use DOM 文本，无需换成 DeltaDOM 的页面捕获。任何来源都逐字恢复原文。单步限 16 MiB UTF-8；流式读取只保留前一步，默认每 20 步保存独立全量检查点。当前读取器顺序读取，不提供随机索引定位。
+例如 `tape.add(dom_state.llm_representation())` 可保存原生 Browser Use DOM 文本，无需换成 DeltaDOM 的页面捕获。成功写入的文本逐字恢复原文。单步限 16 MiB UTF-8；直接调用 `TapeWriter.add` 超限仍会抛出 `ValueError` 的子类，且不改变文件或录制状态；占位处理只在 Browser Use 回调中进行。流式读取只保留前一步，默认每 20 步保存独立全量检查点。当前读取器顺序读取，不提供随机索引定位。
 
 DDT1 使用标准 zlib、上一份快照的最多 32 KiB 字典、重复帧和全量回退。编码本身不是新压缩算法。它提供的是带长度限制、序号、校验、结束标记和恢复工具的完整工程路径。比较结果同时列出逐帧独立压缩和整段 gzip：[记录实验](../benchmarks/RECORDING-RESULTS.md)。

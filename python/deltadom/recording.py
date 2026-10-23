@@ -9,7 +9,7 @@ from playwright.async_api import async_playwright
 
 from .hook import DeltaBrowser
 from .runtime import launch_browser
-from .tape import TapeError, TapeWriter, read_tape
+from .tape import SnapshotTooLarge, TapeError, TapeWriter, read_tape
 
 
 def dump(value):
@@ -17,7 +17,7 @@ def dump(value):
 
 
 class BrowserUseRecorder:
-    """Browser Use 0.13.11 on_step_end callback. Records complete model-boundary messages.
+    """Browser Use 0.13.11 callback; oversized steps become explicit omission records.
 
     Opt in on synthetic/public test data first. Messages can contain screenshots,
     passwords or page content. This is a diagnostic copy, not provider wire usage.
@@ -32,23 +32,39 @@ class BrowserUseRecorder:
         if messages is None:
             raise ValueError("Browser Use has no recorded model input for this step")
         # Copy only: preserve the actual model/action instances and their identities.
-        self.tape.add(
-            dump(
-                {
-                    "source": "browser-use-model-boundary",
-                    "step": agent.state.n_steps,
-                    "messages": [m.model_dump(mode="json") for m in messages],
-                    "model_output": (
-                        agent.state.last_model_output.model_dump(mode="json")
-                        if agent.state.last_model_output
-                        else None
-                    ),
-                    "action_results": [
-                        r.model_dump(mode="json") for r in (agent.state.last_result or [])
-                    ],
-                }
-            )
+        snapshot = dump(
+            {
+                "source": "browser-use-model-boundary",
+                "step": agent.state.n_steps,
+                "messages": [m.model_dump(mode="json") for m in messages],
+                "model_output": (
+                    agent.state.last_model_output.model_dump(mode="json")
+                    if agent.state.last_model_output
+                    else None
+                ),
+                "action_results": [
+                    r.model_dump(mode="json") for r in (agent.state.last_result or [])
+                ],
+            }
         )
+        try:
+            self.tape.add(snapshot)
+        except SnapshotTooLarge as exc:
+            # Size rejection is atomic. Preserve the step without changing the agent's
+            # messages, raising into its awaited callback, or pretending we saved them.
+            self.tape.add(
+                dump(
+                    {
+                        "source": "browser-use-model-boundary",
+                        "step": agent.state.n_steps,
+                        "status": "omitted",
+                        "reason": "snapshot_too_large",
+                        "message_count": len(messages),
+                        "raw_bytes": exc.raw_bytes,
+                        "limit_bytes": exc.limit_bytes,
+                    }
+                )
+            )
 
     def __enter__(self):
         return self
@@ -96,6 +112,7 @@ async def record_page(url, output, *, count=20, interval=1.0, channel="auto", he
 
 def inspect_tape(path, *, step=None, output=None, recover=False):
     count, raw_bytes, selected = 0, 0, None
+    omitted_snapshots = 0
     kinds = {"F": 0, "D": 0, "R": 0}
     complete, error = True, None
     try:
@@ -103,6 +120,16 @@ def inspect_tape(path, *, step=None, output=None, recover=False):
             count += 1
             raw_bytes += len(entry.text.encode("utf-8"))
             kinds[entry.kind] += 1
+            try:
+                record = json.loads(entry.text)
+            except (ValueError, RecursionError):
+                record = None  # TapeWriter also accepts arbitrary text.
+            if (
+                isinstance(record, dict)
+                and record.get("source") == "browser-use-model-boundary"
+                and record.get("status") == "omitted"
+            ):
+                omitted_snapshots += 1
             if entry.seq == step:
                 selected = entry.text
     except TapeError as exc:
@@ -123,6 +150,7 @@ def inspect_tape(path, *, step=None, output=None, recover=False):
         "recovered_prefix": not complete,
         "error": error,
         "snapshots": count,
+        "omitted_snapshots": omitted_snapshots,
         "raw_bytes": raw_bytes,
         "file_bytes": Path(path).stat().st_size,
         "encodings": kinds,
